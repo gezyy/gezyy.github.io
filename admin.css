@@ -159,6 +159,276 @@
 }
 .edit-mode .nav-del-btn { display: block; }
 
+/* ── M5 Edit-mode status bar ── */
+#em-status-bar {
+  position: fixed;
+  top: 48px;
+  left: 0; right: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.35rem 1.2rem;
+  background: color-mix(in srgb, var(--bg-deep) 90%, var(--accent-dim) 10%);
+  border-bottom: 1px solid var(--accent-dim);
+  z-index: 7900;
+  gap: 1rem;
+}
+#em-pending-label {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+}
+.em-actions { display: flex; gap: 0.5rem; }
+#em-save-btn, #em-discard-btn {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  background: transparent;
+  border: 1px solid var(--ink-dim);
+  color: var(--ink-dim);
+  padding: 2px 10px;
+  cursor: pointer;
+  clip-path: polygon(5px 0%, 100% 0%, calc(100% - 5px) 100%, 0% 100%);
+  letter-spacing: 0.06em;
+  transition: color 0.2s, border-color 0.2s;
+}
+#em-save-btn:hover { color: var(--accent); border-color: var(--accent-dim); }
+#em-discard-btn:hover { color: var(--danger); border-color: var(--danger); }
+
+/* ── M5 Toast ── */
+#em-toast {
+  position: fixed;
+  bottom: 5rem;
+  left: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--accent);
+  background: var(--bg-elev);
+  border: 1px solid var(--accent-dim);
+  padding: 0.4rem 0.9rem;
+  z-index: 9100;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+  letter-spacing: 0.07em;
+}
+#em-toast.error { color: var(--danger); border-color: var(--danger); }
+
+/* ── M5 Book edit controls ── */
+.book-edit-ctrl {
+  position: absolute;
+  display: none;
+  flex-direction: row;
+  gap: 3px;
+  z-index: 500;
+  pointer-events: all;
+}
+body.edit-mode .book-edit-ctrl { display: flex; }
+
+.book-edit-ctrl button {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  background: var(--bg-deep);
+  border: 1px solid var(--ink-dim);
+  color: var(--ink-dim);
+  padding: 2px 6px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+}
+.book-edit-ctrl button:hover { color: var(--accent); border-color: var(--accent-dim); }
+.book-edit-ctrl button.danger:hover { color: var(--danger); border-color: var(--danger); }
+
+/* ── M5 Add-book button ── */
+#lib-add-book-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 1.5rem;
+  display: none;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--accent);
+  background: var(--bg-elev);
+  border: 1px solid var(--accent-dim);
+  padding: 4px 14px;
+  cursor: pointer;
+  z-index: 7800;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+  letter-spacing: 0.06em;
+}
+body.edit-mode #lib-add-book-btn { display: block; }
+#lib-add-book-btn:hover { background: var(--bg-deep); border-color: var(--accent); }
+
+/* ── M5 Book editor modal ── */
+#book-editor-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.82);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 9600;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+#book-editor-backdrop.open { display: flex; }
+#book-editor {
+  background: var(--bg-elev);
+  border: 1px solid var(--accent-dim);
+  padding: 1.5rem;
+  width: 100%; max-width: 700px;
+  box-sizing: border-box;
+  font-family: var(--font-display);
+  color: var(--ink);
+}
+#book-editor h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+#book-editor label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
+}
+#book-editor input[type=text] {
+  width: 100%; padding: 0.4rem 0.5rem;
+  background: var(--bg-deep); border: 1px solid var(--ink-dim);
+  color: var(--ink); font-size: 1rem; font-family: var(--font-display);
+  box-sizing: border-box; margin-bottom: 1rem; letter-spacing: 0.04em;
+}
+#book-editor input[type=text]:focus { outline: none; border-color: var(--accent-dim); }
+.be-cover-row {
+  display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;
+}
+.be-cover-preview {
+  width: 60px; height: 90px; object-fit: cover;
+  image-rendering: pixelated;
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+  filter: drop-shadow(0 0 1px var(--accent-dim));
+  flex-shrink: 0;
+}
+#be-cover-btn {
+  font-family: var(--font-display);
+  font-size: 0.8rem; color: var(--ink-dim);
+  background: transparent; border: 1px solid var(--ink-dim);
+  padding: 3px 10px; cursor: pointer; letter-spacing: 0.05em;
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+}
+#be-cover-btn:hover { color: var(--accent); border-color: var(--accent-dim); }
+.be-page-row {
+  display: grid; grid-template-columns: 1fr 1fr auto;
+  gap: 0.5rem; margin-bottom: 0.6rem; align-items: start;
+}
+.be-page-row textarea {
+  width: 100%; min-height: 90px; padding: 0.4rem;
+  background: var(--bg-deep); border: 1px solid var(--ink-dim);
+  color: var(--ink); font-size: 0.8rem; font-family: var(--font-display);
+  resize: vertical; box-sizing: border-box; letter-spacing: 0.03em;
+}
+.be-page-row textarea:focus { outline: none; border-color: var(--accent-dim); }
+.be-del-page {
+  align-self: flex-start; margin-top: 2px;
+  background: transparent; border: 1px solid var(--danger);
+  color: var(--danger); font-family: var(--font-display);
+  font-size: 0.75rem; padding: 2px 6px; cursor: pointer;
+}
+#be-add-page {
+  font-family: var(--font-display); font-size: 0.8rem;
+  background: transparent; border: 1px dashed var(--ink-dim);
+  color: var(--ink-dim); padding: 4px 12px; cursor: pointer;
+  letter-spacing: 0.05em; margin-bottom: 1rem; display: block;
+}
+#be-add-page:hover { border-color: var(--accent-dim); color: var(--accent); }
+.be-footer {
+  display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 0.5rem;
+}
+.be-footer button {
+  font-family: var(--font-display); font-size: 0.9rem;
+  background: transparent; border: 1px solid var(--ink-dim);
+  color: var(--ink-dim); padding: 4px 14px; cursor: pointer;
+  clip-path: polygon(5px 0%, 100% 0%, calc(100% - 5px) 100%, 0% 100%);
+  letter-spacing: 0.06em; transition: color 0.15s, border-color 0.15s;
+}
+.be-footer button.primary { color: var(--accent); border-color: var(--accent-dim); }
+.be-footer button:hover { border-color: var(--accent-dim); color: var(--accent); }
+
+/* ── M5 Gallery edit list ── */
+body.edit-mode.page-gallery #gallery-wrap,
+body.edit-mode.page-gallery #gallery-hint,
+body.edit-mode.page-gallery #dust-layer { display: none; }
+
+#gallery-edit-list {
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem 6rem;
+  margin-top: 48px;
+  max-width: 640px;
+  margin-left: auto; margin-right: auto;
+}
+body.edit-mode.page-gallery #gallery-edit-list { display: flex; }
+
+.gem-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--ink-dim);
+  padding: 0.6rem 0.8rem;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+.gem-thumb {
+  width: 56px; height: 75px; object-fit: cover; flex-shrink: 0;
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+  image-rendering: pixelated;
+}
+.gem-info { flex: 1; min-width: 0; }
+.gem-caption {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.9rem; color: var(--ink); letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+  min-width: 1em;
+}
+.gem-caption[contenteditable] {
+  outline: 1px dashed var(--accent-dim); padding: 0 0.2rem;
+}
+.gem-btns { display: flex; gap: 4px; flex-wrap: wrap; }
+.gem-btns button {
+  font-family: var(--font-display); font-size: 0.72rem;
+  background: transparent; border: 1px solid var(--ink-dim);
+  color: var(--ink-dim); padding: 2px 6px; cursor: pointer;
+  letter-spacing: 0.04em; transition: color 0.15s, border-color 0.15s;
+}
+.gem-btns button:hover { color: var(--accent); border-color: var(--accent-dim); }
+.gem-btns button.danger:hover { color: var(--danger); border-color: var(--danger); }
+#gem-add-btn {
+  font-family: var(--font-display); font-size: 0.85rem;
+  background: transparent; border: 1px dashed var(--accent-dim);
+  color: var(--accent); padding: 6px 16px; cursor: pointer;
+  letter-spacing: 0.06em; align-self: center; margin-top: 0.5rem;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+#gem-add-btn:hover { background: var(--bg-elev); }
+
+/* ── M5 Home title editable ── */
+body.edit-mode #site-title {
+  cursor: text;
+  outline: none;
+}
+body.edit-mode #site-title:hover {
+  filter: drop-shadow(0 0 6px var(--accent-dim));
+}
+body.edit-mode #site-title:focus {
+  outline: 1px dashed var(--accent-dim);
+  outline-offset: 4px;
+}
+
 /* ── Library text editor modal ── */
 #lib-editor-backdrop {
   position: fixed; inset: 0;

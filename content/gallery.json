@@ -1,3 +1,9 @@
 {
-  "items": []
+  "items": [
+    {"id": "img-001", "src": "resources/image1.png", "caption": "Jigoku Angel", "order": 0},
+    {"id": "img-002", "src": "resources/image2.png", "caption": "Pork Tapeworm", "order": 1},
+    {"id": "img-003", "src": "resources/image3.jpg", "caption": "Kumori Tonbo", "order": 2},
+    {"id": "img-004", "src": "resources/image4.jpg", "caption": "Unknown", "order": 3},
+    {"id": "img-005", "src": "resources/image5.jpg", "caption": "This Way", "order": 4}
+  ]
 }

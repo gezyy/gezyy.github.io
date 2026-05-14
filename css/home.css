@@ -73,23 +73,20 @@ body.page-home {
 }
 
 /* ── Geometry sandbox ────────────────────── */
+/* Full-screen layer behind hero; pointer-events off so nav clicks pass through */
 #geo-sandbox {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 45vh;
+  inset: 0;
   overflow: hidden;
   pointer-events: none;
   z-index: 0;
 }
 
-#geo-sandbox.interactive {
-  pointer-events: all;
-}
-
 /* Individual falling shapes */
 .geo-shape {
   position: absolute;
+  left: 0;
+  top: 0;
   will-change: transform;
+  transform-origin: center center;
 }

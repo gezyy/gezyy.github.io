@@ -10,13 +10,19 @@
 </head>
 <body class="page-gallery">
 
-  <!-- M1 placeholder — replaced in M4 -->
-  <div class="page-placeholder">
-    <div class="placeholder-label">// GALLERY //</div>
-    <div class="placeholder-sub blink">LOADING IMAGES...</div>
+  <div id="dust-layer"></div>
+
+  <div id="gallery-wrap">
+    <div id="gallery-scene">
+      <div id="gallery-model"></div>
+      <div id="carousel"></div>
+    </div>
   </div>
 
+  <div id="gallery-hint">DRAG TO ROTATE · CLICK TO VIEW</div>
+
   <script type="module" src="js/shared.js"></script>
+  <script type="module" src="js/gallery.js"></script>
   <script src="admin.js"></script>
 </body>
 </html>
