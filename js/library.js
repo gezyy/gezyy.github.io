@@ -23,9 +23,12 @@ let editorIdx   = -1;    // index in books[] (-1 = new)
 async function loadBooks() {
   try {
     const r = await fetch(`/${LIB_FILE}?_=${Date.now()}`);
+    if (!r.ok) throw new Error(`HTTP ${r.status} — ${r.url}`);
     const data = await r.json();
+    if (!Array.isArray(data.books)) throw new Error('books field missing or not an array');
     return [...data.books].sort((a, b) => a.order - b.order);
-  } catch {
+  } catch (e) {
+    console.error('[Library] loadBooks failed:', e);
     return [];
   }
 }

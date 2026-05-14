@@ -161,14 +161,13 @@ function showToast(msg, isError) {
   t._timer = setTimeout(() => { t.style.opacity = '0'; }, 4500);
 }
 
+// Expose commitAll so admin.js can call it when its toolbar button is created
+window.__emCommit = commitAll;
+
 // ── Init ──────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   if (!isAdmin()) return;
   buildStatusBar();
-
-  // Override admin.js save button to use our commit flow
-  const adminSaveBtn = document.getElementById('admin-save-btn');
-  if (adminSaveBtn) adminSaveBtn.onclick = (e) => { e.preventDefault(); commitAll(); };
 
   // Watch body.edit-mode toggle via MutationObserver
   new MutationObserver(() => {

@@ -407,7 +407,10 @@ window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
     document.body.appendChild(bar);
 
     document.getElementById('admin-edit-toggle').onclick = toggleEditMode;
-    document.getElementById('admin-save-btn').onclick = saveAll;
+    document.getElementById('admin-save-btn').onclick = (e) => {
+      e.preventDefault();
+      (window.__emCommit || saveAll)();
+    };
   }
 
   function toggleEditMode() {
