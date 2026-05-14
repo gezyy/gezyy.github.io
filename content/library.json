@@ -103,6 +103,30 @@
         }
       ],
       "order": 1
+    },
+    {
+      "id": "book-1778795818070",
+      "cover": "assets/images/library/Rainnybabe.png",
+      "title": "Odes to the Night",
+      "pages": [
+        {
+          "left": "1. Night Is Formless\n\nFormless night\n\ncannot easily be spoken of.\n\nIt is air, crowds, the streets of the city,\n\nthe long trunk of an elephant.\n\nNight is desire,\n\nnot love.\n\nThose who attempt to capture the night keep walking,\n\ntheir bodies merging with the formless dark,\n\nyet they pass through night\n\nas wind passes through emptiness.\n\nBodies wither piece by piece\n\nwithin the eternal night—\n\nonly the night endures.",
+          "right": "1. 夜是无形\n\n无形的夜\n\n难以被言说\n\n是空气，人群，城市的街道\n\n是大象的长鼻\n\n夜是爱欲，不是爱情\n\n妄图捕捉夜的人们行走着\n\n用肉体与无形的夜交融\n\n而他们穿过夜像风穿过空洞\n\n肉体在永夜中一片片凋零\n\n惟夜永恒"
+        },
+        {
+          "left": "2. The Black Bird\n\nin tribute to Naked Assembly\n\nThe black night gives birth to a black bird,\n\ncircling above the silent wasteland.\n\nWhat grows from here\n\nis your gravestone.\n\nAfter a halted climax,\n\na new cycle begins.\n\nThe black night\n\ngives birth to a black bird.",
+          "right": "2. 黑色的鸟 *致敬裸身集会\n\n黑夜孕育黑色的鸟\n\n盘旋在静谧的荒地\n\n从这里生长出来的\n\n是你的墓碑\n\n在寸止的性高潮之后\n\n进入新的轮回\n\n黑夜孕育黑色的鸟"
+        },
+        {
+          "left": "3. Murmur I\n\nRed, silver, black—\n\na tin-can chicken.\n\nFrom the old tree branch\n\nhangs whose great head?\n\nStir it in, stir it in,\n\na flying natural man.\n\nThe drunken moon grants me\n\nthe instinct of love.\n\nOn this beautiful night,\n\nsigh!",
+          "right": "3. 呓语Ⅰ\n\n红色银色黑的\n\n铁皮罐头鸡\n\n老树杈子挂了谁的大脑袋\n\n搅进去 搅进去\n\n飞翔的自然人\n\n喝醉了的月亮赐予我爱的本能\n\n在这个漂亮的夜晚\n\n叹息吧！"
+        },
+        {
+          "left": "4. A Declaration of Night\n\nDo you hear it?\n\nThe one who walks hears dogs barking deep in the alley.\n\nThe one who dances hears signals of love passing through the crowd.\n\nThe imprisoned hears the wind knocking along the window’s edge.\n\nThe sleeper hears, within a dream,\n\na voice saying:\n\nGo—for me.\n\nAnd so,\n\nthe walker, the dancer, the imprisoned, the sleeper,\n\nall become Abraham,\n\ntaking up the knife of sacrifice,\n\nsearching through the night\n\nfor Isaac.",
+          "right": "4. 夜晚的宣言\n\n听见了吗？\n\n行走的人听见了巷子深处的犬吠，\n\n跳舞的人听见人群传来爱的信号，\n\n被囚禁者听见风经过时叩击窗沿，\n\n沉睡的人在梦中听见一个声音对他说，\n\n去吧，为了我。\n\n于是，行走的人，跳舞的人，被囚禁者，沉睡的人，\n\n纷纷化身亚伯拉罕，拿起献祭的刀，\n\n在夜晚寻找艾萨克。"
+        }
+      ],
+      "order": 2
     }
   ]
 }
