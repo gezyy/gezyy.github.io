@@ -1,6 +1,7 @@
 // Admin panel — shared across all pages
 // Set WORKER_URL after deploying the Cloudflare Worker
 const WORKER_URL = 'https://gezyy-admin.gezijun167955.workers.dev';
+window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
 
 (function () {
   'use strict';

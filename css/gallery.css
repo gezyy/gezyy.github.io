@@ -1,0 +1,6 @@
+/* gallery.css */
+
+body.page-gallery {
+  min-height: 100vh;
+  padding-top: 48px;
+}

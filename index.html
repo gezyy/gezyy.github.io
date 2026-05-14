@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gege say hi!</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="admin.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gege say hi!</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="admin.css">
 </head>
-<body data-page="index">
-<div class="container">
-    <h1 id="main-title">Instantiated in a substratum</h1>
-    <img id="animated-gif" src="your-gif-image.gif" alt="Animated Image">
-    <div id="dialog-box">
-        <p id="dialog-text">Where you wanna go?</p>
-        <nav id="links" class="hidden"></nav>
-    </div>
-</div>
-<script src="script.js"></script>
-<script src="admin.js"></script>
+<body class="page-home">
+
+  <div id="home-hero">
+    <h1 id="site-title">Instantiated in a substratum</h1>
+
+    <nav id="home-nav">
+      <a class="nav-card" href="library.html">LIBRARY</a>
+      <a class="nav-card" href="gallery.html">GALLERY</a>
+      <a class="nav-card" href="games.html">GAME COLLECTION</a>
+    </nav>
+  </div>
+
+  <!-- Geometry sandbox — filled by home.js in M2 -->
+  <div id="geo-sandbox" class="interactive"></div>
+
+  <script type="module" src="js/shared.js"></script>
+  <script src="admin.js"></script>
 </body>
 </html>
