@@ -5,19 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style-library.css">
+    <link rel="stylesheet" href="admin.css">
 </head>
-<body>
+<body data-page="library">
 <div class="container">
-    <div class="images-container">
-        <div class="image-item">
-            <img src="resources/library-image1.jpg" alt="Image 1" onclick="showText(1)">
-            <p class="image-title">A Series of Yiping</p>
-        </div>
-        <div class="image-item">
-            <img src="resources/library-image2.jpg" alt="Image 2" onclick="showText(2)">
-            <p class="image-title">Night Chantintonesing</p>
-        </div>
-    </div>
+    <div class="images-container"></div>
     <div class="text-container">
         <textarea id="text-area" readonly></textarea>
         <div class="buttons-row">
@@ -31,5 +23,6 @@
 </div>
 <a href="index.html" id="go-back">Go Back</a>
 <script src="script-library.js"></script>
+<script src="admin.js"></script>
 </body>
 </html>

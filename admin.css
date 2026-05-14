@@ -1,0 +1,211 @@
+/* ── Identity modal ── */
+#admin-modal-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.75);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9000;
+  font-family: inherit;
+}
+#admin-modal {
+  background: #111;
+  border: 1px solid #333;
+  padding: 2rem 2.5rem;
+  min-width: 280px;
+  text-align: center;
+  color: #eee;
+}
+#admin-modal h2 { margin: 0 0 1.5rem; font-size: 1rem; letter-spacing: .1em; color: #aaa; }
+.admin-modal-btns { display: flex; gap: .75rem; justify-content: center; }
+.admin-modal-btns button {
+  padding: .5rem 1.2rem;
+  border: 1px solid #555;
+  background: transparent;
+  color: #ddd;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: background .2s, border-color .2s;
+}
+.admin-modal-btns button:hover { background: #222; border-color: #888; }
+#admin-pin-form { margin-top: 1.25rem; display: none; }
+#admin-pin-form input[type=password] {
+  width: 100%; padding: .45rem .6rem;
+  background: #1a1a1a; border: 1px solid #444;
+  color: #eee; font-size: 1rem; box-sizing: border-box;
+  margin-bottom: .5rem;
+}
+#admin-pin-form input[type=password]:focus { outline: none; border-color: #888; }
+#admin-pin-form button {
+  width: 100%; padding: .45rem;
+  background: #2a2a2a; border: 1px solid #555;
+  color: #ccc; cursor: pointer; font-size: .9rem;
+}
+#admin-pin-form button:hover { background: #333; }
+#admin-pin-error { color: #e55; font-size: .8rem; margin-top: .4rem; display: none; }
+
+/* ── Edit mode toolbar ── */
+#admin-toolbar {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: flex; flex-direction: column; align-items: flex-end; gap: .5rem;
+  z-index: 8000;
+}
+#admin-edit-toggle {
+  padding: .45rem 1rem;
+  border: 1px solid #666;
+  background: #111;
+  color: #ccc;
+  cursor: pointer;
+  font-size: .8rem;
+  letter-spacing: .05em;
+  transition: background .2s;
+}
+#admin-edit-toggle:hover { background: #222; }
+#admin-edit-toggle.active { background: #2a4a2a; border-color: #4a8; color: #8fb; }
+#admin-save-btn {
+  padding: .45rem 1rem;
+  border: 1px solid #4a8;
+  background: #1a3a1a;
+  color: #8fb;
+  cursor: pointer;
+  font-size: .8rem;
+  display: none;
+}
+#admin-save-btn:hover { background: #2a4a2a; }
+#admin-save-status {
+  font-size: .75rem; color: #8fb;
+  display: none; padding: .3rem .6rem;
+  background: #111; border: 1px solid #333;
+}
+
+/* ── Edit overlays on items ── */
+.admin-item-overlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,.55);
+  display: none;
+  align-items: center; justify-content: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+.edit-mode .admin-item-overlay { display: flex; }
+
+.admin-overlay-btn {
+  padding: .3rem .65rem;
+  background: #111;
+  border: 1px solid #666;
+  color: #ddd;
+  cursor: pointer;
+  font-size: .75rem;
+  white-space: nowrap;
+}
+.admin-overlay-btn:hover { background: #222; border-color: #999; }
+.admin-overlay-btn.danger { border-color: #933; color: #e88; }
+.admin-overlay-btn.danger:hover { background: #2a0a0a; }
+
+/* ── Library add button ── */
+#library-add-btn {
+  display: none;
+  margin: 1rem auto;
+  padding: .45rem 1.2rem;
+  background: transparent;
+  border: 1px dashed #666;
+  color: #aaa;
+  cursor: pointer;
+  font-size: .85rem;
+}
+.edit-mode #library-add-btn { display: block; }
+
+/* ── Gallery upload zone ── */
+#gallery-upload-zone {
+  display: none;
+  border: 1px dashed #666;
+  padding: 1rem;
+  text-align: center;
+  color: #888;
+  cursor: pointer;
+  margin: 1rem;
+  font-size: .85rem;
+}
+.edit-mode #gallery-upload-zone { display: block; }
+#gallery-upload-zone:hover { border-color: #aaa; color: #bbb; }
+
+/* ── Editable titles in gallery ── */
+.edit-mode .image-title[contenteditable] {
+  outline: 1px dashed #666;
+  padding: 0 .25rem;
+  min-width: 2em;
+}
+
+/* ── Nav edit (index page) ── */
+#nav-add-btn {
+  display: none;
+  padding: .3rem .8rem;
+  background: transparent;
+  border: 1px dashed #666;
+  color: #aaa;
+  cursor: pointer;
+  font-size: .85rem;
+  margin-top: .5rem;
+}
+.edit-mode #nav-add-btn { display: inline-block; }
+.nav-link-wrap { position: relative; display: inline-block; }
+.nav-del-btn {
+  display: none;
+  position: absolute; top: -6px; right: -10px;
+  background: #700; color: #faa;
+  border: none; border-radius: 50%;
+  width: 16px; height: 16px; font-size: 10px;
+  line-height: 16px; text-align: center;
+  cursor: pointer; padding: 0;
+}
+.edit-mode .nav-del-btn { display: block; }
+
+/* ── Library text editor modal ── */
+#lib-editor-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.8);
+  display: none;
+  align-items: flex-start; justify-content: center;
+  z-index: 9500;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+#lib-editor-backdrop.open { display: flex; }
+#lib-editor {
+  background: #111;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  width: 100%; max-width: 680px;
+  color: #ddd;
+  box-sizing: border-box;
+}
+#lib-editor h3 { margin: 0 0 1rem; font-size: .9rem; color: #aaa; }
+#lib-editor-title {
+  width: 100%; padding: .4rem .5rem;
+  background: #1a1a1a; border: 1px solid #444;
+  color: #eee; font-size: 1rem; box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+.lib-page-entry { margin-bottom: .75rem; position: relative; }
+.lib-page-entry textarea {
+  width: 100%; min-height: 80px; padding: .4rem .5rem;
+  background: #1a1a1a; border: 1px solid #444;
+  color: #ddd; font-size: .85rem;
+  resize: vertical; box-sizing: border-box;
+  font-family: inherit;
+}
+.lib-page-entry textarea:focus { outline: none; border-color: #777; }
+.lib-page-del { position: absolute; top: 4px; right: 4px;
+  background: #400; border: none; color: #e88;
+  cursor: pointer; font-size: .75rem; padding: 2px 6px; }
+#lib-editor-add-page {
+  padding: .35rem .8rem; background: transparent;
+  border: 1px dashed #555; color: #888;
+  cursor: pointer; font-size: .8rem; margin-bottom: 1rem;
+}
+.lib-editor-footer { display: flex; gap: .5rem; justify-content: flex-end; }
+.lib-editor-footer button {
+  padding: .4rem .9rem;
+  border: 1px solid #555; background: transparent;
+  color: #ccc; cursor: pointer; font-size: .85rem;
+}
+.lib-editor-footer button.primary { border-color: #4a8; color: #8fb; background: #1a3a1a; }

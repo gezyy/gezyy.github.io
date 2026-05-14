@@ -1,0 +1,7 @@
+name = "gezyy-admin"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# Set secrets via CLI (never put values here):
+#   wrangler secret put ADMIN_PIN
+#   wrangler secret put GITHUB_TOKEN
