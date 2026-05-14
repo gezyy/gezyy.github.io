@@ -2,8 +2,8 @@
   "books": [
     {
       "id": "book-1778793728965",
-      "cover": "",
-      "title": "w'w",
+      "cover": "assets/images/library/1.png",
+      "title": "Series of Yiping",
       "pages": [
         {
           "left": "111",
