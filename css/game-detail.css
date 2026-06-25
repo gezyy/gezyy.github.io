@@ -32,6 +32,12 @@ body.page-game-detail {
   text-align: center;
 }
 
+/* The [hidden] attribute has matching specificity with the .gd-state class,
+   so the author rule above would otherwise win and keep the state visible. */
+.gd-state[hidden] {
+  display: none;
+}
+
 #gd-error-msg {
   font-size: 0.9rem;
   color: var(--ink-dim);

@@ -216,6 +216,10 @@ body.font-readable .game-card-blurb {
   margin-top: 2.4rem;
 }
 
+#games-load-more-wrap[hidden] {
+  display: none;
+}
+
 #games-load-more {
   font-family: var(--font-display);
   font-size: 1rem;
