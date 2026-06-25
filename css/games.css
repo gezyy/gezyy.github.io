@@ -248,3 +248,220 @@ body.font-readable .game-card-blurb {
     transform: none;
   }
 }
+
+/* ════════════════════════════════════════
+   M-Games-2 — admin / edit-mode overlays
+   Only render visually when body.edit-mode
+   ════════════════════════════════════════ */
+
+/* Per-card control strip (hidden until edit mode) */
+.game-card-ctrl {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: none;
+  gap: 4px;
+  padding: 6px;
+  background: linear-gradient(to top, rgba(10,13,10,0.96), transparent);
+  z-index: 5;
+  pointer-events: all;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body.edit-mode .game-card-ctrl {
+  display: flex;
+}
+
+.game-card-ctrl button {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  background: var(--bg-deep);
+  border: 1px solid var(--ink-dim);
+  color: var(--ink-dim);
+  padding: 2px 8px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.game-card-ctrl button:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+}
+
+.game-card-ctrl button.danger:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+/* In edit mode the card itself is a <div>, no pointer chrome */
+body.edit-mode .game-card--editing {
+  cursor: default;
+}
+
+body.edit-mode .game-card--editing:hover,
+body.edit-mode .game-card--editing:focus-visible {
+  /* Slightly less aggressive when editing so the controls stay readable */
+  transform: translateY(-2px);
+}
+
+/* ── Add game FAB ────────────────────────── */
+#games-add-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 1.5rem;
+  display: none;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--accent);
+  background: var(--bg-elev);
+  border: 1px solid var(--accent-dim);
+  padding: 6px 16px;
+  cursor: pointer;
+  z-index: 7800;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  letter-spacing: 0.08em;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+body.edit-mode #games-add-btn {
+  display: block;
+}
+
+#games-add-btn:hover {
+  background: var(--bg-deep);
+  border-color: var(--accent);
+}
+
+/* ── Game editor modal ──────────────────── */
+#game-editor-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 9600;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+
+#game-editor-backdrop.open {
+  display: flex;
+}
+
+#game-editor {
+  background: var(--bg-elev);
+  border: 1px solid var(--accent-dim);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 540px;
+  box-sizing: border-box;
+  font-family: var(--font-display);
+  color: var(--ink);
+  clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
+}
+
+#game-editor h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+#game-editor label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
+}
+
+#game-editor input[type=text] {
+  width: 100%;
+  padding: 0.42rem 0.55rem;
+  background: var(--bg-deep);
+  border: 1px solid var(--ink-dim);
+  color: var(--ink);
+  font-size: 1rem;
+  font-family: var(--font-display);
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+
+#game-editor input[type=text]:focus {
+  outline: none;
+  border-color: var(--accent-dim);
+}
+
+#game-editor input[type=text]:disabled {
+  color: var(--ink-dim);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.ge-cover-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ge-cover-preview {
+  width: 96px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--bg-deep);
+  border: 1px solid var(--accent-dim);
+  flex-shrink: 0;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+
+#ge-cover-btn {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+  background: transparent;
+  border: 1px solid var(--ink-dim);
+  padding: 4px 12px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  clip-path: polygon(5px 0%, 100% 0%, calc(100% - 5px) 100%, 0% 100%);
+}
+
+#ge-cover-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+}
+
+.ge-footer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.ge-footer button {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  background: transparent;
+  border: 1px solid var(--ink-dim);
+  color: var(--ink-dim);
+  padding: 5px 16px;
+  cursor: pointer;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+  letter-spacing: 0.06em;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.ge-footer button.primary {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+}
+
+.ge-footer button:hover {
+  border-color: var(--accent-dim);
+  color: var(--accent);
+}

@@ -260,3 +260,262 @@ body.font-readable .gd-block-image figcaption {
     transition: none;
   }
 }
+
+/* ════════════════════════════════════════
+   M-Games-2 — admin / edit-mode chrome
+   ════════════════════════════════════════ */
+
+/* Editable indicators */
+body.edit-mode .gd-editable {
+  outline: 1px dashed var(--accent-dim);
+  outline-offset: 4px;
+  transition: outline-color 0.15s;
+}
+
+body.edit-mode .gd-editable:focus {
+  outline-color: var(--accent);
+}
+
+/* Title (inline contenteditable) */
+body.edit-mode #gd-title.gd-editable {
+  cursor: text;
+}
+
+/* ── Tag inputs ─────────────────────────── */
+.gd-tag-input {
+  background: var(--bg-deep);
+  border: 1px solid var(--accent-dim);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 2px 4px;
+  margin: 0;
+  min-width: 6ch;
+  text-transform: uppercase;
+}
+
+.gd-tag-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+body.font-readable .gd-tag-input {
+  font-family: var(--font-readable);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── Video editor panel ─────────────────── */
+.gd-video-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-elev);
+  border-style: dashed;
+}
+
+.gd-video-edit {
+  margin-top: 0.6rem;
+  padding: 0.8rem;
+  background: var(--bg-elev);
+  border: 1px dashed var(--accent-dim);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.gd-video-edit-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gd-video-edit select,
+.gd-video-edit input[type=text],
+.gd-video-src {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  background: var(--bg-deep);
+  border: 1px solid var(--ink-dim);
+  color: var(--ink);
+  padding: 4px 8px;
+  letter-spacing: 0.04em;
+}
+
+.gd-video-edit select:focus,
+.gd-video-edit input[type=text]:focus {
+  outline: none;
+  border-color: var(--accent-dim);
+}
+
+.gd-video-src {
+  flex: 1;
+  min-width: 200px;
+}
+
+.gd-video-upload,
+.gd-video-clear {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  background: transparent;
+  border: 1px solid var(--ink-dim);
+  color: var(--ink-dim);
+  padding: 4px 12px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  clip-path: polygon(5px 0%, 100% 0%, calc(100% - 5px) 100%, 0% 100%);
+  align-self: flex-start;
+}
+
+.gd-video-upload:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+}
+
+.gd-video-clear.danger {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.gd-video-src-label {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+  letter-spacing: 0.04em;
+  word-break: break-all;
+}
+
+/* ── Body block wrapper / controls ─────── */
+.gd-block-wrap {
+  position: relative;
+}
+
+body.edit-mode .gd-block-wrap {
+  padding: 0.6rem;
+  border: 1px dashed transparent;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+body.edit-mode .gd-block-wrap:hover,
+body.edit-mode .gd-block-wrap:focus-within {
+  border-color: var(--accent-dim);
+  background: rgba(124, 255, 94, 0.03);
+}
+
+.gd-block-ctrl {
+  display: none;
+  gap: 4px;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+body.edit-mode .gd-block-ctrl {
+  display: flex;
+}
+
+.gd-block-ctrl button {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  background: var(--bg-deep);
+  border: 1px solid var(--ink-dim);
+  color: var(--ink-dim);
+  padding: 2px 8px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+}
+
+.gd-block-ctrl button:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+}
+
+.gd-block-ctrl button.danger:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+/* Editable text block */
+.gd-text-edit {
+  width: 100%;
+  min-height: 4rem;
+  background: var(--bg-deep);
+  border: 1px solid var(--ink-dim);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: inherit;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  padding: 0.6rem 0.7rem;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.gd-text-edit:focus {
+  outline: none;
+  border-color: var(--accent-dim);
+}
+
+/* Editable caption */
+.gd-block-cap-edit {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+  letter-spacing: 0.08em;
+  background: var(--bg-deep);
+  border: 1px solid var(--ink-dim);
+  padding: 3px 8px;
+  margin-top: 0.4rem;
+  box-sizing: border-box;
+}
+
+.gd-block-cap-edit:focus {
+  outline: none;
+  border-color: var(--accent-dim);
+}
+
+body.font-readable .gd-block-cap-edit {
+  font-family: var(--font-readable);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+/* ── Insert-between row ─────────────────── */
+.gd-block-insert {
+  display: none;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.4rem 0;
+  opacity: 0.35;
+  transition: opacity 0.2s;
+}
+
+body.edit-mode .gd-block-insert {
+  display: flex;
+}
+
+.gd-block-insert:hover {
+  opacity: 1;
+}
+
+.gd-block-insert button {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  background: transparent;
+  border: 1px dashed var(--accent-dim);
+  color: var(--accent);
+  padding: 3px 12px;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+}
+
+.gd-block-insert button:hover {
+  background: rgba(124, 255, 94, 0.06);
+  border-style: solid;
+}
