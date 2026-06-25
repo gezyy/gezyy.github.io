@@ -90,3 +90,35 @@ body.page-home {
   will-change: transform;
   transform-origin: center center;
 }
+
+/* ── 3D character (bottom-left) ───────────── */
+#home-3d {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 240px;
+  height: 280px;
+  z-index: 2;
+  background: transparent;
+  --poster-color: transparent;
+  --progress-bar-color: var(--accent);
+  cursor: grab;
+}
+
+#home-3d:active {
+  cursor: grabbing;
+}
+
+/* Hide model-viewer's default AR / fullscreen UI */
+#home-3d::part(default-ar-button) {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  #home-3d {
+    width: 150px;
+    height: 180px;
+    left: 8px;
+    bottom: 8px;
+  }
+}

@@ -23,6 +23,23 @@
   <!-- Geometry sandbox — filled by home.js in M2 -->
   <div id="geo-sandbox" class="interactive"></div>
 
+  <!-- 3D character in bottom-left corner -->
+  <model-viewer
+    id="home-3d"
+    src="assets/gurl.gltf"
+    alt="gege 3D character"
+    autoplay
+    animation-name="idle"
+    camera-controls
+    disable-zoom
+    interaction-prompt="none"
+    shadow-intensity="0"
+    exposure="1.1"
+    camera-orbit="0deg 85deg 110%"
+    field-of-view="30deg"
+  ></model-viewer>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
   <script type="module" src="js/i18n.js"></script>
   <script type="module" src="js/shared.js"></script>
   <script type="module" src="js/home.js"></script>

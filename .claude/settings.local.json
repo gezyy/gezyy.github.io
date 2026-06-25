@@ -19,7 +19,8 @@
       "Bash(node --check js/admin.js)",
       "Bash(node --check admin.js)",
       "Bash(node --check js/edit-mode.js)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "Bash(find . -not -path '*/\\\\.git*' \\\\\\( -iname '*.glb' -o -iname '*.gltf' -o -iname '*.fbx' -o -iname '*.obj' \\\\\\))"
     ]
   },
   "enabledPlugins": {
