@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <rect width="1280" height="720" fill="#0a0d0a"/>
+  <g stroke="#3a7a2e" stroke-width="1" fill="none">
+    <path d="M0 520 L200 420 L420 480 L640 360 L880 440 L1100 320 L1280 380"/>
+    <path d="M0 580 L200 480 L420 540 L640 420 L880 500 L1100 380 L1280 440" opacity="0.5"/>
+  </g>
+  <g>
+    <circle cx="320" cy="280" r="18" fill="none" stroke="#7cff5e" stroke-width="1.5"/>
+    <circle cx="600" cy="220" r="18" fill="none" stroke="#7cff5e" stroke-width="1.5"/>
+    <circle cx="880" cy="180" r="18" fill="none" stroke="#7cff5e" stroke-width="1.5"/>
+    <circle cx="1080" cy="240" r="18" fill="none" stroke="#ff4a3d" stroke-width="1.5"/>
+  </g>
+  <path d="M320 280 L600 220 L880 180 L1080 240" stroke="#7cff5e" stroke-dasharray="6 8" fill="none" opacity="0.7"/>
+  <text x="640" y="690" text-anchor="middle" font-family="VT323, monospace" font-size="22" fill="#6b7a68" letter-spacing="3">CHECKPOINT CHAIN — TIER 3</text>
+</svg>

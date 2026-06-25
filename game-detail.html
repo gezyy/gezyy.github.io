@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Cat</title>
-    <link rel="stylesheet" href="style-game-detail.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Detail — gezyy</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/game-detail.css">
+  <link rel="stylesheet" href="admin.css">
 </head>
-<body>
-<div class="content-section">
-    <img src="resources/game1-1.jpg" alt="game1-1">
-    <h3>Game Play</h3>
-    <p>Using WASD or arrow keys to move. Space to jump. Using shift key to transfer to cat ball, then using mouse drag the character then release to shoot.</p>
-    When you get food in the scene you can click the screen to shoot the enemy. Also can use shift to switch the formation of cat anytime!
-    More actions can check out in the game information.
-</div>
+<body class="page-game-detail">
 
-<div class="content-section">
-    <img src="resources/game1-2.jpg" alt="game1-2">
-    <h3>Download</h3>
-    <a href="https://roselia-penguin.github.io/2DGameFinalVersion.github.io/WebGL/index.html" download>Click to play</a>
-</div>
+  <article id="game-detail">
 
-<div class="content-section">
-    <img src="resources/game1-3.jpg" alt="game1-3">
-    <h3>Development Notes</h3>
-    <p>This is my first game designed and developed within 7 days. It is draft, simple, stupid but completed.</p>
-    That's why I put it here. Because it means I started my game design and development travel officially.
-    TBH, when I developed this game, I used a lot technics learnt from others, and I leaned a lot about how to start a project
-    and work with others, except the skills of programming and project management.
-    That's all, hope you enjoy it and can find more in my blogs.
-</div>
+    <div id="gd-loading" class="gd-state">
+      <span class="blink">// LOADING TRANSMISSION //</span>
+    </div>
 
-<a href="game-collections.html">Back</a>
+    <div id="gd-error" class="gd-state" hidden>
+      <span>// SIGNAL LOST //</span>
+      <p id="gd-error-msg"></p>
+      <a class="gd-back-inline" href="games.html">[ ← BACK TO COLLECTION ]</a>
+    </div>
+
+    <div id="gd-content" hidden>
+      <header id="gd-header">
+        <h1 id="gd-title"></h1>
+        <ul id="gd-tags" aria-label="Game info tags"></ul>
+      </header>
+
+      <section id="gd-video-wrap" aria-label="Preview video"></section>
+
+      <section id="gd-body" aria-label="Project notes"></section>
+    </div>
+  </article>
+
+  <a id="gd-back-fab" href="games.html" aria-label="Back to Game Collection">
+    [ ← GAME COLLECTION ]
+  </a>
+
+  <script type="module" src="js/shared.js"></script>
+  <script type="module" src="js/game-detail.js"></script>
+  <script src="admin.js"></script>
 </body>
 </html>

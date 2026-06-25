@@ -10,9 +10,25 @@
 </head>
 <body class="page-games">
 
-  <div id="transmission-text">// TRANSMISSION INCOMING //</div>
+  <main id="games-page">
+    <header id="games-header">
+      <h1 id="games-title">GAME COLLECTION</h1>
+      <p id="games-sub">// archived transmissions from past builds //</p>
+    </header>
+
+    <section id="games-grid" aria-label="Games grid"></section>
+
+    <div id="games-grid-empty" hidden>
+      <span class="blink">// NO ENTRIES //</span>
+    </div>
+
+    <div id="games-load-more-wrap" hidden>
+      <button id="games-load-more" type="button">[ LOAD MORE ]</button>
+    </div>
+  </main>
 
   <script type="module" src="js/shared.js"></script>
+  <script type="module" src="js/games.js"></script>
   <script src="admin.js"></script>
 </body>
 </html>

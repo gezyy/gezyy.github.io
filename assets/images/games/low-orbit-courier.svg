@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0d0a"/>
+      <stop offset="1" stop-color="#1a2410"/>
+    </linearGradient>
+    <pattern id="scan2" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" fill="rgba(0,0,0,0.4)"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg2)"/>
+  <g stroke="#3a7a2e" fill="none" opacity="0.6">
+    <path d="M-20 280 L120 200 L260 230 L400 160 L540 200 L660 130" stroke-width="1.2"/>
+    <path d="M-20 320 L120 250 L260 280 L400 210 L540 240 L660 180" stroke-width="1" opacity="0.4"/>
+  </g>
+  <g fill="#7cff5e">
+    <polygon points="290,140 360,160 320,170 305,180" opacity="0.9"/>
+    <rect x="312" y="158" width="6" height="4" opacity="0.9"/>
+  </g>
+  <g stroke="#7cff5e" stroke-width="1" fill="none" opacity="0.5">
+    <circle cx="320" cy="165" r="22"/>
+    <circle cx="320" cy="165" r="38"/>
+  </g>
+  <text x="320" y="60" text-anchor="middle" font-family="VT323, monospace" font-size="36" fill="#c8d4c4" letter-spacing="6">LOW ORBIT COURIER</text>
+  <text x="320" y="320" text-anchor="middle" font-family="VT323, monospace" font-size="14" fill="#6b7a68" letter-spacing="3">SECTOR 7 — DELIVERY IN PROGRESS</text>
+  <rect width="640" height="360" fill="url(#scan2)"/>
+</svg>

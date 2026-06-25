@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#080a08"/>
+      <stop offset="1" stop-color="#0f1a0f"/>
+    </linearGradient>
+    <pattern id="grid3" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#3a7a2e" stroke-width="0.5" opacity="0.45"/>
+    </pattern>
+    <pattern id="scan3" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" fill="rgba(0,0,0,0.35)"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg3)"/>
+  <rect width="640" height="360" fill="url(#grid3)"/>
+  <g fill="#7cff5e" opacity="0.18">
+    <polygon points="160,160 320,90 280,210"/>
+    <polygon points="480,220 360,140 420,260"/>
+  </g>
+  <g stroke="#7cff5e" stroke-width="1.4" fill="none">
+    <circle cx="160" cy="160" r="6"/>
+    <circle cx="480" cy="220" r="6"/>
+  </g>
+  <g stroke="#ff4a3d" stroke-width="1" fill="none" opacity="0.85">
+    <circle cx="320" cy="200" r="9"/>
+    <line x1="311" y1="200" x2="329" y2="200"/>
+    <line x1="320" y1="191" x2="320" y2="209"/>
+  </g>
+  <text x="320" y="60" text-anchor="middle" font-family="VT323, monospace" font-size="34" fill="#c8d4c4" letter-spacing="6">NIGHTSHIFT PROTOCOL</text>
+  <text x="320" y="320" text-anchor="middle" font-family="VT323, monospace" font-size="14" fill="#6b7a68" letter-spacing="3">// 03:14 AM — INTRUDER DETECTED //</text>
+  <rect width="640" height="360" fill="url(#scan3)"/>
+</svg>

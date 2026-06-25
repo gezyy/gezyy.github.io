@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <rect width="1280" height="720" fill="#0a0d0a"/>
+  <g stroke="#3a7a2e" stroke-width="1" fill="none">
+    <polygon points="0,540 220,420 460,500 720,360 1000,460 1280,380 1280,720 0,720"/>
+    <polygon points="180,460 360,360 540,440 720,340 920,420 1100,360 1280,400" opacity="0.5"/>
+  </g>
+  <g fill="#7cff5e" opacity="0.7">
+    <circle cx="900" cy="180" r="3"/>
+    <circle cx="280" cy="140" r="2"/>
+    <circle cx="1080" cy="220" r="2.5"/>
+  </g>
+  <rect x="540" y="320" width="200" height="220" fill="#141914" stroke="#3a7a2e"/>
+  <line x1="640" y1="200" x2="640" y2="320" stroke="#6b7a68" stroke-width="2"/>
+  <circle cx="640" cy="190" r="14" fill="none" stroke="#7cff5e"/>
+  <text x="640" y="690" text-anchor="middle" font-family="VT323, monospace" font-size="22" fill="#6b7a68" letter-spacing="3">OBSERVATORY — DAWN</text>
+</svg>

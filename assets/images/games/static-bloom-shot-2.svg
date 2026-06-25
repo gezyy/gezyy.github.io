@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <rect width="1280" height="720" fill="#0a0d0a"/>
+  <g stroke="#3a7a2e" fill="none" stroke-width="1.5">
+    <circle cx="640" cy="360" r="200"/>
+    <circle cx="640" cy="360" r="140" opacity="0.6"/>
+    <circle cx="640" cy="360" r="80" opacity="0.4"/>
+  </g>
+  <line x1="640" y1="160" x2="640" y2="560" stroke="#7cff5e" stroke-width="1" opacity="0.6"/>
+  <line x1="440" y1="360" x2="840" y2="360" stroke="#7cff5e" stroke-width="1" opacity="0.6"/>
+  <g transform="translate(640,360) rotate(28)">
+    <line x1="0" y1="0" x2="180" y2="0" stroke="#7cff5e" stroke-width="2"/>
+    <circle cx="180" cy="0" r="6" fill="#7cff5e"/>
+  </g>
+  <text x="640" y="690" text-anchor="middle" font-family="VT323, monospace" font-size="22" fill="#6b7a68" letter-spacing="3">ANTENNA DIAL — 88.4 MHZ</text>
+</svg>
