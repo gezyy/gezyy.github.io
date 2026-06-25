@@ -2,6 +2,8 @@
 // ES Module. Imported by library.js, gallery.js, home.js.
 // Depends on admin.js running first (sets window.ADMIN_WORKER_URL, body.edit-mode).
 
+import { t } from './i18n.js';
+
 const workerUrl = () => window.ADMIN_WORKER_URL || '';
 
 // ── State ────────────────────────────────────────
@@ -67,9 +69,9 @@ export function onEditModeChange(cb) {
 // ── Commit ────────────────────────────────────────
 async function commitAll() {
   const total = pendingDeletes.length + pendingUploads.length + pendingChanges.size;
-  if (total === 0) { showToast('[NOTHING TO SAVE]', false); return; }
+  if (total === 0) { showToast(t('em.nothing'), false); return; }
 
-  setStatusLabel('[SAVING…]');
+  setStatusLabel(t('em.saving'));
   const url = workerUrl();
   const headers = authHeaders();
 
@@ -101,10 +103,10 @@ async function commitAll() {
     }
     pendingChanges.clear();
 
-    showToast('[SAVED — site rebuilds in ~1 min]', false);
+    showToast(t('em.saved'), false);
     refreshStatusBar();
   } catch (e) {
-    showToast(`[SAVE FAILED: ${e.message}]`, true);
+    showToast(t('em.fail', { err: e.message }), true);
     refreshStatusBar();
   }
 }
@@ -117,14 +119,14 @@ function buildStatusBar() {
   statusBar.innerHTML = `
     <span id="em-pending-label"></span>
     <div class="em-actions">
-      <button id="em-save-btn">[SAVE ALL]</button>
-      <button id="em-discard-btn">[DISCARD]</button>
+      <button id="em-save-btn">${t('em.save.all')}</button>
+      <button id="em-discard-btn">${t('em.discard')}</button>
     </div>`;
   document.body.appendChild(statusBar);
 
   document.getElementById('em-save-btn').addEventListener('click', commitAll);
   document.getElementById('em-discard-btn').addEventListener('click', () => {
-    if (!confirm('Discard all pending changes and reload?')) return;
+    if (!confirm(t('em.discard.confirm'))) return;
     pendingChanges.clear();
     pendingUploads.length = 0;
     pendingDeletes.length = 0;
@@ -138,7 +140,8 @@ function refreshStatusBar() {
   const total = pendingChanges.size + pendingUploads.length + pendingDeletes.length;
   const inEdit = document.body.classList.contains('edit-mode');
   statusBar.style.display = (inEdit && total > 0) ? 'flex' : 'none';
-  setStatusLabel(`[${total} change${total !== 1 ? 's' : ''} pending]`);
+  const key = total === 1 ? 'em.pending.one' : 'em.pending.many';
+  setStatusLabel(t(key, { n: total }));
 }
 
 function setStatusLabel(text) {

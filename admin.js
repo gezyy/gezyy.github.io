@@ -15,10 +15,19 @@ window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
   const token = () => sessionStorage.getItem('adminToken');
   const identity = () => sessionStorage.getItem('siteIdentity');
 
+  // i18n: short helper. Falls back to the bare key if i18n.js failed to load.
+  const t = (key, params) =>
+    (window.I18N && window.I18N.t) ? window.I18N.t(key, params) : key;
+
   // ── Bootstrap ──────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', async () => {
     siteContent = await loadContent();
     initPage();
+
+    // Wait for the language modal (i18n.js) to finish before showing identity.
+    if (window.I18N_READY) {
+      try { await window.I18N_READY; } catch { /* ignored */ }
+    }
 
     if (!identity()) {
       showIdentityModal();
@@ -339,15 +348,15 @@ window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
     backdrop.id = 'admin-modal-backdrop';
     backdrop.innerHTML = `
       <div id="admin-modal">
-        <h2>你是谁？</h2>
+        <h2>${t('identity.title')}</h2>
         <div class="admin-modal-btns">
-          <button id="btn-guest">游客</button>
-          <button id="btn-admin">管理员</button>
+          <button id="btn-guest">${t('identity.guest')}</button>
+          <button id="btn-admin">${t('identity.admin')}</button>
         </div>
         <div id="admin-pin-form">
-          <input type="password" id="admin-pin-input" placeholder="输入 PIN" autocomplete="off">
-          <button id="btn-pin-submit">确认</button>
-          <div id="admin-pin-error">PIN 错误，请重试</div>
+          <input type="password" id="admin-pin-input" placeholder="${t('identity.pin.placeholder')}" autocomplete="off">
+          <button id="btn-pin-submit">${t('identity.pin.confirm')}</button>
+          <div id="admin-pin-error">${t('identity.pin.wrong')}</div>
         </div>
       </div>`;
     document.body.appendChild(backdrop);
@@ -386,11 +395,12 @@ window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
         document.getElementById('admin-modal-backdrop').remove();
         buildToolbar();
       } else {
+        errEl.textContent = t('identity.pin.wrong');
         errEl.style.display = 'block';
         document.getElementById('admin-pin-input').value = '';
       }
     } catch {
-      errEl.textContent = '连接失败，请检查网络';
+      errEl.textContent = t('identity.pin.connection');
       errEl.style.display = 'block';
     }
   }
@@ -402,8 +412,8 @@ window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
     bar.id = 'admin-toolbar';
     bar.innerHTML = `
       <div id="admin-save-status"></div>
-      <button id="admin-save-btn">保存更改</button>
-      <button id="admin-edit-toggle">编辑模式</button>`;
+      <button id="admin-save-btn">${t('admin.save')}</button>
+      <button id="admin-edit-toggle">${t('admin.edit.enter')}</button>`;
     document.body.appendChild(bar);
 
     document.getElementById('admin-edit-toggle').onclick = toggleEditMode;
@@ -419,7 +429,7 @@ window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
     const toggle = document.getElementById('admin-edit-toggle');
     const saveBtn = document.getElementById('admin-save-btn');
     toggle.classList.toggle('active', editMode);
-    toggle.textContent = editMode ? '退出编辑' : '编辑模式';
+    toggle.textContent = editMode ? t('admin.edit.exit') : t('admin.edit.enter');
     saveBtn.style.display = editMode ? 'block' : 'none';
   }
 
@@ -427,7 +437,7 @@ window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
   async function saveAll() {
     const status = document.getElementById('admin-save-status');
     status.style.display = 'block';
-    status.textContent = '保存中…';
+    status.textContent = t('admin.save.progress');
 
     const headers = {
       'Content-Type': 'application/json',
@@ -461,13 +471,13 @@ window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
       const result = await resp.json();
 
       if (result.ok) {
-        status.textContent = '已保存！页面将在约 1 分钟后更新。';
+        status.textContent = t('admin.save.ok');
         setTimeout(() => { status.style.display = 'none'; }, 5000);
       } else {
-        status.textContent = '保存失败: ' + (result.error || '未知错误');
+        status.textContent = t('admin.save.fail') + (result.error || t('admin.error.unknown'));
       }
     } catch (e) {
-      status.textContent = '错误: ' + e.message;
+      status.textContent = t('admin.error.prefix') + e.message;
     }
   }
 

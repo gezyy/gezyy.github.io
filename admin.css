@@ -429,6 +429,151 @@ body.edit-mode #site-title:focus {
   outline-offset: 4px;
 }
 
+/* ════════════════════════════════════════
+   i18n — language modal + paired ZH/EN inputs
+   ════════════════════════════════════════ */
+
+#lang-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;   /* above identity modal */
+  font-family: var(--font-display);
+}
+
+#lang-modal {
+  background: var(--bg-elev);
+  border: 1px solid var(--accent-dim);
+  padding: 2rem 2.5rem;
+  min-width: 320px;
+  text-align: center;
+  color: var(--ink);
+  clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
+}
+
+#lang-modal h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  font-family: var(--font-display);
+}
+
+.lang-modal-btns {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.lang-modal-btns button {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid var(--ink-dim);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.lang-modal-btns button:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(124, 255, 94, 0.06);
+}
+
+/* ── Paired ZH/EN input pattern ───────────── */
+
+.bilingual-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+/* Long-form textarea stacks vertically (game-detail body text) */
+.bilingual-pair.bilingual-stack {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 640px) {
+  .bilingual-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bilingual-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0; /* allow inputs to shrink */
+}
+
+.bilingual-tag {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--accent-dim);
+  text-transform: uppercase;
+  padding: 1px 6px;
+  border-left: 2px solid var(--accent-dim);
+  align-self: flex-start;
+}
+
+.bilingual-cell input,
+.bilingual-cell textarea {
+  width: 100%;
+  background: var(--bg-deep);
+  border: 1px solid var(--ink-dim);
+  color: var(--ink);
+  font-family: var(--font-body);
+  padding: 0.4rem 0.55rem;
+  box-sizing: border-box;
+  letter-spacing: 0.02em;
+  font-size: 0.95rem;
+}
+
+.bilingual-cell input:focus,
+.bilingual-cell textarea:focus {
+  outline: none;
+  border-color: var(--accent-dim);
+}
+
+.bilingual-cell textarea {
+  resize: vertical;
+  min-height: 5rem;
+  line-height: 1.55;
+  font-family: var(--font-body);
+}
+
+/* Inline editor host (under page titles) */
+.gd-inline-editor {
+  margin: 0.75rem 0 1rem;
+}
+
+/* Game-detail tag pair tightening — they sit inside small tag chips */
+.gd-tag-pair {
+  grid-template-columns: 1fr;
+  gap: 0.2rem;
+  margin: 0.25rem 0 0;
+}
+
+/* Gallery edit-list caption pair sits inside a row, keep it compact */
+.gem-caption-pair {
+  margin: 0 0 0.4rem;
+  gap: 0.35rem;
+}
+
+.gem-caption-pair input {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.45rem;
+}
+
 /* ── Library text editor modal ── */
 #lib-editor-backdrop {
   position: fixed; inset: 0;

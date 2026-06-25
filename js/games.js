@@ -1,23 +1,28 @@
 // js/games.js — Game Collection list page
 // M-Games-1: visual rendering of cards.
 // M-Games-2: admin editing — per-card overlay + add/edit modal + cover upload.
-// Edit mode lives behind the PIN-protected toggle in admin.js;
-// all persistence is funneled through js/edit-mode.js → Cloudflare Worker → GitHub.
+// M-Games-3 (i18n): bilingual title/blurb via {zh, en} objects + paired editor inputs.
 
 import {
   isAdmin, pushChange, addPendingUpload, addPendingDelete,
   readFileAsBase64, onEditModeChange,
 } from './edit-mode.js';
+import { t, pickLocalized, bilingualize } from './i18n.js';
 
 const GAMES_FILE = 'content/games.json';
 const PAGE_SIZE  = 12;
 
-let allGames = [];        // single source of truth on this page
-let visibleCount = 0;     // for paginated rendering
+let allGames = [];
+let visibleCount = 0;
 let editor = null;        // { idx: number | -1, draft: gameObject }
 
 // ── Boot ─────────────────────────────────────
 document.addEventListener('DOMContentLoaded', async () => {
+  // Localize header copy
+  document.getElementById('games-title').textContent = t('games.title');
+  document.getElementById('games-sub').textContent   = t('games.subtitle');
+  document.querySelector('#games-grid-empty .blink').textContent = t('games.empty');
+
   allGames = await loadGames();
   renderAll();
 
@@ -27,7 +32,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (isAdmin()) {
     buildAddButton();
     buildEditorModal();
-    // Re-render when edit mode toggled so overlays show/hide
     onEditModeChange(() => renderAll());
   }
 });
@@ -47,7 +51,6 @@ async function loadGames() {
 }
 
 function syncPending() {
-  // Always rewrite full games array — Worker overwrites the JSON file.
   pushChange(GAMES_FILE, { games: allGames });
 }
 
@@ -83,7 +86,7 @@ function syncLoadMore() {
   const remaining = allGames.length - visibleCount;
   if (remaining > 0) {
     wrap.hidden = false;
-    btn.textContent = `[ LOAD MORE — ${remaining} LEFT ]`;
+    btn.textContent = t('games.loadmore', { n: remaining });
   } else {
     wrap.hidden = true;
   }
@@ -91,15 +94,15 @@ function syncLoadMore() {
 
 function buildCard(game, idx) {
   const admin = isAdmin();
+  const titleText = pickLocalized(game.title) || t('games.untitled');
+  const blurbText = pickLocalized(game.blurb) || tagsToBlurb(game.tags);
 
-  // Card is an <a> normally, but in edit mode swap to a <div> so the per-card
-  // edit buttons don't have to fight bubbling click → navigation.
   const tag = admin && document.body.classList.contains('edit-mode') ? 'div' : 'a';
   const card = document.createElement(tag);
   card.className = 'game-card';
   if (tag === 'a') {
     card.href = `game-detail.html?id=${encodeURIComponent(game.id)}`;
-    card.setAttribute('aria-label', `Open ${game.title || 'game'} details`);
+    card.setAttribute('aria-label', `Open ${titleText} details`);
   } else {
     card.classList.add('game-card--editing');
   }
@@ -111,7 +114,9 @@ function buildCard(game, idx) {
   const img = document.createElement('img');
   img.loading = 'lazy';
   img.decoding = 'async';
-  img.alt = game.title ? `${game.title} cover art` : 'Game cover';
+  img.alt = titleText
+    ? t('games.cover.alt', { title: titleText })
+    : t('games.cover.alt.empty');
   img.src = game.cover || placeholderCover();
   img.onerror = () => { img.src = placeholderCover(); };
   cover.appendChild(img);
@@ -122,11 +127,11 @@ function buildCard(game, idx) {
 
   const title = document.createElement('h2');
   title.className = 'game-card-title';
-  title.textContent = game.title || 'Untitled transmission';
+  title.textContent = titleText;
 
   const blurb = document.createElement('p');
   blurb.className = 'game-card-blurb';
-  blurb.textContent = game.blurb || tagsToBlurb(game.tags);
+  blurb.textContent = blurbText;
 
   body.appendChild(title);
   body.appendChild(blurb);
@@ -134,7 +139,6 @@ function buildCard(game, idx) {
   card.appendChild(cover);
   card.appendChild(body);
 
-  // ── Admin overlay ──
   if (admin) card.appendChild(buildCardCtrl(idx));
 
   return card;
@@ -164,7 +168,10 @@ function mkBtn(parent, label, handler, danger = false) {
 
 function tagsToBlurb(tags) {
   if (!tags) return '';
-  return [tags.genre, tags.platform, tags.duration].filter(Boolean).join(' · ');
+  return [tags.genre, tags.platform, tags.duration]
+    .map(v => pickLocalized(v))
+    .filter(Boolean)
+    .join(' · ');
 }
 
 // ── Reorder / Delete ─────────────────────────
@@ -179,7 +186,8 @@ function reorder(idx, dir) {
 
 function removeGame(idx) {
   const g = allGames[idx];
-  if (!confirm(`Delete "${g.title || g.id}" from the collection?`)) return;
+  const display = pickLocalized(g.title) || g.id;
+  if (!confirm(t('confirm.delete.game', { title: display }))) return;
   allGames.splice(idx, 1);
   reindex();
   renderAll();
@@ -196,7 +204,7 @@ function buildAddButton() {
   const btn = document.createElement('button');
   btn.id = 'games-add-btn';
   btn.type = 'button';
-  btn.textContent = '[ + ADD GAME ]';
+  btn.textContent = t('fab.add.game');
   btn.addEventListener('click', () => openEditor(-1));
   document.body.appendChild(btn);
 }
@@ -208,29 +216,38 @@ function buildEditorModal() {
   backdrop.id = 'game-editor-backdrop';
   backdrop.innerHTML = `
     <div id="game-editor">
-      <h3 id="ge-heading">EDIT GAME</h3>
+      <h3 id="ge-heading"></h3>
 
-      <label for="ge-id">ID / SLUG (URL-safe)</label>
+      <label id="ge-id-label" for="ge-id"></label>
       <input type="text" id="ge-id" placeholder="my-game-slug" autocomplete="off">
 
-      <label for="ge-title">TITLE</label>
-      <input type="text" id="ge-title" placeholder="Game title">
+      <label id="ge-title-label"></label>
+      <div class="bilingual-pair" id="ge-title-pair"></div>
 
-      <label for="ge-blurb">BLURB (one short line)</label>
-      <input type="text" id="ge-blurb" placeholder="Genre · Platform · Duration">
+      <label id="ge-blurb-label"></label>
+      <div class="bilingual-pair" id="ge-blurb-pair"></div>
 
-      <label>COVER IMAGE</label>
+      <label id="ge-cover-label"></label>
       <div class="ge-cover-row">
         <img class="ge-cover-preview" id="ge-cover-preview" alt="" src="">
-        <button type="button" id="ge-cover-btn">[CHANGE COVER]</button>
+        <button type="button" id="ge-cover-btn"></button>
       </div>
 
       <div class="ge-footer">
-        <button type="button" id="ge-cancel">[CANCEL]</button>
-        <button type="button" class="primary" id="ge-done">[DONE]</button>
+        <button type="button" id="ge-cancel"></button>
+        <button type="button" class="primary" id="ge-done"></button>
       </div>
     </div>`;
   document.body.appendChild(backdrop);
+
+  // Localized text injection (so we can re-translate easily if needed)
+  document.getElementById('ge-id-label').textContent     = t('editor.id');
+  document.getElementById('ge-title-label').textContent  = t('editor.title');
+  document.getElementById('ge-blurb-label').textContent  = t('editor.blurb');
+  document.getElementById('ge-cover-label').textContent  = t('editor.cover');
+  document.getElementById('ge-cover-btn').textContent    = t('editor.cover.change');
+  document.getElementById('ge-cancel').textContent       = t('editor.cancel');
+  document.getElementById('ge-done').textContent         = t('editor.done');
 
   document.getElementById('ge-cancel').addEventListener('click', closeEditor);
   document.getElementById('ge-done').addEventListener('click', commitEditor);
@@ -253,19 +270,48 @@ function openEditor(idx) {
     order: allGames.length,
   } : allGames[idx];
 
-  editor = { idx, draft: JSON.parse(JSON.stringify(base)) };
+  // Deep clone + force title/blurb into bilingual shape so the editor never sees a bare string
+  const draft = JSON.parse(JSON.stringify(base));
+  draft.title = bilingualize(draft.title);
+  draft.blurb = bilingualize(draft.blurb);
+  editor = { idx, draft };
 
-  document.getElementById('ge-heading').textContent = isNew ? 'ADD GAME' : 'EDIT GAME';
-  document.getElementById('ge-id').value     = editor.draft.id || '';
+  document.getElementById('ge-heading').textContent = t(isNew ? 'editor.add.game' : 'editor.edit.game');
+  document.getElementById('ge-id').value     = draft.id || '';
   document.getElementById('ge-id').disabled  = !isNew; // changing slug breaks links
-  document.getElementById('ge-title').value  = editor.draft.title || '';
-  document.getElementById('ge-blurb').value  = editor.draft.blurb || '';
+
+  renderBilingualPair('ge-title-pair', draft.title, (lang, val) => { draft.title[lang] = val; });
+  renderBilingualPair('ge-blurb-pair', draft.blurb, (lang, val) => { draft.blurb[lang] = val; });
 
   const prev = document.getElementById('ge-cover-preview');
-  prev.src = editor.draft.cover || '';
-  prev.style.display = editor.draft.cover ? 'block' : 'none';
+  prev.src = draft.cover || '';
+  prev.style.display = draft.cover ? 'block' : 'none';
 
   document.getElementById('game-editor-backdrop').classList.add('open');
+}
+
+// Renders two inputs (ZH + EN) into a host div, wired to onChange(lang, value).
+function renderBilingualPair(hostId, valueObj, onChange) {
+  const host = document.getElementById(hostId);
+  host.innerHTML = '';
+  ['zh', 'en'].forEach(lang => {
+    const cell = document.createElement('div');
+    cell.className = 'bilingual-cell';
+
+    const tag = document.createElement('span');
+    tag.className = 'bilingual-tag';
+    tag.textContent = t(`editor.lang.${lang}`);
+    cell.appendChild(tag);
+
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = valueObj[lang] || '';
+    input.placeholder = t(`editor.placeholder.${lang}`);
+    input.addEventListener('input', () => onChange(lang, input.value));
+    cell.appendChild(input);
+
+    host.appendChild(cell);
+  });
 }
 
 function closeEditor() {
@@ -276,21 +322,22 @@ function closeEditor() {
 function commitEditor() {
   if (!editor) return;
   const { idx, draft } = editor;
-  draft.id    = document.getElementById('ge-id').value.trim();
-  draft.title = document.getElementById('ge-title').value.trim();
-  draft.blurb = document.getElementById('ge-blurb').value.trim();
+  draft.id = document.getElementById('ge-id').value.trim();
 
-  if (!draft.id) { alert('ID / slug cannot be empty.'); return; }
+  if (!draft.id) { alert(t('alert.id.empty')); return; }
   if (!/^[a-z0-9][a-z0-9-]*$/.test(draft.id)) {
-    alert('ID must be lowercase, digits and hyphens only, e.g. "my-game-slug".');
+    alert(t('alert.id.format'));
     return;
   }
-  if (!draft.title) { alert('Title cannot be empty.'); return; }
+  // Title needs at least one language filled
+  if (!draft.title.zh.trim() && !draft.title.en.trim()) {
+    alert(t('alert.title.empty'));
+    return;
+  }
 
   if (idx === -1) {
-    // creating — guard against duplicate id
     if (allGames.some(g => g.id === draft.id)) {
-      alert(`A game with id "${draft.id}" already exists.`);
+      alert(t('alert.id.duplicate', { id: draft.id }));
       return;
     }
     allGames.push(draft);
@@ -312,11 +359,9 @@ async function pickCover() {
     if (!file || !editor) return;
     const { base64, dataUrl } = await readFileAsBase64(file);
 
-    // Path the file will live at in the repo
     const safeName = file.name.replace(/[^a-zA-Z0-9_.-]/g, '_');
     const filePath = `assets/images/games/${Date.now()}-${safeName}`;
 
-    // If we're replacing an existing repo-hosted cover, queue deletion of the old one
     const oldCover = editor.draft.cover;
     if (oldCover && oldCover.startsWith('assets/images/games/')) {
       addPendingDelete(oldCover);
@@ -332,7 +377,7 @@ async function pickCover() {
   input.click();
 }
 
-// ── Placeholder cover (inline SVG, same palette) ──
+// ── Placeholder cover ────────────────────────
 function placeholderCover() {
   const svg = `
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'>

@@ -1,6 +1,8 @@
 // js/shared.js — ES Module
 // Injects CRT overlay, top bar controls, back button. Auto-runs on DOMContentLoaded.
 
+import { t, getLang, setLang } from './i18n.js';
+
 const IS_HOME = document.body.classList.contains('page-home');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,31 +29,40 @@ function injectTopBar() {
   if (!IS_HOME) {
     const back = document.createElement('button');
     back.id = 'btn-back';
-    back.textContent = '[← HOME]';
+    back.textContent = t('topbar.back.home');
     back.onclick = () => { window.location.href = 'index.html'; };
     left.appendChild(back);
   }
 
-  // Right: FX toggle + font toggle
+  // Right: FX toggle + font toggle + language toggle
   const right = document.createElement('div');
   right.id = 'top-bar-right';
 
   const btnFX = document.createElement('button');
   btnFX.className = 'top-bar-btn';
   btnFX.id = 'btn-fx';
-  btnFX.textContent = '[FX]';
+  btnFX.textContent = t('topbar.fx');
   btnFX.title = 'Toggle CRT effects';
   btnFX.onclick = toggleFX;
 
   const btnFont = document.createElement('button');
   btnFont.className = 'top-bar-btn';
   btnFont.id = 'btn-font';
-  btnFont.textContent = '[Aa]';
+  btnFont.textContent = t('topbar.font');
   btnFont.title = 'Toggle readable font';
   btnFont.onclick = toggleFont;
 
+  const btnLang = document.createElement('button');
+  btnLang.className = 'top-bar-btn';
+  btnLang.id = 'btn-lang';
+  // Label shows the OTHER language (i.e. what you'd switch TO).
+  btnLang.textContent = t('topbar.lang');
+  btnLang.title = 'Switch language / 切换语言';
+  btnLang.onclick = toggleLang;
+
   right.appendChild(btnFX);
   right.appendChild(btnFont);
+  right.appendChild(btnLang);
 
   bar.appendChild(left);
   bar.appendChild(right);
@@ -71,6 +82,14 @@ function toggleFont() {
   const isReadable = document.body.classList.toggle('font-readable');
   document.getElementById('btn-font').classList.toggle('active', isReadable);
   localStorage.setItem('fontReadable', isReadable ? '1' : '0');
+}
+
+function toggleLang() {
+  const next = getLang() === 'zh' ? 'en' : 'zh';
+  setLang(next);
+  // Re-render every renderer that consumes a language by reloading the page —
+  // simplest path that guarantees consistent state across modules.
+  window.location.reload();
 }
 
 function restorePrefs() {

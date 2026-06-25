@@ -1,8 +1,10 @@
 // js/gallery.js — ring carousel gallery (M4) + edit mode (M5)
+// i18n: caption is bilingual ({zh, en} object); legacy strings still render.
 import {
   isAdmin, pushChange, addPendingUpload, addPendingDelete,
   readFileAsBase64, onEditModeChange,
 } from './edit-mode.js';
+import { t, pickLocalized, bilingualize } from './i18n.js';
 
 const RADIUS      = 380;
 const TILT        = 28;
@@ -67,13 +69,15 @@ function buildCarousel(itemData) {
   const step = N > 0 ? 360 / N : 0;
 
   itemData.forEach((item, i) => {
+    const captionText = pickLocalized(item.caption);
+
     const wrap = document.createElement('div');
     wrap.className = 'carousel-item';
     wrap.dataset.idx = i;
 
     const img = document.createElement('img');
     img.src = item.src;
-    img.alt = item.caption || '';
+    img.alt = captionText || '';
     img.draggable = false;
 
     const overlay = document.createElement('div');
@@ -81,7 +85,7 @@ function buildCarousel(itemData) {
 
     const caption = document.createElement('div');
     caption.className = 'item-caption';
-    caption.textContent = item.caption || '';
+    caption.textContent = captionText;
 
     wrap.appendChild(img);
     wrap.appendChild(overlay);
@@ -129,7 +133,7 @@ function buildModal() {
 
 function openModal(item) {
   document.getElementById('gallery-modal-img').src = item.src;
-  document.getElementById('gallery-modal-caption').textContent = item.caption || '';
+  document.getElementById('gallery-modal-caption').textContent = pickLocalized(item.caption);
   document.getElementById('gallery-modal-backdrop').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -254,20 +258,48 @@ function refreshEditList() {
   list.innerHTML = '';
 
   items.forEach((item, i) => {
+    // Always normalize caption to bilingual when entering edit list
+    item.caption = bilingualize(item.caption);
+
     const row = document.createElement('div');
     row.className = 'gem-item';
 
     const thumb = document.createElement('img');
     thumb.className = 'gem-thumb';
     thumb.src = item.src;
-    thumb.alt = item.caption || '';
+    thumb.alt = pickLocalized(item.caption);
 
     const info = document.createElement('div');
     info.className = 'gem-info';
 
-    const caption = document.createElement('span');
-    caption.className = 'gem-caption';
-    caption.textContent = item.caption || '';
+    // Bilingual caption editor
+    const pair = document.createElement('div');
+    pair.className = 'bilingual-pair gem-caption-pair';
+    ['zh', 'en'].forEach(lang => {
+      const cell = document.createElement('div');
+      cell.className = 'bilingual-cell';
+
+      const tag = document.createElement('span');
+      tag.className = 'bilingual-tag';
+      tag.textContent = t(`editor.lang.${lang}`);
+      cell.appendChild(tag);
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.className = 'gem-caption-input';
+      input.value = item.caption[lang] || '';
+      input.placeholder = t(`editor.placeholder.${lang}`);
+      input.addEventListener('input', () => {
+        item.caption[lang] = input.value;
+        // live update carousel display
+        const carouselCaption = carouselEl &&
+          carouselEl.querySelectorAll('.carousel-item .item-caption')[i];
+        if (carouselCaption) carouselCaption.textContent = pickLocalized(item.caption);
+        syncPending();
+      });
+      cell.appendChild(input);
+      pair.appendChild(cell);
+    });
 
     const btns = document.createElement('div');
     btns.className = 'gem-btns';
@@ -281,7 +313,8 @@ function refreshEditList() {
     };
 
     mkBtn('[del]', () => {
-      if (!confirm(`Delete "${item.caption || item.id}"?`)) return;
+      const display = pickLocalized(item.caption) || item.id;
+      if (!confirm(t('confirm.delete.image', { caption: display }))) return;
       addPendingDelete(item.src);
       items.splice(i, 1);
       items.forEach((it, j) => { it.order = j; });
@@ -312,25 +345,7 @@ function refreshEditList() {
       syncPending();
     });
 
-    mkBtn('[edit caption]', () => {
-      caption.contentEditable = 'true';
-      caption.focus();
-      const finish = () => {
-        caption.contentEditable = 'false';
-        item.caption = caption.textContent.trim();
-        // update carousel caption too
-        const carouselCaption = carouselEl &&
-          carouselEl.querySelectorAll('.carousel-item .item-caption')[i];
-        if (carouselCaption) carouselCaption.textContent = item.caption;
-        syncPending();
-      };
-      caption.addEventListener('blur', finish, { once: true });
-      caption.addEventListener('keydown', e => {
-        if (e.key === 'Enter') { e.preventDefault(); caption.blur(); }
-      }, { once: true });
-    });
-
-    info.appendChild(caption);
+    info.appendChild(pair);
     info.appendChild(btns);
     row.appendChild(thumb);
     row.appendChild(info);
@@ -339,7 +354,7 @@ function refreshEditList() {
 
   const addBtn = document.createElement('button');
   addBtn.id = 'gem-add-btn';
-  addBtn.textContent = '[+ ADD IMAGE]';
+  addBtn.textContent = t('fab.add.image');
   addBtn.addEventListener('click', pickGalleryImage);
   list.appendChild(addBtn);
 }
@@ -353,15 +368,14 @@ async function pickGalleryImage() {
     for (const file of Array.from(input.files)) {
       const { base64, dataUrl } = await readFileAsBase64(file);
       const filePath = `assets/images/gallery/${file.name}`;
-      const caption  = file.name.replace(/\.[^.]+$/, '');
+      const baseName = file.name.replace(/\.[^.]+$/, '');
       const newItem  = {
         id: 'img-' + Date.now() + Math.random().toString(36).slice(2, 5),
         src: filePath,
-        caption,
+        caption: { zh: baseName, en: baseName },
         order: items.length,
       };
       addPendingUpload(filePath, base64);
-      // Preview using data URL until committed
       newItem._previewSrc = dataUrl;
       items.push(newItem);
     }

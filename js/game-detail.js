@@ -1,42 +1,52 @@
 // js/game-detail.js — single game writeup
 // M-Games-1: read-only rendering.
 // M-Games-2: admin inline editing for title / tags / video source / body blocks.
-// Persistence funnels through edit-mode.js → Worker → GitHub (entire games.json overwrite).
+// M-Games-3 (i18n): bilingual title / tags / body text / image captions.
+//   Renderer picks current language; editor exposes paired ZH/EN inputs.
 
 import {
   isAdmin, pushChange, addPendingUpload, addPendingDelete,
   readFileAsBase64, onEditModeChange,
 } from './edit-mode.js';
+import { t, pickLocalized, bilingualize } from './i18n.js';
 
 const GAMES_FILE = 'content/games.json';
 
-const TAG_KEYS = [
-  { key: 'genre',    label: 'GENRE' },
-  { key: 'platform', label: 'PLATFORM' },
-  { key: 'duration', label: 'BUILD TIME' },
+const TAG_DEFS = [
+  { key: 'genre',    labelKey: 'gd.tag.genre' },
+  { key: 'platform', labelKey: 'gd.tag.platform' },
+  { key: 'duration', labelKey: 'gd.tag.duration' },
 ];
 
-let allGames = [];       // full list (we still need to overwrite the whole file)
-let game     = null;     // current game (reference into allGames)
+let allGames = [];
+let game     = null;
 let gameIdx  = -1;
 
 // ── Boot ─────────────────────────────────────
 document.addEventListener('DOMContentLoaded', async () => {
+  // Localize chrome
+  document.querySelector('#gd-loading .blink').textContent = t('gd.loading');
+  document.querySelector('#gd-error span').textContent     = t('gd.error');
+  document.querySelector('.gd-back-inline').textContent    = t('gd.back.inline');
+  const fab = document.getElementById('gd-back-fab');
+  fab.textContent = t('gd.back.fab');
+  fab.setAttribute('aria-label', t('gd.back.aria'));
+
   const id = new URLSearchParams(location.search).get('id');
   if (!id) {
-    showError('No game id given. Open a card from the collection page.');
+    showError(t('gd.error.no.id'));
     return;
   }
 
   allGames = await loadGames();
   gameIdx  = allGames.findIndex(g => g.id === id);
   if (gameIdx === -1) {
-    showError(`No game found for id "${id}".`);
+    showError(t('gd.error.not.found', { id }));
     return;
   }
   game = allGames[gameIdx];
 
-  document.title = `${game.title} — gezyy`;
+  document.title = pickLocalized(game.title) + ' — gezyy';
   renderAll();
 
   if (isAdmin()) onEditModeChange(() => renderAll());
@@ -56,7 +66,6 @@ async function loadGames() {
 }
 
 function syncPending() {
-  // game is a reference into allGames, so mutating game[…] already updates allGames.
   pushChange(GAMES_FILE, { games: allGames });
 }
 
@@ -77,26 +86,40 @@ function renderAll() {
 // ── Header (title) ───────────────────────────
 function renderHeader() {
   const titleEl = document.getElementById('gd-title');
-  titleEl.textContent = game.title || 'Untitled';
+  const editor  = document.getElementById('gd-title-editor');
+
+  titleEl.textContent = pickLocalized(game.title);
+  // Title is never contenteditable now — editing happens in paired inputs below
+  titleEl.removeAttribute('contenteditable');
+  titleEl.classList.remove('gd-editable');
+  titleEl.onblur = null;
 
   if (isEditing()) {
-    titleEl.contentEditable = 'true';
-    titleEl.classList.add('gd-editable');
-    titleEl.onblur = () => {
-      const v = titleEl.textContent.trim();
-      if (v && v !== game.title) {
-        game.title = v;
-        document.title = `${v} — gezyy`;
-        syncPending();
-      } else {
-        titleEl.textContent = game.title;
-      }
-    };
-  } else {
-    titleEl.removeAttribute('contenteditable');
-    titleEl.classList.remove('gd-editable');
-    titleEl.onblur = null;
+    if (!editor) ensureTitleEditor();
+    populateTitleEditor();
+    document.getElementById('gd-title-editor').hidden = false;
+  } else if (editor) {
+    editor.hidden = true;
   }
+}
+
+function ensureTitleEditor() {
+  const host = document.createElement('div');
+  host.id = 'gd-title-editor';
+  host.className = 'gd-inline-editor';
+  host.innerHTML = `<div class="bilingual-pair" id="gd-title-pair"></div>`;
+  document.getElementById('gd-header').insertBefore(host, document.getElementById('gd-tags'));
+}
+
+function populateTitleEditor() {
+  const obj = bilingualize(game.title);
+  game.title = obj;
+  renderBilingualPair('gd-title-pair', obj, (lang, val) => {
+    obj[lang] = val;
+    document.getElementById('gd-title').textContent = pickLocalized(obj);
+    document.title = pickLocalized(obj) + ' — gezyy';
+    syncPending();
+  });
 }
 
 // ── Tags ─────────────────────────────────────
@@ -104,43 +127,54 @@ function renderTags() {
   const list = document.getElementById('gd-tags');
   list.innerHTML = '';
   if (!game.tags) game.tags = {};
+  const editing = isEditing();
 
-  TAG_KEYS.forEach(({ key, label }) => {
-    const value = game.tags[key] || '';
-    if (!value && !isEditing()) return;
+  TAG_DEFS.forEach(({ key, labelKey }) => {
+    const localized = pickLocalized(game.tags[key]);
+    if (!localized && !editing) return;
 
     const li = document.createElement('li');
     li.className = 'gd-tag';
 
     const k = document.createElement('span');
     k.className = 'gd-tag-key';
-    k.textContent = label;
+    k.textContent = t(labelKey);
     li.appendChild(k);
 
-    if (isEditing()) {
-      const input = document.createElement('input');
-      input.type = 'text';
-      input.className = 'gd-tag-input';
-      input.value = value;
-      input.placeholder = '—';
-      input.addEventListener('input', () => {
-        game.tags[key] = input.value;
-        syncPending();
+    if (editing) {
+      // Ensure stored as bilingual object
+      const obj = bilingualize(game.tags[key]);
+      game.tags[key] = obj;
+      const pair = document.createElement('div');
+      pair.className = 'bilingual-pair gd-tag-pair';
+      ['zh', 'en'].forEach(lang => {
+        const cell = document.createElement('div');
+        cell.className = 'bilingual-cell';
+
+        const langLabel = document.createElement('span');
+        langLabel.className = 'bilingual-tag';
+        langLabel.textContent = t(`editor.lang.${lang}`);
+        cell.appendChild(langLabel);
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.className = 'gd-tag-input';
+        input.value = obj[lang] || '';
+        input.placeholder = t(`editor.placeholder.${lang}`);
+        input.addEventListener('input', () => {
+          obj[lang] = input.value;
+          syncPending();
+        });
+        cell.appendChild(input);
+        pair.appendChild(cell);
       });
-      sizeTagInput(input);
-      input.addEventListener('input', () => sizeTagInput(input));
-      li.appendChild(input);
+      li.appendChild(pair);
     } else {
-      li.appendChild(document.createTextNode(value));
+      li.appendChild(document.createTextNode(localized));
     }
 
     list.appendChild(li);
   });
-}
-
-function sizeTagInput(input) {
-  // Make the input expand to its content
-  input.style.width = `${Math.max(input.value.length, 6) + 1}ch`;
 }
 
 // ── Video ────────────────────────────────────
@@ -148,7 +182,6 @@ function renderVideo() {
   const wrap = document.getElementById('gd-video-wrap');
   wrap.innerHTML = '';
 
-  // Render the preview (if present)
   if (game.video?.src) {
     wrap.hidden = false;
     const frame = document.createElement('div');
@@ -164,22 +197,20 @@ function renderVideo() {
         frame.appendChild(buildVideoTag(game.video.src));
         break;
       default:
-        frame.appendChild(buildFallback('// UNSUPPORTED VIDEO SOURCE //'));
+        frame.appendChild(buildFallback(t('video.unsupported')));
     }
     wrap.appendChild(frame);
   } else if (isEditing()) {
-    // In edit mode show an empty drop slot
     wrap.hidden = false;
     const placeholder = document.createElement('div');
     placeholder.className = 'gd-video-frame gd-video-empty';
-    placeholder.appendChild(buildFallback('// NO VIDEO YET //'));
+    placeholder.appendChild(buildFallback(t('video.no.video')));
     wrap.appendChild(placeholder);
   } else {
     wrap.hidden = true;
     return;
   }
 
-  // Render the editor panel underneath
   if (isEditing()) {
     if (!game.video) game.video = { type: 'youtube', src: '' };
     wrap.appendChild(buildVideoEditor());
@@ -193,29 +224,27 @@ function buildVideoEditor() {
   const row = document.createElement('div');
   row.className = 'gd-video-edit-row';
 
-  // Source-type dropdown
   const select = document.createElement('select');
-  ['youtube', 'vimeo', 'upload'].forEach(t => {
+  ['youtube', 'vimeo', 'upload'].forEach(typeKey => {
     const opt = document.createElement('option');
-    opt.value = t;
-    opt.textContent = t.toUpperCase();
-    if (game.video.type === t) opt.selected = true;
+    opt.value = typeKey;
+    opt.textContent = typeKey.toUpperCase();
+    if (game.video.type === typeKey) opt.selected = true;
     select.appendChild(opt);
   });
   select.addEventListener('change', () => {
     game.video.type = select.value;
-    game.video.src  = ''; // src format depends on type — reset
+    game.video.src  = '';
     syncPending();
     renderVideo();
   });
   row.appendChild(select);
 
-  // SRC input (for youtube/vimeo) or upload button (for upload)
   if (game.video.type === 'upload') {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'gd-video-upload';
-    btn.textContent = game.video.src ? '[ REPLACE VIDEO ]' : '[ UPLOAD VIDEO ]';
+    btn.textContent = game.video.src ? t('video.replace') : t('video.upload');
     btn.addEventListener('click', () => pickVideo());
     row.appendChild(btn);
 
@@ -230,8 +259,8 @@ function buildVideoEditor() {
     input.type = 'text';
     input.className = 'gd-video-src';
     input.placeholder = game.video.type === 'youtube'
-      ? 'YouTube ID or URL'
-      : 'Vimeo ID or URL';
+      ? t('video.youtube.placeholder')
+      : t('video.vimeo.placeholder');
     input.value = game.video.src || '';
     input.addEventListener('input', () => {
       game.video.src = input.value.trim();
@@ -247,9 +276,9 @@ function buildVideoEditor() {
     const clear = document.createElement('button');
     clear.type = 'button';
     clear.className = 'gd-video-clear danger';
-    clear.textContent = '[ CLEAR VIDEO ]';
+    clear.textContent = t('video.clear');
     clear.addEventListener('click', () => {
-      if (!confirm('Remove the preview video?')) return;
+      if (!confirm(t('video.confirm.clear'))) return;
       if (game.video.type === 'upload' && game.video.src?.startsWith('assets/videos/games/')) {
         addPendingDelete(game.video.src);
       }
@@ -271,7 +300,8 @@ async function pickVideo() {
     const file = input.files[0];
     if (!file) return;
     if (file.size > 40 * 1024 * 1024) {
-      if (!confirm(`That file is ${(file.size / 1024 / 1024).toFixed(1)} MB. The Worker upload may fail above ~40 MB. Continue?`)) return;
+      const size = (file.size / 1024 / 1024).toFixed(1);
+      if (!confirm(t('video.confirm.size', { size }))) return;
     }
     const { base64 } = await readFileAsBase64(file);
     const safeName = file.name.replace(/[^a-zA-Z0-9_.-]/g, '_');
@@ -311,22 +341,39 @@ function buildTextBlock(block, idx) {
   wrap.className = 'gd-block-wrap';
 
   if (isEditing()) {
-    const ta = document.createElement('textarea');
-    ta.className = 'gd-block-text gd-editable gd-text-edit';
-    ta.value = block.value || '';
-    ta.placeholder = 'Block text…';
-    ta.addEventListener('input', () => {
-      block.value = ta.value;
+    const obj = bilingualize(block.value);
+    block.value = obj;
+
+    const pair = document.createElement('div');
+    pair.className = 'bilingual-pair bilingual-stack';
+    ['zh', 'en'].forEach(lang => {
+      const cell = document.createElement('div');
+      cell.className = 'bilingual-cell';
+
+      const tag = document.createElement('span');
+      tag.className = 'bilingual-tag';
+      tag.textContent = t(`editor.lang.${lang}`);
+      cell.appendChild(tag);
+
+      const ta = document.createElement('textarea');
+      ta.className = 'gd-block-text gd-text-edit';
+      ta.value = obj[lang] || '';
+      ta.placeholder = t('block.text.placeholder');
+      ta.addEventListener('input', () => {
+        obj[lang] = ta.value;
+        autoGrow(ta);
+        syncPending();
+      });
       autoGrow(ta);
-      syncPending();
+      cell.appendChild(ta);
+      pair.appendChild(cell);
     });
-    autoGrow(ta);
-    wrap.appendChild(ta);
+    wrap.appendChild(pair);
     wrap.appendChild(buildBlockCtrl(idx));
   } else {
     const p = document.createElement('p');
     p.className = 'gd-block-text';
-    p.textContent = block.value || '';
+    p.textContent = pickLocalized(block.value);
     wrap.appendChild(p);
   }
   return wrap;
@@ -340,37 +387,56 @@ function buildImageBlock(block, idx) {
 
   const img = document.createElement('img');
   img.src = block.src || placeholderImage();
-  img.alt = block.caption || 'Project screenshot';
+  img.alt = pickLocalized(block.caption) || 'Project screenshot';
   img.loading = 'lazy';
   img.decoding = 'async';
   img.onerror = () => { img.src = placeholderImage(); };
   fig.appendChild(img);
 
   if (isEditing()) {
-    const cap = document.createElement('input');
-    cap.type = 'text';
-    cap.className = 'gd-block-cap-edit';
-    cap.placeholder = 'Caption…';
-    cap.value = block.caption || '';
-    cap.addEventListener('input', () => {
-      block.caption = cap.value;
-      syncPending();
+    const obj = bilingualize(block.caption);
+    block.caption = obj;
+
+    const pair = document.createElement('div');
+    pair.className = 'bilingual-pair';
+    ['zh', 'en'].forEach(lang => {
+      const cell = document.createElement('div');
+      cell.className = 'bilingual-cell';
+
+      const tag = document.createElement('span');
+      tag.className = 'bilingual-tag';
+      tag.textContent = t(`editor.lang.${lang}`);
+      cell.appendChild(tag);
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.className = 'gd-block-cap-edit';
+      input.placeholder = t('block.caption.placeholder');
+      input.value = obj[lang] || '';
+      input.addEventListener('input', () => {
+        obj[lang] = input.value;
+        syncPending();
+      });
+      cell.appendChild(input);
+      pair.appendChild(cell);
     });
-    fig.appendChild(cap);
-  } else if (block.caption) {
-    const cap = document.createElement('figcaption');
-    cap.textContent = block.caption;
-    fig.appendChild(cap);
+    fig.appendChild(pair);
+  } else {
+    const cap = pickLocalized(block.caption);
+    if (cap) {
+      const node = document.createElement('figcaption');
+      node.textContent = cap;
+      fig.appendChild(node);
+    }
   }
 
   wrap.appendChild(fig);
 
   if (isEditing()) {
     const ctrl = buildBlockCtrl(idx);
-    // Append a "replace image" button to image blocks
     const replace = document.createElement('button');
     replace.type = 'button';
-    replace.textContent = '[replace img]';
+    replace.textContent = t('block.replace.img');
     replace.addEventListener('click', () => pickBlockImage(idx));
     ctrl.insertBefore(replace, ctrl.firstChild);
     wrap.appendChild(ctrl);
@@ -390,8 +456,8 @@ function buildBlockCtrl(idx) {
 function buildInsertRow(idx) {
   const row = document.createElement('div');
   row.className = 'gd-block-insert';
-  mkBtn(row, '[ + TEXT ]',  () => insertBlock(idx, { type: 'text',  value: '' }));
-  mkBtn(row, '[ + IMAGE ]', () => insertImage(idx));
+  mkBtn(row, t('block.text.add'),  () => insertBlock(idx, { type: 'text',  value: { zh: '', en: '' } }));
+  mkBtn(row, t('block.image.add'), () => insertImage(idx));
   return row;
 }
 
@@ -428,7 +494,7 @@ function insertImage(idx) {
     const safeName = file.name.replace(/[^a-zA-Z0-9_.-]/g, '_');
     const filePath = `assets/images/games/${Date.now()}-${safeName}`;
     addPendingUpload(filePath, base64);
-    insertBlock(idx, { type: 'image', src: filePath, caption: '' });
+    insertBlock(idx, { type: 'image', src: filePath, caption: { zh: '', en: '' } });
   };
   input.click();
 }
@@ -465,7 +531,7 @@ function moveBlock(idx, dir) {
 
 function deleteBlock(idx) {
   const block = game.body[idx];
-  if (!confirm('Delete this block?')) return;
+  if (!confirm(t('block.delete.confirm'))) return;
   if (block?.type === 'image' && block.src?.startsWith('assets/images/games/')) {
     addPendingDelete(block.src);
   }
@@ -518,7 +584,6 @@ function vimeoEmbedUrl(input) {
   return id ? `https://player.vimeo.com/video/${id}` : '';
 }
 
-// ── Placeholder image for a freshly-inserted image block that hasn't uploaded yet
 function placeholderImage() {
   const svg = `
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'>
@@ -527,6 +592,30 @@ function placeholderImage() {
             font-size='34' fill='#3a7a2e' letter-spacing='6'>// IMAGE PENDING //</text>
     </svg>`.replace(/\s+/g, ' ');
   return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+}
+
+// Bilingual pair renderer for the title editor (reused locally)
+function renderBilingualPair(hostId, valueObj, onChange) {
+  const host = document.getElementById(hostId);
+  host.innerHTML = '';
+  ['zh', 'en'].forEach(lang => {
+    const cell = document.createElement('div');
+    cell.className = 'bilingual-cell';
+
+    const tag = document.createElement('span');
+    tag.className = 'bilingual-tag';
+    tag.textContent = t(`editor.lang.${lang}`);
+    cell.appendChild(tag);
+
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = valueObj[lang] || '';
+    input.placeholder = t(`editor.placeholder.${lang}`);
+    input.addEventListener('input', () => onChange(lang, input.value));
+    cell.appendChild(input);
+
+    host.appendChild(cell);
+  });
 }
 
 // ── Error UI ─────────────────────────────────

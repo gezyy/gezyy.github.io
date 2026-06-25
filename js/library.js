@@ -1,8 +1,11 @@
 // js/library.js — CSS 3D bookshelf renderer (M3) + edit mode (M5)
+// i18n: book title is bilingual ({zh, en} object). Page left/right content is kept
+// as-is (the existing layout already encodes a side-by-side bilingual reading view).
 import {
   isAdmin, pushChange, addPendingUpload,
   readFileAsBase64, onEditModeChange,
 } from './edit-mode.js';
+import { t, pickLocalized, bilingualize } from './i18n.js';
 
 const DIAG_START = { x: 0.12, y: 0.82 };
 const DIAG_END   = { x: 0.72, y: 0.14 };
@@ -55,6 +58,8 @@ function pixelizeCover(src) {
 
 // ── Build one book element ────────────────────────
 function buildBook(book) {
+  const titleText = pickLocalized(book.title) || t('book.untitled');
+
   const el = document.createElement('div');
   el.className = 'book-3d';
   el.dataset.bookId = book.id;
@@ -63,7 +68,7 @@ function buildBook(book) {
   cover.className = 'book-face cover';
   const coverTitle = document.createElement('div');
   coverTitle.className = 'cover-title';
-  coverTitle.textContent = book.title;
+  coverTitle.textContent = titleText;
   cover.appendChild(coverTitle);
   el.appendChild(cover);
 
@@ -81,7 +86,7 @@ function buildBook(book) {
   spine.className = 'book-face spine';
   const spineLabel = document.createElement('span');
   spineLabel.className = 'spine-label';
-  spineLabel.textContent = book.title;
+  spineLabel.textContent = titleText;
   spine.appendChild(spineLabel);
   el.appendChild(spine);
 
@@ -100,6 +105,8 @@ function buildBook(book) {
   el.addEventListener('click', () => {
     if (!document.body.classList.contains('edit-mode')) openModal(book);
   });
+
+  book._displayTitle = titleText; // for delete confirmation etc.
 
   return el;
 }
@@ -239,7 +246,8 @@ function reorderBook(idx, dir) {
 
 // ── Edit: delete ──────────────────────────────────
 function deleteBook(idx) {
-  if (!confirm(`Delete "${books[idx].title}"?`)) return;
+  const title = pickLocalized(books[idx].title) || books[idx].id || '';
+  if (!confirm(t('confirm.delete.book', { title }))) return;
   books.splice(idx, 1);
   books.forEach((b, i) => { b.order = i; });
   renderBooks();
@@ -255,7 +263,7 @@ function buildBookEditor() {
     <div id="book-editor">
       <h3 id="be-title-heading">EDIT BOOK</h3>
       <label>TITLE</label>
-      <input type="text" id="be-title-input" placeholder="Book title">
+      <div class="bilingual-pair" id="be-title-pair"></div>
       <label>COVER IMAGE</label>
       <div class="be-cover-row">
         <img class="be-cover-preview" id="be-cover-preview" src="" alt="">
@@ -280,6 +288,29 @@ function buildBookEditor() {
   document.getElementById('be-cover-btn').addEventListener('click', pickEditorCover);
 }
 
+function renderBeTitlePair(obj) {
+  const host = document.getElementById('be-title-pair');
+  host.innerHTML = '';
+  ['zh', 'en'].forEach(lang => {
+    const cell = document.createElement('div');
+    cell.className = 'bilingual-cell';
+
+    const tag = document.createElement('span');
+    tag.className = 'bilingual-tag';
+    tag.textContent = t(`editor.lang.${lang}`);
+    cell.appendChild(tag);
+
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = obj[lang] || '';
+    input.placeholder = t(`editor.placeholder.${lang}`);
+    input.addEventListener('input', () => { obj[lang] = input.value; });
+    cell.appendChild(input);
+
+    host.appendChild(cell);
+  });
+}
+
 function openBookEditor(idx) {
   editorIdx  = idx;
   // Deep-clone so cancelling doesn't corrupt live data
@@ -291,9 +322,12 @@ function openBookEditor(idx) {
     order: books.length,
   } : books[idx]));
 
+  // Normalize title to bilingual object
+  editorBook.title = bilingualize(editorBook.title);
+
   document.getElementById('be-title-heading').textContent =
     idx === -1 ? 'ADD BOOK' : 'EDIT BOOK';
-  document.getElementById('be-title-input').value = editorBook.title;
+  renderBeTitlePair(editorBook.title);
   const prev = document.getElementById('be-cover-preview');
   prev.src = editorBook.cover || '';
   prev.style.display = editorBook.cover ? 'block' : 'none';
@@ -353,8 +387,11 @@ async function pickEditorCover() {
 }
 
 function saveBookEditor() {
-  editorBook.title = document.getElementById('be-title-input').value.trim();
-  if (!editorBook.title) { alert('Title cannot be empty.'); return; }
+  // editorBook.title is already a {zh, en} object updated live by the paired inputs
+  const zh = (editorBook.title.zh || '').trim();
+  const en = (editorBook.title.en || '').trim();
+  if (!zh && !en) { alert(t('alert.title.empty')); return; }
+  editorBook.title = { zh, en };
 
   if (editorIdx === -1) {
     books.push(editorBook);
@@ -376,7 +413,7 @@ function buildAddBookBtn() {
   if (document.getElementById('lib-add-book-btn')) return;
   const btn = document.createElement('button');
   btn.id = 'lib-add-book-btn';
-  btn.textContent = '[+ ADD BOOK]';
+  btn.textContent = t('fab.add.book');
   btn.addEventListener('click', () => openBookEditor(-1));
   document.body.appendChild(btn);
 }

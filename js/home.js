@@ -1,6 +1,8 @@
 // js/home.js — Falling geometry physics (M2) + title edit (M5)
 // ES Module, auto-runs on DOMContentLoaded
+// i18n: site title is bilingual ({zh, en}); legacy strings still render.
 import { isAdmin, pushChange, onEditModeChange } from './edit-mode.js';
+import { t, pickLocalized, bilingualize } from './i18n.js';
 
 const GROUND_RATIO  = 0.70;   // ground line at 70% viewport height
 const MAX_SETTLED   = 28;
@@ -229,45 +231,58 @@ document.addEventListener('DOMContentLoaded', async () => {
   requestAnimationFrame(loop);
 
   // ── Title load + admin edit ────────────────────
+  let titleData = { zh: '', en: '' };
   try {
     const r = await fetch(`/content/home.json?_=${Date.now()}`);
     const d = await r.json();
-    const titleEl = document.getElementById('site-title');
-    if (titleEl && d.title) titleEl.textContent = d.title;
+    titleData = bilingualize(d.title);
   } catch { /* keep hardcoded fallback */ }
 
-  if (isAdmin()) {
-    const titleEl = document.getElementById('site-title');
-    if (!titleEl) return;
+  const titleEl = document.getElementById('site-title');
+  if (titleEl) {
+    const display = pickLocalized(titleData) || titleEl.textContent;
+    titleEl.textContent = display;
+  }
 
-    const activateEdit = () => {
-      if (!document.body.classList.contains('edit-mode')) return;
-      titleEl.contentEditable = 'true';
-      titleEl.focus();
+  if (isAdmin() && titleEl) {
+    // Insert a paired ZH/EN editor under the title; visible only in edit mode.
+    const editor = document.createElement('div');
+    editor.id = 'site-title-editor';
+    editor.className = 'gd-inline-editor';
+    editor.innerHTML = '<div class="bilingual-pair" id="site-title-pair"></div>';
+    titleEl.insertAdjacentElement('afterend', editor);
+
+    const renderPair = () => {
+      const host = document.getElementById('site-title-pair');
+      host.innerHTML = '';
+      ['zh', 'en'].forEach(lang => {
+        const cell = document.createElement('div');
+        cell.className = 'bilingual-cell';
+
+        const tag = document.createElement('span');
+        tag.className = 'bilingual-tag';
+        tag.textContent = t(`editor.lang.${lang}`);
+        cell.appendChild(tag);
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.value = titleData[lang] || '';
+        input.placeholder = t(`editor.placeholder.${lang}`);
+        input.addEventListener('input', () => {
+          titleData[lang] = input.value;
+          titleEl.textContent = pickLocalized(titleData);
+          pushChange('content/home.json', { title: titleData });
+        });
+        cell.appendChild(input);
+        host.appendChild(cell);
+      });
     };
 
-    const finishEdit = () => {
-      titleEl.contentEditable = 'false';
-      const newTitle = titleEl.textContent.trim();
-      if (newTitle) pushChange('content/home.json', { title: newTitle });
+    const syncEditorVisibility = () => {
+      editor.hidden = !document.body.classList.contains('edit-mode');
+      if (!editor.hidden) renderPair();
     };
-
-    titleEl.addEventListener('dblclick', activateEdit);
-    titleEl.addEventListener('blur', finishEdit);
-    titleEl.addEventListener('keydown', e => {
-      if (e.key === 'Enter') { e.preventDefault(); titleEl.blur(); }
-      if (e.key === 'Escape') {
-        titleEl.contentEditable = 'false';
-        // Restore from JSON (cancel)
-        fetch(`/content/home.json?_=${Date.now()}`)
-          .then(r => r.json())
-          .then(d => { if (d.title) titleEl.textContent = d.title; })
-          .catch(() => {});
-      }
-    });
-
-    onEditModeChange(inEdit => {
-      titleEl.title = inEdit ? 'Double-click to edit title' : '';
-    });
+    syncEditorVisibility();
+    onEditModeChange(syncEditorVisibility);
   }
 });
