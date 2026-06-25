@@ -6,8 +6,7 @@
 body.page-game-detail {
   min-height: 100vh;
   padding-top: 48px;
-  /* Leave room for floating back button at the bottom on small screens */
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
 }
 
 /* ── Article wrapper ─────────────────────── */
@@ -220,43 +219,39 @@ body.font-readable .gd-block-image figcaption {
   letter-spacing: 0.02em;
 }
 
-/* ── Back button (floating, always visible) */
+/* ── Back button — sits directly under the top-bar [← HOME] ── */
 #gd-back-fab {
   position: fixed;
-  left: 50%;
-  bottom: 1.6rem;
-  transform: translateX(-50%);
+  top: 56px;
+  left: 1.25rem;
   z-index: 9100;
 
   font-family: var(--font-display);
-  font-size: 1rem;
-  letter-spacing: 0.12em;
-  color: var(--ink);
-  background: rgba(10, 13, 10, 0.92);
-  border: 1px solid var(--accent-dim);
-  padding: 8px 22px;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: var(--ink-dim);
+  background: transparent;
+  border: none;
+  padding: 4px 14px;
   text-decoration: none;
-  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  box-shadow: 0 0 18px rgba(124, 255, 94, 0.15);
-  transition: color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  transition: color 0.2s, background 0.2s;
 }
 
 #gd-back-fab:hover,
 #gd-back-fab:focus-visible {
   color: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 0 28px rgba(124, 255, 94, 0.35);
+  background: rgba(124, 255, 94, 0.08);
   outline: none;
 }
 
 /* ── Mobile tweaks ───────────────────────── */
 @media (max-width: 640px) {
   #gd-back-fab {
-    font-size: 0.85rem;
-    padding: 6px 14px;
-    bottom: 1rem;
+    font-size: 0.95rem;
+    padding: 4px 10px;
+    left: 1rem;
   }
 }
 
