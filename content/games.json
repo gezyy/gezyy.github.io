@@ -148,50 +148,50 @@
         {
           "type": "text",
           "value": {
-            "zh": "在星露谷物语中，能量条（或称精力条）的存在在刚开始可能会让某些玩家感到困惑：为什么我感觉什么都没干至三十砍了几下树，敲了几块石头就累倒了，还损失了五十块钱。又或者是，我今天明明还打算去一趟镇上的杂货铺，但是由于我缺少精力，只能睡一觉明天再说。甚至有的时候还会因为挣扎在晕倒的边缘而惊心动魄地祈祷自己能顺利在昏倒之前回到家里。",
-            "en": ""
+            "zh": "在星露谷物语中，能量条（或称精力条）的存在在刚开始可能会让某些玩家感到困惑：为什么我感觉什么都没干只是砍了几下树，敲了几块石头就累倒了，还损失了五十块钱。又或者是，我今天明明还打算去一趟镇上的杂货铺，但是由于我缺少精力，只能睡一觉明天再说。甚至有的时候还会因为挣扎在晕倒的边缘而惊心动魄地祈祷自己能顺利在昏倒之前回到家里。",
+            "en": "In Stardew Valley, the energy bar can be a source of confusion for some players when they first start playing: How am I already exhausted? It feels like I’ve barely done anything—just chopped down a few trees or broken a couple of rocks—and suddenly I collapse, losing 50 bucks in the process. Or perhaps I had planned to stop by the grocery store in town that day, only to realize that I simply didn't have enough energy left and would have to put it off until tomorrow. And if you know, you know: those nerve-racking moments when you're right on the edge of passing out, desperately hoping you'll make it back home before collapsing."
           }
         },
         {
           "type": "text",
           "value": {
             "zh": "但由于星露谷物语精美可爱的美术视觉风格——一座悠闲的乡下童话小镇，配合放松的背景音乐，以及刚开始你确实没那么多需要操心的事情：只是种种防风草，顺便清理一下门口的杂草和树丛，或许拜访几个邻居。因此渐渐的，玩家会在心理上接受这种设定：那好吧，在这样一个一切看上去都很悠闲的地方，为什么我还要拼死拼活地劳作呢？精力不够那就上床睡觉，等待明天的到来。",
-            "en": ""
+            "en": "However, Stardew Valley's charming visual style—a cosy countryside fairytale town paired with relaxing background music—along with the fact that you really don't have much to worry about at the beginning, gradually changes the way players perceive this system. At first, your days mostly consist of watering a few parsnips, clearing some weeds and bushes outside your farmhouse, and maybe dropping by to visit a few neighbours around town.\n\nSlowly but surely, players begin to accept the logic behind it: Alright then, in a place where everything feels so peaceful and laid-back, why should I be working myself to death like a 24/7 convenience store employee? If I run out of energy, so be it. I'll just head to bed and wait for tomorrow to arrive."
           }
         },
         {
           "type": "text",
           "value": {
             "zh": "而这正是开发者们想要看到的。当玩家对这种慢悠悠的节奏逐渐适应后，他们就开始加快节奏了，你会收到各种信件和新任务，引导你一边探索星露谷里更丰富的设定和系统，一边让你扩大自己的版图。于是这时候玩家们会发现一天的时间很快变得不够用，我本该在睡前给作物浇水，结果挖了一天矿已经没力气了。于是，玩家会从此刻开始思考，想要变得更加高效只有两种方式：第一，在一天开始之前考虑好要处理的事项优先级，第二，如何提高我的精力条？ ",
-            "en": ""
+            "en": "And that's exactly what the developers want to see. Once players have settled into the game's slow and easy-going rhythm, the pace begins to pick up. New letters arrive in the mailbox, new quests appear, and the game gradually encourages you to both explore the richer systems and stories hidden throughout Stardew Valley and expand your own little corner of it.\n\nBefore long, players begin to realise that a single day suddenly doesn't feel nearly long enough anymore. I was supposed to water my crops before bed, but after spending the entire day mining, I'm already out of energy.\n\nAnd it is at this moment that players begin to think that there are only two ways to become more efficient: first, decide what deserves priority before the day even begins; second, figure out how to make that energy bar last longer."
           }
         },
         {
           "type": "text",
           "value": {
             "zh": "答案当然是：两者皆可！而这正是开发者们喜闻乐见的。当你开始自发地产生脑内路线规划，并且给排列出今日要做的任务和优先级时，你就已经学会了自己去探索和自主驱动地在这个游戏里探索，而不是通过开发者为你塞进来一封又一封邮件，或者给你整个琳琅满目的任务系统。而当你开始想办法提高精力条的上限或者恢复精力条时，你开始把精力条当作游戏里的一种资源，而你此时产生了一个新的重要目标：我需要升级，以及，我需要合成/获取更多能恢复精力的道具。",
-            "en": ""
+            "en": "The answer, of course, is: both. And once again, that's exactly what the developers want to see.\n\nThe moment you start mentally mapping out your own routes for the day and arranging your tasks according to priority, you've already learned to explore the game on your own terms and drive your own progress, rather than relying on an endless stream of letters in your mailbox or a giant checklist of quests handed to you by the developers.\n\nAnd when you begin looking for ways to increase your maximum energy or restore it more efficiently, the energy bar stops being a restriction and starts becoming a resource in its own right. At that point, a new set of goals naturally emerges: I need upgrades. And I need better tools, foods, and items that can keep my energy topped up."
           }
         },
         {
           "type": "text",
           "value": {
             "zh": "所以，我会将星露谷物语里的精力条设计定义为一个优秀的案例，即如何通过设置某种限制，反而促进玩家的自驱力，让游戏里的目标和任务自发地涌现。其实很多游戏中都有类似的设定存在，在某些策略游戏中，这种设计被包装成行动点数；或者某些内置购买的游戏则是直接将这种行动点设定成了可以通过花钱补充的资源；而在很多战斗游戏中，尽管你的行为不会直接消耗，但是你的生命值经常受到威胁从而需要进行维护。只是为何星露谷物语中的这个设计会让玩家产生新鲜感，我认为主要有以下几点原因。",
-            "en": ""
+            "en": "To sum it up, I would consider the energy bar in Stardew Valley an excellent example of game design: a system where imposing limitations on the player actually encourages self-motivation, allowing goals and tasks to emerge naturally rather than being explicitly assigned by the game itself.\n\nIn fact, similar ideas can be found in many other games. In some strategy games, this limitation takes the form of action points. In certain free-to-play titles, those action points are even turned into a monetisable resource that can be replenished with real money. And in many combat-focused games, while your actions may not directly consume a resource, your health is constantly under threat and therefore requires careful management.\n\nSo why does Stardew Valley's implementation of this idea feel so fresh to players? I believe there are several reasons for that."
           }
         },
         {
           "type": "text",
           "value": {
             "zh": "1. 精力条的可视化方法并不会直接告诉你某个行为将会消耗多少能量，真的没有多少玩家喜欢在游戏里看见大量数字！（当然，某些爱好爆炸式数值呈现的玩家除外）而这种选择性的不可视也让玩家体验上更加自由，这是一种心理影响。\n2. 与模拟经营游戏的结合。正如这篇简评一开始提到的，这是一种巧妙控制游玩节奏的策略。由于精力条的存在，你不能再像个永动机一样昼夜不停地在你的模拟农场里劳作，而是每一天都需要思考今天将要探索哪几个地点，做些什么。也会让你格外期待下一天的到来，因为你有很多来不及今天完成的事情。而这种强制中断未尽之事的心理体验会让人上瘾，不像那些不加限制的经营游戏，当你持续不断工作了几个小时之后，大部分玩家会开始感到疲惫，而当你因为疲惫退出游戏后，下一次打开可能就是很久之后了。但这种强迫你中止的循环会让玩家不断地想起那些还没有完成的事情，从而因为这短暂的停止而更加投入到下一次循环中。",
-            "en": ""
+            "en": "1. The energy bar never tells you the numbers.\n\nFirst of all, the game never directly tells you how much energy each action costs. And honestly, most players don't actually enjoy staring at a bunch of numbers while playing games. (Well, unless you're one of those people who get excited by damage numbers exploding all over the screen.)\n\nBy keeping some of that information hidden, the game actually makes the whole system feel less restrictive. You're not constantly calculating whether chopping down one more tree will cost 6 energy or 8 energy. You just get a rough feeling for it over time.\n\nIronically, making the system less visible makes players feel more free, even though the restriction itself never disappeared. That's the psychological trick behind it.\n\n2. It works perfectly with the farming sim genre.\n\nAs I mentioned at the beginning, this is a very clever way of controlling the pace of the game.\n\nBecause of the energy bar, you can't just turn yourself into some kind of farming machine that works 24 hours a day without stopping. Every morning you naturally start asking yourself:\n\n\"Am I going mining today?\"\n\n\"Should I spend the day fishing?\"\n\n\"Do I finally have time to upgrade my pickaxe?\"\n\nSuddenly, planning becomes part of the game.\n\nAnd perhaps more importantly, the game makes you excited for tomorrow.\n\nThere's always something you didn't get around to doing today. Maybe the crops still need watering. Maybe there's another five floors waiting for you in the mines. Maybe you were this close to finally catching that fish.\n\nAnd strangely enough, being forced to stop is exactly what makes you want to keep playing.\n\nIn a lot of management games with no restrictions, players simply keep going until they burn themselves out. A few hours later they're tired, they quit, and the next time they open the game might be weeks later.\n\nStardew Valley does the opposite.\n\nIt stops you while you're still thinking:\n\n\"Ah, just one more day.\"\n\nAnd because the game leaves things unfinished, those unfinished tasks stay in your head. You keep thinking about them after you've stopped playing, which only makes you more excited to jump back in next time."
           }
         },
         {
           "type": "text",
           "value": {
             "zh": "总结，星露谷物语中的精力条设计不仅本身成为了一种独特的游戏体验，还与游戏任务系统和养成系统进行了有机结合。这是一种非常聪明且基于玩家体验出发的游戏设计思路。",
-            "en": ""
+            "en": "To sum up, the energy bar in Stardew Valley is not only a unique gameplay experience in itself, but also one that blends seamlessly with the game's quest and progression systems. It is a remarkably clever design, built around the player experience from beginning to end."
           }
         }
       ],
