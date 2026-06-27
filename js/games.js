@@ -11,8 +11,12 @@ import { t, pickLocalized, bilingualize } from './i18n.js';
 
 const GAMES_FILE = 'content/games.json';
 const PAGE_SIZE  = 12;
+const SECTIONS   = ['devlogs', 'essays'];   // M-Games-4: section tabs (default: devlogs)
+const DEFAULT_SECTION = 'devlogs';
 
 let allGames = [];
+let view = [];            // [{ game, idx }] — entries of the active section, in order
+let currentSection = DEFAULT_SECTION;
 let visibleCount = 0;
 let editor = null;        // { idx: number | -1, draft: gameObject }
 
@@ -22,6 +26,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('games-title').textContent = t('games.title');
   document.getElementById('games-sub').textContent   = t('games.subtitle');
   document.querySelector('#games-grid-empty .blink').textContent = t('games.empty');
+
+  setupSectionNav();
 
   allGames = await loadGames();
   renderAll();
@@ -35,6 +41,31 @@ document.addEventListener('DOMContentLoaded', async () => {
     onEditModeChange(() => renderAll());
   }
 });
+
+// ── Sections ─────────────────────────────────
+function sectionOf(game) {
+  return SECTIONS.includes(game.section) ? game.section : DEFAULT_SECTION;
+}
+
+function setupSectionNav() {
+  document.querySelectorAll('.games-section-tab').forEach(tab => {
+    const sec = tab.dataset.section;
+    tab.textContent = t(`games.section.${sec}`);
+    tab.setAttribute('aria-pressed', String(sec === currentSection));
+    tab.addEventListener('click', () => switchSection(sec));
+  });
+}
+
+function switchSection(sec) {
+  if (sec === currentSection || !SECTIONS.includes(sec)) return;
+  currentSection = sec;
+  document.querySelectorAll('.games-section-tab').forEach(tab => {
+    const active = tab.dataset.section === sec;
+    tab.classList.toggle('is-active', active);
+    tab.setAttribute('aria-pressed', String(active));
+  });
+  renderAll();
+}
 
 // ── Data ─────────────────────────────────────
 async function loadGames() {
@@ -58,10 +89,14 @@ function syncPending() {
 function renderAll() {
   const grid = document.getElementById('games-grid');
   if (!grid) return;
+  // Rebuild the active-section view: keep each entry's real index into allGames.
+  view = allGames
+    .map((game, idx) => ({ game, idx }))
+    .filter(({ game }) => sectionOf(game) === currentSection);
   grid.innerHTML = '';
   visibleCount = 0;
   const empty = document.getElementById('games-grid-empty');
-  if (allGames.length === 0) {
+  if (view.length === 0) {
     empty.hidden = false;
   } else {
     empty.hidden = true;
@@ -73,9 +108,9 @@ function renderAll() {
 function renderNextPage() {
   const grid = document.getElementById('games-grid');
   const start = visibleCount;
-  const end   = Math.min(start + PAGE_SIZE, allGames.length);
+  const end   = Math.min(start + PAGE_SIZE, view.length);
   for (let i = start; i < end; i++) {
-    grid.appendChild(buildCard(allGames[i], i));
+    grid.appendChild(buildCard(view[i].game, view[i].idx));
   }
   visibleCount = end;
 }
@@ -83,7 +118,7 @@ function renderNextPage() {
 function syncLoadMore() {
   const wrap = document.getElementById('games-load-more-wrap');
   const btn  = document.getElementById('games-load-more');
-  const remaining = allGames.length - visibleCount;
+  const remaining = view.length - visibleCount;
   if (remaining > 0) {
     wrap.hidden = false;
     btn.textContent = t('games.loadmore', { n: remaining });
@@ -176,7 +211,12 @@ function tagsToBlurb(tags) {
 
 // ── Reorder / Delete ─────────────────────────
 function reorder(idx, dir) {
-  const target = idx + dir;
+  // Move within the active section: find the nearest neighbour sharing the section.
+  const sec = sectionOf(allGames[idx]);
+  let target = idx + dir;
+  while (target >= 0 && target < allGames.length && sectionOf(allGames[target]) !== sec) {
+    target += dir;
+  }
   if (target < 0 || target >= allGames.length) return;
   [allGames[idx], allGames[target]] = [allGames[target], allGames[idx]];
   reindex();
@@ -261,6 +301,7 @@ function openEditor(idx) {
   const isNew = idx === -1;
   const base = isNew ? {
     id: '',
+    section: currentSection,    // new entries land in the active section
     title: '',
     cover: '',
     blurb: '',

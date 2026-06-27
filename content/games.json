@@ -2,6 +2,7 @@
   "games": [
     {
       "id": "static-bloom",
+      "section": "devlogs",
       "title": "STATIC BLOOM",
       "cover": "assets/images/games/static-bloom.svg",
       "blurb": "First-person walking sim · PC · 4 weeks",
@@ -25,6 +26,7 @@
     },
     {
       "id": "low-orbit-courier",
+      "section": "devlogs",
       "title": "LOW ORBIT COURIER",
       "cover": "assets/images/games/low-orbit-courier.svg",
       "blurb": "Arcade flight · PC / Web · 8 weeks",
@@ -46,6 +48,7 @@
     },
     {
       "id": "nightshift-protocol",
+      "section": "devlogs",
       "title": "NIGHTSHIFT PROTOCOL",
       "cover": "assets/images/games/nightshift-protocol.svg",
       "blurb": "Tactical puzzle · Mobile · 12 weeks",

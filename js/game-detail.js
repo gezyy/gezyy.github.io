@@ -73,6 +73,11 @@ function isEditing() {
   return isAdmin() && document.body.classList.contains('edit-mode');
 }
 
+// Essays (游戏设计杂谈) share the writeup format but carry no preview video.
+function isEssay() {
+  return game?.section === 'essays';
+}
+
 // ── Render ───────────────────────────────────
 function renderAll() {
   renderHeader();
@@ -181,6 +186,12 @@ function renderTags() {
 function renderVideo() {
   const wrap = document.getElementById('gd-video-wrap');
   wrap.innerHTML = '';
+
+  // Essays have no video — hide the section and skip the editor entirely.
+  if (isEssay()) {
+    wrap.hidden = true;
+    return;
+  }
 
   if (game.video?.src) {
     wrap.hidden = false;
