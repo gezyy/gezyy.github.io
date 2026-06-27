@@ -142,7 +142,7 @@
       },
       "video": {
         "type": "youtube",
-        "src": ""
+        "src": "https://www.youtube.com/watch?v=6kv66MydDUc&t=219s"
       },
       "body": [
         {
@@ -150,6 +150,14 @@
           "value": {
             "zh": "在星露谷物语中，能量条（或称精力条）的存在在刚开始可能会让某些玩家感到困惑：为什么我感觉什么都没干只是砍了几下树，敲了几块石头就累倒了，还损失了五十块钱。又或者是，我今天明明还打算去一趟镇上的杂货铺，但是由于我缺少精力，只能睡一觉明天再说。甚至有的时候还会因为挣扎在晕倒的边缘而惊心动魄地祈祷自己能顺利在昏倒之前回到家里。",
             "en": "In Stardew Valley, the energy bar can be a source of confusion for some players when they first start playing: How am I already exhausted? It feels like I’ve barely done anything—just chopped down a few trees or broken a couple of rocks—and suddenly I collapse, losing 50 bucks in the process. Or perhaps I had planned to stop by the grocery store in town that day, only to realize that I simply didn't have enough energy left and would have to put it off until tomorrow. And if you know, you know: those nerve-racking moments when you're right on the edge of passing out, desperately hoping you'll make it back home before collapsing."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1782591817220-ScreenShot_2026-06-27_211736_019.png",
+          "caption": {
+            "zh": "",
+            "en": ""
           }
         },
         {
@@ -164,6 +172,14 @@
           "value": {
             "zh": "而这正是开发者们想要看到的。当玩家对这种慢悠悠的节奏逐渐适应后，他们就开始加快节奏了，你会收到各种信件和新任务，引导你一边探索星露谷里更丰富的设定和系统，一边让你扩大自己的版图。于是这时候玩家们会发现一天的时间很快变得不够用，我本该在睡前给作物浇水，结果挖了一天矿已经没力气了。于是，玩家会从此刻开始思考，想要变得更加高效只有两种方式：第一，在一天开始之前考虑好要处理的事项优先级，第二，如何提高我的精力条？ ",
             "en": "And that's exactly what the developers want to see. Once players have settled into the game's slow and easy-going rhythm, the pace begins to pick up. New letters arrive in the mailbox, new quests appear, and the game gradually encourages you to both explore the richer systems and stories hidden throughout Stardew Valley and expand your own little corner of it.\n\nBefore long, players begin to realise that a single day suddenly doesn't feel nearly long enough anymore. I was supposed to water my crops before bed, but after spending the entire day mining, I'm already out of energy.\n\nAnd it is at this moment that players begin to think that there are only two ways to become more efficient: first, decide what deserves priority before the day even begins; second, figure out how to make that energy bar last longer."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1782591831143-ScreenShot_2026-06-27_211802_566.png",
+          "caption": {
+            "zh": "",
+            "en": ""
           }
         },
         {
