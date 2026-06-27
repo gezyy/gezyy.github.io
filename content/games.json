@@ -16,11 +16,28 @@
         "src": "dQw4w9WgXcQ"
       },
       "body": [
-        { "type": "text", "value": "STATIC BLOOM is a short atmospheric piece built around a single broken transmission. The player wanders a derelict observatory, tuning antennae to recover fragments of a forgotten broadcast.\n\nDesigned as a study in restraint: no HUD, no combat, no objectives beyond curiosity." },
-        { "type": "image", "src": "assets/images/games/static-bloom-shot-1.svg", "caption": "The main observatory floor at dawn." },
-        { "type": "text", "value": "I built the entire vertical slice solo in Unity HDRP. Most of the time was spent on the audio: each antenna emits its own filtered noise that mixes into a single drifting drone, generated procedurally from FMOD events." },
-        { "type": "image", "src": "assets/images/games/static-bloom-shot-2.svg", "caption": "Antenna tuning interaction — analog dial driven by player position." },
-        { "type": "text", "value": "Lessons learned: cut the inventory system on day three. The game got better the moment I stopped trying to give the player things to do." }
+        {
+          "type": "text",
+          "value": "STATIC BLOOM is a short atmospheric piece built around a single broken transmission. The player wanders a derelict observatory, tuning antennae to recover fragments of a forgotten broadcast.\n\nDesigned as a study in restraint: no HUD, no combat, no objectives beyond curiosity."
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/static-bloom-shot-1.svg",
+          "caption": "The main observatory floor at dawn."
+        },
+        {
+          "type": "text",
+          "value": "I built the entire vertical slice solo in Unity HDRP. Most of the time was spent on the audio: each antenna emits its own filtered noise that mixes into a single drifting drone, generated procedurally from FMOD events."
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/static-bloom-shot-2.svg",
+          "caption": "Antenna tuning interaction — analog dial driven by player position."
+        },
+        {
+          "type": "text",
+          "value": "Lessons learned: cut the inventory system on day three. The game got better the moment I stopped trying to give the player things to do."
+        }
       ],
       "order": 0
     },
@@ -40,9 +57,19 @@
         "src": "M7lc1UVf-VE"
       },
       "body": [
-        { "type": "text", "value": "LOW ORBIT COURIER is a score-attack arcade flight game. You pilot a delivery glider through procedurally tilted canyons, threading freight between magnetic checkpoints while the wind tries to murder you." },
-        { "type": "image", "src": "assets/images/games/low-orbit-courier-shot-1.svg", "caption": "Course generator output — magnetic gates colored by tier." },
-        { "type": "text", "value": "Core loop runs at 60 Hz with a fixed-step physics integrator. The whole thing fits in under 2 MB once stripped — small enough to run on the itch.io browser embed without a loader." }
+        {
+          "type": "text",
+          "value": "LOW ORBIT COURIER is a score-attack arcade flight game. You pilot a delivery glider through procedurally tilted canyons, threading freight between magnetic checkpoints while the wind tries to murder you."
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/low-orbit-courier-shot-1.svg",
+          "caption": "Course generator output — magnetic gates colored by tier."
+        },
+        {
+          "type": "text",
+          "value": "Core loop runs at 60 Hz with a fixed-step physics integrator. The whole thing fits in under 2 MB once stripped — small enough to run on the itch.io browser embed without a loader."
+        }
       ],
       "order": 1
     },
@@ -62,13 +89,54 @@
         "src": "aqz-KE-bpKQ"
       },
       "body": [
-        { "type": "text", "value": "NIGHTSHIFT PROTOCOL is a top-down tactical puzzle game about a security guard rerouting cameras to catch (or hide from) an intruder. Each level is a tight grid; each move re-cooks the entire light graph." },
-        { "type": "image", "src": "assets/images/games/nightshift-protocol-shot-1.svg", "caption": "Camera cone overlap drives the threat heatmap." },
-        { "type": "text", "value": "Built in Godot 4. I wrote the line-of-sight solver as a Wave Function Collapse variant — overkill for the problem, but it let me reuse the same data for the procedural level generator I ended up cutting." },
-        { "type": "image", "src": "assets/images/games/nightshift-protocol-shot-2.svg", "caption": "Editor view of the visibility graph at runtime." },
-        { "type": "text", "value": "Shipped a small free build on itch. The level editor will probably never see the light of day, but the core 10 levels are tight." }
+        {
+          "type": "text",
+          "value": "NIGHTSHIFT PROTOCOL is a top-down tactical puzzle game about a security guard rerouting cameras to catch (or hide from) an intruder. Each level is a tight grid; each move re-cooks the entire light graph."
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/nightshift-protocol-shot-1.svg",
+          "caption": "Camera cone overlap drives the threat heatmap."
+        },
+        {
+          "type": "text",
+          "value": "Built in Godot 4. I wrote the line-of-sight solver as a Wave Function Collapse variant — overkill for the problem, but it let me reuse the same data for the procedural level generator I ended up cutting."
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/nightshift-protocol-shot-2.svg",
+          "caption": "Editor view of the visibility graph at runtime."
+        },
+        {
+          "type": "text",
+          "value": "Shipped a small free build on itch. The level editor will probably never see the light of day, but the core 10 levels are tight."
+        }
       ],
       "order": 2
+    },
+    {
+      "id": "01",
+      "section": "essays",
+      "title": {
+        "zh": "简评《星露谷物语》中的能量条设计",
+        "en": "A Quick Review of Energy bar design in Stardew Valley"
+      },
+      "cover": "assets/images/games/1782573898042-450e1661-00ff-493b-8f48-bfb9ea961a2a.png",
+      "blurb": {
+        "zh": "一种巧妙调节玩家游玩节奏的方式",
+        "en": "A sophisticated method of gently regulating the play's pace"
+      },
+      "tags": {
+        "genre": "",
+        "platform": "",
+        "duration": ""
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [],
+      "order": 3
     }
   ]
 }
