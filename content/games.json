@@ -3,9 +3,15 @@
     {
       "id": "static-bloom",
       "section": "devlogs",
-      "title": "STATIC BLOOM",
-      "cover": "assets/images/games/static-bloom.svg",
-      "blurb": "First-person walking sim · PC · 4 weeks",
+      "title": {
+        "zh": "与Claude Code协作实现快速开发",
+        "en": "Working with Claude Code for Rapid Game Prototype"
+      },
+      "cover": "assets/images/games/1784007719517-claude.png",
+      "blurb": {
+        "zh": "本文简述了个人快速搭建原型的工作流",
+        "en": "This article introduces my personal workflow by using Claude in game development."
+      },
       "tags": {
         "genre": "Walking Sim",
         "platform": "PC (Windows)",
