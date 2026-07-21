@@ -168,10 +168,10 @@ body.page-library {
 /* ── Book modal ──────────────────────────── */
 #book-modal {
   position: relative;
-  width: 50vw;
-  max-width: 860px;
-  height: 60vh;
-  min-height: 360px;
+  width: 64vw;
+  max-width: 1000px;
+  height: 74vh;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   transform: scale(0.88);
@@ -185,18 +185,20 @@ body.page-library {
 /* Open book: two pages + spine */
 #book-open {
   flex: 1;
+  min-height: 0;       /* let flex children shrink so pages scroll instead of growing */
   display: flex;
-  overflow: hidden;
-  perspective: 800px;
+  overflow: hidden;    /* contain pages vertically (footer stays reachable); the 4rem
+                          outer padding keeps text clear of this horizontal clip */
+  perspective: 1600px;
 }
 
 .book-page {
   flex: 1;
   background: var(--bg-elev);
-  padding: 1.8rem 1.4rem;
+  padding: 2rem 1.4rem;   /* base; horizontal sides are overridden per page below */
   overflow-y: auto;
   font-family: var(--font-body);
-  font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+  font-size: clamp(0.8rem, 1.15vw, 0.95rem);
   color: var(--ink);
   line-height: 1.75;
   white-space: pre-wrap;
@@ -205,15 +207,23 @@ body.page-library {
   scrollbar-color: var(--accent-dim) transparent;
 }
 
+/* Real open-book tilt: each page hinges at the spine and its outer half tips
+   gently toward the reader. #book-open uses overflow:visible so the outer edge
+   is never clipped. The text block is pushed hard toward the centre spine
+   (large OUTER padding, small INNER padding) so the outer-left/outer-right
+   column always clears the foreshortened edge and is fully readable. */
 #book-page-left {
   transform-origin: right center;
-  transform: perspective(600px) rotateY(4deg);
-  border-right: none;
+  transform: rotateY(5deg);
+  padding-left: 4rem;
+  padding-right: 1.3rem;
 }
 
 #book-page-right {
   transform-origin: left center;
-  transform: perspective(600px) rotateY(-4deg);
+  transform: rotateY(-5deg);
+  padding-right: 4rem;
+  padding-left: 1.3rem;
 }
 
 /* Center spine binding */
