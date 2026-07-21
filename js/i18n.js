@@ -107,6 +107,7 @@ const STRINGS = {
   'block.text.add':           { zh: '[ + 文字 ]', en: '[ + TEXT ]' },
   'block.image.add':          { zh: '[ + 图片 ]', en: '[ + IMAGE ]' },
   'block.replace.img':        { zh: '[替换图片]', en: '[replace img]' },
+  'block.image.upload':       { zh: '[上传图片]', en: '[upload img]' },
   'block.delete.confirm':     { zh: '删除这个块？', en: 'Delete this block?' },
   'block.text.placeholder':   { zh: '段落文字…', en: 'Block text…' },
   'block.caption.placeholder': { zh: '图片说明…', en: 'Caption…' },

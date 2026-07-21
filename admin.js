@@ -392,8 +392,10 @@ window.ADMIN_WORKER_URL = WORKER_URL; // exposed for edit-mode.js
       if (data.token) {
         sessionStorage.setItem('adminToken', data.token);
         sessionStorage.setItem('siteIdentity', 'admin');
-        document.getElementById('admin-modal-backdrop').remove();
-        buildToolbar();
+        // Reload so every page module (add buttons, editors, edit controls)
+        // initializes with the admin token present at load time. Without this,
+        // authenticating after DOMContentLoaded leaves the admin UI unbuilt.
+        window.location.reload();
       } else {
         errEl.textContent = t('identity.pin.wrong');
         errEl.style.display = 'block';

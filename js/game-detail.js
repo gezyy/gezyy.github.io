@@ -73,6 +73,20 @@ function isEditing() {
   return isAdmin() && document.body.classList.contains('edit-mode');
 }
 
+// Systems Breakdown articles may embed charts whose text is baked into the
+// image, so their image blocks carry a separate picture per language.
+function isSystemsSection() {
+  return game && game.section === 'systems';
+}
+
+// All games-asset image paths referenced by an image block's src
+// (handles both the legacy string form and the bilingual {zh, en} form).
+function imageSrcPaths(src) {
+  if (!src) return [];
+  if (typeof src === 'string') return [src];
+  return [src.zh, src.en].filter(Boolean);
+}
+
 // ── Render ───────────────────────────────────
 function renderAll() {
   renderHeader();
@@ -386,12 +400,18 @@ function buildImageBlock(block, idx) {
   const fig = document.createElement('figure');
 
   const img = document.createElement('img');
-  img.src = block.src || placeholderImage();
+  img.src = pickLocalized(block.src) || placeholderImage();
   img.alt = pickLocalized(block.caption) || 'Project screenshot';
   img.loading = 'lazy';
   img.decoding = 'async';
   img.onerror = () => { img.src = placeholderImage(); };
   fig.appendChild(img);
+
+  // Systems Breakdown: bilingual image — a separate upload slot per language.
+  if (isEditing() && isSystemsSection()) {
+    block.src = bilingualize(block.src);
+    fig.appendChild(buildImageLangUploads(block, idx));
+  }
 
   if (isEditing()) {
     const obj = bilingualize(block.caption);
@@ -434,13 +454,51 @@ function buildImageBlock(block, idx) {
 
   if (isEditing()) {
     const ctrl = buildBlockCtrl(idx);
-    const replace = document.createElement('button');
-    replace.type = 'button';
-    replace.textContent = t('block.replace.img');
-    replace.addEventListener('click', () => pickBlockImage(idx));
-    ctrl.insertBefore(replace, ctrl.firstChild);
+    if (!isSystemsSection()) {
+      // Non-systems: one shared image, single replace button (legacy behaviour).
+      const replace = document.createElement('button');
+      replace.type = 'button';
+      replace.textContent = t('block.replace.img');
+      replace.addEventListener('click', () => pickBlockImage(idx));
+      ctrl.insertBefore(replace, ctrl.firstChild);
+    }
     wrap.appendChild(ctrl);
   }
+  return wrap;
+}
+
+// Paired ZH/EN image upload controls for a Systems Breakdown image block.
+function buildImageLangUploads(block, idx) {
+  const wrap = document.createElement('div');
+  wrap.className = 'gd-img-lang-uploads';
+
+  ['zh', 'en'].forEach(lang => {
+    const cell = document.createElement('div');
+    cell.className = 'gd-img-lang-cell';
+
+    const tag = document.createElement('span');
+    tag.className = 'bilingual-tag';
+    tag.textContent = t(`editor.lang.${lang}`);
+    cell.appendChild(tag);
+
+    const cur = block.src[lang];
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'gd-img-lang-btn';
+    btn.textContent = cur ? t('block.replace.img') : t('block.image.upload');
+    btn.addEventListener('click', () => pickBlockImage(idx, lang));
+    cell.appendChild(btn);
+
+    if (cur) {
+      const name = document.createElement('span');
+      name.className = 'gd-img-lang-name';
+      name.textContent = cur.split('/').pop();
+      cell.appendChild(name);
+    }
+
+    wrap.appendChild(cell);
+  });
+
   return wrap;
 }
 
@@ -494,12 +552,17 @@ function insertImage(idx) {
     const safeName = file.name.replace(/[^a-zA-Z0-9_.-]/g, '_');
     const filePath = `assets/images/games/${Date.now()}-${safeName}`;
     addPendingUpload(filePath, base64);
-    insertBlock(idx, { type: 'image', src: filePath, caption: { zh: '', en: '' } });
+    // In Systems Breakdown, seed both languages with the first upload (so a
+    // fallback always exists); the admin can then replace one side separately.
+    const src = isSystemsSection() ? { zh: filePath, en: filePath } : filePath;
+    insertBlock(idx, { type: 'image', src, caption: { zh: '', en: '' } });
   };
   input.click();
 }
 
-function pickBlockImage(idx) {
+// lang omitted → replace the single shared image (legacy / non-systems).
+// lang = 'zh' | 'en' → replace just that language's image (systems).
+function pickBlockImage(idx, lang) {
   const block = game.body[idx];
   const input = document.createElement('input');
   input.type = 'file';
@@ -510,10 +573,23 @@ function pickBlockImage(idx) {
     const { base64 } = await readFileAsBase64(file);
     const safeName = file.name.replace(/[^a-zA-Z0-9_.-]/g, '_');
     const filePath = `assets/images/games/${Date.now()}-${safeName}`;
-    if (block.src?.startsWith('assets/images/games/')) {
-      addPendingDelete(block.src);
+
+    if (lang) {
+      block.src = bilingualize(block.src);
+      const old   = block.src[lang];
+      const other = block.src[lang === 'zh' ? 'en' : 'zh'];
+      // Delete the old file only if it's ours and not shared with the other language.
+      if (old && old !== other && old.startsWith('assets/images/games/')) {
+        addPendingDelete(old);
+      }
+      block.src[lang] = filePath;
+    } else {
+      if (typeof block.src === 'string' && block.src.startsWith('assets/images/games/')) {
+        addPendingDelete(block.src);
+      }
+      block.src = filePath;
     }
-    block.src = filePath;
+
     addPendingUpload(filePath, base64);
     syncPending();
     renderBody();
@@ -532,8 +608,10 @@ function moveBlock(idx, dir) {
 function deleteBlock(idx) {
   const block = game.body[idx];
   if (!confirm(t('block.delete.confirm'))) return;
-  if (block?.type === 'image' && block.src?.startsWith('assets/images/games/')) {
-    addPendingDelete(block.src);
+  if (block?.type === 'image') {
+    [...new Set(imageSrcPaths(block.src))].forEach(p => {
+      if (p.startsWith('assets/images/games/')) addPendingDelete(p);
+    });
   }
   game.body.splice(idx, 1);
   syncPending();
