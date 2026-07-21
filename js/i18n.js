@@ -133,6 +133,14 @@ const STRINGS = {
   'book.untitled':            { zh: '未命名书本', en: 'Untitled book' },
   'gallery.untitled':         { zh: '未命名图片', en: 'Untitled image' },
   'home.title.placeholder':   { zh: 'Instantiated in a substratum', en: 'Instantiated in a substratum' },
+
+  // Home — 3D character speech bubble editor
+  'home.dialog.editor.title': { zh: '角色台词预设', en: 'CHARACTER LINES' },
+  'home.dialog.editor.hint':  { zh: '单击小人时随机显示其中一条', en: 'One is picked at random when the character is clicked' },
+  'home.dialog.add':          { zh: '[ + 添加台词 ]', en: '[ + ADD LINE ]' },
+  'home.dialog.empty':        { zh: '// 还没有台词 //', en: '// NO LINES YET //' },
+  'home.dialog.close.aria':   { zh: '关闭对话框', en: 'Close dialog' },
+  'home.dialog.del.aria':     { zh: '删除这条台词', en: 'Delete this line' },
 };
 
 // ── Public API ───────────────────────────────────

@@ -1,3 +1,9 @@
 {
-  "title": "Instantiated in a substratum"
+  "title": "Instantiated in a substratum",
+  "dialogs": [
+    { "zh": "嗨，你来啦！", "en": "Hey, you made it!" },
+    { "zh": "点一下我，我就换句话说。", "en": "Click me and I'll say something new." },
+    { "zh": "这里的方块一直在往下掉，别管它们。", "en": "The blocks keep falling. Just ignore them." },
+    { "zh": "去看看画廊吧，那边有好东西。", "en": "Check out the gallery — good stuff over there." }
+  ]
 }

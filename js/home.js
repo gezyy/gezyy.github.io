@@ -230,19 +230,29 @@ document.addEventListener('DOMContentLoaded', async () => {
   fpsTs = performance.now();
   requestAnimationFrame(loop);
 
-  // ── Title load + admin edit ────────────────────
-  let titleData = { zh: '', en: '' };
+  // ── Home content load (title + character dialogs) ──
+  let titleData   = { zh: '', en: '' };
+  let dialogsData = [];   // [{ zh, en }, …]
   try {
     const r = await fetch(`/content/home.json?_=${Date.now()}`);
     const d = await r.json();
-    titleData = bilingualize(d.title);
+    titleData   = bilingualize(d.title);
+    dialogsData = Array.isArray(d.dialogs) ? d.dialogs.map(bilingualize) : [];
   } catch { /* keep hardcoded fallback */ }
+
+  // Whole-file writer: title + dialogs live in the same JSON, so always
+  // push both together or one editor would clobber the other's field.
+  const pushHome = () =>
+    pushChange('content/home.json', { title: titleData, dialogs: dialogsData });
 
   const titleEl = document.getElementById('site-title');
   if (titleEl) {
     const display = pickLocalized(titleData) || titleEl.textContent;
     titleEl.textContent = display;
   }
+
+  // ── Character speech bubble ────────────────────
+  setupSpeechBubble(() => dialogsData);
 
   if (isAdmin() && titleEl) {
     // Insert a paired ZH/EN editor under the title; visible only in edit mode.
@@ -271,7 +281,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         input.addEventListener('input', () => {
           titleData[lang] = input.value;
           titleEl.textContent = pickLocalized(titleData);
-          pushChange('content/home.json', { title: titleData });
+          pushHome();
         });
         cell.appendChild(input);
         host.appendChild(cell);
@@ -284,5 +294,146 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
     syncEditorVisibility();
     onEditModeChange(syncEditorVisibility);
+
+    // ── Dialog preset editor (add / edit / remove lines) ──
+    buildDialogEditor(dialogsData, pushHome);
   }
 });
+
+// ── Speech bubble: click the character to show a random line ──
+function setupSpeechBubble(getDialogs) {
+  const model = document.getElementById('home-3d');
+  if (!model) return;
+
+  const bubble = document.createElement('div');
+  bubble.id = 'home-3d-bubble';
+  bubble.innerHTML = `
+    <div class="bubble-body">
+      <button class="bubble-close" type="button" aria-label="${t('home.dialog.close.aria')}">×</button>
+      <span class="bubble-text"></span>
+    </div>
+    <span class="bubble-tail"></span>`;
+  document.body.appendChild(bubble);
+
+  const textEl = bubble.querySelector('.bubble-text');
+  bubble.querySelector('.bubble-close').addEventListener('click', () => {
+    bubble.classList.remove('open');
+  });
+
+  let lastIdx = -1;
+  function showRandomLine() {
+    const dialogs = getDialogs();
+    // Only consider lines that render to non-empty text in the current language.
+    const candidates = [];
+    dialogs.forEach((d, i) => {
+      if (pickLocalized(d).trim()) candidates.push(i);
+    });
+    if (!candidates.length) return;
+
+    let idx = candidates[Math.floor(Math.random() * candidates.length)];
+    if (candidates.length > 1 && idx === lastIdx) {
+      // Avoid repeating the same line twice in a row.
+      const rest = candidates.filter(i => i !== lastIdx);
+      idx = rest[Math.floor(Math.random() * rest.length)];
+    }
+    lastIdx = idx;
+
+    textEl.textContent = pickLocalized(dialogs[idx]);
+    bubble.classList.add('open');
+  }
+
+  // Distinguish a click (toggle a line) from a drag (rotate the model).
+  // model-viewer's camera-controls also react to the drag; the threshold
+  // keeps a genuine click from being swallowed by a tiny rotation.
+  let downX = 0, downY = 0, downT = 0, armed = false;
+  model.addEventListener('pointerdown', e => {
+    if (e.button !== 0) return;   // left button only
+    armed = true;
+    downX = e.clientX; downY = e.clientY; downT = e.timeStamp;
+  });
+  window.addEventListener('pointerup', e => {
+    if (!armed) return;
+    armed = false;
+    if (e.button !== 0) return;
+    const moved = Math.hypot(e.clientX - downX, e.clientY - downY);
+    if (moved <= 6 && e.timeStamp - downT <= 500) showRandomLine();
+  });
+}
+
+// ── Admin: build the dialog preset editor panel ──
+function buildDialogEditor(dialogsData, pushHome) {
+  const panel = document.createElement('div');
+  panel.id = 'dialog-editor';
+  panel.innerHTML = `
+    <h3>${t('home.dialog.editor.title')}</h3>
+    <p class="dialog-editor-hint">${t('home.dialog.editor.hint')}</p>
+    <div id="dialog-list"></div>
+    <button id="dialog-add-btn" type="button">${t('home.dialog.add')}</button>`;
+  document.body.appendChild(panel);
+
+  const list = panel.querySelector('#dialog-list');
+
+  function render() {
+    list.innerHTML = '';
+    if (!dialogsData.length) {
+      const empty = document.createElement('p');
+      empty.className = 'dialog-editor-empty';
+      empty.textContent = t('home.dialog.empty');
+      list.appendChild(empty);
+      return;
+    }
+
+    dialogsData.forEach((entry, i) => {
+      const row = document.createElement('div');
+      row.className = 'dialog-edit-row';
+
+      const del = document.createElement('button');
+      del.className = 'dialog-del-line';
+      del.type = 'button';
+      del.textContent = '×';
+      del.setAttribute('aria-label', t('home.dialog.del.aria'));
+      del.addEventListener('click', () => {
+        dialogsData.splice(i, 1);
+        pushHome();
+        render();
+      });
+      row.appendChild(del);
+
+      const pair = document.createElement('div');
+      pair.className = 'bilingual-pair';
+      ['zh', 'en'].forEach(lang => {
+        const cell = document.createElement('div');
+        cell.className = 'bilingual-cell';
+
+        const tag = document.createElement('span');
+        tag.className = 'bilingual-tag';
+        tag.textContent = t(`editor.lang.${lang}`);
+        cell.appendChild(tag);
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.value = entry[lang] || '';
+        input.placeholder = t(`editor.placeholder.${lang}`);
+        input.addEventListener('input', () => {
+          entry[lang] = input.value;
+          pushHome();
+        });
+        cell.appendChild(input);
+        pair.appendChild(cell);
+      });
+      row.appendChild(pair);
+      list.appendChild(row);
+    });
+  }
+
+  panel.querySelector('#dialog-add-btn').addEventListener('click', () => {
+    dialogsData.push({ zh: '', en: '' });
+    pushHome();
+    render();
+    // Focus the freshly added line's first input.
+    const inputs = list.querySelectorAll('.dialog-edit-row input');
+    if (inputs.length) inputs[inputs.length - 2]?.focus();
+  });
+
+  render();
+}
