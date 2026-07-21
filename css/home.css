@@ -105,7 +105,8 @@ body.page-home {
   cursor: grab;
 }
 
-#home-3d:active {
+#home-3d:active,
+#home-3d.dragging {
   cursor: grabbing;
 }
 
@@ -130,15 +131,15 @@ body.page-home {
    of the same visual system. */
 #home-3d-bubble {
   position: fixed;
-  left: 250px;
-  bottom: 190px;
+  left: 0;
+  top: 0;      /* actual position set by home.js relative to the character */
   width: max-content;
   max-width: 260px;
   z-index: 5;
   /* Hidden state */
   opacity: 0;
   transform: translateY(6px) scale(0.96);
-  transform-origin: left bottom;
+  transform-origin: left top;
   pointer-events: none;
   transition:
     opacity 0.22s var(--ease-out),
@@ -173,13 +174,24 @@ body.font-readable .bubble-body {
 .bubble-tail {
   position: absolute;
   left: -11px;
-  bottom: 18px;
+  top: 16px;
   width: 0;
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-right: 12px solid #f4f1e6;
   filter: drop-shadow(-1px 0 0 var(--accent-dim));
+}
+
+/* Flipped: character dragged near the right edge → bubble sits on its left,
+   tail points right toward the character. */
+#home-3d-bubble.flip { transform-origin: right top; }
+#home-3d-bubble.flip .bubble-tail {
+  left: auto;
+  right: -11px;
+  border-right: none;
+  border-left: 12px solid #f4f1e6;
+  filter: drop-shadow(1px 0 0 var(--accent-dim));
 }
 
 /* Close button inside the bubble */
@@ -200,11 +212,7 @@ body.font-readable .bubble-body {
 .bubble-close:hover { color: var(--accent-dim); }
 
 @media (max-width: 640px) {
-  #home-3d-bubble {
-    left: 150px;
-    bottom: 130px;
-    max-width: 190px;
-  }
+  #home-3d-bubble { max-width: 190px; }
   .bubble-body { font-size: 1rem; }
 }
 

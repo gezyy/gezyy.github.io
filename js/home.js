@@ -251,8 +251,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     titleEl.textContent = display;
   }
 
-  // ── Character speech bubble ────────────────────
-  setupSpeechBubble(() => dialogsData);
+  // ── Character: drag to move + click to speak ───
+  setupCharacter(() => dialogsData);
 
   if (isAdmin() && titleEl) {
     // Insert a paired ZH/EN editor under the title; visible only in edit mode.
@@ -300,11 +300,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 });
 
-// ── Speech bubble: click the character to show a random line ──
-function setupSpeechBubble(getDialogs) {
+// ── Character: left-click speaks / left-drag rotates / right-drag moves ──
+function setupCharacter(getDialogs) {
   const model = document.getElementById('home-3d');
   if (!model) return;
 
+  const DRAG_THRESHOLD = 6;   // px before a press becomes a drag rather than a click
+
+  // ── Speech bubble ──
   const bubble = document.createElement('div');
   bubble.id = 'home-3d-bubble';
   bubble.innerHTML = `
@@ -319,6 +322,20 @@ function setupSpeechBubble(getDialogs) {
   bubble.querySelector('.bubble-close').addEventListener('click', () => {
     bubble.classList.remove('open');
   });
+
+  // Position the bubble next to the character's current spot, flipping to the
+  // left side if the character sits too close to the right edge.
+  function positionBubble() {
+    const rect = model.getBoundingClientRect();
+    const top  = rect.top + rect.height * 0.12;
+    bubble.classList.remove('flip');
+    bubble.style.top  = `${top}px`;
+    bubble.style.left = `${rect.right - 12}px`;
+    if (rect.right - 12 + bubble.offsetWidth > window.innerWidth - 8) {
+      bubble.classList.add('flip');
+      bubble.style.left = `${rect.left - bubble.offsetWidth + 12}px`;
+    }
+  }
 
   let lastIdx = -1;
   function showRandomLine() {
@@ -340,23 +357,86 @@ function setupSpeechBubble(getDialogs) {
 
     textEl.textContent = pickLocalized(dialogs[idx]);
     bubble.classList.add('open');
+    positionBubble();
   }
 
-  // Distinguish a click (toggle a line) from a drag (rotate the model).
-  // model-viewer's camera-controls also react to the drag; the threshold
-  // keeps a genuine click from being swallowed by a tiny rotation.
-  let downX = 0, downY = 0, downT = 0, armed = false;
+  // ── Animation switching ──
+  function playAnim(name) {
+    const avail = model.availableAnimations;
+    if (avail && avail.length && !avail.includes(name)) return;
+    if (model.getAttribute('animation-name') === name) return;
+    model.setAttribute('animation-name', name);
+  }
+
+  // ── Input model ──
+  //  • LEFT button:  a clean click speaks (bubble); a left-drag rotates the
+  //                  character — that rotation is handled by model-viewer's
+  //                  own camera-controls, so we only detect the click here.
+  //  • RIGHT button: drag to move the character anywhere on screen, playing
+  //                  the walk animation until release.
+  model.addEventListener('contextmenu', e => e.preventDefault());  // free the right-drag
+
+  // Left-click (speak) detection
+  let lStartX = 0, lStartY = 0, leftArmed = false;
+  // Right-drag (move) state
+  let rStartX = 0, rStartY = 0, baseLeft = 0, baseTop = 0, moving = false;
+
   model.addEventListener('pointerdown', e => {
-    if (e.button !== 0) return;   // left button only
-    armed = true;
-    downX = e.clientX; downY = e.clientY; downT = e.timeStamp;
+    if (e.button === 0) {                       // left → potential click
+      leftArmed = true;
+      lStartX = e.clientX; lStartY = e.clientY;
+    } else if (e.button === 2) {                // right → start moving
+      moving = true;
+      rStartX = e.clientX; rStartY = e.clientY;
+      const rect = model.getBoundingClientRect();
+      baseLeft = rect.left; baseTop = rect.top;
+      bubble.classList.remove('open');          // moving dismisses the bubble
+      model.style.bottom = 'auto';              // switch to explicit top/left
+      model.classList.add('dragging');
+      playAnim('walk');
+      e.preventDefault();
+    }
   });
+
+  window.addEventListener('pointermove', e => {
+    if (!moving) return;
+    const maxX = window.innerWidth  - model.offsetWidth;
+    const maxY = window.innerHeight - model.offsetHeight;
+    const nx = Math.max(0, Math.min(baseLeft + (e.clientX - rStartX), maxX));
+    const ny = Math.max(0, Math.min(baseTop  + (e.clientY - rStartY), maxY));
+    model.style.left = `${nx}px`;
+    model.style.top  = `${ny}px`;
+  });
+
+  function endMove() {
+    if (!moving) return;
+    moving = false;
+    model.classList.remove('dragging');
+    playAnim('idle');
+  }
+
   window.addEventListener('pointerup', e => {
-    if (!armed) return;
-    armed = false;
-    if (e.button !== 0) return;
-    const moved = Math.hypot(e.clientX - downX, e.clientY - downY);
-    if (moved <= 6 && e.timeStamp - downT <= 500) showRandomLine();
+    if (e.button === 0 && leftArmed) {
+      leftArmed = false;
+      // Only a near-stationary press counts as a click; a left-drag was a rotate.
+      if (Math.hypot(e.clientX - lStartX, e.clientY - lStartY) <= DRAG_THRESHOLD) {
+        showRandomLine();
+      }
+    } else if (e.button === 2) {
+      endMove();
+    }
+  });
+  window.addEventListener('pointercancel', endMove);
+
+  // Keep the character on-screen if the viewport shrinks after a move.
+  window.addEventListener('resize', () => {
+    if (model.style.bottom !== 'auto') return;  // still at its default anchor
+    const maxX = window.innerWidth  - model.offsetWidth;
+    const maxY = window.innerHeight - model.offsetHeight;
+    const curX = parseFloat(model.style.left) || 0;
+    const curY = parseFloat(model.style.top)  || 0;
+    model.style.left = `${Math.max(0, Math.min(curX, maxX))}px`;
+    model.style.top  = `${Math.max(0, Math.min(curY, maxY))}px`;
   });
 }
 
