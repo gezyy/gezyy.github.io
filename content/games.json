@@ -632,9 +632,18 @@
         "en": "MR+VR Narrative Game design thinking (based on Unity)"
       },
       "tags": {
-        "genre": "",
-        "platform": "",
-        "duration": ""
+        "genre": {
+          "zh": "MR, VR, 叙事, 教育",
+          "en": "MR, VR, Narrative, Education"
+        },
+        "platform": {
+          "zh": "Meta quest 3",
+          "en": "meta quest 3"
+        },
+        "duration": {
+          "zh": "3周",
+          "en": "3-weeks"
+        }
       },
       "video": {
         "type": "youtube",
