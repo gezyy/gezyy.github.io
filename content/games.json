@@ -232,15 +232,113 @@
         "en": "How did they build a vibrant, living 1940s crime-ridden city in L.A. Noire? — The choice of details shapes the sense of realism."
       },
       "tags": {
-        "genre": "",
-        "platform": "",
-        "duration": ""
+        "genre": {
+          "zh": "角色扮演，线性叙事",
+          "en": "Roleplay, storytelling"
+        },
+        "platform": {
+          "zh": "pc/vr",
+          "en": "pc/vr"
+        },
+        "duration": {
+          "zh": "",
+          "en": ""
+        }
       },
       "video": {
         "type": "youtube",
         "src": ""
       },
-      "body": [],
+      "body": [
+        {
+          "type": "text",
+          "value": {
+            "zh": "作者标注：此篇为早期完成。 ",
+            "en": "Notice: This is an early article."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "NPC微表情：使用自研的加强版面部捕捉技术应用到NPC的微表情，可以通过观察NPC的微表情来判断他们是否说谎。我不敢说直到现在这项技术是否已经被广泛应用，但对于十三年前来说，这样一款能够捕捉到人物细致入微的表情，其真实感和流畅度仍然是足以令人震惊的。这里也不得不佩服R星工作室的开发者们为之付出的心血，在幕后访谈中，开发者提到他们使用了360度无死角的摄像头来捕捉每一个动作乃至表情的细节，而这对于设计者来说也同样是一项复杂的工作：他们做到了给每一位NPC设计好各种表情的细节，坦然、犹豫、惊慌、嘲讽......这些表情的含义相似但不同演员的表演却带来了毫无重复的新鲜感，因此在游戏中，当你与这些或许配合或许抗拒的人物进行对峙时，除了利用好手上收集到的线索和他们的表述，很多时候更加好用的是这些近乎真实的微表情判断——而作为玩家，我是第一次在游戏中如此细致入微地观察一个由电脑程序控制的NPC的表情，仿佛我穿过屏幕化身此地，而我所面对的都是一个个鲜活真实，生活在这座混乱邪恶的洛城里的 人。",
+            "en": "NPC Micro-Expressions: The game uses a self-developed advanced facial capture technology to depict NPCs’ micro-expressions. These expressions allow players to assess whether someone is lying. While I can’t say if this technology is widely used today, it was still incredibly impressive for its time. Thirteen years ago, the ability to capture such subtle facial expressions added a level of realism and smoothness that was truly astonishing. The developers at Rockstar Studios deserve immense credit for the effort they put in. In behind-the-scenes interviews, they mentioned using 360-degree cameras to capture every detail of movements and expressions. This was a complex task for the designers, as they had to create a variety of facial expressions for each NPC—calm, hesitation, panic, sarcasm… Although these expressions might have similar meanings, different actors’ performances brought freshness and uniqueness to each one. In the game, when confronting these characters—whether cooperative or resistant—it’s often more useful to rely on these almost lifelike micro-expressions, rather than just the clues or statements you’ve gathered. For me, as a player, this was the first time I observed NPCs controlled by a computer program so closely, as though I had stepped through the screen into the city, facing real people who lived in the chaotic, evil world of Los Angeles."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1784632485820-Screenshot_2026-07-21_121440.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "出色的音效设计与游戏情节相结合：游戏音乐设计主要由两大部分组成：背景音乐和音效。黑色洛城的背景音乐选取了几首十分经典的爵士乐以及当时在美国流行的乡村音乐。这些音乐非常适合游戏的故事背景——1940年代的美国洛杉矶，流行之都，并且很好地为游戏注入了类似电影般的体验，配合这些经典的音乐，在洛城里开车办案，无疑是一种享受。而游戏里我最喜欢的一首ost是进入游戏主界面时播放的爵士，配合红色霓虹灯管闪烁着L.A.，映入眼帘的是黑白配色的游戏界面，在一面小巷晦暗的墙面上投射出的光影构成了几个选项字体，这一切完美地展现了游戏的气质——疑云重重的案件，纸醉金迷的40年代洛杉矶生活，这种阴冷夹杂着欲望的气息，足以称之为是一个吸引人的开场。其次，游戏的音效设计同样出色。在游戏过程中，当你在与人审问的过程中选择了错误的判断，游戏会响起一段沉重的音乐，这种音效加大了玩家在游戏体验过程中的不安感。",
+            "en": "Outstanding Sound Design Combined with Storytelling: The game’s music is split into two main categories: background music and sound effects. L.A. Noire uses several classic jazz tracks and popular country music from the 1940s in Los Angeles, which perfectly fit the setting of the game. These tracks inject a cinematic experience into the gameplay. One of my favorite OSTs is the jazz song that plays when you enter the main menu, accompanied by the neon red “L.A.” lights and the black-and-white interface. The shadowed alley wall projecting light and text options is a perfect representation of the game’s atmosphere—filled with mystery and the decadence of 1940s Los Angeles, creating an enticing opening. The sound effects are equally excellent. For example, when you make a wrong judgment during an interrogation, a heavy, ominous tune plays, increasing the player’s sense of unease during the experience."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1784632655070-Screenshot_2026-07-21_121730.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "细节且风味足够的人物对话设计——还原真实的城市风土一向是R星的拿手好戏，除了那些在GTA中随处可见的障碍物破坏、会从车上跳下来大声指责你的司机们、当你违规驾驶时四处惊慌逃窜路人，你甚至可以通过警察们在车上的闲聊窥见90s的洛杉矶文化。而在紧张刺激的追逐中，那些看似无关紧要只是程序生成的与你擦肩而过的路人却会停下脚步为你加油助威，同样，在这座看热闹不嫌事大的城市里，当你前往证人的家中进行搜查审讯时，在门口遇见的一帮游手好闲的混混可能会对你毫不掩饰地流露他们对于警察的厌恶。这些与主线任务无关紧要的台词设计，却为玩家还原呈现出一个立体鲜活的黑色洛城，相信你即便不赶去案发现场，慢悠悠地开着车在城市里晃荡，听着身旁除了唠嗑几乎毫无用处的搭档的闲聊和车载的经典音乐，看着街道两旁的城市风景以及时不时会路过一些经典的地标建筑，也是十分惬意的。",
+            "en": "Detailed and Flavorful Dialogue Design: Rockstar is known for faithfully recreating city cultures, and L.A. Noire is no exception. Apart from the usual obstacles and car chases, you can even hear police officers casually chatting in their cars about 90s LA culture. In intense chases, the seemingly irrelevant pedestrians you pass by may stop to cheer you on. On the other hand, when visiting a witness’s house for an interrogation, you might encounter idle thugs who openly express their disdain for the police. These seemingly minor, unrelated lines of dialogue add richness to the world and create a vivid, three-dimensional city. Even if you’re not rushing to the crime scene, casually driving through the city, listening to your partner’s chatter or the classic in-car music, while taking in the cityscape and passing landmarks, is quite relaxing."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1784632975868-Screenshot_2026-07-21_122247.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "出色的推理玩法与动作设计——枪战、飙车、收集线索、审讯犯人、盘问证人、紧张的追逐战等等，被恰到好处地安排设计，游玩体验就像观看一部美国经典犯罪电影那样爽快刺激，环环相扣的案件推进丝毫不会让人感到疲惫。在前期的任务中，即便我们在审问的过程中屡屡失误错失机会，也几乎不会影响我们逐步解锁新地点，只不过会使这个过程变得较为缓慢。\u000b而每一次案件我们都将经历从前期的取证、搜查、使用线索进行审问，这也是黑色洛城的核心玩法。但是，很显然设计师们并没有止步于此，为了尽可能还原在一座凶险的罪恶都市的警探生涯，也为了游戏的层次更加丰富，除此之外，枪战、飙车、追逐战、甚至在执勤的路上偶遇抢劫犯人的突发事件，都毫无疑问将游戏的真实体验感再度提升一个档次。",
+            "en": "Brilliant Detective Work and Action Design: Gunfights, car chases, collecting clues, interrogating criminals, questioning witnesses, and thrilling pursuits are all seamlessly integrated, creating a play experience that feels as engaging and intense as watching a classic American crime movie. The investigations unfold logically without overwhelming the player. Early on, even if we make mistakes during interrogations, we can still unlock new locations, though the process may be slower. Each case involves evidence collection, searches, and questioning based on clues—this is the core gameplay of L.A. Noire. However, the designers didn’t stop there. They added extra layers of depth, such as gunfights, car chases, and even random events like encountering a robbery while on patrol, all of which elevate the immersion."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "本作如何在有限的框架下提供自由的选择？——沉浸式电影般的体验\n一个特殊的点：在可以自由驾车探索真实还原洛城风貌的地图上，并非一举一动都是完全开放自由的。但这种限制却是必不可少——当玩家作为警探要尝试通过收集线索来一点点缩小调查范围，过于宽泛的选择并不是一件好事，试想一下，假如你像在辐射4中那样每一件物品都可以捡起观察，是不是足以令人头大？而LANoire选择在一个有限的空间内设置一定数量的clue spot，并且结合足够的音效和画面提示来帮助玩家找到线索，当你没有头绪时，除了查看随身携带的小笔记本，甚至还可以询问身旁的搭档是否有建议。这种将探索的自由和筛选线索的限制平衡得非常好，令玩家在对每一个调查现场感到足够好奇和兴奋的同时，也不会因为混乱的交互物品而感到烦躁。\n其次：笔记本的定位和线索梳理功能。游戏里主角最重要的道具除了汽车大概就是这个随身携带的调查笔记本。我认为这是游戏中一个很实用而且巧妙的小设计，面对一个真实还原的大地图和数量繁多的细节线索，我不认为追求真实地要求玩家全靠自己来记住是合理的，很大概率上这只会让玩家感到烦躁和困难，从而无法游玩下去。而拥有了这个小笔记本，可以自动将玩家收集到的关键线索记录下来，作为之后审问犯人的根据，还可以根据线索和证词圈定几个需要调查的关键地点，而且可以在地图上自动标记。这些功能减少了游戏为了真实性带来的潜在困难，大大提升了玩家的游戏体验。",
+            "en": "**How Does the Game Provide Freedom Within a Limited Framework? — Immersive Cinematic Experience**: A notable aspect of *L.A. Noire* is its open world map where players can freely explore and experience a realistic version of Los Angeles. However, not all actions are completely open and free, and this limitation is crucial. As a detective, narrowing down your investigation through clue collection requires focus. Imagine if the game let you pick up every item like in *Fallout 4*—it would be overwhelming. Instead, *L.A. Noire* cleverly restricts the number of clue spots within a defined space and provides helpful audio and visual cues to guide players. When you’re stuck, you can refer to your notebook or ask your partner for suggestions. This balance between free exploration and focused clue selection helps maintain excitement while preventing frustration from an overabundance of items.\n\n**The Notebook and Clue Organization**: The protagonist’s most important tool besides their car is the investigation notebook. This is a very useful and clever feature. With such a large map and numerous clues, expecting players to remember everything would likely be frustrating. The notebook automatically records key clues, which can then be used to guide interrogations and pinpoint essential locations on the map. This feature alleviates potential issues caused by realism, enhancing the overall player experience."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1784633262519-Screenshot_2026-07-21_122737.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "游戏叙事的大成之作——并非单纯平铺直叙，而是有一个个看似无关的支线与穿插其中的回忆CG逐步塑造起一个多面有深度的主角。\n有几个重要的点：\n将场景和剧情结合得很好，没有多余的物品和场景设计，甚至不可交互的装饰性物品都暗示了一部分角色信息以及剧情发展。\n每一段剧情的发展总有小转折带给玩家预料之外的感受。\n优秀的台词设计。不管是与核心玩法无关的台词还是人物的关键证词，R星的设计做到了人物台词都能对应其角色设定，起到丰满人物形象的作用。尤其是每一次审问证人的对话，NPC的每一句台词都能做到既符合剧情和角色特点，且能够在不显得过分直白和愚蠢的前提下露出破绽——从而留给玩家根据调查得来的线索进行侦破。\n在基于真实的社会和历史背景下进行剧情设计。",
+            "en": "**Masterful Narrative Design**: The story is not told in a linear, flat manner. Instead, seemingly unrelated side stories and inserted memory cutscenes gradually build a multi-faceted and deep protagonist. Several key points stand out:\n\n- The integration of scenes and plot, with no unnecessary items or designs. Even non-interactive decorative items subtly hint at character backstory and plot developments.\n- Every plot segment has small twists that keep the player engaged.\n- The excellent dialogue design—whether it’s casual, unrelated lines or key testimonies, the dialogue always fits the character, enhancing their depth. Especially during interrogations, the NPCs’ lines fit both the storyline and character traits, revealing subtle clues without being too obvious, leaving room for players to piece together the investigation."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "最后聊一下黑色洛城的小缺点：\n首先，升级系统的意义不大。这几乎是完全可以在游玩途中被忽略的一个要素。除了解锁一些提示点数和新的人物制服，似乎并不能给我带来更多的驱动去升级解锁。比起这些升级带来的奖励，游戏吸引我玩下去的主要原因还是其优秀的剧情设计和独特的调查玩法。当然，这并不会构成一个减分项，只是说存在的意义没有那么大。\n其次，不可避免的，质量略低的模型和画质似乎与细腻的微表情有时候配合得不是很好。考虑到黑色洛城的开发日期，这是完全可以理解的。但以一个2024年的玩家的角度来看，这种真实捕捉的面部表情有时候会在粗糙的模型上显得有些”恐怖“。\n总体而言，黑色洛城毫无疑问是一款瑕不掩瑜的优秀作品，而且最难能可贵的是它独特的调查玩法至今仍然难以见到雷同的设计，这使得它在此类侦探游戏上留下了值得被铭记的一笔。",
+            "en": "**Final Thoughts on Minor Flaws**:\n\n- The upgrade system feels insignificant. This is an aspect of the game that can almost be ignored. Aside from unlocking some hint points and new outfits for characters, the rewards don’t provide enough motivation for upgrading. The main draw of the game for me was its exceptional story design and unique investigative gameplay, rather than the upgrades themselves. Of course, this doesn’t detract from the overall experience.\n- The low-quality models and graphics sometimes clash with the detailed micro-expressions. Given the game’s development date, this is understandable, but from a 2024 player’s perspective, the real-time facial capture can sometimes look a bit “creepy” on rougher models.\n\nOverall, *L.A. Noire* is undeniably an excellent work with minor flaws that do not diminish its value. Its unique investigative gameplay remains unmatched, leaving a lasting impact on detective games and making it a standout in its genre."
+          }
+        }
+      ],
       "order": 4
     }
   ]
