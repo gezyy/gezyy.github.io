@@ -354,15 +354,46 @@
         "en": "This is an early article"
       },
       "tags": {
-        "genre": "",
-        "platform": "",
-        "duration": ""
+        "genre": {
+          "zh": "心理恐怖，线性叙事",
+          "en": "Psychological Horror, Narrative"
+        },
+        "platform": {
+          "zh": "PC",
+          "en": "PC"
+        },
+        "duration": {
+          "zh": "",
+          "en": ""
+        }
       },
       "video": {
         "type": "youtube",
         "src": ""
       },
-      "body": [],
+      "body": [
+        {
+          "type": "text",
+          "value": {
+            "zh": "## 目录\n\n- 概述\n- 游戏流程：流程图，场景图\n- 核心系统：交互系统，对话系统，道具系统，任务系统，场景管理系统，角色行为系统，动效音效系统，关卡系统\n- 游戏循环\n- 总结",
+            "en": "## **Table of Contents**\n\n- Overview\n- Game Flow: Flowchart, Scene Diagrams\n- Core Systems:  **Interaction System**, **Dialogue System**, Item System, Mission System, Scene Management System, Character Behavior Logic System, Audio-Visual Effects System, Independent Level System\n- Game Loop\n- Summary"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "## 概述\n\n1. 类型\n- **视角**: 第一人称3D\n- **风格**: 复古低多边形90年代VHS\n- **类型**: 恐怖、叙事、解谜\n- 流程：线性叙事\n- 地图：箱庭，多个房间+少量独立场景\n1. 驱动机制\n- 剧情：游戏通过角色对话和剧情发展推动进程。\n- 任务：游戏流程由基于关卡的任务驱动。",
+            "en": "## Overview\n\n1. Type\n- **Perspective**: First-person 3D\n- **Style**: Retro LowPoly 90s VHS\n- **Genre**: Horror, Narrative, Puzzle\n- **Flow**: Linear progression\n- **Map**: Closed environment with multiple rooms + a few standalone scenes\n1. **Driving Mechanisms**\n- **Storyline**: The game progresses through character dialogues and plot development.\n- **Missions**: The game flow is driven by stage-based missions."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "## 游戏流程\n\n由于整个游戏流程较长，此处并非完整流程图。以下是对游戏流程一部分的分析。",
+            "en": "## Game Flow\n\nThe full flowchart is not included here as the entire game flow is quite lengthy. Below is an analysis of only a portion of the game flow."
+          }
+        }
+      ],
       "order": 5
     }
   ]
