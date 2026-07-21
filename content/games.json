@@ -656,6 +656,38 @@
             "zh": "另一个例子是在游戏接近尾声时，吉米意识到自己的错误时，快速的意识流闪回场景",
             "en": "Another example is the quick stream of consciousness flashback near the end of the game, when Jimmy realizes his mistake"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "2. 次要循环：叙事（角色视角切换）、游戏内（节奏、能力限制）\n\n游戏中的次要循环主要分为叙事部分和游戏体验部分。\n\n- 叙事部分：\n\n尽管游戏遵循线性叙事，但故事的节奏打破了时间线和主要视角的顺序。在某些章节中，部分事实故意被隐藏，直到故事的结尾才向玩家揭示，从而提供了一种不枯燥的叙事体验。视角在两个角色之间切换：船长和吉米，他们是整个故事的核心人物。船长的角色设计尤其有趣——在大部分游戏过程中（事故发生后），他基本上是一个躺在病床上的没有生命的角色，除了痛苦的挣扎外，无法做任何事情，唯一的动作就是他的眼睛。\n\n玩家主要扮演吉米的角色，吉米是这一切的制造者。作为一个不断隐藏自己错误的罪人，吉米（玩家）必须忍受船长眼睛痛苦的凝视，这双眼睛不断地注视着他（评判他）。在某种程度上，船长后来的角色就像一个沉默的法官——唯一知道真相的人，默默见证吉米的虚伪和“承担责任”。\n\n以下是一个简单的流程图，展示了游戏叙事时间线的变化：",
+            "en": "2. Minor Loop: Narrative (Character Perspective Shift), In-Game (Pacing, Ability Limitations)\n\nThe minor loop in the game is primarily divided into the narrative section and the gameplay experience section.\n\n- Narrative Section:\n\nAlthough the game follows a linear narrative, the pacing of the story disrupts the timeline and main perspective. In certain chapters, some facts are intentionally withheld, only to be revealed to the player at the end of the story, offering a non-boring narrative experience. The perspective switches between only two characters: the captain and Jimmy, who are the core characters of the entire story. The captain’s character design is particularly interesting—during most of the game (after the accident), he is essentially a lifeless figure lying on a hospital bed, unable to do anything except painfully struggle, with the only movement being his eye.\n\nThe player predominantly takes on the role of Jimmy, the one who caused all of this. As a sinner who continuously hides his mistakes, Jimmy (the player) must endure the painful gaze of the captain’s eye, which constantly watches him (judges him). In a sense, the captain’s later role is like a silent judge — the only one who knows the truth, silently witnessing Jimmy’s hypocrisy and “taking on responsibility.”\n\nThe following is a simple flowchart that illustrates the change in the narrative timeline of the game:"
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653766141-1730099364496.png",
+            "en": "assets/images/games/1784653770133-img1.png"
+          },
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这种叙事结构直接的效果就是让玩家对眼前的局势感到困惑，但正是这种困惑驱使着玩家继续游戏，充满了问题和好奇心，渴望揭开真相。同时，两个叙事线条常常是相互依赖的，让玩家在体验“顿悟时刻”的同时，又产生了新的问题，形成了一个节奏良好的叙事循环。",
+            "en": "This narrative structure has the most direct effect of leaving players confused by the situation in front of them, but this confusion is precisely what drives them to continue playing, filled with questions and curiosity to uncover the truth. At the same time, the two narrative threads are often interdependent, allowing players to experience the “aha moment” while simultaneously acquiring new questions, creating a well-paced narrative loop."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "- 总结\n\n《缄默货运》是叙事驱动游戏中的一部杰作。它真正卓越之处在于，许多叙事型游戏在看完视频攻略后会失去吸引力，而在重新游玩时体验往往会减弱。然而，即使看完完整的游戏并了解剧情，我在亲自游玩时依然感到这款游戏极具冲击力。我认为，主要原因在于其出色的氛围（包括音效设计、环境艺术、光照效果，甚至过渡）和其卓越的故事叙述节奏，真相逐渐展开，一点一滴地揭示。\n\n游戏同样遵循了经典的恐怖游戏原则之一：恐惧通常来自火力的匮乏。也就是说，除了营造氛围外，适度限制玩家的能力实际上能够增强感官效果，从而带来更加刺激和悬疑的体验。此外，游戏在管理心理恐怖的节奏方面表现得尤为出色。例如，在逃离货舱的过程中，安静的背景音和小马逐渐接近的情节制造了持续的紧张感，保持了玩家的警觉性，增强了他们的情绪波动，使其进入深度专注和流畅的状态。我特别欣赏的一个设计元素是管道部分，玩家只能后退。当他们慢慢退后时，心中不断担心会遇到什么奇怪的东西。与此同时，他们注意到管道上贴着“责任”这个词，增添了更深层次的情感冲击，并留下了深刻的印象。\n\n游戏的系统并不特别复杂，这也让我在分析其系统时遇到了一定困难。但这款游戏给了我一个重要的启示：有时候，一款游戏不需要更多复杂的系统来增加乐趣。通过精简不必要的细节，专注于主题，学会简化，依然可以创造出一款优秀的游戏。",
+            "en": "- Summary\n\nMouthwashing is a masterpiece of narrative-driven games. What makes it truly remarkable is that many narrative games lose their appeal after watching the video walkthrough, and the experience can often feel diminished when replayed. However, even after watching the full gameplay and knowing the plot, I still found the experience incredibly impactful when I played it myself. The main reason for this, I believe, lies in its outstanding atmosphere (including sound design, environment art, lighting effects, even transitions), and its exceptional pacing in storytelling, where the truth gradually unfolds, piece by piece.\n\nThe game also adheres to a classic principle in horror games: fear often comes from a lack of firepower. That is, in addition to creating an atmosphere, limiting the player’s abilities to a certain extent actually enhances sensory effects, resulting in a more thrilling and suspenseful experience. Furthermore, the game excels in managing the pacing of psychological horror. For instance, in the escape from the cargo hold, the quiet moments and the gradual approach of the creature, Little Horse, create a constant tension, keeping the player on edge and heightening their emotional fluctuations, reaching a state of deep focus and flow. One particular design element I really appreciate is the segment in the pipes, where the player can only move backward. As they slowly retreat, there’s a constant worry about encountering something strange. At the same time, they notice the word “Responsibility” posted on the pipe, which adds a deeper level of emotional impact and leaves a strong impression.\n\nThe game’s systems are not particularly complex, which made it difficult to apply the methods I learned during my internship when analyzing its systems. But this game has taught me an important lesson: sometimes, a game doesn’t need more complex systems to be more enjoyable. By trimming unnecessary details, focusing on the theme, and learning to simplify, you can still create a great game."
+          }
         }
       ],
       "order": 5
