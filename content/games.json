@@ -382,8 +382,8 @@
         {
           "type": "text",
           "value": {
-            "zh": "## 概述\n\n1. 类型\n- **视角**: 第一人称3D\n- **风格**: 复古低多边形90年代VHS\n- **类型**: 恐怖、叙事、解谜\n- 流程：线性叙事\n- 地图：箱庭，多个房间+少量独立场景\n1. 驱动机制\n- 剧情：游戏通过角色对话和剧情发展推动进程。\n- 任务：游戏流程由基于关卡的任务驱动。",
-            "en": "## Overview\n\n1. Type\n- **Perspective**: First-person 3D\n- **Style**: Retro LowPoly 90s VHS\n- **Genre**: Horror, Narrative, Puzzle\n- **Flow**: Linear progression\n- **Map**: Closed environment with multiple rooms + a few standalone scenes\n1. **Driving Mechanisms**\n- **Storyline**: The game progresses through character dialogues and plot development.\n- **Missions**: The game flow is driven by stage-based missions."
+            "zh": "- 概述\n\n1. 类型\n- 视角: 第一人称3D\n- 风格: 复古低多边形90年代VHS\n- 类型: 恐怖、叙事、解谜\n- 流程：线性叙事\n- 地图：箱庭，多个房间+少量独立场景\n2. 驱动机制\n- 剧情：游戏通过角色对话和剧情发展推动进程。\n- 任务：游戏流程由基于关卡的任务驱动。",
+            "en": "- Overview\n\n1. Type\n- Perspective**: First-person 3D\n- Style: Retro LowPoly 90s VHS\n- Genre: Horror, Narrative, Puzzle\n- Flow: Linear progression\n- Map: Closed environment with multiple rooms + a few standalone scenes\n2. Driving Mechanisms\n- Storyline: The game progresses through character dialogues and plot development.\n- Missions: The game flow is driven by stage-based missions."
           }
         },
         {
