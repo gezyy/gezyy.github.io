@@ -218,6 +218,30 @@
         }
       ],
       "order": 3
+    },
+    {
+      "id": "game-review-quicl",
+      "section": "essays",
+      "title": {
+        "zh": "时隔13年，我们可以从黑色洛城中学习到什么",
+        "en": "Thirteen Years Later: What Can We Learn from L.A. Noire?"
+      },
+      "cover": "assets/images/games/1784632053685-Screenshot_2026-07-21_120200.png",
+      "blurb": {
+        "zh": "他们是如何构建出一座有血有肉的40s罪恶都市洛城？——有选择的细节决定真实性塑造。",
+        "en": "How did they build a vibrant, living 1940s crime-ridden city in L.A. Noire? — The choice of details shapes the sense of realism."
+      },
+      "tags": {
+        "genre": "",
+        "platform": "",
+        "duration": ""
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [],
+      "order": 4
     }
   ]
 }
