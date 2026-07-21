@@ -375,8 +375,8 @@
         {
           "type": "text",
           "value": {
-            "zh": "## 目录\n\n- 概述\n- 游戏流程：流程图，场景图\n- 核心系统：交互系统，对话系统，道具系统，任务系统，场景管理系统，角色行为系统，动效音效系统，关卡系统\n- 游戏循环\n- 总结",
-            "en": "## **Table of Contents**\n\n- Overview\n- Game Flow: Flowchart, Scene Diagrams\n- Core Systems:  **Interaction System**, **Dialogue System**, Item System, Mission System, Scene Management System, Character Behavior Logic System, Audio-Visual Effects System, Independent Level System\n- Game Loop\n- Summary"
+            "zh": "- 目录\n\n1. 概述\n2. 游戏流程：流程图，场景图\n3. 核心系统：交互系统，对话系统，道具系统，任务系统，场景管理系统，角色行为系统，动效音效系统，关卡系统\n4. 游戏循环\n5. 总结",
+            "en": "- Table of Contents\n\n1. Overview\n2. Game Flow: Flowchart, Scene Diagrams\n3. Core Systems:  **Interaction System**, **Dialogue System**, Item System, Mission System, Scene Management System, Character Behavior Logic System, Audio-Visual Effects System, Independent Level System\n4. Game Loop\n5. Summary"
           }
         },
         {
