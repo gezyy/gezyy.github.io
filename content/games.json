@@ -667,6 +667,13 @@
         {
           "type": "text",
           "value": {
+            "zh": "因此进入设计阶段后，我几乎第一时间就确认了MR的内容作为前半部分，VR的内容作为后半部分这样的顺序。然后真正的考验是，由于我游戏的主题是一款关于机器学习的预科教育游戏，因此在内容方面需要考虑知识点的循序渐进。其次，如何让MR过渡到VR这个阶段显得很自然？此外，还需要考虑到MR的空间限制。",
+            "en": "Therefore, when I entered the design stage, I almost immediately decided to put the MR content in the first half of the game and the VR content in the second half. The real challenge was that, since the game was designed as a foundation-level educational game about machine learning, I needed to introduce the knowledge step by step. Secondly, I needed to think about how to make the transition from MR to VR feel natural. In addition, I also had to consider the spatial limitations of MR."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
             "zh": "",
             "en": ""
           }
