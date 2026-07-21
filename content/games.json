@@ -421,6 +421,100 @@
             "zh": "- 核心系统\n\n1. 互动系统\n\n游戏中的主要互动方式是基于点击的，并且在特殊关卡中具有独特的互动机制。\n\n游戏世界中的物品可以分为*可互动*和*不可互动*两类。角色根据场景中的时间和地点会有不同的对话选项。游戏中所有可收集的物品都被视为道具；除了代码扫描器外，所有其他道具仅在单一关卡中使用，并且使用后会被消耗。\n\n- 设计目标：\n\n1. 通过建立故事背景和提供线索来增强沉浸感。\n2. 作为主要的进程推进方式，通过与角色和场景互动来完成任务目标，从而推动关卡进展。",
             "en": "- Core Systems\n\n1. Interaction System\n\nThe primary interaction method in the game is click-based, with unique interaction mechanics for special levels.\n\nItems in the game world can be divided into *interactable* and *non-interactable*. Characters have different dialogue options depending on the time and location within the scene. All collectible items in the game are considered props; except for the code scanner, all other props are used in single levels and are consumed after use.\n\n- Design Objectives:\n\n1. Enhance immersion by establishing the story setting and providing clues.\n2. Serve as the main progression method, advancing levels by interacting with characters and scenes to complete mission objectives."
           }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653087866-Untitled.png",
+            "en": "assets/images/games/1784653094191-img5.png"
+          },
+          "caption": {
+            "zh": "交互逻辑图",
+            "en": "Interactive Frame"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "- 相关系统\n\n对话系统、道具系统、任务系统\n\n- 游戏规则\n\n游戏中的互动可以分为标准互动和非标准互动。\n\n标准互动:\n\n这些互动通过在场景中的可互动区域或角色上左键点击触发。\n\n1. 只有点击可互动区域时，才会触发互动。不可互动区域不会有任何反应。\n2. 当点击一个可互动区域（如场景中的某个部分或角色）时，摄像机会自动聚焦该区域。此时玩家可以点击特定物品进行进一步互动，或弹出详细信息。\n\n非标准互动：主要发生在特殊关卡或场景中，包括扫描、切割、听音辨位和射击。\n\n1. 扫描：代码扫描器在游戏中的多个部分都有使用。玩家可以通过点击物品栏中的扫描器来激活它。一旦启用，扫描器会持续开启，并在对准带有隐藏代码的表面时显示文字。例如，在逃离货舱的关卡中，扫描器能显示地板上的血迹，或者在接近时显示小马的位置。在婴儿关卡部分，扫描器也用于定位小马。\n2. 切割：游戏中有两次出现切割机制。第一次是在生日庆祝关卡，玩家使用刀子通过按W和S键来切蛋糕。第二次是在船长关卡中，切割机制以相同的方式使用。\n3. 听音辨位：在逃离货舱的关卡中，玩家需要通过听小马的声音来判断它是否靠近。当小马足够接近时，玩家将无法再继续移动。\n4. 射击：在与斯旺西的对抗中，当斯旺西出现时，玩家需要射击三次才能逃脱。\n\n- 游戏入口点\n\n标准互动：标准互动没有特定的入口点。在整个游戏中，每个场景都有可以通过点击与之互动的区域和角色。\n\n非标准互动：\n \n1. 扫描：代码扫描器在第一个任务中被引入。玩家接受任务后，必须前往船长办公室并从储物柜中取出扫描器，加入物品栏。要使用它，玩家需要从物品栏中选择扫描器，点击激活，然后关闭物品栏。一旦激活，扫描器会默认保持开启状态，玩家可以用它来揭示表面上的隐藏代码。",
+            "en": "- Related Systems\n\nDialogue System, Item System, Mission System\n\n- Gameplay Rules\n\nThe gameplay interactions can be divided into Standard Interactions and Non-Standard Interactions.\n\nStandard Interactions: \n\nThese are triggered by left-clicking on interactive areas or characters in the scene.\n\n1. Interactions are only triggered when you click on an interactive area. Non-interactive areas will not react.\n2. Once you click an interactive area (such as a part of the scene or a character), the camera will automatically zoom in on that area. You can then either click on specific items for further interaction or have detailed information pop up.\n\nNon-Standard Interactions: These occur primarily in special levels or scenes and include scanning, cutting, listening for sound cues, and shooting.\n\n1. Scanning: The code scanner is used in various parts of the game. The player can activate the scanner from the inventory by clicking on it. Once enabled, the scanner will continuously stay on, and when aimed at surfaces with hidden codes, it will display text. For example, in the escape the cargo hold level, the scanner reveals bloodstains on the floor or shows the location of the small pony when it gets close. In the baby-level section, the scanner is used to locate the small pony as well.\n2. Cutting: This appears twice in the game. First, during the birthday celebration level, the player uses a knife to cut the cake by pressing the W and S keys to move back and forth. The second instance happens in the captain’s level, where the cutting mechanic is used in the same way.\n3. Listening for Sound Cues: In the escape the cargo hold level, the player needs to listen for the small pony’s sounds to determine if it’s getting closer. When the pony is sufficiently near, the player cannot move any further.\n4. Shooting: During the confrontation with Swansea, the player must shoot three times to escape when Swansea appears.\n\n- Gameplay Entry Points\n\nStandard Interactions: There are no specific entry points for standard interactions. Throughout the entire game, every scene contains areas and characters that can be interacted with by clicking.\n\nNon-Standard Interactions:\n\n1. Scanning: The code scanner is introduced in the first mission. After receiving the mission, the player must go to the captain’s office and retrieve the scanner from a storage cabinet to add it to the inventory. To use it, the player selects it from the inventory, clicks to activate, and then closes the inventory. Once active, the scanner will remain on by default, and the player can use it to reveal hidden codes on surfaces."
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653133676-1730081819155.png",
+            "en": "assets/images/games/1784653133676-1730081819155.png"
+          },
+          "caption": {
+            "zh": "点击鼠标左键使用扫描仪",
+            "en": "Click the left mouse button to use"
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653157547-1730081868557.png",
+            "en": "assets/images/games/1784653157547-1730081868557.png"
+          },
+          "caption": {
+            "zh": "下一步对准扫描区域进行扫描",
+            "en": "Next, aim the scanner at the scanable surface."
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653175918-1730082097361.png",
+            "en": "assets/images/games/1784653175918-1730082097361.png"
+          },
+          "caption": {
+            "zh": "在“婴儿管道”关卡中出现了另一个扫描器。玩家进入该场景后，接近子宫时会自动获得扫描器。其使用方式与代码扫描器类似——对准子宫，扫描器会在平板电脑上显示内部图像。",
+            "en": "Another scanner appears in the “Baby Pipeline” level. After reaching this scene, the player will automatically receive the scanner when approaching the uterus. The usage is similar to the code scanner—aim it at the uterus to display internal images on the tablet."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "2. 切割：该机制出现在两个地方：船长的生日派对和吉米的生日派对。在这两个地方，互动过程是相同的——首先找到刀子，然后点击蛋糕开始切割。",
+            "en": "2. Cutting: This mechanic appears in two locations: the captain’s birthday party and Jimmy’s birthday party. The interaction process is the same in both cases—first, find the knife, then click on the cake to begin cutting."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "3. 听音辨位：该机制在“逃离货舱”关卡中引入。进入货舱后，走下楼梯，来到楼下后继续向前走，可以找到一张纸条。纸条上有提示，告诉玩家需要依靠声音来判断怪物小马的位置。",
+            "en": "3. Listening for Sound Cues: This mechanic is introduced in the “Escape the Cargo Hold” level. After entering the cargo hold, walk down the stairs, and once at the bottom, proceed forward to find a note. This note contains a hint, telling the player that they need to rely on sound to determine the location of the monster pony."
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653233627-1730082409658.png",
+            "en": "assets/images/games/1784653233627-1730082409658.png"
+          },
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "4. 射击：该机制出现在与斯旺西的对抗中。在之前的场景中，玩家选择向斯旺西开枪，这会触发场景过渡到一个墓地。在这个新的场景中，与斯旺西的追逐序列展开。玩家必须在斯旺西出现时开枪，击中他三次后，玩家才能继续前进。",
+            "en": "4. Shooting: This mechanic appears during the confrontation with Swansea. In the previous scene, the player chooses to shoot at Swansea, which triggers a scene transition to a graveyard. In this new setting, a chase sequence with Swansea unfolds. The player must shoot at Swansea when he appears, and hitting him three times will allow the player to proceed."
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653258711-1730082549218.png",
+            "en": "assets/images/games/1784653258711-1730082549218.png"
+          },
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 5
