@@ -649,7 +649,15 @@
         "type": "youtube",
         "src": "https://youtu.be/qa9MF-yOw9w"
       },
-      "body": [],
+      "body": [
+        {
+          "type": "text",
+          "value": {
+            "zh": "这个项目本身是我大学本科期间的一个思考，当时要为导师设计并开发一个教育游戏，初步选定了虚拟现实技术作为项目研究方向。在前期调查的过程中，我发现混合现实（MR）和虚拟现实（VR）存在以下微妙的区分：\n1. MR将虚拟内容与现实环境融合，用户仍能感知并与现实世界互动。\n2. VR完全以虚拟环境取代现实，用户沉浸在由计算机生成的世界中。\n总而言之，MR是虚实结合，VR是完全虚拟。在我深度体验了几个MR游戏和VR游戏之后，我发现了几个很有意思的方向，值得进一步的研究：\n1. VR很显然比MR设计的自由度更高。因为受技术局限，MR大多只能识别单个空间（通常是一个房间），场景大小受限的前提下，游戏内容的设计也就限制在这个小小的空间里。且如何在不破坏沉浸感的前提下，把虚拟内容与现实空间进行融合，是一个设计上的挑战。\n2. VR理论上可以做到与PC开发游戏同等的自由度，但是沉浸感的上限更高。\n3. 然而，实际体验里，VR受硬件和技术限制导致的晕眩，沉重，画面精细度等挑战非常多，经过测试，大多数人持续游玩VR游戏的时长平均在30分钟左右。\n4. 也许是由于现实空间透视效果，MR在使用过程中完全没有晕眩，并且在多人协作方向上比VR更容易实现且更有趣。",
+            "en": "This project was originally an idea I had during my undergraduate studies. At the time, I was asked to design and develop an educational game for my supervisor, and I initially chose virtual reality (VR) as the research direction. During my early research, I found some subtle differences between mixed reality (MR) and virtual reality (VR):\n\n1. MR combines virtual content with the real environment, allowing users to remain aware of and interact with the real world.\n2. VR completely replaces the real world with a virtual environment, immersing users in a computer-generated world.\n\nIn short, MR combines the real and virtual worlds, while VR is fully virtual. After I had hands-on experience with several MR and VR games, I found several interesting areas that were worth further research:\n\n1. VR clearly offers more freedom in game design than MR. Due to technical limitations, MR can usually only recognize a single space, typically one room. Because the size of the playable space is limited, the game design is also limited to this small space. It is also a design challenge to combine virtual content with the real environment without breaking immersion.\n2. In theory, VR can offer a similar level of freedom to developing games for PC, while also providing a higher level of immersion.\n3. However, in actual use, VR faces many challenges caused by hardware and technical limitations, such as motion sickness, heavy headsets, and limited visual quality. Based on our testing, most people could play VR games continuously for around 30 minutes on average.\n4. Perhaps because users can see the real space around them, MR caused almost no motion sickness during use. It also seemed easier and more interesting to implement for multiplayer cooperation than VR."
+          }
+        }
+      ],
       "order": 4
     }
   ]
