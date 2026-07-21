@@ -605,6 +605,57 @@
             "zh": "5. 物品栏：\n\n按 Tab 键打开物品栏。使用 A 和 D 键滚动浏览物品。左键点击选择物品。物品的详细信息将显示出来，并会弹出一个选项询问是否使用该物品。\n\n- 当前任务名称显示在屏幕的左上角。\n- 物品模型会旋转360度，以展示其细节。\n- 屏幕中央会出现使用或互动该物品的选项。\n- 物品的名称和详细描述会显示在屏幕底部。",
             "en": "5. Inventory:\n\nPress Tab to open the inventory. Use the A and D keys to scroll through the items. Left-click to select an item. The item’s details will appear, along with a pop-up option asking whether you want to use it.\n\n- The current task name is displayed at the top left of the screen.\n- The item model rotates 360 degrees to showcase its details.\n- In the center of the screen, options for using or interacting with the item will appear.\n- The item’s name and a detailed description will be shown at the bottom of the screen."
           }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653598675-1730083883726.png",
+            "en": "assets/images/games/1784653603479-1730074951326.png"
+          },
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653616623-1730085161470.png",
+            "en": "assets/images/games/1784653623328-img4.png"
+          },
+          "caption": {
+            "zh": "交互界面数据结构表（示例）",
+            "en": "Data Structure Table"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "- 游戏循环\n\n1. 主循环：剧情场景和关卡交替进行。\n\n这款线性叙事游戏的游戏体验在很大程度上依赖于故事的节奏。游戏展示了一个平衡良好的节奏，使玩家在保持专注的同时，始终沉浸于剧情之中，同时通过充满挑战性和刺激性的关卡避免玩家感到无聊。关卡和剧情片段之间的过渡设计独特，既不突兀也不打断节奏，增强了游戏的整体艺术效果。整个过程中，现实场景与梦幻般扭曲的设置交替出现，给玩家提供了一种既熟悉又耳目一新的视觉体验。以下是一个简单的流程图，展示了游戏中船长视角的这一节奏片段：",
+            "en": "- Game Loop\n\n1. Main Loop: Plot scenes and levels alternate.\n\nThe gameplay experience of this linear narrative game heavily depends on the pacing of the story. This game demonstrates a well-balanced rhythm that keeps players engaged in the story while maintaining their focus with thrilling, challenging levels, preventing boredom. The transition between levels and plot segments is uniquely designed, neither abrupt nor disruptive, enhancing the overall artistic effect of the game. Throughout, realistic scenes alternate with dreamlike, distorted settings, offering players a familiar yet refreshing visual experience. The following is a simple flowchart that represents this rhythm using a segment from the captain’s perspective in the game:"
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653665827-1730086462327.png",
+            "en": "assets/images/games/1784653673329-img3.png"
+          },
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653690100-1730093220682.png",
+            "en": "assets/images/games/1784653697348-img2.png"
+          },
+          "caption": {
+            "zh": "另一个例子是在游戏接近尾声时，吉米意识到自己的错误时，快速的意识流闪回场景",
+            "en": "Another example is the quick stream of consciousness flashback near the end of the game, when Jimmy realizes his mistake"
+          }
         }
       ],
       "order": 5
