@@ -389,8 +389,37 @@
         {
           "type": "text",
           "value": {
-            "zh": "## 游戏流程\n\n由于整个游戏流程较长，此处并非完整流程图。以下是对游戏流程一部分的分析。",
-            "en": "## Game Flow\n\nThe full flowchart is not included here as the entire game flow is quite lengthy. Below is an analysis of only a portion of the game flow."
+            "zh": "- 游戏流程\n\n由于整个游戏流程较长，此处并非完整流程图。以下是对游戏流程一部分的分析。",
+            "en": "- Game Flow\n\nThe full flowchart is not included here as the entire game flow is quite lengthy. Below is an analysis of only a portion of the game flow."
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784652995051-flowch.png",
+            "en": "assets/images/games/1784653004428-flow.png"
+          },
+          "caption": {
+            "zh": "游戏流程（部分）",
+            "en": "Game Flow(part)"
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653023364-BG.png",
+            "en": "assets/images/games/1784653032309-img6.png"
+          },
+          "caption": {
+            "zh": "主场景图",
+            "en": "Main Scene"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "- 核心系统\n\n1. 互动系统\n\n游戏中的主要互动方式是基于点击的，并且在特殊关卡中具有独特的互动机制。\n\n游戏世界中的物品可以分为*可互动*和*不可互动*两类。角色根据场景中的时间和地点会有不同的对话选项。游戏中所有可收集的物品都被视为道具；除了代码扫描器外，所有其他道具仅在单一关卡中使用，并且使用后会被消耗。\n\n- 设计目标：\n\n1. 通过建立故事背景和提供线索来增强沉浸感。\n2. 作为主要的进程推进方式，通过与角色和场景互动来完成任务目标，从而推动关卡进展。",
+            "en": "- Core Systems\n\n1. Interaction System\n\nThe primary interaction method in the game is click-based, with unique interaction mechanics for special levels.\n\nItems in the game world can be divided into *interactable* and *non-interactable*. Characters have different dialogue options depending on the time and location within the scene. All collectible items in the game are considered props; except for the code scanner, all other props are used in single levels and are consumed after use.\n\n- Design Objectives:\n\n1. Enhance immersion by establishing the story setting and providing clues.\n2. Serve as the main progression method, advancing levels by interacting with characters and scenes to complete mission objectives."
           }
         }
       ],
