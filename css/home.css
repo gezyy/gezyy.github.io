@@ -110,6 +110,12 @@ body.page-home {
   cursor: grabbing;
 }
 
+/* Locked during the nav-guard sequence — no drag / click / rotate */
+#home-3d.guard-lock {
+  pointer-events: none;
+  cursor: default;
+}
+
 /* Hide model-viewer's default AR / fullscreen UI */
 #home-3d::part(default-ar-button) {
   display: none;

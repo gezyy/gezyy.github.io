@@ -24,5 +24,19 @@
       "zh": "如果您是我的面试官，请到游戏合集查看我的游戏相关作品。",
       "en": "If you're my interviewer, feel free to check out some of my work on the Game Collection page."
     }
-  ]
+  ],
+  "guard": {
+    "intro": {
+      "zh": "如果您是我的面试官，请到游戏合集查看我的游戏相关作品。",
+      "en": "If you're my interviewer, feel free to check out some of my work on the Game Collection page."
+    },
+    "confirm": {
+      "zh": "您确定吗？",
+      "en": "Are you sure?"
+    },
+    "final": {
+      "zh": "那好吧，我猜你是很有好奇心的人？",
+      "en": "Fair enough. I guess you are very curious."
+    }
+  }
 }

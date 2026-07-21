@@ -230,20 +230,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   fpsTs = performance.now();
   requestAnimationFrame(loop);
 
-  // ── Home content load (title + character dialogs) ──
+  // ── Home content load (title + character dialogs + guard lines) ──
   let titleData   = { zh: '', en: '' };
-  let dialogsData = [];   // [{ zh, en }, …]
+  let dialogsData = [];   // [{ zh, en }, …]  — the random click pool
+  // Guard lines are shown by the nav-guard sequence only; they never enter
+  // the random pool above.
+  let guardData   = { intro: { zh: '', en: '' }, confirm: { zh: '', en: '' }, final: { zh: '', en: '' } };
   try {
     const r = await fetch(`/content/home.json?_=${Date.now()}`);
     const d = await r.json();
     titleData   = bilingualize(d.title);
     dialogsData = Array.isArray(d.dialogs) ? d.dialogs.map(bilingualize) : [];
+    const g = d.guard || {};
+    guardData = { intro: bilingualize(g.intro), confirm: bilingualize(g.confirm), final: bilingualize(g.final) };
   } catch { /* keep hardcoded fallback */ }
 
-  // Whole-file writer: title + dialogs live in the same JSON, so always
-  // push both together or one editor would clobber the other's field.
+  // Whole-file writer: title + dialogs + guard live in the same JSON, so always
+  // push all of them or one editor would clobber another's field.
   const pushHome = () =>
-    pushChange('content/home.json', { title: titleData, dialogs: dialogsData });
+    pushChange('content/home.json', { title: titleData, dialogs: dialogsData, guard: guardData });
 
   const titleEl = document.getElementById('site-title');
   if (titleEl) {
@@ -251,8 +256,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     titleEl.textContent = display;
   }
 
-  // ── Character: drag to move + click to speak ───
-  setupCharacter(() => dialogsData);
+  // ── Character: drag to move + click to speak + nav guard ───
+  setupCharacter(() => dialogsData, guardData);
 
   if (isAdmin() && titleEl) {
     // Insert a paired ZH/EN editor under the title; visible only in edit mode.
@@ -301,7 +306,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 // ── Character: left-click speaks / left-drag rotates / right-drag moves ──
-function setupCharacter(getDialogs) {
+function setupCharacter(getDialogs, guardData) {
   const model = document.getElementById('home-3d');
   if (!model) return;
 
@@ -337,6 +342,13 @@ function setupCharacter(getDialogs) {
     }
   }
 
+  function showBubble(text) {
+    if (!text) return;
+    textEl.textContent = text;
+    bubble.classList.add('open');
+    positionBubble();
+  }
+
   let lastIdx = -1;
   function showRandomLine() {
     const dialogs = getDialogs();
@@ -354,10 +366,7 @@ function setupCharacter(getDialogs) {
       idx = rest[Math.floor(Math.random() * rest.length)];
     }
     lastIdx = idx;
-
-    textEl.textContent = pickLocalized(dialogs[idx]);
-    bubble.classList.add('open');
-    positionBubble();
+    showBubble(pickLocalized(dialogs[idx]));
   }
 
   // ── Animation switching ──
@@ -366,6 +375,106 @@ function setupCharacter(getDialogs) {
     if (avail && avail.length && !avail.includes(name)) return;
     if (model.getAttribute('animation-name') === name) return;
     model.setAttribute('animation-name', name);
+  }
+
+  // ── Scripted walk: glide the character to a target, playing the walk clip ──
+  let walkRAF = null;
+  function walkTo(tx, ty, done) {
+    if (walkRAF) cancelAnimationFrame(walkRAF);
+    const rect = model.getBoundingClientRect();
+    const sx = rect.left, sy = rect.top;
+    model.style.bottom = 'auto';                 // switch to explicit top/left
+    tx = Math.max(0, Math.min(tx, window.innerWidth  - model.offsetWidth));
+    ty = Math.max(0, Math.min(ty, window.innerHeight - model.offsetHeight));
+    const dist = Math.hypot(tx - sx, ty - sy);
+    if (dist < 2) { done && done(); return; }
+
+    const dur = Math.min(1700, Math.max(420, dist / 0.5));   // ~0.5 px/ms
+    playAnim('walk');
+    const start = performance.now();
+    (function step(now) {
+      let p = (now - start) / dur;
+      if (p > 1) p = 1;
+      const e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;  // easeInOutQuad
+      model.style.left = `${sx + (tx - sx) * e}px`;
+      model.style.top  = `${sy + (ty - sy) * e}px`;
+      if (bubble.classList.contains('open')) positionBubble();  // bubble follows
+      if (p < 1) { walkRAF = requestAnimationFrame(step); }
+      else { walkRAF = null; playAnim('idle'); done && done(); }
+    })(start);
+  }
+
+  // Walk to stand in front of a nav button (covering it).
+  function walkToButton(btnRect, done) {
+    const tx = btnRect.left + btnRect.width  / 2 - model.offsetWidth  / 2;
+    const ty = btnRect.top  + btnRect.height / 2 - model.offsetHeight * 0.6;
+    walkTo(tx, ty, done);
+  }
+
+  // Walk back to the default bottom-left corner, then re-pin to the CSS anchor.
+  function walkHome(done) {
+    const m  = window.innerWidth <= 640 ? 8 : 20;
+    const tx = m;
+    const ty = window.innerHeight - model.offsetHeight - m;
+    walkTo(tx, ty, () => {
+      model.style.left = '';
+      model.style.top  = '';
+      model.style.bottom = '';   // revert to the CSS bottom-left anchor
+      done && done();
+    });
+  }
+
+  function setGuardLock(locked) {
+    model.classList.toggle('guard-lock', locked);   // pointer-events:none while locked
+  }
+
+  // ── First-visit greeting (feature 1): show the intro line once per session ──
+  let greetTimer = null;
+  if (guardData && pickLocalized(guardData.intro).trim() && !sessionStorage.getItem('homeGreeted')) {
+    sessionStorage.setItem('homeGreeted', '1');
+    greetTimer = setTimeout(() => showBubble(pickLocalized(guardData.intro)), 500);
+  }
+
+  // ── Nav guard (feature 2): gate Library/Gallery for non-admin visitors ──
+  setupNavGuard();
+  function setupNavGuard() {
+    if (isAdmin()) return;                 // owner navigates freely
+    if (!guardData) return;
+    const guarded = [...document.querySelectorAll('#home-nav .nav-card')]
+      .filter(a => /(?:library|gallery)\.html/i.test(a.getAttribute('href') || ''));
+    if (!guarded.length) return;
+
+    let stage = 0;        // 0 not started · 1 intro shown · 2 confirm shown · 3 done
+    let busy  = false;    // a scripted walk is in progress → swallow clicks
+
+    guarded.forEach(a => {
+      a.addEventListener('click', e => {
+        if (isAdmin() || stage >= 3) return;   // owner / finished → normal navigation
+        e.preventDefault();
+        if (busy) return;
+
+        clearTimeout(greetTimer);          // cancel any pending greeting
+        const btnRect = a.getBoundingClientRect();
+
+        if (stage === 0) {
+          stage = 1;
+          busy = true;
+          setGuardLock(true);
+          bubble.classList.remove('open');
+          walkToButton(btnRect, () => { showBubble(pickLocalized(guardData.intro)); busy = false; });
+        } else if (stage === 1) {
+          stage = 2;
+          busy = true;
+          bubble.classList.remove('open');
+          walkToButton(btnRect, () => { showBubble(pickLocalized(guardData.confirm)); busy = false; });
+        } else if (stage === 2) {
+          stage = 3;
+          busy = true;
+          showBubble(pickLocalized(guardData.final));   // spoken while walking home
+          walkHome(() => { setGuardLock(false); busy = false; });
+        }
+      });
+    });
   }
 
   // ── Input model ──
