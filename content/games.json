@@ -674,6 +674,13 @@
         {
           "type": "text",
           "value": {
+            "zh": "我当时工作的环境是一间小办公室，桌面上有一个很大的外接显示屏。在头脑风暴的阶段，我设想了许多诸如MR密室逃脱，寻宝，或者阵地防守，甚至连虚拟桌游的形式我都考虑过。但无一例外的，因为技术限制或者教学性等因素不得不放弃。比如，密室逃脱本身挺有趣的，我的设想是在房间里布置多个同时存在的机关谜题，玩家需要收集并利用现实道具解开虚拟机关，然后逃出房间进入VR异世界。然而，由于我所拥有的设备是META QUEST 3，它并不支持扫描并识别预设物体以外的现实道具，所以这个想法只能遗憾放弃了。",
+            "en": "At the time, I was working in a small office with a large external monitor on the desk. During the brainstorming stage, I considered many ideas, such as an MR escape room, a treasure hunt, and a base-defense game. I even considered making it a virtual board game. However, I had to give up on all of these ideas due to technical limitations, educational requirements, or other factors.\n\nFor example, the escape room idea was quite interesting. My idea was to set up multiple puzzles that existed at the same time in the room. Players would need to collect and use physical objects in the real world to solve virtual puzzles, then escape the room and enter a virtual world in VR. However, the device I had, the Meta Quest 3, could not scan and recognize physical objects other than predefined objects. Because of this limitation, I had to sadly give up on the idea."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
             "zh": "",
             "en": ""
           }
