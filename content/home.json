@@ -1,9 +1,28 @@
 {
-  "title": "Instantiated in a substratum",
+  "title": {
+    "zh": "Instantiated in a substratum",
+    "en": "Instantiated in a substratum"
+  },
   "dialogs": [
-    { "zh": "嗨，你来啦！", "en": "Hey, you made it!" },
-    { "zh": "点一下我，我就换句话说。", "en": "Click me and I'll say something new." },
-    { "zh": "这里的方块一直在往下掉，别管它们。", "en": "The blocks keep falling. Just ignore them." },
-    { "zh": "去看看画廊吧，那边有好东西。", "en": "Check out the gallery — good stuff over there." }
+    {
+      "zh": "嗨，你来啦！",
+      "en": "Hey, you made it!"
+    },
+    {
+      "zh": "点一下我，我就换句话说。",
+      "en": "Click me and I'll say something new."
+    },
+    {
+      "zh": "这里的方块一直在往下掉，别管它们。",
+      "en": "The blocks keep falling. Just ignore them."
+    },
+    {
+      "zh": "去看看画廊吧，那边有好东西。",
+      "en": "Check out the gallery — good stuff over there."
+    },
+    {
+      "zh": "如果您是我的面试官，请到游戏合集查看我的游戏相关作品。",
+      "en": "If you're my interviewer, feel free to check out some of my work on the Game Collection page."
+    }
   ]
 }
