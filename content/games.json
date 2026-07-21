@@ -48,79 +48,6 @@
       "order": 0
     },
     {
-      "id": "low-orbit-courier",
-      "section": "devlogs",
-      "title": "LOW ORBIT COURIER",
-      "cover": "assets/images/games/low-orbit-courier.svg",
-      "blurb": "Arcade flight · PC / Web · 8 weeks",
-      "tags": {
-        "genre": "Arcade Flight",
-        "platform": "PC, Web",
-        "duration": "8 weeks"
-      },
-      "video": {
-        "type": "youtube",
-        "src": "M7lc1UVf-VE"
-      },
-      "body": [
-        {
-          "type": "text",
-          "value": "LOW ORBIT COURIER is a score-attack arcade flight game. You pilot a delivery glider through procedurally tilted canyons, threading freight between magnetic checkpoints while the wind tries to murder you."
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/low-orbit-courier-shot-1.svg",
-          "caption": "Course generator output — magnetic gates colored by tier."
-        },
-        {
-          "type": "text",
-          "value": "Core loop runs at 60 Hz with a fixed-step physics integrator. The whole thing fits in under 2 MB once stripped — small enough to run on the itch.io browser embed without a loader."
-        }
-      ],
-      "order": 1
-    },
-    {
-      "id": "nightshift-protocol",
-      "section": "devlogs",
-      "title": "NIGHTSHIFT PROTOCOL",
-      "cover": "assets/images/games/nightshift-protocol.svg",
-      "blurb": "Tactical puzzle · Mobile · 12 weeks",
-      "tags": {
-        "genre": "Tactical Puzzle",
-        "platform": "iOS, Android",
-        "duration": "12 weeks"
-      },
-      "video": {
-        "type": "youtube",
-        "src": "aqz-KE-bpKQ"
-      },
-      "body": [
-        {
-          "type": "text",
-          "value": "NIGHTSHIFT PROTOCOL is a top-down tactical puzzle game about a security guard rerouting cameras to catch (or hide from) an intruder. Each level is a tight grid; each move re-cooks the entire light graph."
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/nightshift-protocol-shot-1.svg",
-          "caption": "Camera cone overlap drives the threat heatmap."
-        },
-        {
-          "type": "text",
-          "value": "Built in Godot 4. I wrote the line-of-sight solver as a Wave Function Collapse variant — overkill for the problem, but it let me reuse the same data for the procedural level generator I ended up cutting."
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/nightshift-protocol-shot-2.svg",
-          "caption": "Editor view of the visibility graph at runtime."
-        },
-        {
-          "type": "text",
-          "value": "Shipped a small free build on itch. The level editor will probably never see the light of day, but the core 10 levels are tight."
-        }
-      ],
-      "order": 2
-    },
-    {
       "id": "01",
       "section": "essays",
       "title": {
@@ -217,7 +144,7 @@
           }
         }
       ],
-      "order": 3
+      "order": 1
     },
     {
       "id": "game-review-quicl",
@@ -339,7 +266,7 @@
           }
         }
       ],
-      "order": 4
+      "order": 2
     },
     {
       "id": "system-breakdown-1",
@@ -690,7 +617,31 @@
           }
         }
       ],
-      "order": 5
+      "order": 3
+    },
+    {
+      "id": "mr-ship-dev",
+      "section": "devlogs",
+      "title": {
+        "zh": "混合现实？虚拟现实？哪个更好？",
+        "en": "Mixed Reality? Virtual Reality? Which one better?"
+      },
+      "cover": "assets/images/games/1784663017750-FYP-Video-Final_-_frame_at_3m9s.jpg",
+      "blurb": {
+        "zh": "基于Unity的MR+VR叙事游戏设计与思考",
+        "en": "MR+VR Narrative Game design thinking (based on Unity)"
+      },
+      "tags": {
+        "genre": "",
+        "platform": "",
+        "duration": ""
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [],
+      "order": 4
     }
   ]
 }
