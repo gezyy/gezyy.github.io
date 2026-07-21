@@ -11,8 +11,10 @@ import { t, pickLocalized, bilingualize } from './i18n.js';
 
 const GAMES_FILE = 'content/games.json';
 const PAGE_SIZE  = 12;
-const SECTIONS   = ['devlogs', 'essays'];   // M-Games-4: section tabs (default: devlogs)
-const DEFAULT_SECTION = 'devlogs';
+// Section keys kept stable for stored data ('essays' = Game Design Notes,
+// 'devlogs' = Devlog); 'systems' & 'analysis' are new. Order = tab order.
+const SECTIONS   = ['essays', 'systems', 'analysis', 'devlogs'];
+const DEFAULT_SECTION = 'essays';
 
 let allGames = [];
 let view = [];            // [{ game, idx }] — entries of the active section, in order

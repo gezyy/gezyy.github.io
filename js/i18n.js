@@ -66,8 +66,10 @@ const STRINGS = {
   'games.untitled':           { zh: '未命名记录', en: 'Untitled transmission' },
   'games.cover.alt':          { zh: '{title} 封面', en: '{title} cover art' },
   'games.cover.alt.empty':    { zh: '游戏封面', en: 'Game cover' },
-  'games.section.devlogs':    { zh: 'DevLogs', en: 'DevLogs' },
   'games.section.essays':     { zh: '游戏设计杂谈', en: 'Game Design Notes' },
+  'games.section.systems':    { zh: '游戏系统拆解', en: 'Systems Breakdown' },
+  'games.section.analysis':   { zh: '产品与市场分析', en: 'Product & Market Analysis' },
+  'games.section.devlogs':    { zh: '开发日志', en: 'Devlog' },
 
   // Game detail
   'gd.loading':               { zh: '// 加载传输信号 //', en: '// LOADING TRANSMISSION //' },
