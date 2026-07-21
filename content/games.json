@@ -340,6 +340,30 @@
         }
       ],
       "order": 4
+    },
+    {
+      "id": "system-breakdown-1",
+      "section": "systems",
+      "title": {
+        "zh": "《缄默货运》拆解分析",
+        "en": "Mouthwashing Breakdown"
+      },
+      "cover": "assets/images/games/1784644961269-cover12.jpg",
+      "blurb": {
+        "zh": "此为旧作",
+        "en": "This is an early article"
+      },
+      "tags": {
+        "genre": "",
+        "platform": "",
+        "duration": ""
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [],
+      "order": 5
     }
   ]
 }
