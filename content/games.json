@@ -515,6 +515,96 @@
             "zh": "",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "- 游戏界面\n\n以下几种情况会出现不同的界面：点击互动、详细互动、角色互动、物品栏。\n\n1. 点击互动：\n\n可以点击的物品在互动后会直接显示详细描述。每个互动区域都有预设的固定视角供玩家查看。此外，当玩家接近一个互动区域时，会出现点击提示。不可互动的区域不会显示任何提示。",
+            "en": "- Gameplay Interface\n\nThe following cases will show different interface: click interaction, detailed interaction, character interaction, inventory.\n\n1. Click Interaction:\n\nItems that can be clicked will directly show detailed descriptions once interacted with. Each interactive area has a pre-set, fixed camera angle for viewing. Additionally, when the player gets close to an interactive area, a click prompt will appear. Non-interactive areas won’t display any prompts."
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653426906-1730083573673.png",
+            "en": "assets/images/games/1784653442109-1730083883726.png"
+          },
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "2. 标准互动：\n\n这些包括像开门、使用物品等动作。",
+            "en": "2. Standard Interactions:\n\nThese include actions like opening doors, using items."
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653467415-1730083653194.png",
+            "en": "assets/images/games/1784653467415-1730083653194.png"
+          },
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "3. 详细互动：\n\n点击一个互动区域会触发动画，并使摄像机缩放到该区域的特写镜头。这使玩家能够专注于该区域的特定细节或物体，通过动画和摄像机角度的调整提供更多的背景或信息。",
+            "en": "3. Detailed Interaction:\n\nClicking on an interactive area triggers an animation and zooms in the camera to display a close-up of the scene. This allows the player to focus on specific details or objects within that area, providing more context or information through the animation and camera angle adjustment."
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653491408-1730074951326.png",
+            "en": "assets/images/games/1784653491408-1730074951326.png"
+          },
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653505464-1730075968695.png",
+            "en": "assets/images/games/1784653505464-1730075968695.png"
+          },
+          "caption": {
+            "zh": "当玩家移动鼠标时，摄像机会稍微延迟跟随，以增加真实感。当玩家点击一个可互动物品时，物品的特写视图将出现，并且下方会显示该物品的文字描述",
+            "en": "When the player moves the mouse, the camera will follow with a slight delay for added realism. When the player clicks on an interactive item, a zoomed-in detail view of the item will appear, accompanied by a text description displayed below."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "4. 角色互动：\n\n点击场景中的角色时，摄像机会进行缩放，并打开对话框。有时，这种互动会触发动画，以进一步增强场景或对话的氛围。",
+            "en": "4. Character Interaction:\n\nClicking on a character in the scene will zoom in the camera and open a dialogue box. Sometimes, this interaction will trigger an animation to further enhance the scene or the conversation."
+          }
+        },
+        {
+          "type": "image",
+          "src": {
+            "zh": "assets/images/games/1784653541219-1730083742330.png",
+            "en": "assets/images/games/1784653541219-1730083742330.png"
+          },
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "5. 物品栏：\n\n按 Tab 键打开物品栏。使用 A 和 D 键滚动浏览物品。左键点击选择物品。物品的详细信息将显示出来，并会弹出一个选项询问是否使用该物品。\n\n- 当前任务名称显示在屏幕的左上角。\n- 物品模型会旋转360度，以展示其细节。\n- 屏幕中央会出现使用或互动该物品的选项。\n- 物品的名称和详细描述会显示在屏幕底部。",
+            "en": "5. Inventory:\n\nPress Tab to open the inventory. Use the A and D keys to scroll through the items. Left-click to select an item. The item’s details will appear, along with a pop-up option asking whether you want to use it.\n\n- The current task name is displayed at the top left of the screen.\n- The item model rotates 360 degrees to showcase its details.\n- In the center of the screen, options for using or interacting with the item will appear.\n- The item’s name and a detailed description will be shown at the bottom of the screen."
+          }
         }
       ],
       "order": 5
