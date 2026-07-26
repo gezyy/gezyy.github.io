@@ -240,6 +240,21 @@
             "zh": "",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在我的实现中，我编写了一个名为 Camera Controller的脚本来管理这种关系。房间和宇宙飞船的旋转是根据方向盘的x轴旋转来控制的。方向盘的旋转是通过target.rotation.eulerAngles.x获得的。要计算旋转增量，它是x轴旋转与中性角之间的差值deltaRotation = targetXRotation - neutralAngle)  转角度确定转弯方向，如下所示:当方向盘的x轴旋转介于neutralAngle和maxAngle之间时，房间和飞船将向左旋转(即旋转增量为正)，旋转速度根据方向盘的旋转角度线性变化.当方向盘的x轴旋转介于neutralAngle和minAngle之间时，房间和宇宙飞船将向右旋转(即旋转增量为负)旋转速度也会根据方向盘的旋转呈线性变化.如果方向盘的旋转超过最大或最小旋转限制(即超过maxAngle或minAngle)，房间和宇宙飞船将以最大速度旋转 (maxRotationSpeed).为了获得更平滑的运动，我们还需要控制旋转过渡房间和宇宙飞船的旋转使用Mathf.LerpAngle进行平滑处理，它会随着时间的推移逐渐调整旋转速度。此转换的速度由accelerationTime控制.\n我还创建了一个杠杆来控制宇宙飞船的上升和下降。控制杆的逻辑类似于方向盘的逻辑，主要区别在于旋转方向的变化.",
+            "en": "In my implementation, I wrote a script called **Camera Controller** to manage this relationship. The rotation of the room and the spaceship is controlled by the steering wheel's rotation around the X-axis. The steering wheel's rotation is obtained using `target.rotation.eulerAngles.x`. To calculate the rotation difference, I used the difference between the X-axis rotation and the neutral angle:\n\n`deltaRotation = targetXRotation - neutralAngle`\n\nThe rotation angle determines the direction of the turn. When the steering wheel's X-axis rotation is between `neutralAngle` and `maxAngle`, the room and spaceship rotate to the left, meaning the rotation delta is positive. The rotation speed changes linearly based on the steering wheel's rotation angle.\n\nWhen the steering wheel's X-axis rotation is between `neutralAngle` and `minAngle`, the room and spaceship rotate to the right, meaning the rotation delta is negative. The rotation speed also changes linearly based on the steering wheel's rotation.\n\nIf the steering wheel's rotation exceeds the maximum or minimum rotation limits, meaning it goes beyond `maxAngle` or `minAngle`, the room and spaceship rotate at the maximum rotation speed, `maxRotationSpeed`.\n\nTo achieve smoother movement, I also controlled the rotation transition of the room and spaceship using `Mathf.LerpAngle`, which gradually adjusts the rotation speed over time. The speed of this transition is controlled by `accelerationTime`.\n\nI also created a lever to control the spaceship's ascent and descent. The logic is similar to that of the steering wheel, with the main difference being the change in rotation direction."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785105136367-Screenshot_2026-07-26_222415.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 0
