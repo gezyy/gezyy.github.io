@@ -833,6 +833,30 @@
       },
       "body": [],
       "order": 5
+    },
+    {
+      "id": "my-npc",
+      "section": "devlogs",
+      "title": {
+        "zh": "关于去年做过的一个NPC引导系统",
+        "en": "An NPC Guidance System I Developed Last Year"
+      },
+      "cover": "assets/images/games/1785102535124-Screenshot_2026-07-26_224842.png",
+      "blurb": {
+        "zh": "我实现了一个便于协作和设计师编辑的引导数据系统",
+        "en": "I implemented a tutorial data system that makes collaboration and editing easier for designers."
+      },
+      "tags": {
+        "genre": "",
+        "platform": "",
+        "duration": ""
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [],
+      "order": 6
     }
   ]
 }
