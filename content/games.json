@@ -737,6 +737,21 @@
             "zh": "游戏任务设计",
             "en": "Game Quests Design"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在确定了上述的基本框架后，我就开始着手于前期开发工作。受限于时间和工作量，我没有在游戏视觉和美术方面投入精力自己建模和制作动画、特效等，直接从网上的资源商店里下载了免费正版模型。在代码方面，任何一个游戏项目都需要尽可能清晰和便于后续更新的基础，因此，我采用了设计模式来构建核心并确保游戏的可拓展性、可维护性和模块化。如下图所示，我利用Singleton和State模式等设计模式来管理游戏状态和场景，该架构围绕GameManager，SceneManager，TaskManager和UIManager等核心组件，确保以有序方式处理游戏流程、状态转换和交互。",
+            "en": "After establishing the basic framework above, I began the early development work. Due to time and workload constraints, I did not spend much effort on creating the game's visuals and art myself, such as modelling, animations, or visual effects. Instead, I downloaded free and legally licensed models from online asset stores.\n\nOn the programming side, every game project needs a clear foundation that is easy to update and maintain. Therefore, I used design patterns to build the core systems and ensure the game's scalability, maintainability, and modularity. As shown in the figure below, I used design patterns such as the Singleton and State patterns to manage the game states and scenes. The architecture is built around core components such as the GameManager, SceneManager, TaskManager, and UIManager, ensuring that the game flow, state transitions, and interactions are handled in an organised way."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785098168311-Screenshot_2026-07-26_213558.png",
+          "caption": {
+            "zh": "项目类图",
+            "en": "Project Class Diagram"
+          }
         }
       ],
       "order": 4
