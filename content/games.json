@@ -752,6 +752,60 @@
             "zh": "项目类图",
             "en": "Project Class Diagram"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "我向来很乐意在游戏中探索多样化的交互方式。这个项目也不例外。我尝试在游戏的不同阶段整合了多种交互方法，例如手势识别、凝视识别、控制器输入以及语音识别（使用了自定义的AI关键词模型）。玩家将利用合理的交互方式在游戏里驾驶飞船、操纵武器、虚拟界面交互以及物品收集。之所以整合这些交互方式不仅仅是出于我的实验兴趣，更多是我在过往使用VR设备的经验中发现，很多初次使用头戴式VR设备的用户变得熟练使用控制器进行游戏并不容易，因此我在设计交互方法时考虑到更符合人类直觉的自然交互方式，例如抓取物品和触屏控制界面我选取了手势交互，经过后续的用户测试验证，大部分的用户对于这种方式很快就适应并且熟练使用。而对于一些特定的场景，例如游戏中有一关需要玩家使用粒子发射器进行射击，对于这部分我则引入了控制器，并将它们设置为可以与手势兼容的模式，因为使用真实的控制抓握并扣动扳机进行射击更符合人的直觉。",
+            "en": "I have always enjoyed exploring different types of interaction in games. This project was no exception. I tried to integrate several interaction methods at different stages of the game, including gesture recognition, gaze tracking, controller input, and voice recognition using a custom AI keyword model. Players would use different interaction methods to pilot the spaceship, operate weapons, interact with virtual interfaces, and collect items.\n\nThe reason I integrated these interaction methods was not only because of my interest in experimentation. Based on my previous experience using VR devices, I found that many first-time VR users have difficulty becoming familiar with controllers. Therefore, when designing the interactions, I also considered more intuitive and natural ways of interacting. For example, I chose gesture-based interaction for tasks such as grabbing objects and using touchscreen-like interfaces. Later user testing showed that most users quickly adapted to and became comfortable with this method.\n\nFor specific situations, however, I chose different interaction methods. For example, one level requires the player to use a particle blaster to shoot targets. For this part, I introduced controllers and made them compatible with gesture-based interactions. Using a physical controller to grip the weapon and pull the trigger feels more natural and intuitive for shooting."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099033365-Screenshot_2026-07-26_214920.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099039446-Screenshot_2026-07-26_214940.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099047160-Screenshot_2026-07-26_214953.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "除此之外，对于游戏中大部分需要简单文字说明的道具和虚拟物品，我为它们制作了一种通过检测凝视激活的UI面板，这样有效降低了场景内同时存在过多文本信息量可能带来的认知负担——尤其是在VR环境中。而对于后半部分的机器人助手，我给它加入了可以用语音输入进行简单交流的功能，不过在实际用户测试中，真正使用这一功能的用户并不多，我认为一部分原因可能来自于这个检测语音输入的模块有比较明显的延迟而带来了不好的用户体验，因此在最终版本中这一功能被废除了，后续使用类似的功能也需要考虑到这一点。 ",
+            "en": "In addition, for most objects and virtual items in the game that required simple text descriptions, I created UI panels that were activated when the player looked at them. This helped reduce the cognitive load caused by having too much text displayed in the scene at the same time, especially in a VR environment.\n\nFor the robot assistant in the second half of the game, I also added a voice input feature that allowed players to have simple conversations with it. However, during the user testing, not many users actually used this feature. I think one possible reason was the noticeable delay in the voice input detection module, which led to a poor user experience. Therefore, this feature was removed from the final version, and this is also something that should be considered when implementing similar features in future projects."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099054332-Screenshot_2026-07-26_215013.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099058578-Screenshot_2026-07-26_215019.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 4
