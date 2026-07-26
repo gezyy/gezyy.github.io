@@ -884,13 +884,22 @@
         "en": "My Mini Games and What I Learned"
       },
       "tags": {
-        "genre": "",
-        "platform": "",
-        "duration": ""
+        "genre": {
+          "zh": "",
+          "en": ""
+        },
+        "platform": {
+          "zh": "",
+          "en": ""
+        },
+        "duration": {
+          "zh": "",
+          "en": ""
+        }
       },
       "video": {
         "type": "youtube",
-        "src": ""
+        "src": "https://www.youtube.com/watch?v=iOj_gRFdnOk"
       },
       "body": [],
       "order": 5
