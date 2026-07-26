@@ -187,6 +187,29 @@
             "zh": "",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在设置游戏场景的时候，我对MR场景中能够透视真实环境的因素做出了取舍。也就是说，并不是整个房间都会在头显中显示，我保留了地面、桌面以及部分环境中的家具和显示器、窗口。保留地面和家具的原因是，我认为让玩家在完全虚拟的环境中行走并不安全，且这也会让他们在游玩时对于走动有所顾虑，而完全可视的真实地面和周围存在的障碍物会让他们没有任何威胁地进行自由探索。",
+            "en": "When setting up the game environment, I made decisions about which parts of the real environment should remain visible in the MR scene. In other words, the entire room would not be visible through the headset. I kept the floor, desk, some furniture, the monitor, and the window visible.\n\nI kept the floor and furniture because I felt that walking around in a completely virtual environment could be unsafe and might make players hesitant to move around while playing. Having the real floor and surrounding obstacles clearly visible allows players to explore the space freely without worrying about potential hazards."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785104763021-Screenshot_2026-07-26_220533.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785104767771-Screenshot_2026-07-26_220553.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 0
