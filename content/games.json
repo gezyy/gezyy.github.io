@@ -776,13 +776,22 @@
         "en": "I implemented a tutorial data system that makes collaboration and editing easier for designers."
       },
       "tags": {
-        "genre": "",
-        "platform": "",
-        "duration": ""
+        "genre": {
+          "zh": "",
+          "en": ""
+        },
+        "platform": {
+          "zh": "",
+          "en": ""
+        },
+        "duration": {
+          "zh": "",
+          "en": ""
+        }
       },
       "video": {
         "type": "youtube",
-        "src": ""
+        "src": "https://www.youtube.com/watch?v=oncyUw2_k8Q"
       },
       "body": [],
       "order": 4
