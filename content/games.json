@@ -225,6 +225,21 @@
             "zh": "渲染层级",
             "en": "Render Layer"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "还有一个例子是我在实现飞船驾驶功能的时候。在游戏中，玩家可以通过纵虚拟方向盘来控制宇宙飞船。抓住方向盘的手势识别使用 MetaOculus提供的Unity官方工具包，如图所示。为了正确识别玩家的手部，为方向盘对象分配了HandGrabInteraction 和HandGrab Pose 组件。这些功能使玩家能够抓住方向盘，使其能够左右旋转，同时保持其位置稳定，就像现实世界的方向盘一样。为此，使用了两个脚本，两个Grab Rotate Transformer 和一个GrabRotateTransformer(如图所示)。这些脚本定义方向盘旋转的角度范围，并确保它沿Right轴旋转。此外，还会添加方向指针对象。最后，有必要将方向盘的旋转与宇宙飞船和驾驶舱的旋转联系起来.",
+            "en": "Another example was the implementation of the spaceship's piloting system. In the game, players can control the spaceship by turning a virtual steering wheel. The hand gesture recognition for grabbing the steering wheel was implemented using Meta's official Unity toolkit, as shown in the figure.\n\nTo correctly detect the player's hand, the **Hand Grab Interaction** and **Hand Grab Pose** components were assigned to the steering wheel object. These features allow the player to grab the steering wheel and rotate it left and right while keeping its position stable, just like a real steering wheel.\n\nTo achieve this, I used two scripts, two **Grab Rotate Transformer** components, and one **GrabRotateTransformer**, as shown in the figure. These scripts define the rotation range of the steering wheel and ensure that it rotates along the **Right** axis. A direction indicator object was also added. Finally, the rotation of the steering wheel needed to be linked to the rotation of the spaceship and the cockpit."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785105104484-Screenshot_2026-07-26_222116.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 0
