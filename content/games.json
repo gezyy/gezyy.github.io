@@ -684,6 +684,29 @@
             "zh": "结果有一天，我正坐在办公桌前对着我的大显示器苦思冥想，突然灵光一闪：如果把显示器作为挡风玻璃，整个房间当作驾驶室，让玩家可以坐在桌前开飞船怎么样呢？",
             "en": "Then one day, I was sitting at my desk, staring at the large monitor and trying to figure things out, when I suddenly had an idea: **What if I used the monitor as a windshield and treated the entire room as the cockpit, allowing the player to sit at the desk and pilot a spaceship?**"
           }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785090295449-Screenshot_2026-07-26_192436.png",
+          "caption": {
+            "zh": "虚拟驾驶室 vs. 我的办公桌",
+            "en": "Virtual cockpit vs. My office desk"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这个想法出现后，一切都显得顺理成章起来：一个飞船驾驶室天然符合MR对单一房间空间的需求，并且，利用真实空间的地面和家具（例如我的电脑外接显示器）作为打破完全虚拟化的现实融合因素，不仅不会破坏沉浸感，还会让玩家将现实里的因素加以利用，以获得更好的游戏体验。顺着这个思路，我很快就决定了后续故事发展，玩家将会扮演一名飞船驾驶员，开着飞船进行星际旅程并探索异星球，收集和分析异星球上的数据，为未来人类的栖居地作出贡献。因此，我决定将游戏的后半程：在异星球表面着陆并且收集和处理数据作为VR的部分，一个完全虚拟的环境。",
+            "en": "Once this idea came to me, everything started to fall into place. A spaceship cockpit naturally fits the single-room space required by MR. Using the real floor and furniture, such as my external computer monitor, as elements that connect the virtual world with reality would not only avoid breaking immersion, but also encourage players to use real-world elements to improve their gameplay experience.\n\nFollowing this idea, I soon decided on the direction of the story. The player would take on the role of a spaceship pilot, travelling through space and exploring alien planets, collecting and analysing data to help find future habitats for humanity. Therefore, I decided that the second half of the game would take place in VR: the player would land on the surface of alien planets and collect and process data in a completely virtual environment."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785090777298-Screenshot_2026-07-26_193251.png",
+          "caption": {
+            "zh": "游戏流程设计图（局部）",
+            "en": "Game Design Flow Chart (Part)"
+          }
         }
       ],
       "order": 4
