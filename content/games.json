@@ -806,6 +806,81 @@
             "zh": "",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在设置游戏场景的时候，我对MR场景中能够透视真实环境的因素做出了取舍。也就是说，并不是整个房间都会在头显中显示，我保留了地面、桌面以及部分环境中的家具和显示器、窗口。保留地面和家具的原因是，我认为让玩家在完全虚拟的环境中行走并不安全，且这也会让他们在游玩时对于走动有所顾虑，而完全可视的真实地面和周围存在的障碍物会让他们没有任何威胁地进行自由探索。",
+            "en": "When setting up the game environment, I made decisions about which parts of the real environment should remain visible in the MR scene. In other words, the entire room would not be visible through the headset. I kept the floor, desk, some furniture, the monitor, and the window visible.\n\nI kept the floor and furniture because I felt that walking around in a completely virtual environment could be unsafe and might make players hesitant to move around while playing. Having the real floor and surrounding obstacles clearly visible allows players to explore the space freely without worrying about potential hazards."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099959716-Screenshot_2026-07-26_220533.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099962585-Screenshot_2026-07-26_220553.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在开发过程中，我也有遇到一些有趣的技术挑战。例如，可以透过真实门窗看见飞船外的虚拟环境是如何实现的？这是通过将Shader文件用于控制窗口玻璃材质的渲染深度和顺序来实现的。这个实现方法的理论背景是，渲染中的深度测试将每个像素的深度值和深度缓冲区中的现有值进行比较，以确定是否应该渲染它。距离摄像机较近的对象（具有较小的深度值）通过测试，并遮挡其后面的对象。\n在游戏中，渲染顺序由Render Queue控制，首先渲染虚拟场景，然后是门/窗和墙壁。深度缓冲区在渲染对象时更新，门的深度信息将替换虚拟场景中的深度信息，墙壁的深度信息将替换门的深度信息（如果适用）。被门挡住的墙壁无法通过深度测试，并且不会在这些区域中进行渲染，从而使原始虚拟场景可见。",
+            "en": "During development, I also encountered some interesting technical challenges. For example, how could I make the virtual environment outside the spaceship visible through the real doors and windows? I achieved this by using a Shader to control the rendering depth and order of the window glass material.\n\nThe theoretical principle behind this implementation is that depth testing compares the depth value of each pixel with the existing value in the depth buffer to determine whether it should be rendered. Objects that are closer to the camera, with smaller depth values, pass the test and occlude objects behind them.\n\nIn the game, the rendering order is controlled by the Render Queue. The virtual scene is rendered first, followed by the doors/windows and then the walls. The depth buffer is updated as each object is rendered. The depth information of the doors replaces the depth information of the virtual scene, and the depth information of the walls then replaces that of the doors, where applicable. The parts of the walls that are blocked by the doors fail the depth test and are therefore not rendered in those areas, allowing the original virtual scene to remain visible."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785100424589-Screenshot_2026-07-26_221332.png",
+          "caption": {
+            "zh": "渲染层级",
+            "en": "Render Layers"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "还有一个例子是我在实现飞船驾驶功能的时候。在游戏中，玩家可以通过纵虚拟方向盘来控制宇宙飞船。抓住方向盘的手势识别使用 MetaOculus提供的Unity官方工具包，如图所示。为了正确识别玩家的手部，为方向盘对象分配了HandGrabInteraction 和HandGrab Pose 组件。这些功能使玩家能够抓住方向盘，使其能够左右旋转，同时保持其位置稳定，就像现实世界的方向盘一样。为此，使用了两个脚本，两个Grab Rotate Transformer 和一个GrabRotateTransformer(如图所示)。这些脚本定义方向盘旋转的角度范围，并确保它沿Right轴旋转。此外，还会添加方向指针对象。最后，有必要将方向盘的旋转与宇宙飞船和驾驶舱的旋转联系起来.",
+            "en": "Another example was the implementation of the spaceship's piloting system. In the game, players can control the spaceship by turning a virtual steering wheel. The hand gesture recognition for grabbing the steering wheel was implemented using Meta's official Unity toolkit, as shown in the figure.\n\nTo correctly detect the player's hand, the **Hand Grab Interaction** and **Hand Grab Pose** components were assigned to the steering wheel object. These features allow the player to grab the steering wheel and rotate it left and right while keeping its position stable, just like a real steering wheel.\n\nTo achieve this, I used two scripts, two **Grab Rotate Transformer** components, and one **GrabRotateTransformer**, as shown in the figure. These scripts define the rotation range of the steering wheel and ensure that it rotates along the **Right** axis. A direction indicator object was also added. Finally, the rotation of the steering wheel needed to be linked to the rotation of the spaceship and the cockpit."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785100882457-Screenshot_2026-07-26_222116.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在我的实现中，我编写了一个名为 Camera Controller的脚本来管理这种关系。房间和宇宙飞船的旋转是根据方向盘的x轴旋转来控制的。方向盘的旋转是通过target.rotation.eulerAngles.x获得的。要计算旋转增量，它是x轴旋转与中性角之间的差值deltaRotation = targetXRotation - neutralAngle)  转角度确定转弯方向，如下所示:当方向盘的x轴旋转介于neutralAngle和maxAngle之间时，房间和飞船将向左旋转(即旋转增量为正)，旋转速度根据方向盘的旋转角度线性变化.当方向盘的x轴旋转介于neutralAngle和minAngle之间时，房间和宇宙飞船将向右旋转(即旋转增量为负)旋转速度也会根据方向盘的旋转呈线性变化.如果方向盘的旋转超过最大或最小旋转限制(即超过maxAngle或minAngle)，房间和宇宙飞船将以最大速度旋转 (maxRotationSpeed).为了获得更平滑的运动，我们还需要控制旋转过渡房间和宇宙飞船的旋转使用Mathf.LerpAngle进行平滑处理，它会随着时间的推移逐渐调整旋转速度。此转换的速度由accelerationTime控制.\n我还创建了一个杠杆来控制宇宙飞船的上升和下降。控制杆的逻辑类似于方向盘的逻辑，主要区别在于旋转方向的变化.",
+            "en": "In my implementation, I wrote a script called **Camera Controller** to manage this relationship. The rotation of the room and the spaceship is controlled by the steering wheel's rotation around the X-axis. The steering wheel's rotation is obtained using `target.rotation.eulerAngles.x`. To calculate the rotation difference, I used the difference between the X-axis rotation and the neutral angle:\n\n`deltaRotation = targetXRotation - neutralAngle`\n\nThe rotation angle determines the direction of the turn. When the steering wheel's X-axis rotation is between `neutralAngle` and `maxAngle`, the room and spaceship rotate to the left, meaning the rotation delta is positive. The rotation speed changes linearly based on the steering wheel's rotation angle.\n\nWhen the steering wheel's X-axis rotation is between `neutralAngle` and `minAngle`, the room and spaceship rotate to the right, meaning the rotation delta is negative. The rotation speed also changes linearly based on the steering wheel's rotation.\n\nIf the steering wheel's rotation exceeds the maximum or minimum rotation limits, meaning it goes beyond `maxAngle` or `minAngle`, the room and spaceship rotate at the maximum rotation speed, `maxRotationSpeed`.\n\nTo achieve smoother movement, I also controlled the rotation transition of the room and spaceship using `Mathf.LerpAngle`, which gradually adjusts the rotation speed over time. The speed of this transition is controlled by `accelerationTime`.\n\nI also created a lever to control the spaceship's ascent and descent. The logic is similar to that of the steering wheel, with the main difference being the change in rotation direction."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785101059381-Screenshot_2026-07-26_222415.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "总体而言，这个项目是一次有趣的尝试：MR和VR各有优劣，但当它们以合理的方式进行结合时，可以带来更新鲜的体验。而在我的用户测试报告中也有许多参与者指出，他们在这个长达40分钟的游戏体验中获得了前所未有的学习感受，以及肯定了这个项目在教育机器学习方面做出的尝试。目前，我根据这个项目所写的研究论文已经参与过了2025年的IEEE TALE学术会议，并且被收录在会议论文集中，如果对于更多的研究和技术细节感兴趣，以及详细的用户测试结果，可以去这个网站查看我的论文：https://ieeexplore.ieee.org/document/11346761",
+            "en": "Overall, this project was an interesting experiment. MR and VR each have their own strengths and weaknesses, but when combined in a meaningful way, they can provide a fresh and engaging experience. In my user testing report, many participants mentioned that the 40-minute gameplay experience gave them a learning experience they had never had before, and they also recognised the potential of this project as an approach to teaching machine learning.\n\nThe research paper I wrote based on this project was presented at the **2025 IEEE TALE academic conference** and has been included in the conference proceedings. If you are interested in more research and technical details, as well as the full user testing results, you can view my paper on the following website: https://ieeexplore.ieee.org/document/11346761"
+          }
         }
       ],
       "order": 4
