@@ -255,6 +255,13 @@
             "zh": "",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "总体而言，这个项目是一次有趣的尝试：MR和VR各有优劣，但当它们以合理的方式进行结合时，可以带来更新鲜的体验。而在我的用户测试报告中也有许多参与者指出，他们在这个长达40分钟的游戏体验中获得了前所未有的学习感受，以及肯定了这个项目在教育机器学习方面做出的尝试。目前，我根据这个项目所写的研究论文已经参与过了2025年的IEEE TALE学术会议，并且被收录在会议论文集中，如果对于更多的研究和技术细节感兴趣，以及详细的用户测试结果，可以去这个网站查看我的论文：https://ieeexplore.ieee.org/document/11346761",
+            "en": "Overall, this project was an interesting experiment. MR and VR each have their own strengths and weaknesses, but when combined in a meaningful way, they can provide a fresh and engaging experience. In my user testing report, many participants mentioned that the 40-minute gameplay experience gave them a learning experience they had never had before, and they also recognised the potential of this project as an approach to teaching machine learning.\n\nThe research paper I wrote based on this project was presented at the **2025 IEEE TALE academic conference** and has been included in the conference proceedings. If you are interested in more research and technical details, as well as the full user testing results, you can view my paper on the following website: [IEEE Xplore – Full Paper](https://ieeexplore.ieee.org/document/11346761?utm_source=chatgpt.com)"
+          }
         }
       ],
       "order": 0
