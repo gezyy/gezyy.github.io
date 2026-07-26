@@ -1,48 +1,192 @@
 {
   "games": [
     {
-      "id": "static-bloom",
+      "id": "mr-ship-dev",
       "section": "devlogs",
       "title": {
-        "zh": "与Claude Code协作实现快速开发",
-        "en": "Working with Claude Code for Rapid Game Prototype"
+        "zh": "混合现实？虚拟现实？哪个更好？",
+        "en": "Mixed Reality? Virtual Reality? Which one better?"
       },
-      "cover": "assets/images/games/1784007719517-claude.png",
+      "cover": "assets/images/games/1784663017750-FYP-Video-Final_-_frame_at_3m9s.jpg",
       "blurb": {
-        "zh": "本文简述了个人快速搭建原型的工作流",
-        "en": "This article introduces my personal workflow by using Claude in game development."
+        "zh": "基于Unity的MR+VR叙事游戏设计与思考",
+        "en": "MR+VR Narrative Game design thinking (based on Unity)"
       },
       "tags": {
-        "genre": "Walking Sim",
-        "platform": "PC (Windows)",
-        "duration": "4 weeks"
+        "genre": {
+          "zh": "MR, VR, 叙事, 教育",
+          "en": "MR, VR, Narrative, Education"
+        },
+        "platform": {
+          "zh": "Meta quest 3",
+          "en": "meta quest 3"
+        },
+        "duration": {
+          "zh": "3周",
+          "en": "3-weeks"
+        }
       },
       "video": {
         "type": "youtube",
-        "src": "dQw4w9WgXcQ"
+        "src": "https://youtu.be/qa9MF-yOw9w"
       },
       "body": [
         {
           "type": "text",
-          "value": "STATIC BLOOM is a short atmospheric piece built around a single broken transmission. The player wanders a derelict observatory, tuning antennae to recover fragments of a forgotten broadcast.\n\nDesigned as a study in restraint: no HUD, no combat, no objectives beyond curiosity."
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/static-bloom-shot-1.svg",
-          "caption": "The main observatory floor at dawn."
-        },
-        {
-          "type": "text",
-          "value": "I built the entire vertical slice solo in Unity HDRP. Most of the time was spent on the audio: each antenna emits its own filtered noise that mixes into a single drifting drone, generated procedurally from FMOD events."
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/static-bloom-shot-2.svg",
-          "caption": "Antenna tuning interaction — analog dial driven by player position."
+          "value": {
+            "zh": "这个项目本身是我大学本科期间的一个思考，当时要为导师设计并开发一个教育游戏，初步选定了虚拟现实技术作为项目研究方向。在前期调查的过程中，我发现混合现实（MR）和虚拟现实（VR）存在以下微妙的区分：\n1. MR将虚拟内容与现实环境融合，用户仍能感知并与现实世界互动。\n2. VR完全以虚拟环境取代现实，用户沉浸在由计算机生成的世界中。\n总而言之，MR是虚实结合，VR是完全虚拟。在我深度体验了几个MR游戏和VR游戏之后，我发现了几个很有意思的方向，值得进一步的研究：\n1. VR很显然比MR设计的自由度更高。因为受技术局限，MR大多只能识别单个空间（通常是一个房间），场景大小受限的前提下，游戏内容的设计也就限制在这个小小的空间里。且如何在不破坏沉浸感的前提下，把虚拟内容与现实空间进行融合，是一个设计上的挑战。\n2. VR理论上可以做到与PC开发游戏同等的自由度，但是沉浸感的上限更高。\n3. 然而，实际体验里，VR受硬件和技术限制导致的晕眩，沉重，画面精细度等挑战非常多，经过测试，大多数人持续游玩VR游戏的时长平均在30分钟左右。\n4. 也许是由于现实空间透视效果，MR在使用过程中完全没有晕眩，并且在多人协作方向上比VR更容易实现且更有趣。",
+            "en": "This project was originally an idea I had during my undergraduate studies. At the time, I was asked to design and develop an educational game for my supervisor, and I initially chose virtual reality (VR) as the research direction. During my early research, I found some subtle differences between mixed reality (MR) and virtual reality (VR):\n\n1. MR combines virtual content with the real environment, allowing users to remain aware of and interact with the real world.\n2. VR completely replaces the real world with a virtual environment, immersing users in a computer-generated world.\n\nIn short, MR combines the real and virtual worlds, while VR is fully virtual. After I had hands-on experience with several MR and VR games, I found several interesting areas that were worth further research:\n\n1. VR clearly offers more freedom in game design than MR. Due to technical limitations, MR can usually only recognize a single space, typically one room. Because the size of the playable space is limited, the game design is also limited to this small space. It is also a design challenge to combine virtual content with the real environment without breaking immersion.\n2. In theory, VR can offer a similar level of freedom to developing games for PC, while also providing a higher level of immersion.\n3. However, in actual use, VR faces many challenges caused by hardware and technical limitations, such as motion sickness, heavy headsets, and limited visual quality. Based on our testing, most people could play VR games continuously for around 30 minutes on average.\n4. Perhaps because users can see the real space around them, MR caused almost no motion sickness during use. It also seemed easier and more interesting to implement for multiplayer cooperation than VR."
+          }
         },
         {
           "type": "text",
-          "value": "Lessons learned: cut the inventory system on day three. The game got better the moment I stopped trying to give the player things to do."
+          "value": {
+            "zh": "在我把这些想法和我的导师进行谈论后，他建议我可以考虑一个方向：即设计并开发一款将MR和VR结合起来的游戏。刚听到这个让我有点不知所措，但仔细想想这么做的人似乎很少，另外，结合我玩游戏的感受，MR某种程度上的确更加友好，似乎比起一开始就被完全虚拟的世界淹没，MR可以成为一种相当合适的预热/新手教学。",
+            "en": "After discussing these ideas with my supervisor, he suggested that I consider one possible direction: designing and developing a game that combines MR and VR. When I first heard this idea, I felt a bit overwhelmed. But after thinking about it carefully, it seemed that very few people had tried this approach. Also, based on my own experience playing games, MR does seem to be more user-friendly in some ways. Rather than immediately being thrown into a fully virtual world, MR could serve as a suitable warm-up or tutorial experience for new players."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "因此进入设计阶段后，我几乎第一时间就确认了MR的内容作为前半部分，VR的内容作为后半部分这样的顺序。然后真正的考验是，由于我游戏的主题是一款关于机器学习的预科教育游戏，因此在内容方面需要考虑知识点的循序渐进。其次，如何让MR过渡到VR这个阶段显得很自然？此外，还需要考虑到MR的空间限制。",
+            "en": "Therefore, when I entered the design stage, I almost immediately decided to put the MR content in the first half of the game and the VR content in the second half. The real challenge was that, since the game was designed as a foundation-level educational game about machine learning, I needed to introduce the knowledge step by step. Secondly, I needed to think about how to make the transition from MR to VR feel natural. In addition, I also had to consider the spatial limitations of MR."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "我当时工作的环境是一间小办公室，桌面上有一个很大的外接显示屏。在头脑风暴的阶段，我设想了许多诸如MR密室逃脱，寻宝，或者阵地防守，甚至连虚拟桌游的形式我都考虑过。但无一例外的，因为技术限制或者教学性等因素不得不放弃。比如，密室逃脱本身挺有趣的，我的设想是在房间里布置多个同时存在的机关谜题，玩家需要收集并利用现实道具解开虚拟机关，然后逃出房间进入VR异世界。然而，由于我所拥有的设备是META QUEST 3，它并不支持扫描并识别预设物体以外的现实道具，所以这个想法只能遗憾放弃了。",
+            "en": "At the time, I was working in a small office with a large external monitor on the desk. During the brainstorming stage, I considered many ideas, such as an MR escape room, a treasure hunt, and a base-defense game. I even considered making it a virtual board game. However, I had to give up on all of these ideas due to technical limitations, educational requirements, or other factors.\n\nFor example, the escape room idea was quite interesting. My idea was to set up multiple puzzles that existed at the same time in the room. Players would need to collect and use physical objects in the real world to solve virtual puzzles, then escape the room and enter a virtual world in VR. However, the device I had, the Meta Quest 3, could not scan and recognize physical objects other than predefined objects. Because of this limitation, I had to sadly give up on the idea."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "结果有一天，我正坐在办公桌前对着我的大显示器苦思冥想，突然灵光一闪：如果把显示器作为挡风玻璃，整个房间当作驾驶室，让玩家可以坐在桌前开飞船怎么样呢？",
+            "en": "Then one day, I was sitting at my desk, staring at the large monitor and trying to figure things out, when I suddenly had an idea: **What if I used the monitor as a windshield and treated the entire room as the cockpit, allowing the player to sit at the desk and pilot a spaceship?**"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785090295449-Screenshot_2026-07-26_192436.png",
+          "caption": {
+            "zh": "虚拟驾驶室 vs. 我的办公桌",
+            "en": "Virtual cockpit vs. My office desk"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这个想法出现后，一切都显得顺理成章起来：一个飞船驾驶室天然符合MR对单一房间空间的需求，并且，利用真实空间的地面和家具（例如我的电脑外接显示器）作为打破完全虚拟化的现实融合因素，不仅不会破坏沉浸感，还会让玩家将现实里的因素加以利用，以获得更好的游戏体验。顺着这个思路，我很快就决定了后续故事发展，玩家将会扮演一名飞船驾驶员，开着飞船进行星际旅程并探索异星球，收集和分析异星球上的数据，为未来人类的栖居地作出贡献。因此，我决定将游戏的后半程：在异星球表面着陆并且收集和处理数据作为VR的部分，一个完全虚拟的环境。",
+            "en": "Once this idea came to me, everything started to fall into place. A spaceship cockpit naturally fits the single-room space required by MR. Using the real floor and furniture, such as my external computer monitor, as elements that connect the virtual world with reality would not only avoid breaking immersion, but also encourage players to use real-world elements to improve their gameplay experience.\n\nFollowing this idea, I soon decided on the direction of the story. The player would take on the role of a spaceship pilot, travelling through space and exploring alien planets, collecting and analysing data to help find future habitats for humanity. Therefore, I decided that the second half of the game would take place in VR: the player would land on the surface of alien planets and collect and process data in a completely virtual environment."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785090777298-Screenshot_2026-07-26_193251.png",
+          "caption": {
+            "zh": "游戏流程设计图（局部）",
+            "en": "Game Design Flow Chart (Part)"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在设计游戏的关卡内容时，考虑到这本身是一个面向零基础人群的机器学习概念科普类教育游戏，游戏关卡和任务必须和教学内容高度关联，且以一种参与实践的方式让玩家对这些知识点的掌握随着进程越来越熟练。我设计这款游戏的目标是通过游玩游戏，让玩家获得一种相较于传统课堂效率更高且更具有自驱力积极性的学习方式。因此，通过大量相关领域（主要是XR在教学方面的应用，严肃游戏以及游戏化教育）的文献查阅以及反思后，我将设计方法论总结为如下图所示的框架：",
+            "en": "When designing the game levels, I considered that this was an educational game aimed at introducing basic machine learning concepts to beginners with no prior knowledge. Therefore, the levels and tasks had to be closely connected to the learning content, while allowing players to learn and gradually become more familiar with these concepts through hands-on practice as they progressed through the game.\n\nMy goal was to use gameplay to provide players with a more efficient, self-driven, and engaging way of learning compared with traditional classroom teaching. Therefore, after reviewing and reflecting on a large number of studies in related fields, mainly the use of XR in education, serious games, and gamification in education, I summarised my design methodology into the framework shown in the following figure:"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785096953433-Screenshot_2026-07-26_211549.png",
+          "caption": {
+            "zh": "设计方法论",
+            "en": "Design Framework"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "然后我从我本科计算机专业的课堂学习材料里查找并选取了合适的章节作为严谨的信息来源，设计了如下所示的游戏任务：",
+            "en": "I then selected appropriate chapters from the learning materials I used during my undergraduate Computer Science studies as reliable sources of information, and designed the following in-game tasks:"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785097143096-Screenshot_2026-07-26_211857.png",
+          "caption": {
+            "zh": "游戏任务设计",
+            "en": "Game Quests Design"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在确定了上述的基本框架后，我就开始着手于前期开发工作。受限于时间和工作量，我没有在游戏视觉和美术方面投入精力自己建模和制作动画、特效等，直接从网上的资源商店里下载了免费正版模型。在代码方面，任何一个游戏项目都需要尽可能清晰和便于后续更新的基础，因此，我采用了设计模式来构建核心并确保游戏的可拓展性、可维护性和模块化。如下图所示，我利用Singleton和State模式等设计模式来管理游戏状态和场景，该架构围绕GameManager，SceneManager，TaskManager和UIManager等核心组件，确保以有序方式处理游戏流程、状态转换和交互。",
+            "en": "After establishing the basic framework above, I began the early development work. Due to time and workload constraints, I did not spend much effort on creating the game's visuals and art myself, such as modelling, animations, or visual effects. Instead, I downloaded free and legally licensed models from online asset stores.\n\nOn the programming side, every game project needs a clear foundation that is easy to update and maintain. Therefore, I used design patterns to build the core systems and ensure the game's scalability, maintainability, and modularity. As shown in the figure below, I used design patterns such as the Singleton and State patterns to manage the game states and scenes. The architecture is built around core components such as the GameManager, SceneManager, TaskManager, and UIManager, ensuring that the game flow, state transitions, and interactions are handled in an organised way."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785098168311-Screenshot_2026-07-26_213558.png",
+          "caption": {
+            "zh": "项目类图",
+            "en": "Project Class Diagram"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "我向来很乐意在游戏中探索多样化的交互方式。这个项目也不例外。我尝试在游戏的不同阶段整合了多种交互方法，例如手势识别、凝视识别、控制器输入以及语音识别（使用了自定义的AI关键词模型）。玩家将利用合理的交互方式在游戏里驾驶飞船、操纵武器、虚拟界面交互以及物品收集。之所以整合这些交互方式不仅仅是出于我的实验兴趣，更多是我在过往使用VR设备的经验中发现，很多初次使用头戴式VR设备的用户变得熟练使用控制器进行游戏并不容易，因此我在设计交互方法时考虑到更符合人类直觉的自然交互方式，例如抓取物品和触屏控制界面我选取了手势交互，经过后续的用户测试验证，大部分的用户对于这种方式很快就适应并且熟练使用。而对于一些特定的场景，例如游戏中有一关需要玩家使用粒子发射器进行射击，对于这部分我则引入了控制器，并将它们设置为可以与手势兼容的模式，因为使用真实的控制抓握并扣动扳机进行射击更符合人的直觉。",
+            "en": "I have always enjoyed exploring different types of interaction in games. This project was no exception. I tried to integrate several interaction methods at different stages of the game, including gesture recognition, gaze tracking, controller input, and voice recognition using a custom AI keyword model. Players would use different interaction methods to pilot the spaceship, operate weapons, interact with virtual interfaces, and collect items.\n\nThe reason I integrated these interaction methods was not only because of my interest in experimentation. Based on my previous experience using VR devices, I found that many first-time VR users have difficulty becoming familiar with controllers. Therefore, when designing the interactions, I also considered more intuitive and natural ways of interacting. For example, I chose gesture-based interaction for tasks such as grabbing objects and using touchscreen-like interfaces. Later user testing showed that most users quickly adapted to and became comfortable with this method.\n\nFor specific situations, however, I chose different interaction methods. For example, one level requires the player to use a particle blaster to shoot targets. For this part, I introduced controllers and made them compatible with gesture-based interactions. Using a physical controller to grip the weapon and pull the trigger feels more natural and intuitive for shooting."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099033365-Screenshot_2026-07-26_214920.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099039446-Screenshot_2026-07-26_214940.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099047160-Screenshot_2026-07-26_214953.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "除此之外，对于游戏中大部分需要简单文字说明的道具和虚拟物品，我为它们制作了一种通过检测凝视激活的UI面板，这样有效降低了场景内同时存在过多文本信息量可能带来的认知负担——尤其是在VR环境中。而对于后半部分的机器人助手，我给它加入了可以用语音输入进行简单交流的功能，不过在实际用户测试中，真正使用这一功能的用户并不多，我认为一部分原因可能来自于这个检测语音输入的模块有比较明显的延迟而带来了不好的用户体验，因此在最终版本中这一功能被废除了，后续使用类似的功能也需要考虑到这一点。 ",
+            "en": "In addition, for most objects and virtual items in the game that required simple text descriptions, I created UI panels that were activated when the player looked at them. This helped reduce the cognitive load caused by having too much text displayed in the scene at the same time, especially in a VR environment.\n\nFor the robot assistant in the second half of the game, I also added a voice input feature that allowed players to have simple conversations with it. However, during the user testing, not many users actually used this feature. I think one possible reason was the noticeable delay in the voice input detection module, which led to a poor user experience. Therefore, this feature was removed from the final version, and this is also something that should be considered when implementing similar features in future projects."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099054332-Screenshot_2026-07-26_215013.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785099058578-Screenshot_2026-07-26_215019.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 0
@@ -620,197 +764,6 @@
       "order": 3
     },
     {
-      "id": "mr-ship-dev",
-      "section": "devlogs",
-      "title": {
-        "zh": "混合现实？虚拟现实？哪个更好？",
-        "en": "Mixed Reality? Virtual Reality? Which one better?"
-      },
-      "cover": "assets/images/games/1784663017750-FYP-Video-Final_-_frame_at_3m9s.jpg",
-      "blurb": {
-        "zh": "基于Unity的MR+VR叙事游戏设计与思考",
-        "en": "MR+VR Narrative Game design thinking (based on Unity)"
-      },
-      "tags": {
-        "genre": {
-          "zh": "MR, VR, 叙事, 教育",
-          "en": "MR, VR, Narrative, Education"
-        },
-        "platform": {
-          "zh": "Meta quest 3",
-          "en": "meta quest 3"
-        },
-        "duration": {
-          "zh": "3周",
-          "en": "3-weeks"
-        }
-      },
-      "video": {
-        "type": "youtube",
-        "src": "https://youtu.be/qa9MF-yOw9w"
-      },
-      "body": [
-        {
-          "type": "text",
-          "value": {
-            "zh": "这个项目本身是我大学本科期间的一个思考，当时要为导师设计并开发一个教育游戏，初步选定了虚拟现实技术作为项目研究方向。在前期调查的过程中，我发现混合现实（MR）和虚拟现实（VR）存在以下微妙的区分：\n1. MR将虚拟内容与现实环境融合，用户仍能感知并与现实世界互动。\n2. VR完全以虚拟环境取代现实，用户沉浸在由计算机生成的世界中。\n总而言之，MR是虚实结合，VR是完全虚拟。在我深度体验了几个MR游戏和VR游戏之后，我发现了几个很有意思的方向，值得进一步的研究：\n1. VR很显然比MR设计的自由度更高。因为受技术局限，MR大多只能识别单个空间（通常是一个房间），场景大小受限的前提下，游戏内容的设计也就限制在这个小小的空间里。且如何在不破坏沉浸感的前提下，把虚拟内容与现实空间进行融合，是一个设计上的挑战。\n2. VR理论上可以做到与PC开发游戏同等的自由度，但是沉浸感的上限更高。\n3. 然而，实际体验里，VR受硬件和技术限制导致的晕眩，沉重，画面精细度等挑战非常多，经过测试，大多数人持续游玩VR游戏的时长平均在30分钟左右。\n4. 也许是由于现实空间透视效果，MR在使用过程中完全没有晕眩，并且在多人协作方向上比VR更容易实现且更有趣。",
-            "en": "This project was originally an idea I had during my undergraduate studies. At the time, I was asked to design and develop an educational game for my supervisor, and I initially chose virtual reality (VR) as the research direction. During my early research, I found some subtle differences between mixed reality (MR) and virtual reality (VR):\n\n1. MR combines virtual content with the real environment, allowing users to remain aware of and interact with the real world.\n2. VR completely replaces the real world with a virtual environment, immersing users in a computer-generated world.\n\nIn short, MR combines the real and virtual worlds, while VR is fully virtual. After I had hands-on experience with several MR and VR games, I found several interesting areas that were worth further research:\n\n1. VR clearly offers more freedom in game design than MR. Due to technical limitations, MR can usually only recognize a single space, typically one room. Because the size of the playable space is limited, the game design is also limited to this small space. It is also a design challenge to combine virtual content with the real environment without breaking immersion.\n2. In theory, VR can offer a similar level of freedom to developing games for PC, while also providing a higher level of immersion.\n3. However, in actual use, VR faces many challenges caused by hardware and technical limitations, such as motion sickness, heavy headsets, and limited visual quality. Based on our testing, most people could play VR games continuously for around 30 minutes on average.\n4. Perhaps because users can see the real space around them, MR caused almost no motion sickness during use. It also seemed easier and more interesting to implement for multiplayer cooperation than VR."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "在我把这些想法和我的导师进行谈论后，他建议我可以考虑一个方向：即设计并开发一款将MR和VR结合起来的游戏。刚听到这个让我有点不知所措，但仔细想想这么做的人似乎很少，另外，结合我玩游戏的感受，MR某种程度上的确更加友好，似乎比起一开始就被完全虚拟的世界淹没，MR可以成为一种相当合适的预热/新手教学。",
-            "en": "After discussing these ideas with my supervisor, he suggested that I consider one possible direction: designing and developing a game that combines MR and VR. When I first heard this idea, I felt a bit overwhelmed. But after thinking about it carefully, it seemed that very few people had tried this approach. Also, based on my own experience playing games, MR does seem to be more user-friendly in some ways. Rather than immediately being thrown into a fully virtual world, MR could serve as a suitable warm-up or tutorial experience for new players."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "因此进入设计阶段后，我几乎第一时间就确认了MR的内容作为前半部分，VR的内容作为后半部分这样的顺序。然后真正的考验是，由于我游戏的主题是一款关于机器学习的预科教育游戏，因此在内容方面需要考虑知识点的循序渐进。其次，如何让MR过渡到VR这个阶段显得很自然？此外，还需要考虑到MR的空间限制。",
-            "en": "Therefore, when I entered the design stage, I almost immediately decided to put the MR content in the first half of the game and the VR content in the second half. The real challenge was that, since the game was designed as a foundation-level educational game about machine learning, I needed to introduce the knowledge step by step. Secondly, I needed to think about how to make the transition from MR to VR feel natural. In addition, I also had to consider the spatial limitations of MR."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "我当时工作的环境是一间小办公室，桌面上有一个很大的外接显示屏。在头脑风暴的阶段，我设想了许多诸如MR密室逃脱，寻宝，或者阵地防守，甚至连虚拟桌游的形式我都考虑过。但无一例外的，因为技术限制或者教学性等因素不得不放弃。比如，密室逃脱本身挺有趣的，我的设想是在房间里布置多个同时存在的机关谜题，玩家需要收集并利用现实道具解开虚拟机关，然后逃出房间进入VR异世界。然而，由于我所拥有的设备是META QUEST 3，它并不支持扫描并识别预设物体以外的现实道具，所以这个想法只能遗憾放弃了。",
-            "en": "At the time, I was working in a small office with a large external monitor on the desk. During the brainstorming stage, I considered many ideas, such as an MR escape room, a treasure hunt, and a base-defense game. I even considered making it a virtual board game. However, I had to give up on all of these ideas due to technical limitations, educational requirements, or other factors.\n\nFor example, the escape room idea was quite interesting. My idea was to set up multiple puzzles that existed at the same time in the room. Players would need to collect and use physical objects in the real world to solve virtual puzzles, then escape the room and enter a virtual world in VR. However, the device I had, the Meta Quest 3, could not scan and recognize physical objects other than predefined objects. Because of this limitation, I had to sadly give up on the idea."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "结果有一天，我正坐在办公桌前对着我的大显示器苦思冥想，突然灵光一闪：如果把显示器作为挡风玻璃，整个房间当作驾驶室，让玩家可以坐在桌前开飞船怎么样呢？",
-            "en": "Then one day, I was sitting at my desk, staring at the large monitor and trying to figure things out, when I suddenly had an idea: **What if I used the monitor as a windshield and treated the entire room as the cockpit, allowing the player to sit at the desk and pilot a spaceship?**"
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785090295449-Screenshot_2026-07-26_192436.png",
-          "caption": {
-            "zh": "虚拟驾驶室 vs. 我的办公桌",
-            "en": "Virtual cockpit vs. My office desk"
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "这个想法出现后，一切都显得顺理成章起来：一个飞船驾驶室天然符合MR对单一房间空间的需求，并且，利用真实空间的地面和家具（例如我的电脑外接显示器）作为打破完全虚拟化的现实融合因素，不仅不会破坏沉浸感，还会让玩家将现实里的因素加以利用，以获得更好的游戏体验。顺着这个思路，我很快就决定了后续故事发展，玩家将会扮演一名飞船驾驶员，开着飞船进行星际旅程并探索异星球，收集和分析异星球上的数据，为未来人类的栖居地作出贡献。因此，我决定将游戏的后半程：在异星球表面着陆并且收集和处理数据作为VR的部分，一个完全虚拟的环境。",
-            "en": "Once this idea came to me, everything started to fall into place. A spaceship cockpit naturally fits the single-room space required by MR. Using the real floor and furniture, such as my external computer monitor, as elements that connect the virtual world with reality would not only avoid breaking immersion, but also encourage players to use real-world elements to improve their gameplay experience.\n\nFollowing this idea, I soon decided on the direction of the story. The player would take on the role of a spaceship pilot, travelling through space and exploring alien planets, collecting and analysing data to help find future habitats for humanity. Therefore, I decided that the second half of the game would take place in VR: the player would land on the surface of alien planets and collect and process data in a completely virtual environment."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785090777298-Screenshot_2026-07-26_193251.png",
-          "caption": {
-            "zh": "游戏流程设计图（局部）",
-            "en": "Game Design Flow Chart (Part)"
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "在设计游戏的关卡内容时，考虑到这本身是一个面向零基础人群的机器学习概念科普类教育游戏，游戏关卡和任务必须和教学内容高度关联，且以一种参与实践的方式让玩家对这些知识点的掌握随着进程越来越熟练。我设计这款游戏的目标是通过游玩游戏，让玩家获得一种相较于传统课堂效率更高且更具有自驱力积极性的学习方式。因此，通过大量相关领域（主要是XR在教学方面的应用，严肃游戏以及游戏化教育）的文献查阅以及反思后，我将设计方法论总结为如下图所示的框架：",
-            "en": "When designing the game levels, I considered that this was an educational game aimed at introducing basic machine learning concepts to beginners with no prior knowledge. Therefore, the levels and tasks had to be closely connected to the learning content, while allowing players to learn and gradually become more familiar with these concepts through hands-on practice as they progressed through the game.\n\nMy goal was to use gameplay to provide players with a more efficient, self-driven, and engaging way of learning compared with traditional classroom teaching. Therefore, after reviewing and reflecting on a large number of studies in related fields, mainly the use of XR in education, serious games, and gamification in education, I summarised my design methodology into the framework shown in the following figure:"
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785096953433-Screenshot_2026-07-26_211549.png",
-          "caption": {
-            "zh": "设计方法论",
-            "en": "Design Framework"
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "然后我从我本科计算机专业的课堂学习材料里查找并选取了合适的章节作为严谨的信息来源，设计了如下所示的游戏任务：",
-            "en": "I then selected appropriate chapters from the learning materials I used during my undergraduate Computer Science studies as reliable sources of information, and designed the following in-game tasks:"
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785097143096-Screenshot_2026-07-26_211857.png",
-          "caption": {
-            "zh": "游戏任务设计",
-            "en": "Game Quests Design"
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "在确定了上述的基本框架后，我就开始着手于前期开发工作。受限于时间和工作量，我没有在游戏视觉和美术方面投入精力自己建模和制作动画、特效等，直接从网上的资源商店里下载了免费正版模型。在代码方面，任何一个游戏项目都需要尽可能清晰和便于后续更新的基础，因此，我采用了设计模式来构建核心并确保游戏的可拓展性、可维护性和模块化。如下图所示，我利用Singleton和State模式等设计模式来管理游戏状态和场景，该架构围绕GameManager，SceneManager，TaskManager和UIManager等核心组件，确保以有序方式处理游戏流程、状态转换和交互。",
-            "en": "After establishing the basic framework above, I began the early development work. Due to time and workload constraints, I did not spend much effort on creating the game's visuals and art myself, such as modelling, animations, or visual effects. Instead, I downloaded free and legally licensed models from online asset stores.\n\nOn the programming side, every game project needs a clear foundation that is easy to update and maintain. Therefore, I used design patterns to build the core systems and ensure the game's scalability, maintainability, and modularity. As shown in the figure below, I used design patterns such as the Singleton and State patterns to manage the game states and scenes. The architecture is built around core components such as the GameManager, SceneManager, TaskManager, and UIManager, ensuring that the game flow, state transitions, and interactions are handled in an organised way."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785098168311-Screenshot_2026-07-26_213558.png",
-          "caption": {
-            "zh": "项目类图",
-            "en": "Project Class Diagram"
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "我向来很乐意在游戏中探索多样化的交互方式。这个项目也不例外。我尝试在游戏的不同阶段整合了多种交互方法，例如手势识别、凝视识别、控制器输入以及语音识别（使用了自定义的AI关键词模型）。玩家将利用合理的交互方式在游戏里驾驶飞船、操纵武器、虚拟界面交互以及物品收集。之所以整合这些交互方式不仅仅是出于我的实验兴趣，更多是我在过往使用VR设备的经验中发现，很多初次使用头戴式VR设备的用户变得熟练使用控制器进行游戏并不容易，因此我在设计交互方法时考虑到更符合人类直觉的自然交互方式，例如抓取物品和触屏控制界面我选取了手势交互，经过后续的用户测试验证，大部分的用户对于这种方式很快就适应并且熟练使用。而对于一些特定的场景，例如游戏中有一关需要玩家使用粒子发射器进行射击，对于这部分我则引入了控制器，并将它们设置为可以与手势兼容的模式，因为使用真实的控制抓握并扣动扳机进行射击更符合人的直觉。",
-            "en": "I have always enjoyed exploring different types of interaction in games. This project was no exception. I tried to integrate several interaction methods at different stages of the game, including gesture recognition, gaze tracking, controller input, and voice recognition using a custom AI keyword model. Players would use different interaction methods to pilot the spaceship, operate weapons, interact with virtual interfaces, and collect items.\n\nThe reason I integrated these interaction methods was not only because of my interest in experimentation. Based on my previous experience using VR devices, I found that many first-time VR users have difficulty becoming familiar with controllers. Therefore, when designing the interactions, I also considered more intuitive and natural ways of interacting. For example, I chose gesture-based interaction for tasks such as grabbing objects and using touchscreen-like interfaces. Later user testing showed that most users quickly adapted to and became comfortable with this method.\n\nFor specific situations, however, I chose different interaction methods. For example, one level requires the player to use a particle blaster to shoot targets. For this part, I introduced controllers and made them compatible with gesture-based interactions. Using a physical controller to grip the weapon and pull the trigger feels more natural and intuitive for shooting."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785099033365-Screenshot_2026-07-26_214920.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785099039446-Screenshot_2026-07-26_214940.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785099047160-Screenshot_2026-07-26_214953.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "除此之外，对于游戏中大部分需要简单文字说明的道具和虚拟物品，我为它们制作了一种通过检测凝视激活的UI面板，这样有效降低了场景内同时存在过多文本信息量可能带来的认知负担——尤其是在VR环境中。而对于后半部分的机器人助手，我给它加入了可以用语音输入进行简单交流的功能，不过在实际用户测试中，真正使用这一功能的用户并不多，我认为一部分原因可能来自于这个检测语音输入的模块有比较明显的延迟而带来了不好的用户体验，因此在最终版本中这一功能被废除了，后续使用类似的功能也需要考虑到这一点。 ",
-            "en": "In addition, for most objects and virtual items in the game that required simple text descriptions, I created UI panels that were activated when the player looked at them. This helped reduce the cognitive load caused by having too much text displayed in the scene at the same time, especially in a VR environment.\n\nFor the robot assistant in the second half of the game, I also added a voice input feature that allowed players to have simple conversations with it. However, during the user testing, not many users actually used this feature. I think one possible reason was the noticeable delay in the voice input detection module, which led to a poor user experience. Therefore, this feature was removed from the final version, and this is also something that should be considered when implementing similar features in future projects."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785099054332-Screenshot_2026-07-26_215013.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1785099058578-Screenshot_2026-07-26_215019.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        }
-      ],
-      "order": 4
-    },
-    {
       "id": "my-gamejam",
       "section": "devlogs",
       "title": {
@@ -832,7 +785,7 @@
         "src": ""
       },
       "body": [],
-      "order": 5
+      "order": 4
     },
     {
       "id": "my-npc",
@@ -847,24 +800,62 @@
         "en": "I implemented a tutorial data system that makes collaboration and editing easier for designers."
       },
       "tags": {
-        "genre": {
-          "zh": "",
-          "en": ""
-        },
-        "platform": {
-          "zh": "",
-          "en": ""
-        },
-        "duration": {
-          "zh": "",
-          "en": ""
-        }
+        "genre": "",
+        "platform": "",
+        "duration": ""
       },
       "video": {
         "type": "youtube",
-        "src": "https://www.youtube.com/watch?v=oncyUw2_k8Q"
+        "src": ""
       },
       "body": [],
+      "order": 5
+    },
+    {
+      "id": "static-bloom",
+      "section": "devlogs",
+      "title": {
+        "zh": "与Claude Code协作实现快速开发",
+        "en": "Working with Claude Code for Rapid Game Prototype"
+      },
+      "cover": "assets/images/games/1784007719517-claude.png",
+      "blurb": {
+        "zh": "本文简述了个人快速搭建原型的工作流",
+        "en": "This article introduces my personal workflow by using Claude in game development."
+      },
+      "tags": {
+        "genre": "Walking Sim",
+        "platform": "PC (Windows)",
+        "duration": "4 weeks"
+      },
+      "video": {
+        "type": "youtube",
+        "src": "dQw4w9WgXcQ"
+      },
+      "body": [
+        {
+          "type": "text",
+          "value": "STATIC BLOOM is a short atmospheric piece built around a single broken transmission. The player wanders a derelict observatory, tuning antennae to recover fragments of a forgotten broadcast.\n\nDesigned as a study in restraint: no HUD, no combat, no objectives beyond curiosity."
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/static-bloom-shot-1.svg",
+          "caption": "The main observatory floor at dawn."
+        },
+        {
+          "type": "text",
+          "value": "I built the entire vertical slice solo in Unity HDRP. Most of the time was spent on the audio: each antenna emits its own filtered noise that mixes into a single drifting drone, generated procedurally from FMOD events."
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/static-bloom-shot-2.svg",
+          "caption": "Antenna tuning interaction — analog dial driven by player position."
+        },
+        {
+          "type": "text",
+          "value": "Lessons learned: cut the inventory system on day three. The game got better the moment I stopped trying to give the player things to do."
+        }
+      ],
       "order": 6
     }
   ]
