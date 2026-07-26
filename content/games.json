@@ -764,16 +764,16 @@
       "order": 3
     },
     {
-      "id": "my-gamejam",
+      "id": "my-npc",
       "section": "devlogs",
       "title": {
-        "zh": "回顾我的历次Game Jam",
-        "en": "Looking Back at My Game Jams"
+        "zh": "关于去年做过的一个NPC引导系统",
+        "en": "An NPC Guidance System I Developed Last Year"
       },
-      "cover": "assets/images/games/1785101615193-background2.png",
+      "cover": "assets/images/games/1785102535124-Screenshot_2026-07-26_224842.png",
       "blurb": {
-        "zh": "我做过哪些小游戏，以及我学到了什么",
-        "en": "My Mini Games and What I Learned"
+        "zh": "我实现了一个便于协作和设计师编辑的引导数据系统",
+        "en": "I implemented a tutorial data system that makes collaboration and editing easier for designers."
       },
       "tags": {
         "genre": "",
@@ -788,16 +788,16 @@
       "order": 4
     },
     {
-      "id": "my-npc",
+      "id": "my-gamejam",
       "section": "devlogs",
       "title": {
-        "zh": "关于去年做过的一个NPC引导系统",
-        "en": "An NPC Guidance System I Developed Last Year"
+        "zh": "回顾我的历次Game Jam",
+        "en": "Looking Back at My Game Jams"
       },
-      "cover": "assets/images/games/1785102535124-Screenshot_2026-07-26_224842.png",
+      "cover": "assets/images/games/1785101615193-background2.png",
       "blurb": {
-        "zh": "我实现了一个便于协作和设计师编辑的引导数据系统",
-        "en": "I implemented a tutorial data system that makes collaboration and editing easier for designers."
+        "zh": "我做过哪些小游戏，以及我学到了什么",
+        "en": "My Mini Games and What I Learned"
       },
       "tags": {
         "genre": "",
