@@ -707,6 +707,36 @@
             "zh": "游戏流程设计图（局部）",
             "en": "Game Design Flow Chart (Part)"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在设计游戏的关卡内容时，考虑到这本身是一个面向零基础人群的机器学习概念科普类教育游戏，游戏关卡和任务必须和教学内容高度关联，且以一种参与实践的方式让玩家对这些知识点的掌握随着进程越来越熟练。我设计这款游戏的目标是通过游玩游戏，让玩家获得一种相较于传统课堂效率更高且更具有自驱力积极性的学习方式。因此，通过大量相关领域（主要是XR在教学方面的应用，严肃游戏以及游戏化教育）的文献查阅以及反思后，我将设计方法论总结为如下图所示的框架：",
+            "en": "When designing the game levels, I considered that this was an educational game aimed at introducing basic machine learning concepts to beginners with no prior knowledge. Therefore, the levels and tasks had to be closely connected to the learning content, while allowing players to learn and gradually become more familiar with these concepts through hands-on practice as they progressed through the game.\n\nMy goal was to use gameplay to provide players with a more efficient, self-driven, and engaging way of learning compared with traditional classroom teaching. Therefore, after reviewing and reflecting on a large number of studies in related fields, mainly the use of XR in education, serious games, and gamification in education, I summarised my design methodology into the framework shown in the following figure:"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785096953433-Screenshot_2026-07-26_211549.png",
+          "caption": {
+            "zh": "设计方法论",
+            "en": "Design Framework"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "然后我从我本科计算机专业的课堂学习材料里查找并选取了合适的章节作为严谨的信息来源，设计了如下所示的游戏任务：",
+            "en": "I then selected appropriate chapters from the learning materials I used during my undergraduate Computer Science studies as reliable sources of information, and designed the following in-game tasks:"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785097143096-Screenshot_2026-07-26_211857.png",
+          "caption": {
+            "zh": "游戏任务设计",
+            "en": "Game Quests Design"
+          }
         }
       ],
       "order": 4
