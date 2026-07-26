@@ -210,6 +210,21 @@
             "zh": "",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在开发过程中，我也有遇到一些有趣的技术挑战。例如，可以透过真实门窗看见飞船外的虚拟环境是如何实现的？这是通过将Shader文件用于控制窗口玻璃材质的渲染深度和顺序来实现的。这个实现方法的理论背景是，渲染中的深度测试将每个像素的深度值和深度缓冲区中的现有值进行比较，以确定是否应该渲染它。距离摄像机较近的对象（具有较小的深度值）通过测试，并遮挡其后面的对象。\n在游戏中，渲染顺序由Render Queue控制，首先渲染虚拟场景，然后是门/窗和墙壁。深度缓冲区在渲染对象时更新，门的深度信息将替换虚拟场景中的深度信息，墙壁的深度信息将替换门的深度信息（如果适用）。被门挡住的墙壁无法通过深度测试，并且不会在这些区域中进行渲染，从而使原始虚拟场景可见。",
+            "en": "During development, I also encountered some interesting technical challenges. For example, how could I make the virtual environment outside the spaceship visible through the real doors and windows? I achieved this by using a Shader to control the rendering depth and order of the window glass material.\n\nThe theoretical principle behind this implementation is that depth testing compares the depth value of each pixel with the existing value in the depth buffer to determine whether it should be rendered. Objects that are closer to the camera, with smaller depth values, pass the test and occlude objects behind them.\n\nIn the game, the rendering order is controlled by the Render Queue. The virtual scene is rendered first, followed by the doors/windows and then the walls. The depth buffer is updated as each object is rendered. The depth information of the doors replaces the depth information of the virtual scene, and the depth information of the walls then replaces that of the doors, where applicable. The parts of the walls that are blocked by the doors fail the depth test and are therefore not rendered in those areas, allowing the original virtual scene to remain visible."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785104902380-Screenshot_2026-07-26_221332.png",
+          "caption": {
+            "zh": "渲染层级",
+            "en": "Render Layer"
+          }
         }
       ],
       "order": 0
