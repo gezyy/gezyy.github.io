@@ -901,7 +901,31 @@
         "type": "youtube",
         "src": "https://www.youtube.com/watch?v=iOj_gRFdnOk"
       },
-      "body": [],
+      "body": [
+        {
+          "type": "text",
+          "value": {
+            "zh": "回顾我从2023年起第一次正式通过一个为期7天的线上训练营参与到游戏开发为起始，这些年除了学校里的研究性项目和游戏实习以外，我总共参加过3次线下Game Jam。其实除了这三次以外，还有两次并不成功的尝试：我第一次在训练营里线上组队，也是我第一次做游戏设计，此前我毫无经验，所以不出所料地，我们没能在规定时间内完成它。那是一个点击解谜文字冒险游戏——这也是我学到的第一段Game Jam经验，在如此紧张的时间限制内，最好不要尝试制作2D文字冒险这种美术素材和文本量需求都极大的游戏类型，除非这是一个经验丰富的团队。而另一段同样以没做完为失败告吹的项目也是线上组队的，我当时同样担任了游戏设计的角色，那是一款类吸血鬼幸存者的Rouge Like游戏，玩家需要管理资源并构建个性化的火车车厢（这些车厢有不同的类型和特性）在无限波次的怪物袭击中存活下来。其实我还挺喜欢这个想法的，尤其是我们设计了一个可以开火车将怪物撞开的机制。然而，这次的失败也让我第一次认识到在游戏开发团队中协作不仅需要你有丰富的创意，项目管理同样重要——快速构建条理清晰易于读懂的设计文档，以及为你的团队提前规划好时间线，并且在每个Check Point检查交付情况，提供反馈等等。",
+            "en": "Looking back, my journey into game development officially began in 2023, when I first took part in a seven-day online training camp. Since then, apart from my university research projects and game industry internship, I have participated in three in-person Game Jams.\n\nActually, there were also two other unsuccessful attempts. The first was when I joined an online team during the training camp. It was also my first time doing game design, and I had absolutely no previous experience, so unsurprisingly, we failed to finish the game within the given time. It was a click-based puzzle text adventure game. This was my first Game Jam lesson: under such a tight time limit, it is probably best not to try making a 2D text adventure game, as it requires a huge amount of art assets and text, unless you are working with an experienced team.\n\nThe other unfinished project was also made by an online team, where I again took on the role of game designer. It was a **Vampire Survivors-style roguelike** in which players had to manage resources and build their own customised train carriages, each with different types and characteristics, in order to survive endless waves of monster attacks. I actually really liked this idea, especially the mechanic we designed where the player could drive the train and run over monsters.\n\nHowever, this failure also taught me, for the first time, that collaboration in a game development team requires more than just having lots of creative ideas. Project management is equally important. This includes quickly creating clear and easy-to-understand design documents, planning a timeline for the team in advance, checking progress and deliverables at each checkpoint, and providing feedback along the way."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785155553581-Screenshot_2026-07-27_132834.png",
+          "caption": {
+            "zh": "我第一次参与制作的文字解谜游戏",
+            "en": "The Click-Puzzle Game I first time made"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1785155588529-toot.jpg",
+          "caption": {
+            "zh": "火车资源管理Rouge-Like游戏",
+            "en": "The Train Rouge-Like Game"
+          }
+        }
+      ],
       "order": 5
     },
     {
