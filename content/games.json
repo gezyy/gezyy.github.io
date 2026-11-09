@@ -13,13 +13,22 @@
         "en": "devlog"
       },
       "tags": {
-        "genre": "",
-        "platform": "",
-        "duration": ""
+        "genre": {
+          "zh": "VR/第一人称/叙事/冒险",
+          "en": "VR/Narrative/adventure"
+        },
+        "platform": {
+          "zh": "Meta Quest 3",
+          "en": "Meta Quest 3"
+        },
+        "duration": {
+          "zh": "1个月",
+          "en": "1 month"
+        }
       },
       "video": {
         "type": "youtube",
-        "src": ""
+        "src": "https://youtu.be/soucfY9vPMk"
       },
       "body": [],
       "order": 0
