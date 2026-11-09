@@ -37,6 +37,13 @@
             "zh": "一点背景信息：这个项目本身是我在布里斯托大学读Immersive Technologies Msc专业的毕业设计（Dissertation）项目，用时大概一个月，团队由两名叙事/3D模型设计师以及两名游戏设计和开发者组成。我在这个团队里担任了这个项目的主要游戏设计和开发工作，以及项目管理。\n\n正如我的课程要求，这是一个VR游戏，但我个人认为这个demo最终呈现出来的完成度和游戏体验对于一个月的设计以及开发时长来说还是可以接受的。我们也为此写了一篇200多页（是的！）的设计论文，但是我不会在这里展示这些，我会尽量精简说明关于这个项目的游戏设计思路和实现过程。\n\n接下来我会分为以下板块，尽量还原我做这个项目的思路和流程，并提炼出有价值的经验：",
             "en": "This project was my dissertation project for the MSc in Immersive Technologies at the University of Bristol. It took approximately one month to complete. The team consisted of four members: two narrative and 3D modelling designers, and two game designers and developers. My primary responsibilities were game design, development, and project management.\n\nAs required by my course, the project was developed as a VR game. Personally, I think the final demo achieved a reasonable level of polish and delivered a fairly satisfying gameplay experience, especially considering that we only had one month for the entire design and development process.\n\nWe also produced a design document of over 200 pages (yes, really!). However, I won't be presenting all of that here. Instead, I'll focus on explaining the key game design ideas and implementation process as concisely as possible.\n\nIn the following sections, I'll walk through the project step by step, retracing my design decisions and development process while highlighting the most valuable lessons and insights I gained along the way."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "1. 如何立项\n2. 前期项目管理\n3. 玩法核心及测试\n4. 叙事为骨，生长出玩法和副系统\n     - 玩家与龙\n     - 关卡\n     - 地形适配\n     - 引导\n5. 取舍以及迭代\n     - 云层\n     - 边界\n     - 变化的天空盒\n6. 打磨游戏体验\n7. 反思",
+            "en": "1. Project Planning and Initial Concept\n2. Early-stage Project Management\n3. Core Gameplay Design and Testing\n4. Building Gameplay and Supporting Systems Around the Narrative\n\n- Player and Dragon\n- Level Design\n- Terrain Adaptation\n- Player Guidance\n\n5. Design Trade-offs and Iteration\n\n- Clouds\n- Boundaries\n- Dynamic Skybox\n\n6. Polishing the Gameplay Experience\n7. Reflection"
+          }
         }
       ],
       "order": 0
