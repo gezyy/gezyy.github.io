@@ -190,6 +190,13 @@
             "zh": "游戏剧本",
             "en": "Game Scripts"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "- 玩家与龙\n\n首先，剧本给我带来最重要的一个启发（也是该项目的亮点）是龙与玩家的关系。在故事中，玩家全程骑行的龙并不单纯是一个坐骑，而是主角一同成长的伙伴。而在大量同类游戏中，龙多数被设定为一个坐骑，坐骑本身也可以获得成长，但如何让玩家感受到伙伴之间的羁绊，则是一个在玩法方面值得探索的方向。\n\n在设计龙和玩家之间如何互动时，我希望这不仅仅是装饰性的，而是能对整个游戏产生影响的机制。但我不希望给玩家带来任何“逼迫感”或者这种影响会导致游戏流程卡住，因此在平衡情感体验和游戏性时，我主要遇到了以下三个方面的设计挑战：（以下内容引用自我的论文）",
+            "en": "### Player and Dragon\n\nFirst, the most important inspiration I drew from the script (and one of the project's key highlights) was the relationship between the dragon and the player.\n\nIn the story, the dragon that the player rides throughout the game is not simply a mount. It is a companion that grows alongside the protagonist. In many similar games, dragons are primarily treated as mounts. While these mounts may have their own progression and development systems, creating a genuine sense of emotional connection between the player and their companion is a much more interesting design challenge worth exploring through gameplay.\n\nWhen designing the interactions between the player and the dragon, I wanted this relationship to be more than just a visual or decorative element. It needed to be a meaningful mechanic that could influence the overall game experience.\n\nHowever, I also wanted to avoid making players feel forced to interact with the dragon, or allowing the relationship system to prevent them from progressing through the game.\n\nBalancing emotional engagement with gameplay therefore presented three major design challenges:\n\n(The following sections are quoted from my dissertation.)"
+          }
         }
       ],
       "order": 0
