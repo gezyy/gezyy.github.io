@@ -1443,8 +1443,8 @@
         {
           "type": "text",
           "value": {
-            "zh": "",
-            "en": ""
+            "zh": "这次的GameJam是一个限时48小时的挑战，并且主题为Impaired Devices。简单来说就是参考一些故障设备的特性，并且将这种特性利用到游戏的主要机制里。这个GameJam我组成了一个三人团队，在布里斯托线下的Game Lab里现场开发。团队中，我负责主要设计和开发工作，我们还有一名美术设计师，以及一名剧本创作者。在揭晓主题后，我立刻想到了利用坏掉的电脑屏幕，例如一些显示器上出现的黑屏现象，让受限的视觉成为核心机制。并且有了之前的经验教训，这一次我决定制作一个PVP双人对战游戏，并且让双人共享同一个受限屏幕，因此操作方式的设计我参考了一些街机游戏，两个人共用一块键盘的不同键位。",
+            "en": "This Game Jam was a 48-hour challenge with the theme Impaired Devices. The idea was to take the characteristics of malfunctioning devices and turn them into the core mechanics of a game.\n\nI formed a three-person team and developed the game on-site at the Game Lab in Bristol. I was responsible for most of the game design and development, while the other two members took care of the art and narrative.\n\nAs soon as the theme was announced, I immediately thought of malfunctioning computer screens, particularly the black screen effect found on some broken monitors. I wanted to turn restricted visibility into the game's core mechanic.\n\nTaking the lessons from my previous experience into account, I decided to make a two-player PvP game. Both players would share the same screen, with their vision equally restricted. For the controls, I took inspiration from arcade games where two players share a single keyboard but use different sets of keys."
           }
         }
       ],
