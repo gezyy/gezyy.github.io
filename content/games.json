@@ -1465,8 +1465,8 @@
         {
           "type": "text",
           "value": {
-            "zh": "",
-            "en": ""
+            "zh": "同样来自街机游戏的灵感，我们将美术风格设计为一个电视机屏幕，并且考虑到我们没有时间做动画，所以美术设计师绘制了一个靠滚轮移动的小机器人。除此之外，我们的剧本创作者还为这个小游戏撰写了几段背景故事，并且配音成新闻播报的形式穿插在游戏开头和每一局结尾，我们还制作了一个简单的电视开关屏幕特效用于亮屏和熄屏阶段的过渡。因此，虽然时间很短，但我们依然做了一个相对完整的小游戏，这也是我最满意的一点。",
+            "en": "Also inspired by arcade games, we designed the visual style around an old television screen. Since we did not have enough time to create animations, our artist designed a small robot that moved around on wheels instead.&#x20;\n\nOur narrative designer also wrote several short pieces of backstory for the game, which were recorded as news broadcasts and played at the beginning of the game and at the end of each round. We also created a simple TV power-on and power-off effect to transition between the screen-on and screen-off phases.\n\nAs a result, despite the extremely limited development time, we still managed to create a relatively complete game. This was probably the aspect of the project that I was most satisfied with."
           }
         }
       ],
