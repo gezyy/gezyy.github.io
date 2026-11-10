@@ -1487,13 +1487,28 @@
         {
           "type": "text",
           "value": {
-            "zh": "这是Global GameJam的布里斯托站。除了业余爱好者，也有很多行业内的专业人士参与。我和另外三名设计师（两名平面设计师，一位模型设计师）组成了一个团队，仍然是我负责设计和开发。这次GameJam的主题是Mask（面具/或者遮罩）在看到这个主题时，我的第一反应是假面舞会，或者某种为了隐藏身份的活动。在于我们团队其他人交流后，我发现大家都对低多边形，略带恐怖的氛围很感兴趣。但这不代表我们就要制作一个恐怖游戏，我从《恶魔轮盘赌》这个游戏中得到了一些灵感，例如将电子音乐和紧张的氛围结合起来的体验。然后，我想到了一个方向，玩家扮演一名保护舞会DJ的杀手，负责识别舞池人群中那些不符合着装要求的人，在他们接近DJ之前将其解决。",
-            "en": "This was the Bristol edition of the Global Game Jam. In addition to hobbyists, many industry professionals also took part. I formed a team with three other designers (two graphic designers and one 3D modeller), while I was once again responsible for the game design and development.\n\nThe theme of this Game Jam was Mask. My first thoughts when I saw the theme were a masquerade ball or some kind of event where people hide their identities. After discussing it with the rest of the team, I found that everyone was interested in low-poly visuals and a slightly unsettling atmosphere. However, this did not necessarily mean we had to make a horror game.\n\nI drew some inspiration from Buckshot Roulette, particularly its combination of electronic music and tension. This led me to an idea: the player would take on the role of an assassin hired to protect a DJ at a party. Their job would be to identify people in the crowd who did not meet the dress code and eliminate them before they could get close to the DJ."
+            "zh": "这是Global GameJam的布里斯托站。除了业余爱好者，也有很多行业内的专业人士参与。我和另外三名设计师（两名平面设计师，一位模型设计师）组成了一个团队，仍然是我负责设计和开发。这次GameJam的主题是Mask（面具/或者遮罩）在看到这个主题时，我的第一反应是假面舞会，或者某种为了隐藏身份的活动。在于我们团队其他人交流后，我发现大家都对低多边形，略带恐怖的氛围很感兴趣。但这不代表我们就要制作一个恐怖游戏，我从《恶魔轮盘赌》这个游戏中得到了一些灵感，例如将电子音乐和紧张的氛围结合起来的体验。然后，我想到了一个方向，玩家扮演一名保护舞会DJ的杀手，负责识别舞池人群中那些不符合舞会要求的人，在他们接近DJ之前将其解决。",
+            "en": "This was the Bristol edition of the Global Game Jam. In addition to hobbyists, many industry professionals also took part. I formed a team with three other designers (two graphic designers and one 3D modeller), while I was once again responsible for the game design and development.\n\nThe theme of this Game Jam was Mask. My first thoughts when I saw the theme were a masquerade ball or some kind of event where people hide their identities. After discussing it with the rest of the team, I found that everyone was interested in low-poly visuals and a slightly unsettling atmosphere. However, this did not necessarily mean we had to make a horror game.\n\nI drew some inspiration from Buckshot Roulette, particularly its combination of electronic music and tension. This led me to an idea: the player would take on the role of an assassin hired to protect a DJ at a party. Their job would be to identify people in the crowd who did not meet the party requirements and eliminate them before they could get close to the DJ."
           }
         },
         {
           "type": "image",
           "src": "assets/images/games/1794316642479-Screenshot_2026-11-10_211715.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "因此，整个游戏的玩法是，玩家以一个固定位置（但可以转动视角）俯视观察楼下舞池里的人群，每一局开始时会随机生成两条搭配规则，规则里说明佩戴哪些面具的人不能在一起跳舞，而一旦有人连续违反规则三次以上，就应该被除掉，如果超过了规定次数，DJ就会有危险。游戏胜利需要玩家识别并清除所有违规人员，且不能误杀任何正常人。值得一提的是，在开发这个玩法的过程中，我遇到了一些困难。例如，舞会AI需要自行两两组合一起跳舞，然后交换舞伴，因此有一些边界情况我一开始没有考虑充分，例如舞伴重复的问题，会导致某个AI在原地卡死。以及两个AI如果同时找了一个人作为舞伴，那么优先级如何判断。这些问题让开发过程不那么顺利，但最终我们仍然按时完成了这个游戏。甚至我还增加了一个PVP模式，双方玩家各自选择一种面具混入一群AI中，率先在人群中找到另一个玩家并将其杀死即可获胜。",
+            "en": "The core gameplay involved observing the dance floor from a fixed position above (although players could rotate their view) and watching the crowd below. At the beginning of each round, two pairing rules would be randomly generated. These rules specified which combinations of masks were not allowed to dance together. Anyone who repeatedly violated these rules more than three times had to be eliminated. If too many violations went unnoticed, the DJ would be put in danger.\n\nTo win, players had to identify and eliminate all rule-breaking individuals without accidentally killing any innocent dancers.\n\nIt is worth mentioning that I encountered several challenges while developing this gameplay system. The AI dancers had to independently find partners, dance in pairs, and then switch partners. This introduced several edge cases that I had not fully considered at first. For example, repeated partner assignments could cause an AI character to get stuck in place. Another problem was how to determine priority when two AI characters tried to choose the same person as their dance partner.\n\nThese issues made development more challenging than expected, but we still managed to complete the game on time. I even added a PvP mode in which each player selected a type of mask and blended into a crowd of AI dancers. The first player to identify and eliminate the other player within the crowd would win."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794317500822-Screenshot_2026-11-10_213131.png",
           "caption": {
             "zh": "",
             "en": ""
