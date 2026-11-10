@@ -1513,6 +1513,13 @@
             "zh": "",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "由于时间很短，我们依然没有进行充分的玩法测试，因此最终我对于玩法有些遗憾的地方，比如玩家想要记住某个连续犯错的人比我预想的更难，而且识别出坏人后的顺利击杀也没有足够的正反馈，如果时间充分，我会增加一些刺激的音效和视觉效果来优化这一点。但这次尝试也有可取之处，例如我为这个游戏制作了一些简单但有趣的人物动画，一个模拟下雨和夜晚雾气的霓虹灯主界面，并且我们还有一个成员制作了非常优秀的电子乐插曲，包括独特的角色设计和贴图元素。这让这个游戏看上去是一个又独特风格和氛围的作品。 ",
+            "en": "Due to the limited development time, we still did not have enough opportunities to playtest the game. As a result, there were some aspects of the gameplay that I was not entirely satisfied with. For example, remembering which individuals had repeatedly broken the rules turned out to be more difficult for players than I had expected. Furthermore, successfully identifying and eliminating a rule-breaker did not provide enough positive feedback. Given more time, I would have added more exciting sound effects and visual effects to make these moments more rewarding.\n\nNevertheless, this project also had several strengths. I created some simple but interesting character animations, as well as a neon-style main menu featuring simulated rain and nighttime fog. One of our team members also composed an excellent electronic music track for the game. Combined with the distinctive character designs and textural elements, these features gave the game a unique visual style and atmosphere."
+          }
         }
       ],
       "order": 6
