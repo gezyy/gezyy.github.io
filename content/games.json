@@ -98,6 +98,22 @@
             "zh": "Gitlab Issue Board",
             "en": "Gitlab Issue Board"
           }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794292029620-level.png",
+          "caption": {
+            "zh": "关卡表",
+            "en": "Table of Level"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794292064995-assets.png",
+          "caption": {
+            "zh": "资产表",
+            "en": "Table of Assets"
+          }
         }
       ],
       "order": 0
