@@ -1421,6 +1421,13 @@
         {
           "type": "text",
           "value": {
+            "zh": "还有关卡设计方面的启发。由于这是一个2D游戏，因此在设计关卡时需要考虑的是横纵两个维度。例如，如果地图的整体走向是纵向的，那么就需要纵向设置平台，并且平台之间的高度差，左右的距离，这些都需要在反复的调试中预留一个合理的数值。并且在设计谜题时，也需要考虑到空间，一个良好的设计不应该存在任何多余的平台。除此之外，敌人和道具的分布以及数量也应该考虑到平衡性和可玩性，对于这类游戏来说，敌人的出现应该是一个惊吓，并且可以通过合理的操作规避的，而不是必须与其发生战斗。",
+            "en": "I also gained some valuable insights into level design. Since this was a 2D game, level design required careful consideration of both horizontal and vertical dimensions. For example, if a map was designed to progress mainly upwards, platforms needed to be arranged vertically, with appropriate spacing in both height and horizontal distance. These values had to be carefully adjusted through repeated testing to achieve a good balance.\n\nPuzzle design also required careful consideration of space. A well-designed puzzle should not contain any unnecessary platforms. In addition, the placement and number of enemies and items needed to be balanced to maintain both challenge and playability. In a game like this, encountering an enemy should come as a surprise, but players should be able to avoid it through skilful movement rather than being forced to fight."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
             "zh": "这次的经历让我首次以全局思维考虑游戏设计了，但同时我也得到了一些宝贵教训，例如：我们应该花费更多的时间分配在核心玩法的打磨上，而不是急着构建关卡。对于短时间，小体量的游戏来说，精心准备一个能让玩家感受到核心玩法的乐趣的关卡比三个粗制滥造的关卡更有价值。其次，在GameJam中制作PVE游戏存在更多挑战，例如游戏平衡，AI设计，内容量的堆砌，这些都是时间杀手。所以，在下一次的GameJam中，我就将目光转向了PVP游戏。",
             "en": "This experience taught me to approach game design from a much broader perspective, but it also gave me some valuable lessons. For example, we should have spent more time refining the core gameplay instead of rushing to build multiple levels. For a small game developed within a limited timeframe, one carefully crafted level that allows players to fully experience the fun of the core mechanics is far more valuable than three poorly polished levels.\n\nSecondly, developing a PvE game during a Game Jam brings additional challenges, such as game balancing, AI design, and creating enough content. All of these can consume a considerable amount of development time. Therefore, for my next Game Jam, I decided to turn my attention to PvP games."
           }
