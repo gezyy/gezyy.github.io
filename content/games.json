@@ -59,6 +59,29 @@
             "zh": "角色设计草图 CR.xiaoya",
             "en": "Character Design Sketch CR.Xiaoya"
           }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794291213119-2.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794291229312-3.png",
+          "caption": {
+            "zh": "地图设计草图 CR.Zhan",
+            "en": "Map Design Sketch CR.Zhan"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 0
