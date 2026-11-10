@@ -1380,6 +1380,21 @@
             "zh": "飞天猫",
             "en": "The Space Cat"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "而且，与团队里其他人分工开发也促使我开始以更加结构化的方式构思整个项目。例如，关卡和关卡之间应该如何跳转？我们是否应该使用一致的地图编辑工具？哪些系统应该先被定义以便所有协作者都能访问？以及，为了让协作更加顺利，我开始考虑在编写文档以及沟通时，采用一种便于理解，且边界详细的方式。如果说之前的我只是作为一个灵感或者创意的提供者，在真正成为开发者参与进来后，我的身份更加靠近了一名游戏设计师。这也让我从更直观的角度体会到，游戏制作是一件复杂的事情，作为设计者，不仅仅是构建一个奇妙的虚拟世界，更重要的是如何将这种幻想转化成一种实际体验，让玩家能够沉浸地参与进来。",
+            "en": "Working with other team members on different parts of the development also encouraged me to approach the project in a more structured way. For example, how should players move between levels? Should we use a consistent map-editing tool? Which systems needed to be defined first so that everyone on the team could access them? To make collaboration smoother, I also began to think about how to write documentation and communicate ideas in a way that was easy to understand, with clearly defined boundaries and responsibilities.\n\nIf I had previously been little more than a source of inspiration and ideas, becoming directly involved in development brought me much closer to the role of a game designer. It also gave me a more practical understanding of how complex game development can be. As a designer, the challenge is not simply to create a wonderful virtual world, but more importantly, to turn that imagination into a tangible experience in which players can become fully immersed."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794307976696-Screenshot_2026-11-10_185249.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 6
