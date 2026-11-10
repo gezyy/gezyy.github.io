@@ -1395,6 +1395,21 @@
             "zh": "",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "七天后，这款小游戏也顺利完成了。虽然最终只有三个完整关卡，但我自己绘制了美术和三个不同主题的地图（披萨星球，毛线团星球和煎蛋星球）而且，我们还设计了多种可互动的陷阱机关和敌人类型，玩家除了变成球形弹射出去作为主要机制外，还有收集道具发射弹幕的能力；而且我们还为每一关设计了一个形态和能力各异的BOSS，并且充分考虑到利用玩家的弹射机制，例如第一关的菠萝王，想要击败他就必须变成球形后将菠萝王发射出的菠萝片反弹回去。虽然整个游戏仍然很笨拙，并且在难度方面不够平衡，对于精细操作的需求很高，有玩家反馈实在是太难了！但仍然有很多玩家在初次游玩时会心一笑，认为利用反弹的机制很有趣。",
+            "en": "After seven days, we successfully completed the game. Although the final version contained only three complete levels, I created the artwork myself and designed three maps, each with a different theme: Pizza Planet, Yarn Ball Planet, and Fried Egg Planet.\n\nWe also designed various interactive traps, mechanisms, and enemy types. In addition to the main mechanic of transforming into a ball and launching themselves through the air, players could collect items and use them to fire projectiles. Each level also featured a unique boss with different forms and abilities, designed to make full use of the player's launching mechanic. For example, to defeat the Pineapple King in the first level, players had to transform into a ball and bounce back the pineapple slices fired by the boss.\n\nAlthough the game was still quite rough around the edges, its difficulty was not well balanced, and it demanded a high level of precision from players. Some even commented that it was simply too difficult! Nevertheless, many players smiled during their first playthrough, finding the bouncing mechanic particularly fun and enjoyable."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794308281111-Screenshot_2026-11-10_185751.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 6
