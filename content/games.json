@@ -175,6 +175,21 @@
             "zh": "防晕视觉效果",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "四、叙事为骨，生长出玩法和副系统\n\n在开发龙的驾驶操作时，我跟进了几次叙事组的会议，结合来自专业脚本设计师的建议，我们最终在这个阶段敲定了整个游戏的叙事剧本。\n\n在最终剧本完成前，我并没有贸然开展更复杂的玩法和系统设计。这是因为在我看来，一个叙事为核心的游戏，任何玩法都应该为叙事服务，玩法不应该打断叙事节奏，且和剧情割裂。所以，在拿到完整剧本后，我立刻对整个剧本进行分析，拆解出完整流程，划分节点，然后在梳理的过程中对玩法和系统进行构思。",
+            "en": "## 4. Building Gameplay and Supporting Systems Around the Narrative\n\nWhile working on the dragon controls, I also attended several meetings with the narrative team. With additional feedback and suggestions from a professional scriptwriter, we eventually finalised the complete game script at this stage.\n\nBefore the final script was ready, I deliberately avoided moving ahead with more complex gameplay and system design.\n\nMy reasoning was simple: in a narrative-driven game, gameplay should always serve the story. It should neither interrupt the narrative flow nor feel disconnected from the events taking place in the game.\n\nOnce I received the complete script, I immediately started analysing it. I broke down the entire narrative into a complete sequence of events, identified the key progression points, and mapped out the overall game flow.\n\nAs I worked through the script and organised its structure, I began developing ideas for gameplay mechanics and supporting systems that could naturally emerge from the narrative itself."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794293404694-scripts.png",
+          "caption": {
+            "zh": "游戏剧本",
+            "en": "Game Scripts"
+          }
         }
       ],
       "order": 0
