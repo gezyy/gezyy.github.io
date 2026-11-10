@@ -1520,6 +1520,13 @@
             "zh": "由于时间很短，我们依然没有进行充分的玩法测试，因此最终我对于玩法有些遗憾的地方，比如玩家想要记住某个连续犯错的人比我预想的更难，而且识别出坏人后的顺利击杀也没有足够的正反馈，如果时间充分，我会增加一些刺激的音效和视觉效果来优化这一点。但这次尝试也有可取之处，例如我为这个游戏制作了一些简单但有趣的人物动画，一个模拟下雨和夜晚雾气的霓虹灯主界面，并且我们还有一个成员制作了非常优秀的电子乐插曲，包括独特的角色设计和贴图元素。这让这个游戏看上去是一个又独特风格和氛围的作品。 ",
             "en": "Due to the limited development time, we still did not have enough opportunities to playtest the game. As a result, there were some aspects of the gameplay that I was not entirely satisfied with. For example, remembering which individuals had repeatedly broken the rules turned out to be more difficult for players than I had expected. Furthermore, successfully identifying and eliminating a rule-breaker did not provide enough positive feedback. Given more time, I would have added more exciting sound effects and visual effects to make these moments more rewarding.\n\nNevertheless, this project also had several strengths. I created some simple but interesting character animations, as well as a neon-style main menu featuring simulated rain and nighttime fog. One of our team members also composed an excellent electronic music track for the game. Combined with the distinctive character designs and textural elements, these features gave the game a unique visual style and atmosphere."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "回顾这几次的GameJam经历，我会发现提升的不止我在短时间内迅捷开发的能力。更多的是我学到了如何建立起一个更全面的游戏设计师的视角，并且这几次的开发经历我都与背景各不相同的优秀设计师们一起工作，在压力下我们依然能够互相分享有趣的想法，一同规划时间协作，最终把我们的想法复现。这种感觉非常好。而且我在这几次尝试中都实验了各种各样的设计思路，这对我来说也是很有趣的体验。而且有时候主题限制本身反而可以打开思路，对我来说，参与这样的线下活动也是一种给我提供灵感的方式，在未来我也会希望参与更多这样的活动。",
+            "en": "Looking back on these Game Jam experiences, I realise that what improved was not just my ability to develop games quickly under tight time constraints. More importantly, I learned how to develop a more comprehensive perspective as a game designer.\n\nAcross these projects, I had the opportunity to work with talented designers from a variety of backgrounds. Even under pressure, we were able to share interesting ideas, plan our time, collaborate effectively, and eventually bring our ideas to life. I found this experience incredibly rewarding.\n\nI also enjoyed experimenting with a wide range of design ideas throughout these Game Jams. Sometimes, the constraints imposed by a theme can actually open up new creative possibilities rather than limit them. For me, taking part in these offline events is also a valuable source of inspiration, and I hope to participate in more of them in the future."
+          }
         }
       ],
       "order": 6
