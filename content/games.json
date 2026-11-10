@@ -264,6 +264,21 @@
             "zh": "项目结构",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "- 地形适配\n\n在我们美术组的成员产出了地图模型后，我先对环境地形做了适配。但这一项工作花费了比预计要长的时间，这是因为在并不平坦的地面上骑乘时，地形检测的问题必须解决。地面骑乘只能让龙水平移动，无法控制高度，它会直接走进山丘，或漂浮在洼地上方。另外，龙在起飞时只会测量一次地面高度，整个过程中都使用这个单一值作为最低和最高高度，以及着落点。这会导致龙直接飞进墙体里，降落时有可能在地面以下或者悬浮在空中。同样的问题也会发生在龙的自主游荡行为上。\n\n因此需要一种统一的方法来检测此时地面在哪里，以及坡度和材质。这应该是一种可被查询的服务。在实现这个方法的过程中，我还犯了一个错误，为了让龙跟随地面高度平滑移动，我设置了一个处于龙正下方的投影，这导致检测和高度调整存在无法避免的时间差，这个方法在斜坡位置会出现严重误差。因此我将目标点调整到龙前方一小段距离的地面时，龙的身体便可以在到达坡面之前开始抬升，最终的动作也不再出现明显的错误。这是因为，真实的四足动物也会以类似的方式行动：它们会提前感知前方的地形，而不是等到地面发生变化后才做出反应。",
+            "en": "### Terrain Adaptation\n\nAfter the art team had finished producing the map models, I began adapting the environment terrain for gameplay. However, this task took longer than expected because I had to solve several terrain detection problems that occurred when riding the dragon over uneven ground.\n\nWhen moving on the ground, the dragon could only move horizontally, with no control over its height. As a result, it could walk straight into hills or float above depressions in the terrain. There was also a problem during take-off: the dragon only measured the ground height once, at the beginning of the flight, and then used that single value throughout the entire process as its minimum and maximum flight height, as well as its landing point. This could cause the dragon to fly directly into walls or land below the ground or remain floating in mid-air. The same problems also occurred during the dragon's autonomous wandering behaviour.\n\nI therefore needed a unified way to detect the current ground position, slope, and surface material. This needed to be implemented as a queryable service that different systems could access.\n\nDuring implementation, I also made a mistake. To make the dragon follow changes in ground height smoothly, I initially placed the ground projection directly beneath the dragon. However, this introduced an unavoidable delay between terrain detection and height adjustment, resulting in significant errors on slopes.\n\nI eventually moved the target detection point slightly ahead of the dragon, onto the ground in front of it. This allowed the dragon to begin raising its body before actually reaching the slope, eliminating the obvious movement errors. This also made sense from a biological perspective: real quadrupedal animals behave in a similar way, sensing the terrain ahead of them and adjusting their movements in anticipation, rather than waiting until the ground changes beneath their feet."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794296641808-detection.png",
+          "caption": {
+            "zh": "地面检测依靠四足的探针",
+            "en": "Detected by the probes on feet"
+          }
         }
       ],
       "order": 0
