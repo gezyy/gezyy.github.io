@@ -90,6 +90,14 @@
             "zh": "Notion文档项目管理",
             "en": "Notion page for management"
           }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794291909803-management2.png",
+          "caption": {
+            "zh": "Gitlab Issue Board",
+            "en": "Gitlab Issue Board"
+          }
         }
       ],
       "order": 0
