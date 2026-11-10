@@ -234,6 +234,21 @@
             "zh": "照料互动",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "三、如何让信任不成为游戏流程的阻碍\n\n让信任值（Trust）决定游戏进度，也带来了一个新问题：如果信任和照料决定玩家能够做什么，那么不够细心的玩家就可能被卡在游戏中。对于一款叙事驱动的游戏来说，这是无法接受的。为此，我在不同的游戏进度阶段加入了补偿机制。如果玩家的信任值低于当前剧情阶段的预期，龙的内部状态机就会更频繁地触发与自身需求相关的行为，提醒玩家注意照料龙。这个机制在后台自动运行，玩家不需要察觉它的存在，但可以避免因为忘记照料龙而无法继续游戏。\n\n此外，为了避免滚雪球效应，信任值只通过玩家主动进行的行为来增加，例如：抚摸、喂食、累计骑行时间、剧情奖励。\n\n至此，游戏中最核心的龙系统正式完成，当然，在实际的开发过程中，这个系统都在不断测试和迭代，我同步还在进行着其他系统的实现。例如，在我完成龙的基本驾驶控制和对象分离后，我就将战斗操作的实现交给了组内另一名开发人员负责，而我则继续专注在决定了整个游戏流程的关卡系统上。",
+            "en": "### 3. How to Prevent Trust from Becoming a Progression Blocker\n\nMaking Trust responsible for game progression introduced another problem: if trust and caring determine what players can do, less attentive players might eventually get stuck.\n\nFor a narrative-driven game, this is simply unacceptable.\n\nTo address this, I introduced a compensation mechanism at different stages of game progression.\n\nIf the player's Trust value falls below the expected level for the current narrative stage, the dragon's internal state machine will trigger behaviours related to its own needs more frequently. These behaviours serve as reminders for players to pay attention to the dragon and take care of it.\n\nThis mechanism runs automatically in the background. Players don't need to know that it exists, but it helps prevent them from becoming unable to progress simply because they have forgotten to care for their dragon.\n\nI also wanted to avoid a snowball effect, so Trust can only increase through deliberate player actions, such as:\n\n- Petting the dragon.\n- Feeding the dragon.\n- Accumulating riding time.\n- Receiving narrative progression rewards.\n\nWith this, the core dragon system was finally complete.\n\nOf course, throughout actual development, the system continued to undergo testing and iteration. Meanwhile, I was also working on other gameplay systems.\n\nFor example, once I had completed the basic dragon controls and separated the player's movement from the dragon's, I handed over the implementation of the combat controls to another developer on the team. I then continued focusing on the level system, which ultimately determined the progression and overall structure of the game."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794293935458-trust.png",
+          "caption": {
+            "zh": "信任如何工作",
+            "en": ""
+          }
         }
       ],
       "order": 0
