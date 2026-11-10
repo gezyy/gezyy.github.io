@@ -1483,6 +1483,21 @@
             "zh": "假面锐舞（游戏名）",
             "en": "Masque Rave"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这是Global GameJam的布里斯托站。除了业余爱好者，也有很多行业内的专业人士参与。我和另外三名设计师（两名平面设计师，一位模型设计师）组成了一个团队，仍然是我负责设计和开发。这次GameJam的主题是Mask（面具/或者遮罩）在看到这个主题时，我的第一反应是假面舞会，或者某种为了隐藏身份的活动。在于我们团队其他人交流后，我发现大家都对低多边形，略带恐怖的氛围很感兴趣。但这不代表我们就要制作一个恐怖游戏，我从《恶魔轮盘赌》这个游戏中得到了一些灵感，例如将电子音乐和紧张的氛围结合起来的体验。然后，我想到了一个方向，玩家扮演一名保护舞会DJ的杀手，负责识别舞池人群中那些不符合着装要求的人，在他们接近DJ之前将其解决。",
+            "en": "This was the Bristol edition of the Global Game Jam. In addition to hobbyists, many industry professionals also took part. I formed a team with three other designers (two graphic designers and one 3D modeller), while I was once again responsible for the game design and development.\n\nThe theme of this Game Jam was Mask. My first thoughts when I saw the theme were a masquerade ball or some kind of event where people hide their identities. After discussing it with the rest of the team, I found that everyone was interested in low-poly visuals and a slightly unsettling atmosphere. However, this did not necessarily mean we had to make a horror game.\n\nI drew some inspiration from Buckshot Roulette, particularly its combination of electronic music and tension. This led me to an idea: the player would take on the role of an assassin hired to protect a DJ at a party. Their job would be to identify people in the crowd who did not meet the dress code and eliminate them before they could get close to the DJ."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794316642479-Screenshot_2026-11-10_211715.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 6
