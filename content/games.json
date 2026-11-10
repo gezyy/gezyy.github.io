@@ -1365,6 +1365,21 @@
             "zh": "火车资源管理Rouge-Like游戏",
             "en": "The Train Rouge-Like Game"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "一个重要的转折是我24年在新加坡参加一个暑期项目期间，用了七天和另外三名队友完成了一个有三个单独关卡和地图的2D平台跳跃解谜游戏。与之前两次只负责设计（策划）不同，这次我也参与到了开发工作中。当我以一名开发者的身份参与进来后，这彻底改变了我之前的想法。我第一次真正从整个项目的视角出发，游戏设计不再是天马行空的想法集合，我脑中那个幻想的世界开始真正地落地。比如，在我刚产生了以一个会飞天的小猫为主角的想法后，我必须从开发者的角度进一步思考：飞行的操作具体是什么样的？需要用到哪些控制按键？可供飞行的场景有多大？飞行有没有具体限制？甚至更进一步：我期望的操作手感是什么样的？飞行给玩家带来的体验应该是快乐轻松的，还是紧张刺激的？",
+            "en": "An important turning point came in 2024, when I attended a summer programme in Singapore. During the programme, I worked with three other teammates to complete a 2D platform puzzle game with three separate levels and maps in just seven days. Unlike my previous two projects, where I was only responsible for game design, I also took part in the development process this time.\n\nTaking on the role of a developer completely changed my perspective. For the first time, I began to think about the project as a whole. Game design was no longer just a collection of imaginative ideas. The fictional world in my mind was finally beginning to take shape as something real.\n\nFor example, after coming up with the idea of a flying kitten as the protagonist, I had to think further from a developer's perspective: What exactly would the flying controls look like? Which buttons would be needed? How large should the flyable areas be? Would there be any limitations on flying? And, going a step further, what kind of control feel did I want to achieve? Should flying feel joyful and relaxing, or exciting and thrilling for the player?"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794307224984-Screenshot_2026-11-10_184013.png",
+          "caption": {
+            "zh": "飞天猫",
+            "en": "The Space Cat"
+          }
         }
       ],
       "order": 6
