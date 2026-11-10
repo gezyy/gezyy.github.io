@@ -1410,6 +1410,35 @@
             "zh": "",
             "en": ""
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "其中有一个谜题设计让我觉得很有趣：在煎蛋星球上，玩家需要将一个煎蛋推到平台正下方的按钮上保持机关门打开。因此，为了做到这一点，玩家需要先将煎蛋推落，然后利用传送门闪现到另一侧，再变成球形发射出去与空中掉落的煎蛋相撞，利用反弹将煎蛋送到按钮上。 ",
+            "en": "One puzzle design that I found particularly interesting was on Fried Egg Planet. Players had to push a fried egg onto a button beneath a platform to keep a mechanical door open. To solve the puzzle, they first had to push the egg off the platform, then use a portal to teleport to the other side. From there, they had to transform into a ball and launch themselves into the falling egg mid-air, using the bounce to send it onto the button."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这次的经历让我首次以全局思维考虑游戏设计了，但同时我也得到了一些宝贵教训，例如：我们应该花费更多的时间分配在核心玩法的打磨上，而不是急着构建关卡。对于短时间，小体量的游戏来说，精心准备一个能让玩家感受到核心玩法的乐趣的关卡比三个粗制滥造的关卡更有价值。其次，在GameJam中制作PVE游戏存在更多挑战，例如游戏平衡，AI设计，内容量的堆砌，这些都是时间杀手。所以，在下一次的GameJam中，我就将目光转向了PVP游戏。",
+            "en": "This experience taught me to approach game design from a much broader perspective, but it also gave me some valuable lessons. For example, we should have spent more time refining the core gameplay instead of rushing to build multiple levels. For a small game developed within a limited timeframe, one carefully crafted level that allows players to fully experience the fun of the core mechanics is far more valuable than three poorly polished levels.\n\nSecondly, developing a PvE game during a Game Jam brings additional challenges, such as game balancing, AI design, and creating enough content. All of these can consume a considerable amount of development time. Therefore, for my next Game Jam, I decided to turn my attention to PvP games."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794309147567-Screenshot_2026-11-10_191211.png",
+          "caption": {
+            "zh": "熄屏（游戏名）",
+            "en": "Black Out"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 6
