@@ -303,8 +303,47 @@
           }
         },
         {
+          "type": "image",
+          "src": "assets/images/games/1794297479511-g2.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794297488132-mark.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
           "type": "text",
           "value": {
+            "zh": "除此之外，我后来还在特定场景中加入了地面标记引导，物体高亮，以及可被玩家感知的触发区视觉引导等。\n\n在引导设计的过程中，我获得了一些珍贵经验。第一，玩家操作应当被拆解为多个步骤。以缰绳操作为例：同时握住两侧把手，等待它们激活，然后将缰绳向胸前拉动。其中握住把手和将缰绳向胸前拉动是两个独立的操作，设计者需要尽可能考虑操作中所有可能的步骤，并设置相应的引导和成败反馈，因为在实际游戏过程中，任何一个独立步骤都可能成为玩家失败的原因。\n\n第二，引导和游戏节奏相结合。尤其对于叙事游戏来说，并不需要单独的引导章节。举例来说：\n\n第一幕（Act 1）的梦境发生在主线故事四年前，玩家在骑龙离家的过程中学习基础移动和地面骑乘。这一设计与叙事自然结合，使教学不再显得独立于故事之外。\n\n第二幕（Act 2）通过抚摸和喂食教授养成机制，并通过一次预设失败引入照料系统：首次骑乘仅几步后，龙便耗尽耐力，玩家随之返回地面。游戏没有直接解释耐力的重要性，而是先让玩家感受到需求，再展示解决方法。\n\n第三幕（Act 3）在 Kelly 修复鞍具、龙的信任度提升后教授飞行。第四幕（Act 4）则在比赛结束、玩家获得攻击能力后，通过蜥蜴人的出现引入战斗教学。\n\n因此，每项教学都在故事提供使用动机之后才出现。教学节奏由叙事决定，而非设计师对玩家信息接收能力的主观估计。",
+            "en": "In addition, I later added ground markers, object highlighting, and visual guidance for trigger zones that players could recognise in specific scenes.\n\nDuring the design of the guidance system, I gained some valuable experience.\n\nFirst, player actions should be broken down into individual steps. Take the reins as an example: players need to grab both handles at the same time, wait for them to activate, and then pull the reins towards their chest. Grabbing the handles and pulling the reins towards the chest are two separate actions. Designers need to consider as many possible steps in an interaction as they can, and provide appropriate guidance and feedback for both success and failure. In actual gameplay, any individual step could be the reason why a player fails to complete an interaction.\n\nSecond, guidance should be integrated into the pacing of the game. This is particularly important for narrative-driven games, which do not necessarily need a separate tutorial chapter. For example:\n\n- Act 1: The dream sequence takes place four years before the main story. As players ride the dragon away from home, they learn the basic movement controls and how to ride on the ground. This naturally integrates the tutorial into the narrative, rather than making it feel like a separate part of the game.\n- Act 2: Players learn the dragon-care mechanics through petting and feeding. A scripted failure then introduces the care system: after only a few steps during their first ride, the dragon runs out of stamina, forcing the player to return to the ground. Instead of directly explaining why stamina matters, the game first lets players experience the dragon's needs before showing them how to address them.\n- Act 3: After Kelly repairs the saddle and the dragon's Trust increases, players are taught how to fly.\n- Act 4: After the race ends and players acquire the ability to attack, the appearance of the Lizardmen introduces the combat tutorial.\n\nIn this way, each tutorial is introduced only after the story has given players a reason to use the corresponding mechanic. The pacing of the tutorials is determined by the narrative, rather than by the designer's subjective estimate of how much information players can absorb."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794297541803-Trigger.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这一安排也与第 3.4 节的信任度成长机制相结合：分阶段解锁既体现了玩家与龙的关系发展，也控制了教学节奏，使同一机制同时承担两项相互关联的功能。\n\n实现这一设计的关键是教学锁定机制（Teaching Lock）：在对应课程完成前，暂时禁用相关能力。例如，在飞行教学开始前，起飞功能始终处于锁定状态；在召唤教学前，号角也无法召唤龙。这种机制使引导触发更加可控，避免玩家在预设教学流程之外提前使用能力，导致教学无法触发或故事进程受阻。这一问题在实际测试中经常出现。\n\n另外，还有一个细节的设计决策：我们尽量编写了符合叙事语境的引导文本，让虚拟角色语音的方式来承担引导任务，并且分别对故事人物的字幕和引导文本用不同的UI和字体大小等来表示，避免玩家感到出戏和混淆。\n\n在实现方面，我将引导分为三类，每一类单独一个容器，有不同的结束条件：\n\n1. 步骤：需要玩家完成，完成与否是唯一终止判定。\n2. 序列：仅说明，不强制要求玩家必须完成才能推进，随时间自动终止。\n3. 节拍：只在某个事件被触发时出现。并非预先设定好的出现时机，需要玩家完成后终止。\n\n这是因为需要引导的情形各不相同，例如，节拍型的引导是为了某些首次出现在游戏里的情况不让玩家感到困惑而设置的。这些类型的完善都是随着游戏的开发进展而逐渐补充，并非一蹴而就。",
+            "en": "This arrangement also worked together with the Trust progression system described in Section 3.4. Unlocking abilities in stages reflected the development of the relationship between the player and the dragon, while also controlling the pacing of the tutorials. In this way, the same mechanic served two closely related purposes.\n\nThe key to implementing this design was the Teaching Lock mechanism, which temporarily disables relevant abilities until the corresponding tutorial has been completed. For example, the take-off ability remains locked until the flight tutorial begins, and the horn cannot summon the dragon before the summoning tutorial. This makes tutorial triggers more controllable and prevents players from using abilities before they are introduced, which could otherwise cause tutorials to fail to trigger or block story progression. This problem occurred frequently during actual testing.\n\nThere was also another small but important design decision. We tried to write tutorial instructions that fitted naturally into the narrative context, using the voices of in-game characters to deliver guidance wherever possible. We also used different UI elements and font sizes for character dialogue subtitles and tutorial instructions. This helped prevent players from feeling disconnected from the story or becoming confused about the source of the information.\n\nIn terms of implementation, I divided guidance into three types, each with its own container and termination conditions:\n\n1. Step: Requires the player to complete an action. Completion is the only condition for termination.\n2. Sequence: Provides information without requiring the player to complete anything before proceeding. It terminates automatically over time.\n3. Beat: Appears only when a specific event is triggered. Its appearance time is not predefined, and it terminates once the player has completed the required action.\n\nThis separation was necessary because different situations require different types of guidance. For example, Beats are designed to prevent players from feeling confused when they encounter something in the game for the first time. These types and their implementation details were gradually refined as development progressed, rather than being fully established from the beginning."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794297644801-Screenshot_2026-11-10_155935.png",
+          "caption": {
             "zh": "",
             "en": ""
           }
