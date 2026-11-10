@@ -114,6 +114,14 @@
             "zh": "资产表",
             "en": "Table of Assets"
           }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794292148647-mana.png",
+          "caption": {
+            "zh": "项目节点",
+            "en": "Project Timeline"
+          }
         }
       ],
       "order": 0
