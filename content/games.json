@@ -1446,6 +1446,28 @@
             "zh": "这次的GameJam是一个限时48小时的挑战，并且主题为Impaired Devices。简单来说就是参考一些故障设备的特性，并且将这种特性利用到游戏的主要机制里。这个GameJam我组成了一个三人团队，在布里斯托线下的Game Lab里现场开发。团队中，我负责主要设计和开发工作，我们还有一名美术设计师，以及一名剧本创作者。在揭晓主题后，我立刻想到了利用坏掉的电脑屏幕，例如一些显示器上出现的黑屏现象，让受限的视觉成为核心机制。并且有了之前的经验教训，这一次我决定制作一个PVP双人对战游戏，并且让双人共享同一个受限屏幕，因此操作方式的设计我参考了一些街机游戏，两个人共用一块键盘的不同键位。",
             "en": "This Game Jam was a 48-hour challenge with the theme Impaired Devices. The idea was to take the characteristics of malfunctioning devices and turn them into the core mechanics of a game.\n\nI formed a three-person team and developed the game on-site at the Game Lab in Bristol. I was responsible for most of the game design and development, while the other two members took care of the art and narrative.\n\nAs soon as the theme was announced, I immediately thought of malfunctioning computer screens, particularly the black screen effect found on some broken monitors. I wanted to turn restricted visibility into the game's core mechanic.\n\nTaking the lessons from my previous experience into account, I decided to make a two-player PvP game. Both players would share the same screen, with their vision equally restricted. For the controls, I took inspiration from arcade games where two players share a single keyboard but use different sets of keys."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在设计阶段，我很快确定了自己想要创造一种速战速决的游戏体验，我希望玩家感受到的是一种快节奏，紧张刺激的对战。基于这个想法，我将一局游戏分为两个阶段，屏幕亮起时，双方玩家都可以看到整个地图上对方的位置，但此时不能进行任何操作包括移动；屏幕熄灭时，双方玩家什么都看不到，但可以凭借记忆找到对方，此时可以进行任何操作。每一轮游戏中，亮屏和熄屏都只持续几秒钟，因此玩家的记忆和操作必须快速。在这个基础上，我又受到现实生活的启发，将对战的地图划分为了四个区域，每个区域加入一种不同的音效，因此当黑屏时，玩家可以通过此时响起的音效大致判断对方正在哪一个方位。为了让游戏更加刺激，我还加入了每轮开始前选择一种道具，然后黑屏阶段可以放置这种道具给对方造成干扰。这些道具的类型有陷阱（可以将对方限制移动一段时间）闪光弹（可以将踩到这个道具的玩家位置短暂暴露）还有克隆人（克隆人会和真人一起移动，给对方的判断造成混淆）同时，玩家还可以每隔几秒钟使用一次出拳，只要碰到一次对方即可获胜。",
+            "en": "During the design phase, I quickly settled on the kind of experience I wanted to create: a short, fast-paced game focused on tense and exciting encounters. Based on this idea, I divided each round into two phases.\n\nWhen the screen was on, both players could see each other's positions across the entire map, but neither could perform any actions, including moving. When the screen went black, neither player could see anything, but they could move freely and rely on their memory to locate their opponent. Each phase lasted only a few seconds, forcing players to react and make decisions quickly.\n\nBuilding on this mechanic, I also drew inspiration from real life and divided the map into four zones, each with its own distinct sound effect. During the black-screen phase, players could use the sounds they heard to roughly determine which direction their opponent was in.\n\nTo make the game even more exciting, I introduced a pre-round item selection system. Before each round, players could choose one type of item to use during the black-screen phase to disrupt their opponent. These included:\n\n- Traps: Temporarily prevent the opponent from moving.\n- Flash bombs: Briefly reveal the position of any player who steps on one.\n- Clones: Move alongside the real player, confusing the opponent's judgement.\n\nPlayers could also throw a punch every few seconds. A single successful hit was enough to win the round."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794310896402-Screenshot_2026-11-10_194126.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 6
