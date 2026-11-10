@@ -1468,6 +1468,21 @@
             "zh": "同样来自街机游戏的灵感，我们将美术风格设计为一个电视机屏幕，并且考虑到我们没有时间做动画，所以美术设计师绘制了一个靠滚轮移动的小机器人。除此之外，我们的剧本创作者还为这个小游戏撰写了几段背景故事，并且配音成新闻播报的形式穿插在游戏开头和每一局结尾，我们还制作了一个简单的电视开关屏幕特效用于亮屏和熄屏阶段的过渡。因此，虽然时间很短，但我们依然做了一个相对完整的小游戏，这也是我最满意的一点。",
             "en": "Also inspired by arcade games, we designed the visual style around an old television screen. Since we did not have enough time to create animations, our artist designed a small robot that moved around on wheels instead.&#x20;\n\nOur narrative designer also wrote several short pieces of backstory for the game, which were recorded as news broadcasts and played at the beginning of the game and at the end of each round. We also created a simple TV power-on and power-off effect to transition between the screen-on and screen-off phases.\n\nAs a result, despite the extremely limited development time, we still managed to create a relatively complete game. This was probably the aspect of the project that I was most satisfied with."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这次的GameJam氛围也是我很享受的，倾听了来自行业专业人员的经验分享，大家一起玩对方的游戏，开发期间一起吃披萨，很荣幸我的游戏最终也获得了这次活动的最佳游戏设计。事后我也对这次开发经历进行了复盘，我认为大方向上的决策是没有问题的，但和之前一样，开发期间缺少对玩法的多次测试，因此直到最后我也不能确定其他玩家对于这个游戏的整体体验是否符合我的预期。但是我很喜欢这次设计中对于玩家瞬时记忆这一点的考验，因此这个方向的实验也带入了下一次的GameJam中。",
+            "en": "I also really enjoyed the atmosphere of this Game Jam. I had the opportunity to listen to industry professionals share their experiences, play other teams' games together, and enjoy pizza with everyone during development. I was also honoured that my game eventually won the award for Best Game Design at the event.\n\nAfterwards, I reflected on the development process. I felt that the major design decisions were sound, but, as with my previous project, we did not conduct enough playtesting during development. As a result, even by the end, I could not be certain whether the overall experience for other players matched what I had originally envisioned.\n\nHowever, I particularly enjoyed the way this game challenged players' short-term memory. I decided to carry this idea forward and explore it further in my next Game Jam."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794311593773-Screenshot_2026-11-10_195303.png",
+          "caption": {
+            "zh": "假面锐舞（游戏名）",
+            "en": "Masque Rave"
+          }
         }
       ],
       "order": 6
