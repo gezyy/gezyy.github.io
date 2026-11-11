@@ -1601,6 +1601,30 @@
       },
       "body": [],
       "order": 8
+    },
+    {
+      "id": "intern-02",
+      "section": "essays",
+      "title": {
+        "zh": "作为实习生我却做出了热销角色技能？",
+        "en": "How Did I, as an Intern, End Up Designing a Best-Selling Character Skill?"
+      },
+      "cover": "assets/images/games/1794391263879-cover2.png",
+      "blurb": {
+        "zh": "关于角色技能设计的反思",
+        "en": "Reflections on Character Skill Design"
+      },
+      "tags": {
+        "genre": "",
+        "platform": "",
+        "duration": ""
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [],
+      "order": 9
     }
   ]
 }
