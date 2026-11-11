@@ -1577,6 +1577,30 @@
         }
       ],
       "order": 7
+    },
+    {
+      "id": "intern-01",
+      "section": "essays",
+      "title": {
+        "zh": "我为一款曾经百万DAU的移动游戏打工的日子",
+        "en": "My Days Working on a Mobile Game with Over One Million DAU"
+      },
+      "cover": "assets/images/games/1794390905350-cover.png",
+      "blurb": {
+        "zh": "对于长线运营移动游戏的思考，以活动玩法为例",
+        "en": "Reflections on Live-Service Mobile Game Design: The Example of Event Gameplay"
+      },
+      "tags": {
+        "genre": "",
+        "platform": "",
+        "duration": ""
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [],
+      "order": 8
     }
   ]
 }
