@@ -1625,6 +1625,30 @@
       },
       "body": [],
       "order": 9
+    },
+    {
+      "id": "intern-03",
+      "section": "essays",
+      "title": {
+        "zh": "我进入行业的起点之在研项目大暴死",
+        "en": "My First Step into the Industry: The Spectacular Failure of a Game in Development"
+      },
+      "cover": "assets/images/games/1794391631196-cover3.png",
+      "blurb": {
+        "zh": "反思一下为什么大厂的项目也暴死",
+        "en": "Why Do Even Big-Budget Games from Major Studios Fail?"
+      },
+      "tags": {
+        "genre": "",
+        "platform": "",
+        "duration": ""
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [],
+      "order": 10
     }
   ]
 }
