@@ -1680,15 +1680,39 @@
         "en": "Some Reflections on Remote Work in Small Teams"
       },
       "tags": {
-        "genre": "",
-        "platform": "",
-        "duration": ""
+        "genre": {
+          "zh": "",
+          "en": ""
+        },
+        "platform": {
+          "zh": "",
+          "en": ""
+        },
+        "duration": {
+          "zh": "",
+          "en": ""
+        }
       },
       "video": {
         "type": "youtube",
         "src": ""
       },
-      "body": [],
+      "body": [
+        {
+          "type": "text",
+          "value": {
+            "zh": "作者声明：本文不会直接出现任何企业/游戏名，本文仅用于个人学习目的，禁止传播转载。另外，文章内容一切都基于本人对游戏设计本身的反思，不涉及任何对公司团队，游戏的评价。本人非常尊重任何工作过的企业和游戏，每一段经历对我来说都是受益匪浅，并结识了许多良师益友的。",
+            "en": "Author's Disclaimer:\n\nThis article does not directly mention the names of any companies or games. It is intended solely for personal learning and reflection and must not be redistributed or reproduced without permission.\n\nAll content is based on my personal reflections on game design itself and should not be interpreted as an evaluation or criticism of any company, team, or game. I have great respect for every company I have worked with and every game I have been involved in. Each experience has taught me a great deal, and I have been fortunate to meet many wonderful colleagues and mentors along the way."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "",
+            "en": ""
+          }
+        }
+      ],
       "order": 11
     }
   ]
