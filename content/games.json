@@ -1649,6 +1649,30 @@
       },
       "body": [],
       "order": 10
+    },
+    {
+      "id": "intern-04",
+      "section": "essays",
+      "title": {
+        "zh": "我为独游工作室远程打工的日子",
+        "en": "My Days Working Remotely for an Indie Game Studio"
+      },
+      "cover": "assets/images/games/1794392184415-cover4.png",
+      "blurb": {
+        "zh": "关于小团队线上工作的一点思考",
+        "en": "Some Reflections on Remote Work in Small Teams"
+      },
+      "tags": {
+        "genre": "",
+        "platform": "",
+        "duration": ""
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [],
+      "order": 11
     }
   ]
 }
