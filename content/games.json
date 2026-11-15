@@ -1718,6 +1718,13 @@
             "zh": "我加入这个项目的节点是从立项之后，一直到第一版demo上线Steam为止。在这期间，我所做的工作围绕任务系统、交互设计，以及部分装备、角色技能、新手引导等。我的工作流程包括了撰写设计文档，配置数据表，配置部分素材例如音效，测试反馈，以及部分线下和线上运营。相比起其他项目工作经历，这是一次我相对完整且广泛参与到一个独立游戏项目各个环节的体验。这正是令我受益匪浅的地方，在这里我见证了小体量工作室如何从零搭建项目，并且一步步走到宣发和运营。",
             "en": "I joined the project shortly after its initial development began and stayed until the first demo was released on Steam. During this period, my work mainly focused on the quest system, interaction design, and some aspects of equipment, character skills, and the tutorial. My responsibilities covered a wide range of tasks, including writing design documents, configuring data tables, setting up assets such as sound effects, testing and providing feedback, as well as supporting both online and offline operations.\n\nCompared with my other project experiences, this was one in which I was involved in almost every stage of an indie game's development. This is what made the experience particularly valuable to me. I had the opportunity to witness how a small indie studio built a project from scratch and gradually moved towards marketing and live operations."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "首先，我想介绍下我们的团队是如何组织架构的。这个项目开始时，我们并没有一个固定的线下工作场所，所有的沟通和开发工作都是在线上完成。我们通过一个线上办公软件叫做飞书建立起不同的交流群组，包括策划组，UI组，Bug反馈组，等等。并且我们会每周召开线上会议进行工作内容对齐和未来任务的分工安排，我们的主策划也会明确每个交付节点给所有人。我们的分工由线上表格统一管理，结构类似于Github的issue board，只不过，每个人的任务后会详细附加开始-结束日期，以及相关链接（例如美术组的成员要上传素材，策划组的成员要添加文档链接）。并且这些任务会按照优先级进行排序，以保证所有人的工作进度是一致的。",
+            "en": "First, I would like to explain how our team was organised. When the project started, we did not have a fixed physical workplace, so all communication and development took place online.\n\nWe used an online collaboration platform called Feishu to create different communication groups for each team and purpose, including the game design team, UI team, bug reporting group, and so on. We also held weekly online meetings to review progress, align on ongoing work, and assign upcoming tasks. Our lead game designer was responsible for setting clear deadlines and communicating key milestones to the entire team.\n\nAll task assignments were managed through shared online spreadsheets, with a structure similar to GitHub's issue board. Each task included a clearly defined start and end date, along with relevant links or deliverables. For example, artists were expected to upload their assets, while game designers needed to attach links to their design documents. Tasks were also prioritised to help everyone stay aligned and ensure that the overall development schedule remained on track."
+          }
         }
       ],
       "order": 11
