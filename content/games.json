@@ -1680,6 +1680,13 @@
             "zh": "作者声明：本文不会直接出现任何企业/游戏名，本文仅用于个人学习目的，禁止传播转载。另外，文章内容一切都基于本人对游戏设计本身的反思，不涉及任何对公司团队，游戏的评价。本人非常尊重任何工作过的企业和游戏，每一段经历对我来说都是受益匪浅，并结识了许多良师益友的。",
             "en": "Author's Disclaimer\n\nThis article will not directly mention the names of any companies or games. It is intended solely for personal learning and reflection and must not be redistributed or reproduced without permission.\n\nAll discussions and reflections in this article are based on my personal experience and thoughts on game design. They should not be interpreted as evaluations or criticisms of any company, team, or game.\n\nI have great respect for every company and project I have had the opportunity to work with. Each experience has taught me something valuable, and I am grateful to have met so many inspiring mentors and colleagues along the way."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这段实习是我第一次真正进入游戏行业的契机，只能说我很幸运能够进入一个当时规模很大的项目团队中，作为一名游戏系统策划实习生参与进来。这是一个移动端多人游戏，包含了PVE和PVP战斗玩法，以及社交玩法。从品类来说，算是一款2D横板战斗跑酷游戏。我加入时，这款游戏还未正式公测，只是拿到了版号，仍然处于在研期。但是当时的团队非常大，总共有两百多人。对我来说，这个开始非常有价值，因为它让我真正参与并见证了一个工业化的标准游戏开发管线，以及团队协作模式是什么样的。",
+            "en": "This internship was my first real opportunity to enter the game industry. I was fortunate enough to join a relatively large development team as a game systems design intern, working on a major project. It was a multiplayer mobile game featuring both PvE and PvP combat, as well as social gameplay. In terms of genre, it could be described as a 2D side-scrolling action platformer with combat and parkour elements. When I joined the team, the game had not yet entered its public beta. It had already obtained its publishing approval but was still under active development. Despite this, the development team was already quite large, with more than 200 members.\n\nThis was an extremely valuable starting point for my career. It gave me the opportunity to experience firsthand what a standard, industrial-scale game development pipeline looks like and how a large development team coordinates its work."
+          }
         }
       ],
       "order": 10
