@@ -1760,6 +1760,13 @@
             "zh": "在文档的最后，我通常会单独列出一个表格容纳全部需要美术设计师产出的素材，包括UI和一般2D素材。一方面防止遗漏，另一方面在美术设计师完成后，可以直接将素材上传至表格处，方便其他协作者进行对照和寻找。设计文档的结构应该根据项目类型进行调整，不必死板地遵循，但大体上的思路是一致的，即有逻辑地组织你的文档结构，方便任何一个不了解概念的人读懂。 ",
             "en": "At the end of the document, I usually include a separate table listing all the assets required from the art team, including UI elements and general 2D assets. This serves two purposes: first, it helps prevent any assets from being overlooked; second, once the artists have completed their work, they can upload the files directly to the table, making it easier for other team members to locate and cross-reference them.\n\nThe structure of a design document should be adapted to the type of project rather than following a rigid template. However, the underlying principle remains the same: organise the content logically so that anyone, even someone unfamiliar with the feature, can easily understand it."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "除了这类系统功能的写作，还有一种值得一提的例子是那些涉及到具体表现的内容，例如角色技能的设计。我们项目里全部的角色技能设计都是在一个大表格下，按照角色名称和职阶划分。每一行需要写清楚技能描述（游戏内显示的文本），具体技能效果和数值（供开发者参考），以及动画表现（供美术设计师参考）。动画表现就是策划希望的画面表现效果，在这个基础上，我还会附加一些参考图片，或者视频来帮助美术设计师理解我期望的一种表现效果。曾经我有纠结过这个问题，因为我不希望我的规定限制了美术设计师的创意空间，但在我与一些合作者交流后，我发现大部分人反而希望策划将这些细节尽可能规定清楚，这会让他们的工作效率大大提升。",
+            "en": "Beyond documenting system features, another interesting example is the design of content that involves specific visual presentations, such as character skills.\n\nIn our project, all character skills were documented in a single large spreadsheet, organised by character name and class. Each row contained three main elements: the skill description (the text displayed in-game), the specific skill effects and numerical values (for developers), and the animation requirements (for artists).\n\nThe animation requirements described the visual effects I had in mind for each skill. To help artists better understand my expectations, I also included reference images or videos to illustrate the intended visual presentation.\n\nI used to have some concerns about this approach because I didn't want my specifications to limit the artists' creative freedom. However, after discussing this with several collaborators, I realised that most of them actually preferred designers to define these details as clearly as possible. Having more specific requirements gave them a much clearer direction and significantly improved their working efficiency."
+          }
         }
       ],
       "order": 11
