@@ -1742,6 +1742,14 @@
           }
         },
         {
+          "type": "image",
+          "src": "assets/images/games/1794737748451-Screenshot_2026-11-15_181150.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
           "type": "text",
           "value": {
             "zh": "值得一提的是，在这个过程中我得到了很多如何清晰撰写一份设计文档的经验。以我过往在不同项目组中工作的经验来看，设计文档的撰写可能有不同的偏好风格，但无一例外地强调易读性。这就好比作为一名开发者在编写代码时需要考虑到你的协作者，尽量撰写架构清晰且适当添加注释的代码一样，设计文档并不只有策划需要阅读，因此你必须考虑到这份文档能够让开发人员理解功能需求，美术设计师明确风格和设计需求。以我个人的习惯来说，我通常会先交代清楚交互需求，然后再梳理功能背后的规则以及数据类型。我喜欢将交互界面的设计放在前面，这是因为可以给阅读者提供一个相当直观的印象，帮助他们理解这个系统或者功能与其他地方的联系。以我主要负责的任务系统为例：首先需要这个系统是因为游戏需要一个来为玩家提供成长目标以及能力验证的功能，这对于一个依赖数值成长的推关单机游戏来说是很重要的。",
@@ -1756,6 +1764,14 @@
           }
         },
         {
+          "type": "image",
+          "src": "assets/images/games/1794737767455-Screenshot_2026-11-15_181321.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
           "type": "text",
           "value": {
             "zh": "梳理完交互界面结构后，作为设计者也会对这个系统包括哪些值得进一步规定清楚的细节了然于胸。比如，任务列表里的任务按照什么优先级进行排序？任务种类的划分？新任务和进展中的任务有什么区别？任务的更新规则是什么？这些都是需要让开发者完全了解的。所以我会接下来按照概念出现的先后顺序详细规定这些规则，保证开发者的阅读体验是相对连贯的，不会被突然出现的新概念打断。在这个例子中，我会先说明任务的刷新与关卡进展有关（这个是已经存在的系统），并且将对应关卡序号与解锁任务的关系梳理在一个一目了然的配置表格中。然后我会讲解任务的分类，包括主线任务和支线，以及随机出现的日常任务。我会说明它们各自出现的条件，终止的条件。然后，我会说明在任务列表中，主线任务是优先级最高的，应该出现在最上方，并且按照解锁顺序排序。规定完这些后，我会进一步讨论在任务详情界面中随任务进展发生的变化以及奖励领取条件。请注意，在解释具体规则时，要遵循由浅入深，从已有的概念拓展到新概念的顺序，这可以降低开发者的理解成本。",
@@ -1767,6 +1783,14 @@
           "value": {
             "zh": "在文档的最后，我通常会单独列出一个表格容纳全部需要美术设计师产出的素材，包括UI和一般2D素材。一方面防止遗漏，另一方面在美术设计师完成后，可以直接将素材上传至表格处，方便其他协作者进行对照和寻找。设计文档的结构应该根据项目类型进行调整，不必死板地遵循，但大体上的思路是一致的，即有逻辑地组织你的文档结构，方便任何一个不了解概念的人读懂。 ",
             "en": "At the end of the document, I usually include a separate table listing all the assets required from the art team, including UI elements and general 2D assets. This serves two purposes: first, it helps prevent any assets from being overlooked; second, once the artists have completed their work, they can upload the files directly to the table, making it easier for other team members to locate and cross-reference them.\n\nThe structure of a design document should be adapted to the type of project rather than following a rigid template. However, the underlying principle remains the same: organise the content logically so that anyone, even someone unfamiliar with the feature, can easily understand it."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794737775513-Screenshot_2026-11-15_181358.png",
+          "caption": {
+            "zh": "",
+            "en": ""
           }
         },
         {
@@ -1802,6 +1826,14 @@
           "value": {
             "zh": "现在，回头来看，我认为这个项目作为工作室的第一款产品是很好的选择。首先，它的创意考虑到了日渐增长的一个小众品类的需求，目标并不在于众口难调的广泛玩家群体。其次，它的类型本身并不需要高成本的投入，非常适合起步阶段的工作室积累第一批用户和资金。而且，完成远比惊世骇俗的创意更重要，也许很多独立开发者一开始都想制作一个市面上从未出现过的游戏，但缺乏实际能力匹不匹配的考虑，最终导致流产。而且，这个过程中积累的技术和经验也更适合之后制作更复杂，更高质量的项目。目前，我看这款游戏的Steam界面上开发组仍然在不断地更新内容和补丁，并积极回复玩家的意见，我认为这种及时跟进和不断更新的态度也是很好的，很多玩家也表示很欣赏工作室的这种态度。",
             "en": "Looking back, I think this project was an excellent choice for the studio's first commercial game.\n\nFirst, its concept addressed the needs of a growing niche market rather than trying to appeal to a broad audience with widely differing tastes. Second, the genre itself did not require a particularly large financial investment, making it a good fit for a studio at an early stage that needed to build its first user base and generate some initial revenue.\n\nI also believe that completing a game is far more important than coming up with an extraordinary idea. Many indie developers start out wanting to create something the market has never seen before, but without carefully considering whether their actual development capabilities match their ambitions, they may eventually find themselves unable to finish the project.\n\nThe technical knowledge and experience gained throughout this process also provide a much better foundation for developing more complex and polished games in the future.\n\nEven now, I can see on the game's Steam page that the development team is still regularly releasing new content and patches, while actively responding to player feedback. I think this commitment to ongoing support and continuous improvement is a very positive attitude. Many players have also expressed their appreciation for the studio's responsiveness."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794737781188-Screenshot_2026-11-15_181423.png",
+          "caption": {
+            "zh": "",
+            "en": ""
           }
         },
         {
