@@ -1947,6 +1947,13 @@
             "zh": "作者声明：本文不会直接出现任何企业/游戏名，本文仅用于个人学习目的，禁止传播转载。另外，文章内容一切都基于本人对游戏设计本身的反思，不涉及任何对公司团队，游戏的评价。本人非常尊重任何工作过的企业和游戏，每一段经历对我来说都是受益匪浅，并结识了许多良师益友的。 ",
             "en": "Author's Disclaimer:\n\nThis article does not directly mention the names of any companies or games. It is intended solely for personal learning and reflection and must not be redistributed or reproduced without permission.\n\nAll content is based on my personal reflections on game design itself and should not be interpreted as an evaluation or criticism of any company, team, or game. I have great respect for every company I have worked with and every game I have been involved in. Each experience has taught me a great deal, and I have been fortunate to meet many wonderful colleagues and mentors along the way."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "与我在另外两篇文章中回顾的经历不同，这是我第一次加入一个已经运营快十年的项目。而且，从团队规模来说，也正好处于另外两段经历之间。公司的架构和氛围也大不相同：整个企业的规模算是中厂，不过内部分成了许多独立的项目组，有三到五个在研单机项目，也有像我加入的这个一样持续运营的移动端项目。每个项目组人数非常精简，但运作效率很高，也完全没有加班文化，比如我所在的团队大约有十几个人。从项目类型来说，这是我第一次参与到已上线项目的内容产出中，我加入的节点正好在他们筹备暑期活动的阶段。这是一个2D像素风肉鸽弹幕射击游戏，也是从早期的单机逐渐转型成了内置付费的模式。我当时在组里做玩法策划实习生。",
+            "en": "Unlike the experiences I discussed in my other two articles, this was my first time joining a project that had already been running for almost ten years. In terms of team size, it also sat somewhere between the other two experiences.\n\nThe company had a rather different organisational structure and working culture. It was a medium-sized game studio, but internally it was divided into many relatively independent project teams. These included three to five single-player games in development, as well as live-service mobile games like the one I joined. Each project team was relatively small but highly efficient, and there was absolutely no overtime culture. My team, for example, had around a dozen people.\n\nIn terms of project experience, this was also my first time contributing to new content for an already-released game. I joined the team just as they were preparing their summer event.\n\nThe game was a 2D pixel-art roguelike bullet-hell shooter. Like many other games, it had gradually evolved from its original single-player format into a product with in-game monetisation.\n\nMy role in the team was a gameplay design intern."
+          }
         }
       ],
       "order": 10
