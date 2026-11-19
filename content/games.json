@@ -1964,15 +1964,32 @@
         "en": "Reflections on Character Skill Design"
       },
       "tags": {
-        "genre": "",
-        "platform": "",
-        "duration": ""
+        "genre": {
+          "zh": "",
+          "en": ""
+        },
+        "platform": {
+          "zh": "",
+          "en": ""
+        },
+        "duration": {
+          "zh": "",
+          "en": ""
+        }
       },
       "video": {
         "type": "youtube",
         "src": ""
       },
-      "body": [],
+      "body": [
+        {
+          "type": "text",
+          "value": {
+            "zh": "作者声明：本文不会直接出现任何企业/游戏名，本文仅用于个人学习目的，禁止传播转载。另外，文章内容一切都基于本人对游戏设计本身的反思，不涉及任何对公司团队，游戏的评价。本人非常尊重任何工作过的企业和游戏，每一段经历对我来说都是受益匪浅，并结识了许多良师益友的。 ",
+            "en": ""
+          }
+        }
+      ],
       "order": 11
     }
   ]
