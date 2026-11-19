@@ -442,124 +442,25 @@
       "order": 0
     },
     {
-      "id": "01",
+      "id": "intern-03",
       "section": "essays",
       "title": {
-        "zh": "简评《星露谷物语》中的能量条设计",
-        "en": "A Quick Review of Energy bar design in Stardew Valley"
+        "zh": "我进入行业的起点之在研项目大暴死",
+        "en": "My First Step into the Industry: The Spectacular Failure of a Game in Development"
       },
-      "cover": "assets/images/games/1782573898042-450e1661-00ff-493b-8f48-bfb9ea961a2a.png",
+      "cover": "assets/images/games/1794391631196-cover3.png",
       "blurb": {
-        "zh": "一种巧妙调节玩家游玩节奏的方式",
-        "en": "A sophisticated method of gently regulating the play's pace"
+        "zh": "反思一下为什么大厂的项目也暴死",
+        "en": "Why Do Even Big-Budget Games from Major Studios Fail?"
       },
       "tags": {
         "genre": {
-          "zh": "模拟经营，像素2D",
-          "en": "Simulated management, 2D pixel art"
-        },
-        "platform": {
-          "zh": "PC，IOS移动端",
-          "en": "PC, IOS"
-        },
-        "duration": {
           "zh": "",
           "en": ""
-        }
-      },
-      "video": {
-        "type": "youtube",
-        "src": "https://www.youtube.com/watch?v=6kv66MydDUc&t=219s"
-      },
-      "body": [
-        {
-          "type": "text",
-          "value": {
-            "zh": "在星露谷物语中，能量条（或称精力条）的存在在刚开始可能会让某些玩家感到困惑：为什么我感觉什么都没干只是砍了几下树，敲了几块石头就累倒了，还损失了五十块钱。又或者是，我今天明明还打算去一趟镇上的杂货铺，但是由于我缺少精力，只能睡一觉明天再说。甚至有的时候还会因为挣扎在晕倒的边缘而惊心动魄地祈祷自己能顺利在昏倒之前回到家里。",
-            "en": "In Stardew Valley, the energy bar can be a source of confusion for some players when they first start playing: How am I already exhausted? It feels like I’ve barely done anything—just chopped down a few trees or broken a couple of rocks—and suddenly I collapse, losing 50 bucks in the process. Or perhaps I had planned to stop by the grocery store in town that day, only to realize that I simply didn't have enough energy left and would have to put it off until tomorrow. And if you know, you know: those nerve-racking moments when you're right on the edge of passing out, desperately hoping you'll make it back home before collapsing."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1782591817220-ScreenShot_2026-06-27_211736_019.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "但由于星露谷物语精美可爱的美术视觉风格——一座悠闲的乡下童话小镇，配合放松的背景音乐，以及刚开始你确实没那么多需要操心的事情：只是种种防风草，顺便清理一下门口的杂草和树丛，或许拜访几个邻居。因此渐渐的，玩家会在心理上接受这种设定：那好吧，在这样一个一切看上去都很悠闲的地方，为什么我还要拼死拼活地劳作呢？精力不够那就上床睡觉，等待明天的到来。",
-            "en": "However, Stardew Valley's charming visual style—a cosy countryside fairytale town paired with relaxing background music—along with the fact that you really don't have much to worry about at the beginning, gradually changes the way players perceive this system. At first, your days mostly consist of watering a few parsnips, clearing some weeds and bushes outside your farmhouse, and maybe dropping by to visit a few neighbours around town.\n\nSlowly but surely, players begin to accept the logic behind it: Alright then, in a place where everything feels so peaceful and laid-back, why should I be working myself to death like a 24/7 convenience store employee? If I run out of energy, so be it. I'll just head to bed and wait for tomorrow to arrive."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "而这正是开发者们想要看到的。当玩家对这种慢悠悠的节奏逐渐适应后，他们就开始加快节奏了，你会收到各种信件和新任务，引导你一边探索星露谷里更丰富的设定和系统，一边让你扩大自己的版图。于是这时候玩家们会发现一天的时间很快变得不够用，我本该在睡前给作物浇水，结果挖了一天矿已经没力气了。于是，玩家会从此刻开始思考，想要变得更加高效只有两种方式：第一，在一天开始之前考虑好要处理的事项优先级，第二，如何提高我的精力条？ ",
-            "en": "And that's exactly what the developers want to see. Once players have settled into the game's slow and easy-going rhythm, the pace begins to pick up. New letters arrive in the mailbox, new quests appear, and the game gradually encourages you to both explore the richer systems and stories hidden throughout Stardew Valley and expand your own little corner of it.\n\nBefore long, players begin to realise that a single day suddenly doesn't feel nearly long enough anymore. I was supposed to water my crops before bed, but after spending the entire day mining, I'm already out of energy.\n\nAnd it is at this moment that players begin to think that there are only two ways to become more efficient: first, decide what deserves priority before the day even begins; second, figure out how to make that energy bar last longer."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1782591831143-ScreenShot_2026-06-27_211802_566.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "答案当然是：两者皆可！而这正是开发者们喜闻乐见的。当你开始自发地产生脑内路线规划，并且给排列出今日要做的任务和优先级时，你就已经学会了自己去探索和自主驱动地在这个游戏里探索，而不是通过开发者为你塞进来一封又一封邮件，或者给你整个琳琅满目的任务系统。而当你开始想办法提高精力条的上限或者恢复精力条时，你开始把精力条当作游戏里的一种资源，而你此时产生了一个新的重要目标：我需要升级，以及，我需要合成/获取更多能恢复精力的道具。",
-            "en": "The answer, of course, is: both. And once again, that's exactly what the developers want to see.\n\nThe moment you start mentally mapping out your own routes for the day and arranging your tasks according to priority, you've already learned to explore the game on your own terms and drive your own progress, rather than relying on an endless stream of letters in your mailbox or a giant checklist of quests handed to you by the developers.\n\nAnd when you begin looking for ways to increase your maximum energy or restore it more efficiently, the energy bar stops being a restriction and starts becoming a resource in its own right. At that point, a new set of goals naturally emerges: I need upgrades. And I need better tools, foods, and items that can keep my energy topped up."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "所以，我会将星露谷物语里的精力条设计定义为一个优秀的案例，即如何通过设置某种限制，反而促进玩家的自驱力，让游戏里的目标和任务自发地涌现。其实很多游戏中都有类似的设定存在，在某些策略游戏中，这种设计被包装成行动点数；或者某些内置购买的游戏则是直接将这种行动点设定成了可以通过花钱补充的资源；而在很多战斗游戏中，尽管你的行为不会直接消耗，但是你的生命值经常受到威胁从而需要进行维护。只是为何星露谷物语中的这个设计会让玩家产生新鲜感，我认为主要有以下几点原因。",
-            "en": "To sum it up, I would consider the energy bar in Stardew Valley an excellent example of game design: a system where imposing limitations on the player actually encourages self-motivation, allowing goals and tasks to emerge naturally rather than being explicitly assigned by the game itself.\n\nIn fact, similar ideas can be found in many other games. In some strategy games, this limitation takes the form of action points. In certain free-to-play titles, those action points are even turned into a monetisable resource that can be replenished with real money. And in many combat-focused games, while your actions may not directly consume a resource, your health is constantly under threat and therefore requires careful management.\n\nSo why does Stardew Valley's implementation of this idea feel so fresh to players? I believe there are several reasons for that."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "1. 精力条的可视化方法并不会直接告诉你某个行为将会消耗多少能量，真的没有多少玩家喜欢在游戏里看见大量数字！（当然，某些爱好爆炸式数值呈现的玩家除外）而这种选择性的不可视也让玩家体验上更加自由，这是一种心理影响。\n2. 与模拟经营游戏的结合。正如这篇简评一开始提到的，这是一种巧妙控制游玩节奏的策略。由于精力条的存在，你不能再像个永动机一样昼夜不停地在你的模拟农场里劳作，而是每一天都需要思考今天将要探索哪几个地点，做些什么。也会让你格外期待下一天的到来，因为你有很多来不及今天完成的事情。而这种强制中断未尽之事的心理体验会让人上瘾，不像那些不加限制的经营游戏，当你持续不断工作了几个小时之后，大部分玩家会开始感到疲惫，而当你因为疲惫退出游戏后，下一次打开可能就是很久之后了。但这种强迫你中止的循环会让玩家不断地想起那些还没有完成的事情，从而因为这短暂的停止而更加投入到下一次循环中。",
-            "en": "1. The energy bar never tells you the numbers.\n\nFirst of all, the game never directly tells you how much energy each action costs. And honestly, most players don't actually enjoy staring at a bunch of numbers while playing games. (Well, unless you're one of those people who get excited by damage numbers exploding all over the screen.)\n\nBy keeping some of that information hidden, the game actually makes the whole system feel less restrictive. You're not constantly calculating whether chopping down one more tree will cost 6 energy or 8 energy. You just get a rough feeling for it over time.\n\nIronically, making the system less visible makes players feel more free, even though the restriction itself never disappeared. That's the psychological trick behind it.\n\n2. It works perfectly with the farming sim genre.\n\nAs I mentioned at the beginning, this is a very clever way of controlling the pace of the game.\n\nBecause of the energy bar, you can't just turn yourself into some kind of farming machine that works 24 hours a day without stopping. Every morning you naturally start asking yourself:\n\n\"Am I going mining today?\"\n\n\"Should I spend the day fishing?\"\n\n\"Do I finally have time to upgrade my pickaxe?\"\n\nSuddenly, planning becomes part of the game.\n\nAnd perhaps more importantly, the game makes you excited for tomorrow.\n\nThere's always something you didn't get around to doing today. Maybe the crops still need watering. Maybe there's another five floors waiting for you in the mines. Maybe you were this close to finally catching that fish.\n\nAnd strangely enough, being forced to stop is exactly what makes you want to keep playing.\n\nIn a lot of management games with no restrictions, players simply keep going until they burn themselves out. A few hours later they're tired, they quit, and the next time they open the game might be weeks later.\n\nStardew Valley does the opposite.\n\nIt stops you while you're still thinking:\n\n\"Ah, just one more day.\"\n\nAnd because the game leaves things unfinished, those unfinished tasks stay in your head. You keep thinking about them after you've stopped playing, which only makes you more excited to jump back in next time."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "总结，星露谷物语中的精力条设计不仅本身成为了一种独特的游戏体验，还与游戏任务系统和养成系统进行了有机结合。这是一种非常聪明且基于玩家体验出发的游戏设计思路。",
-            "en": "To sum up, the energy bar in Stardew Valley is not only a unique gameplay experience in itself, but also one that blends seamlessly with the game's quest and progression systems. It is a remarkably clever design, built around the player experience from beginning to end."
-          }
-        }
-      ],
-      "order": 1
-    },
-    {
-      "id": "game-review-quicl",
-      "section": "essays",
-      "title": {
-        "zh": "时隔13年，我们可以从黑色洛城中学习到什么",
-        "en": "Thirteen Years Later: What Can We Learn from L.A. Noire?"
-      },
-      "cover": "assets/images/games/1784632053685-Screenshot_2026-07-21_120200.png",
-      "blurb": {
-        "zh": "他们是如何构建出一座有血有肉的40s罪恶都市洛城？——有选择的细节决定真实性塑造。",
-        "en": "How did they build a vibrant, living 1940s crime-ridden city in L.A. Noire? — The choice of details shapes the sense of realism."
-      },
-      "tags": {
-        "genre": {
-          "zh": "角色扮演，线性叙事",
-          "en": "Roleplay, storytelling"
         },
         "platform": {
-          "zh": "pc/vr",
-          "en": "pc/vr"
+          "zh": "",
+          "en": ""
         },
         "duration": {
           "zh": "",
@@ -574,20 +475,195 @@
         {
           "type": "text",
           "value": {
-            "zh": "作者标注：此篇为早期完成。 ",
-            "en": "Notice: This is an early article."
+            "zh": "作者声明：本文不会直接出现任何企业/游戏名，本文仅用于个人学习目的，禁止传播转载。另外，文章内容一切都基于本人对游戏设计本身的反思，不涉及任何对公司团队，游戏的评价。本人非常尊重任何工作过的企业和游戏，每一段经历对我来说都是受益匪浅，并结识了许多良师益友的。",
+            "en": "Author's Disclaimer\n\nThis article will not directly mention the names of any companies or games. It is intended solely for personal learning and reflection and must not be redistributed or reproduced without permission.\n\nAll discussions and reflections in this article are based on my personal experience and thoughts on game design. They should not be interpreted as evaluations or criticisms of any company, team, or game.\n\nI have great respect for every company and project I have had the opportunity to work with. Each experience has taught me something valuable, and I am grateful to have met so many inspiring mentors and colleagues along the way."
           }
         },
         {
           "type": "text",
           "value": {
-            "zh": "NPC微表情：使用自研的加强版面部捕捉技术应用到NPC的微表情，可以通过观察NPC的微表情来判断他们是否说谎。我不敢说直到现在这项技术是否已经被广泛应用，但对于十三年前来说，这样一款能够捕捉到人物细致入微的表情，其真实感和流畅度仍然是足以令人震惊的。这里也不得不佩服R星工作室的开发者们为之付出的心血，在幕后访谈中，开发者提到他们使用了360度无死角的摄像头来捕捉每一个动作乃至表情的细节，而这对于设计者来说也同样是一项复杂的工作：他们做到了给每一位NPC设计好各种表情的细节，坦然、犹豫、惊慌、嘲讽......这些表情的含义相似但不同演员的表演却带来了毫无重复的新鲜感，因此在游戏中，当你与这些或许配合或许抗拒的人物进行对峙时，除了利用好手上收集到的线索和他们的表述，很多时候更加好用的是这些近乎真实的微表情判断——而作为玩家，我是第一次在游戏中如此细致入微地观察一个由电脑程序控制的NPC的表情，仿佛我穿过屏幕化身此地，而我所面对的都是一个个鲜活真实，生活在这座混乱邪恶的洛城里的 人。",
-            "en": "NPC Micro-Expressions: The game uses a self-developed advanced facial capture technology to depict NPCs’ micro-expressions. These expressions allow players to assess whether someone is lying. While I can’t say if this technology is widely used today, it was still incredibly impressive for its time. Thirteen years ago, the ability to capture such subtle facial expressions added a level of realism and smoothness that was truly astonishing. The developers at Rockstar Studios deserve immense credit for the effort they put in. In behind-the-scenes interviews, they mentioned using 360-degree cameras to capture every detail of movements and expressions. This was a complex task for the designers, as they had to create a variety of facial expressions for each NPC—calm, hesitation, panic, sarcasm… Although these expressions might have similar meanings, different actors’ performances brought freshness and uniqueness to each one. In the game, when confronting these characters—whether cooperative or resistant—it’s often more useful to rely on these almost lifelike micro-expressions, rather than just the clues or statements you’ve gathered. For me, as a player, this was the first time I observed NPCs controlled by a computer program so closely, as though I had stepped through the screen into the city, facing real people who lived in the chaotic, evil world of Los Angeles."
+            "zh": "这段实习是我第一次真正进入游戏行业的契机，只能说我很幸运能够进入一个当时规模很大的项目团队中，作为一名游戏系统策划实习生参与进来。这是一个移动端多人游戏，包含了PVE和PVP战斗玩法，以及社交玩法。从品类来说，算是一款2D横板战斗跑酷游戏。我加入时，这款游戏还未正式公测，只是拿到了版号，仍然处于在研期。但是当时的团队非常大，总共有两百多人。对我来说，这个开始非常有价值，因为它让我真正参与并见证了一个工业化的标准游戏开发管线，以及团队协作模式是什么样的。",
+            "en": "This internship was my first real opportunity to enter the game industry. I was fortunate enough to join a relatively large development team as a game systems design intern, working on a major project. It was a multiplayer mobile game featuring both PvE and PvP combat, as well as social gameplay. In terms of genre, it could be described as a 2D side-scrolling action platformer with combat and parkour elements. When I joined the team, the game had not yet entered its public beta. It had already obtained its publishing approval but was still under active development. Despite this, the development team was already quite large, with more than 200 members.\n\nThis was an extremely valuable starting point for my career. It gave me the opportunity to experience firsthand what a standard, industrial-scale game development pipeline looks like and how a large development team coordinates its work."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "我当时只是一个刚入行的策划实习生，因此一开始我的工作内容只是帮助其他策划做做诸如配表这类并不考验设计能力的工作。我非常感谢当时那几位策划百忙之中对我的耐心指导，因为我刚开始时甚至需要从零开始参考工作文档学习如何使用项目组自研的配表工具，以及Redmine平台创建工单。当时我的工作内容基本被两个环节占据：配表和跑测。我必须承认，这是非常枯燥的。例如我配置引导的时候，需要参考新手引导文档，对照表格里的每一项要求，按出现顺序和关卡序号把每一步引导里出现的文本、指引框、指示图标等UI素材参数填进表格里。至于跑测，就是每次开发完一个新功能，我都需要反复测试所有边界情况以及流程，并及时提交反馈。当时我们所有策划实习生来说，测试是一项日常任务，除此之外我们还需要每天游玩竞品游戏，并且在日报和周报里汇报自己游玩竞品的进度，以及关于设计方面的建议和心得。",
+            "en": "At the time, I was just an intern who had recently entered the game industry. Naturally, my initial responsibilities were mostly limited to supporting other designers with tasks such as configuring data tables, which did not require much actual design work.\n\nI am still very grateful to the designers who patiently guided me despite their busy schedules. When I first joined, I had to learn almost everything from scratch, including how to use the project's in-house data configuration tools and how to create tickets on the Redmine platform by following the internal documentation.\n\nMost of my daily work revolved around two main tasks: data configuration and playtesting. I have to admit that both could be rather tedious.\n\nFor example, when configuring the tutorial system, I had to follow the tutorial design document and check every requirement against the corresponding spreadsheet. I needed to enter parameters for all the elements appearing at each tutorial step, including text, guidance panels, directional icons, and other UI assets, making sure they appeared in the correct order and at the appropriate stages of each level.\n\nAs for playtesting, whenever a new feature was implemented, I was responsible for repeatedly testing its entire flow and various edge cases, then submitting feedback and bug reports whenever necessary.\n\nFor all design interns on the team, testing was part of our everyday routine. In addition, we were expected to play competing games every day. We had to report our progress in playing these games, along with our observations, design suggestions, and reflections, in our daily and weekly reports."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "现在想想，那其实是一项非常好的训练。对于初入行业的我来说，还不具备成熟的策划思维。而公司愿意将这种对于项目进度本身意义不大的事情作为我们日常工作内容的一部分，其实是很难得的。而且，当时我们的主策划和我的导师会定期给我们写反馈，这其实也是一件相当专业且值得感恩的事情。",
+            "en": "Looking back, I now realise that this was actually an excellent learning experience. As someone who had just entered the industry, I had not yet developed a mature approach to game design. The fact that the company was willing to make time for tasks that did not directly contribute much to the project's immediate progress, but were valuable for our development as designers, was something I truly appreciated.\n\nMoreover, our lead game designer and my mentor regularly provided us with written feedback. I think this was a particularly professional practice, and something I remain genuinely grateful for."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "现在回想，我认为游戏立项的出发点是成立的，并且也做到了发展出自己的特色。其实从主要玩法上来讲，这款游戏与它的竞品（一款运营了十年之久，且一直有稳定受众）几乎是完全相似的。一样的2D横板跑酷闯关，角色有小技能和大招，可以通过主动释放来战斗。剧情过场和PVE关卡结合得很连贯，除此之外，还有角色养成机制，可以配装，升级。另外这款游戏后来发展出的PVP模式更是让它上了一个台阶，在PVP中，玩家组队或单人匹配对手，在同一条路线上同时进行跑酷，率先完成路程的获胜。而且中途有类似肉鸽一样限时购买道具的商店。从体验上来说，这款竞品游戏最主要的优势是流畅的操作手感，符合直觉的交互设计，并且对玩家的战斗能力有意识地进行了限制，例如在技能漫长的CD完成之前，只能通过收集场景里道具的方式来进行普攻，因此大部分时候游玩感受是类似魂游一样紧张刺激的，而这一点和跑酷游戏的本质非常契合。",
+            "en": "Looking back, I believe the original idea behind the game was valid, and the project also managed to develop its own identity.\n\nIn terms of core gameplay, the game was almost identical to its main competitor, a game that had been running for ten years and still maintained a stable player base. Both featured 2D side-scrolling platform gameplay, with characters having basic skills and ultimate abilities that players could actively trigger during combat. The story sequences and PvE levels were also smoothly integrated. On top of that, the game offered character progression systems, allowing players to equip items and upgrade their characters.\n\nThe PvP mode introduced later took the game to another level. In this mode, players could compete either solo or in teams. Everyone ran along the same course at the same time, and the first player to reach the finish line won. Along the way, there were also shops where players could purchase temporary items, much like the item selection system in roguelike games.\n\nIn terms of player experience, the competitor's greatest strengths were its responsive controls and intuitive interactions. It also deliberately limited players' combat abilities. For example, while waiting for their skills to come off their long cooldowns, players could only perform basic attacks by collecting items scattered throughout the level. As a result, the gameplay felt tense and challenging most of the time, almost like playing a Soulslike game. I think this approach was particularly well suited to the nature of a parkour game."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "但这款竞品的问题也是显而易见的。一款运营长达十年的移动游戏，正如很多其他现存的游戏一样，它逐渐从休闲单机的本质转变成了包含内置付费项目的线上运营产品。这种模式的转变是符合逻辑的，但这样做也不可避免地导致了游戏的体验变得臃肿，层出不穷的副系统，极度分散的养成材料获取途径，繁重的任务系统，不平衡的角色数值让这款曾经红极一时的游戏流失了大量老玩家，当然，比起玩家流失和下滑的口碑，这种转变也确实让它保持了一定的生命力，且获得了实际收益。因此，我参与的这个项目正是立足于此，它看中了这批数量可观的受众，这些玩家大部分由于喜爱这种游戏类型却缺少可替代品而一边抱怨一边继续留存。除此之外，项目还看中了同类型赛道的竞争较少，休闲玩家市场等等因素。",
+            "en": "However, the problems with this competitor were also obvious. After ten years of operation, like many other long-running mobile games, it had gradually moved away from its original identity as a casual single-player game and evolved into a live-service product with various in-game monetisation features.\n\nThis transition was understandable from a business perspective, but it inevitably made the overall experience increasingly bloated. An ever-growing number of secondary systems, fragmented ways of obtaining progression materials, increasingly demanding quest systems, and unbalanced character stats all contributed to the loss of many long-time players. The game, which had once been extremely popular, also suffered from a declining reputation.\n\nOf course, despite the loss of players and negative feedback, this transition did help the game maintain a certain level of longevity and generate actual revenue.\n\nThis was precisely where the project I worked on saw its opportunity. It identified this considerable existing player base, many of whom continued playing despite frequently complaining about the game. Most of them still enjoyed this particular genre but had few alternative games to turn to.\n\nIn addition, the project recognised several other opportunities, including relatively little competition in this genre and the potential of the casual gaming market."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "我认为它的出发点是好的。例如，我能看出它在游戏体验方面所做的差异化和尝试：它加入了一个类似弹反的机制，将原本相对被动只能躲避敌人攻击的体验转化成了能够抓timing进行反制的主动进攻手段。此外，还引入了配队和团队连携效果，赋予了角色收集和属性养成更多意义。从实际体验上讲，我认为这两项尝试直接将这款类似的跑酷战斗游戏的侧重点从跑酷引向了战斗，在战斗方面爽感的提升也确立了它与竞品不同的特色。但我也必须在这里打个问号，如果说立项之初的目标是吸引偏好这类跑酷游戏的老玩家为主，加上泛休闲用户为辅。那么这种看似相似，实则游玩体验上却转向战斗爽这种类型，这本身隐含了一定风险。",
+            "en": "I think the original idea behind the project was sound. For example, I could see the effort it made to differentiate itself in terms of gameplay experience. It introduced a parry-like mechanic, turning what was previously a relatively passive experience, where players could only dodge enemy attacks, into a more active form of combat where they could counterattack by timing their actions correctly.\n\nIt also introduced team compositions and team synergy effects, giving character collection and stat progression more purpose.\n\nFrom my actual experience playing the game, I think these two changes shifted the focus of this type of parkour combat game away from running and towards fighting. The more satisfying combat experience also helped establish a distinct identity that set it apart from its competitors.\n\nHowever, I do have some reservations here. If the original goal was primarily to attract existing players who enjoyed this type of parkour game, with casual players as a secondary target audience, then there was an inherent risk in this approach. Although the game looked similar to its competitors on the surface, its actual gameplay experience had shifted towards a much more combat-focused experience, built around the satisfaction of engaging in combat. That difference in direction could potentially create a mismatch between what the target audience expected and what the game actually offered."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "如果说假设游戏的受众在此阶段发生了一次暗含的分化，已经由最初的跑酷游戏爱好者转向了喜欢快节奏爽感战斗的用户，那么接下来的设计决策在我看来存在一系列问题。首当其冲的是，这个游戏引入了一个与主要玩法几乎完全割裂的副玩法——类似泰拉瑞亚的2D沙盒生存建造。而且，我在加入团队的时候，被要求作为系统策划实习生辅助这个环节。我不能干涉已经进入制作阶段的决策，当然这不是重点，但是在参与这个系统的设计时，我产生了很多疑惑。首先，这个系统的设计出发点是为了平衡较为紧张刺激的战斗玩法，根据主要设计师的说法，他们认为玩家会产生疲惫感，而这个系统的存在是为了缓解压力而设置的纯粹休闲玩法。并且，这个玩法被放置在一个名叫家园的入口下，目标是向未来的玩家社交玩法拓展。如果说这个系统的功能只是让玩家可以拥有一个自主设计装饰，并且邀请其他玩家参观和集合的自定义空间，我认为还是可以接受的。在很多线上运营移动游戏里可以看到类似的设计，例如FGO里的空间允许玩家浏览已收集的角色，并与之互动，培养感情。而且从长远来看，社交需求的确是这类联网移动游戏的一项维持玩家社群活跃必不可少的考虑因素。",
+            "en": "If we assume that the target audience had gradually split at this stage, shifting from the original parkour game enthusiasts towards players who preferred fast-paced, action-packed combat, then I believe a series of problems began to emerge in the subsequent design decisions. The most obvious one was the introduction of a secondary game mode that was almost completely disconnected from the core gameplay: a 2D sandbox survival and building mode similar to *Terraria*.\n\nWhen I joined the team, I was assigned to assist with this part of the project as a systems design intern. I had no say in decisions that had already entered production, but that is not really the point. What matters is that I had quite a few questions while working on the design of this system. First of all, the original intention behind this mode was to balance out the relatively intense and fast-paced combat gameplay. According to the lead designer, they believed players would eventually become tired from fighting, so this mode was introduced purely as a casual activity to help them relax.\n\nIt was also placed under an entry point called *Home*, with the intention of eventually expanding into social features for players. If the purpose of this system had simply been to provide players with a personal space that they could freely customise and decorate, where they could also invite other players to visit and hang out, I would have found that perfectly reasonable. Similar features can be found in many live-service mobile games. For example, in *Fate/Grand Order (FGO)*, players can visit a dedicated space to view the characters they have collected and interact with them, helping to build a stronger emotional connection.\n\nMore importantly, from a long-term perspective, social interaction is indeed an important consideration for keeping the player community active in this type of online mobile game."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "但问题是，我发现整个团队几乎分成了两部分，一部分集中力量在战斗玩法的开发和优化上，持续设计敌人和关卡。另一部分则集中在这个家园玩法的打磨上。也就是说，团队似乎并没有把这个家园系统当作一个优先级较低的副系统进行制作，而是投入了比较高的成本和关注度在这个副系统上。当然，设计师们与此同时也在完善其他副系统，例如宠物养成，爬塔副本等等。但是，家园系统甚至制作了多个单独的场景地图，例如火山、冰原、森林等等，这些地图的设计和绘制都是有我参与完成的，还开发了与之匹配的移动和操作逻辑，具体设计和泰拉瑞亚极度相似。也就是说，在这个玩法中，玩家需要使用和主玩法完全不同的操作方式，像泰拉瑞亚一样击败敌人，向下挖掘，收集素材，建造庇护所。",
+            "en": "However, what concerned me was that the team seemed to be almost evenly divided into two groups. One focused on developing and polishing the combat gameplay, continuously designing new enemies and levels. The other concentrated on refining the Home mode.\n\nIn other words, the team did not seem to be treating the Home system as a low-priority secondary feature. Instead, it received a considerable amount of development resources and attention.\n\nOf course, the designers were also working on other secondary systems, such as pet progression and tower-climbing challenges. However, the Home mode went much further. The team even created several separate maps, including volcanic, icy and forest environments. I was personally involved in designing and creating these maps. We also developed dedicated movement and interaction systems to support this mode.\n\nThe gameplay itself was extremely similar to *Terraria*. Players had to use an entirely different control scheme from the main game, defeating enemies, digging underground, collecting resources and building shelters, just as they would in *Terraria*."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "就我个人的体验来说，我认为这个副系统和主要玩法在体验上来说完全是两种不同的心流。如果说主玩法带给我的感受是紧张刺激，需要高度专注的快节奏体验，那么这个家园玩法带给我的就是一种大脑放空，甚至不需要过分关注手上操作，可以一边后台开着背景音乐一边纯粹放松的。我能理解设计师们的愿景，他们假设了一种情景：在玩家经历了高强度的对局战斗后，想要放松一下自己的大脑和手指，这时大部分玩家可能会选择打开另外一款完全不需要思考和操作的休闲小游戏进行放松，但是由于我们的游戏集成了一个休闲玩法，所以这部分玩家不需要退出我们的游戏，他们完全可以继续留在这款游戏里放松，由此可以提升玩家的在线数量和留存率。但这也引出了一个实际问题：那就是，有多少玩家在被这个游戏所宣传的跑酷玩法吸引进来时，会把这个游戏当作一款需要投入主要精力的产品？",
+            "en": "From my personal experience, I felt that the secondary mode and the main gameplay offered two completely different types of flow.\n\nIf the main gameplay was a fast-paced, intense experience that required a high level of concentration, the Home mode was almost the opposite. It allowed me to switch off my brain and relax. I didn't even need to pay too much attention to what I was doing. I could simply leave some background music playing and enjoy the experience without much effort.\n\nI can understand the designers' vision. They imagined a scenario in which players, after several intense combat sessions, would want to give their brains and fingers a break. In that situation, many players might normally choose to open another casual game that requires little thought or interaction. However, since our game already included a casual mode, these players wouldn't need to leave the game to find something else to play. They could simply stay within our game and relax instead.\n\nIn theory, this could help increase the number of active players and improve retention. However, this also raises a practical question: How many players who were initially attracted by the parkour gameplay advertised by the game would actually consider it a product worth investing most of their gaming time in?"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "事情发展到这一步，我认为这款游戏立项的初衷已经暗地发生了两到三次内部分裂，而且最致命的是，这会导致被宣传吸引而来的玩家预期和实际体验严重不符。由于我离开这个项目的节点是在第一次正式付费内测，所以对于游戏本身后续的优化调整和运营我并没有关注，因此我的评价和反思只集中在公开宣发初期。我在职期间，主要设计师后来也对这个玩法进行了一系列优化和完善，例如引入家园联机功能，可以邀请其他玩家加入一起游玩；还有将家园里击败敌人掉落的物品转化成外界系统可用于角色养成的素材；在家园世界地图加入副本玩法的入口等等。在我看来这些尝试很大程度上弥补了系统之间过于割裂的问题，也就是说，这个玩法本身变得有一定价值。但是，体验上的感受却不是系统设计能够弥补的。因此，这可能反而会让一部分玩家觉得，为了获得那部分养成材料和奖励，我不得不去游玩这个我并不感兴趣的玩法，这可能会让玩家产生一种被迫感。",
+            "en": "By this point, I felt that the original vision behind the project had quietly split into two or three different directions. More importantly, this created a serious risk: players attracted by the game's marketing could end up having expectations that were completely different from the actual gameplay experience.\n\nI left the project around the time of its first paid closed beta test, so I didn't follow its subsequent development, optimisation or live operations. Therefore, my evaluation and reflections here are limited to the early stage of its public marketing campaign.\n\nDuring my time on the project, the lead designers did make a series of improvements to the Home mode. For example, they introduced multiplayer functionality, allowing players to invite others into their home worlds and play together. They also made items dropped by enemies in the Home mode usable as character progression materials in the main game. In addition, they added entrances to dungeon content directly to the Home world map.\n\nIn my opinion, these changes went a long way towards addressing the lack of connection between the different systems. In other words, the Home mode gradually gained some practical value within the overall game.\n\nHowever, I don't think changes to system design alone can solve the fundamental problem of how a particular gameplay experience feels to players.\n\nIn fact, these changes might even create another problem. Some players could feel that they *have to* play a mode they aren't interested in just to obtain certain progression materials and rewards. This could easily turn what was originally intended to be a relaxing activity into something that feels like an obligation."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "除了上述我认为的导致项目后来没有取得预期成功的主要原因之外，它也存在着类似竞品游戏一样的困境：系统过于臃肿。某种程度上，这是一个长线运营移动游戏几乎无法避免的问题。但是，它可以通过合理的成长曲线和引导设计进行包装和规避。根据我的回忆，在我离职之前，这个游戏除了主要的pve关卡系统，家园系统，pvp系统，还包含宠物系统，角色养成，商城，任务系统，副本玩法，装备系统，社交系统（公会、组队）。优点是前期任务和引导设计比较清晰，能够很好地串联起这些系统开放的先后顺序，缺点是在游戏早期就加入了过多副系统。对比竞品游戏，它的很多系统都是在运营后期逐渐增加的，当然，在有产能的情况下，当然是越完善越好。但，这种完善更多指向的是如何延长玩家的游玩时长，如何让玩家投入精力，而不是游戏本身内容方面的。这就会导致一部分玩家观感上产生反感，而且主玩法本身的确还欠缺打磨，例如操作手感和交互设置，关卡设计，敌人种类等等。",
+            "en": "Apart from the major issues I mentioned above, which I believe contributed to the project falling short of its original expectations, the game also faced a problem similar to that of its competitor: an increasingly bloated system structure.\n\nTo some extent, this is almost unavoidable for a long-running live-service mobile game. However, it can be managed and made less overwhelming through a well-designed progression curve and onboarding experience.\n\nAs far as I can remember, before I left the project, the game already included the main PvE level system, the Home mode, PvP, pet progression, character development, an in-game shop, quests, dungeon content, equipment, and social features such as guilds and team matchmaking.\n\nOne advantage was that the early quests and tutorials were relatively well designed. They clearly guided players through the game and introduced these systems in a logical sequence. The downside, however, was that too many secondary systems were introduced at such an early stage.\n\nCompared with its competitor, many of these systems had only been added gradually during the later stages of its live operations. Of course, if a development team has sufficient resources, having a more comprehensive set of features is generally a good thing. But I think there is an important distinction here: much of this kind of expansion is aimed at extending playtime and encouraging players to invest more time and effort in the game, rather than actually enriching the core gameplay content itself.\n\nThis can understandably create a negative impression among some players. Meanwhile, the core gameplay itself still needed considerable polishing in several areas, including control responsiveness, interaction design, level design and enemy variety."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "然后，从更小的层面来说，这款游戏本身的故事剧情设计和角色设计并不扎实。由于主线是pve关卡驱动，而且穿插着大量剧情过场，因此剧情并不是一个可以被直接忽略的存在。当然，从游玩的角度来说，这不是一个叙事为主要内核的游戏，但一个制作不精良甚至透露出敷衍感的设计，不如不存在。它带来的问题同样是会拉低一部分玩家的好感。",
+            "en": "On a smaller scale, I also felt that the game's story and character designs lacked depth and polish. Since the main progression was driven by PvE levels, with a large number of story cutscenes woven into the experience, the narrative was not something players could simply ignore. Of course, from a gameplay perspective, this was not a narrative-driven game. However, I believe poorly executed content, especially when it comes across as rushed or half-hearted, can sometimes be worse than having no such content at all. It doesn't add much to the experience and can instead leave some players with a less favourable impression of the game."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "当然，这个项目也是有很多设计亮点的。至少对我来说很有启发性。比如，爬塔玩法我认为是一个很好的设计，在游戏中玩家可以挑战一个BOSS副本，是从易到难往上爬塔的形式，每一关都直接进入BOSS战，挑战不同等级和属性的BOSS，已经挑战过的关卡有每日扫荡功能，可以一键扫荡获得素材。首先从功能上，这个爬塔功能毫无疑问为玩家提供了一个配队和养成快速验证的渠道，而且比起主线的跑酷关卡，这个玩法直接体现了游戏本身的战斗爽感，我甚至认为比起家园，爬塔玩法是真正适合受众的休闲副玩法。另外，在战斗方面，早期角色的阵容连携效果和技能设计还是很有创意的，众多角色中，兼具远程输出特色和近战特色的角色，以及治疗系等辅助角色，每个角色都有鲜明的专长和短板，以及不同的操作手感。并且支持游戏内随时自由切换当前使用的角色，我认为这一点是毫无疑问好玩有趣的。",
+            "en": "Of course, the project also had many design highlights, some of which I found genuinely inspiring.\n\nFor example, I think the tower-climbing mode was a very good design. In this mode, players could challenge a series of boss encounters, progressing through increasingly difficult floors. Each floor took players directly into a boss fight, with different bosses featuring different levels of difficulty and attributes. Previously cleared floors could also be completed instantly through a daily sweep function, allowing players to collect progression materials with a single click.\n\nFrom a functional perspective, this mode provided players with an efficient way to test their team compositions and character builds. More importantly, unlike the parkour-based levels in the main storyline, it directly showcased the combat mechanics and the satisfaction of fighting. I would even argue that, compared with the Home mode, the tower-climbing mode was a much better fit for the target audience as a casual secondary activity.\n\nThere were also some genuinely creative ideas in the early character designs and team synergy mechanics. Among the various characters, there were those who combined ranged and melee combat styles, as well as healers and other support characters. Each had distinct strengths and weaknesses, along with their own unique combat mechanics and feel.\n\nThe game also allowed players to switch freely between their currently available characters at any time during gameplay. I think this was undoubtedly one of its most enjoyable and engaging features."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "另外，从工作流程上，这段经历让我受益匪浅。首先是非常专业化的架构，团队的线上数据库有非常全面且结构清晰的文档规范要求和指导手册，让我这种初入行业的新人都能快速理解并上手。其次，从独立分配的导师制度到由下而上的反馈渠道，即便作为实习生，我也可以和主策划直接对话，交流建议。更不用说日报，周报，以及例会，例会我们也会分为策划组内部的会议和团队会议，因此整个团队的协作分工都是非常明确且方便溯源的。另外，我很欣赏团队里大家互相帮忙的氛围，每个人都非常易于沟通，比如当我们策划遇到一些BUG或者技术问题时，技术组的专家们都会非常及时地响应并且处理。而且我们项目组内部的一些自研策划工具真的非常好用（我至今都在想念）比如技术组开发的策划配表工具，可以在上传之前本地一键排查冲突和漏洞，比直接使用Github这类工具要人性化得多。还有我当时一直在用的编辑器地图绘制工具和素材配置工具，等等。这也让我认识到技术工具的必要性。",
+            "en": "In addition, this experience taught me a great deal about professional development workflows.\n\nFirst, the team had a highly professional organisational structure. Its shared online database contained comprehensive documentation standards and clearly structured guidelines, making it easy for newcomers like me, who had just entered the industry, to understand the workflow and get started quickly.\n\nSecond, there was a well-established mentorship system, with each intern assigned an individual mentor, as well as bottom-up feedback channels. Even as an intern, I could communicate directly with the lead designer and discuss my ideas and suggestions. On top of that, we had daily reports, weekly reports and regular meetings. These meetings were divided into internal design team meetings and wider team meetings. As a result, responsibilities and collaboration across the project were clearly defined, and decisions and progress could easily be traced back.\n\nI also really appreciated the supportive atmosphere within the team. Everyone was approachable and willing to help. For example, whenever we encountered bugs or technical issues as designers, the technical team would respond and resolve them very promptly. Another thing I particularly appreciated was the collection of in-house tools developed specifically for the project. Some of them were genuinely excellent, and I still miss using them today.\n\nFor example, the technical team developed a configuration tool for game designers that allowed us to check for conflicts and potential errors locally with a single click before uploading our data. It was much more user-friendly than relying directly on tools like GitHub for this kind of work. There were also other useful tools I used regularly, such as the in-editor map creation tool and the asset configuration tool.\n\nAll of this helped me realise just how important well-designed technical tools are to an efficient game development workflow."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "最后，我有些标题党了，在此诚挚致歉（主要是这是一个曾经面试被问过的问题，我就写的夸张了些）。实际上，这段旅程对我来说意义重大，而且很幸运地能够与团队中如此优秀，专业的策划导师们和技术专家，以及美术设计师一起工作，成长。他们不仅耐心且专业地指导了我，包容了我，而且还为我提供了很多职场上的关怀，例如我的导师会请我们经常聚餐，和我们讨论一些游戏行业的情况，提供专业视角的建议和分析等等。而且这段经历也让我觉得游戏行业是一个很纯粹，大家都很专注在自己的热爱上的一个场所，更加坚定了我继续前行的信心。无论以后大家都在做什么样的项目，我都真诚希望大家能够收获事业成功，以及更重要的是玩的开心，身体健康。",
+            "en": "Finally, I may have used a slightly misleading title, and I sincerely apologise for that. (To be honest, this was actually a question I was once asked in a job interview, so I deliberately made the title a little more dramatic.) In reality, this journey meant a great deal to me. I was incredibly fortunate to have the opportunity to work and grow alongside such talented and professional design mentors, technical experts and artists.\n\nThey not only guided me with patience and professionalism, but also showed great understanding and support throughout my time there. They also made an effort to look after us beyond our day-to-day work. For example, my mentor would often invite us out for meals, discuss the state of the game industry with us, and share professional insights and advice from their own experience.\n\nThis experience also gave me the impression that the game industry can be a genuinely passionate place, where people are deeply committed to what they love doing. It strengthened my confidence and determination to keep moving forward in this industry.\n\nWhatever projects everyone is working on in the future, I sincerely wish you all success in your careers. More importantly, I hope you continue to enjoy what you do, have fun making games, and stay happy and healthy."
+          }
+        }
+      ],
+      "order": 1
+    },
+    {
+      "id": "intern-04",
+      "section": "essays",
+      "title": {
+        "zh": "我为独游工作室远程打工的日子",
+        "en": "My Days Working Remotely for an Indie Game Studio"
+      },
+      "cover": "assets/images/games/1794392184415-cover4.png",
+      "blurb": {
+        "zh": "关于小团队线上工作的一点思考",
+        "en": "Some Reflections on Remote Work in Small Teams"
+      },
+      "tags": {
+        "genre": {
+          "zh": "",
+          "en": ""
+        },
+        "platform": {
+          "zh": "",
+          "en": ""
+        },
+        "duration": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [
+        {
+          "type": "text",
+          "value": {
+            "zh": "作者声明：本文不会直接出现任何企业/游戏名，本文仅用于个人学习目的，禁止传播转载。另外，文章内容一切都基于本人对游戏设计本身的反思，不涉及任何对公司团队，游戏的评价。本人非常尊重任何工作过的企业和游戏，每一段经历对我来说都是受益匪浅，并结识了许多良师益友的。",
+            "en": "Author's Disclaimer:\n\nThis article does not directly mention the names of any companies or games. It is intended solely for personal learning and reflection and must not be redistributed or reproduced without permission.\n\nAll content is based on my personal reflections on game design itself and should not be interpreted as an evaluation or criticism of any company, team, or game. I have great respect for every company I have worked with and every game I have been involved in. Each experience has taught me a great deal, and I have been fortunate to meet many wonderful colleagues and mentors along the way."
           }
         },
         {
           "type": "image",
-          "src": "assets/images/games/1784632485820-Screenshot_2026-07-21_121440.png",
+          "src": "assets/images/games/1794737682985-Screenshot_2026-11-15_181133.png",
+          "caption": {
+            "zh": "图片来源游戏Steam界面，版权归游戏工作室所有",
+            "en": "Image source: The game's Steam page. Image copyright belongs to the game studio."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这段远程工作的经历是在我从上一段实习项目组内离职前往布里斯托读书期间，有幸得到之前老板的信任继续合作的。所以这份工作完全是我一边读书一边利用课余时间参与的，还存在与国内的七个小时时差等问题。因此我会在文内谈谈关于游戏开发纯线上的体验和一些反思。当然，这篇文章也是对我自己工作成果的一个反思，我会讨论很多关于游戏设计方面的经验反思。目前这个游戏已经于今年十月正式上线Steam了，截至目前大约2周多已经售出两万多份，由于这是工作室第一款游戏，而且是一款小体量的放置游戏，我认为这个成绩还是很不错的。在此，我也向曾经合作过的工作室成员以及我的老板真心祝贺，并且感谢他们的知遇之恩。也祝福他们之后的作品大获成功。",
+            "en": "This remote working experience took place while I was preparing to leave my previous internship team and move to Bristol for my studies. Fortunately, my former boss trusted me enough to continue working together, even after I had left the team. As a result, I worked on this project entirely alongside my studies, using my spare time to contribute. There were also practical challenges, such as the seven-hour time difference between the UK and China.\n\nIn this article, I will share my experience and reflections on working in a fully remote game development environment. I will also look back on my own contributions to the project and discuss some of the lessons I learned about game design.\n\nThe game officially launched on Steam in October this year and has sold over 20,000 copies in just over two weeks. Considering that this is the studio's first game and a relatively small-scale idle game, I think this is a very impressive achievement.\n\nI would also like to sincerely congratulate my former colleagues at the studio and my former boss. I am truly grateful that they gave me the opportunity and trusted me with this work. I wish them every success with their future projects!"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "我加入这个项目的节点是从立项之后，一直到第一版demo上线Steam为止。在这期间，我所做的工作围绕任务系统、交互设计，以及部分装备、角色技能、新手引导等。我的工作流程包括了撰写设计文档，配置数据表，配置部分素材例如音效，测试反馈，以及部分线下和线上运营。相比起其他项目工作经历，这是一次我相对完整且广泛参与到一个独立游戏项目各个环节的体验。这正是令我受益匪浅的地方，在这里我见证了小体量工作室如何从零搭建项目，并且一步步走到宣发和运营。",
+            "en": "I joined the project shortly after its initial development began and stayed until the first demo was released on Steam. During this period, my work mainly focused on the quest system, interaction design, and some aspects of equipment, character skills, and the tutorial. My responsibilities covered a wide range of tasks, including writing design documents, configuring data tables, setting up assets such as sound effects, testing and providing feedback, as well as supporting both online and offline operations.\n\nCompared with my other project experiences, this was one in which I was involved in almost every stage of an indie game's development. This is what made the experience particularly valuable to me. I had the opportunity to witness how a small indie studio built a project from scratch and gradually moved towards marketing and live operations."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "首先，我想介绍下我们的团队是如何组织架构的。这个项目开始时，我们并没有一个固定的线下工作场所，所有的沟通和开发工作都是在线上完成。我们通过一个线上办公软件叫做飞书建立起不同的交流群组，包括策划组，UI组，Bug反馈组，等等。并且我们会每周召开线上会议进行工作内容对齐和未来任务的分工安排，我们的主策划也会明确每个交付节点给所有人。我们的分工由线上表格统一管理，结构类似于Github的issue board，只不过，每个人的任务后会详细附加开始-结束日期，以及相关链接（例如美术组的成员要上传素材，策划组的成员要添加文档链接）。并且这些任务会按照优先级进行排序，以保证所有人的工作进度是一致的。",
+            "en": "First, I would like to explain how our team was organised. When the project started, we did not have a fixed physical workplace, so all communication and development took place online.\n\nWe used an online collaboration platform called Feishu to create different communication groups for each team and purpose, including the game design team, UI team, bug reporting group, and so on. We also held weekly online meetings to review progress, align on ongoing work, and assign upcoming tasks. Our lead game designer was responsible for setting clear deadlines and communicating key milestones to the entire team.\n\nAll task assignments were managed through shared online spreadsheets, with a structure similar to GitHub's issue board. Each task included a clearly defined start and end date, along with relevant links or deliverables. For example, artists were expected to upload their assets, while game designers needed to attach links to their design documents. Tasks were also prioritised to help everyone stay aligned and ensure that the overall development schedule remained on track."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "任何一个功能从设计到实现交付的完整流程是：设计师们先内部讨论出方案，然后交给一人负责撰写整个设计文档，在文档里需要明确规定这个功能的定位，如何展示以及交互（UIUX），涉及哪些需要开发的内容，需要哪些美术以及文本素材。在主策划审核并确认通过后，这份文档就会被同步给开发组和美术组的人员共同审核，明确全部需求后建立起各自的任务分工和周期，然后进入开发阶段。在开发过程中，如果遇到任何问题，设计师需要一起讨论并解决，最终完成后，整组人员都要参与测试，但主要是设计师本人，测试并反馈建议给开发人员进行二次调整。",
+            "en": "The complete workflow for taking a feature from initial design to final delivery was as follows.\n\nFirst, the game designers discussed the idea internally and agreed on a proposed solution. One designer was then assigned to write the full design document. This document needed to clearly define the feature's purpose, presentation and interactions (UI/UX), development requirements, and the art and text assets needed.\n\nOnce the lead game designer had reviewed and approved the document, it was shared with both the development and art teams for further review. After all requirements had been clarified, tasks were assigned to the relevant team members, with clear timelines for each task. Development could then begin.\n\nDuring development, if any problems arose, the designers would discuss them together and work towards a solution. Once implementation was complete, the whole team participated in testing, although the designer responsible for the feature played the leading role. They would test the feature, provide feedback and suggestions to the developers, and request further adjustments where necessary."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1794737748451-Screenshot_2026-11-15_181150.png",
           "caption": {
             "zh": "",
             "en": ""
@@ -596,13 +672,20 @@
         {
           "type": "text",
           "value": {
-            "zh": "出色的音效设计与游戏情节相结合：游戏音乐设计主要由两大部分组成：背景音乐和音效。黑色洛城的背景音乐选取了几首十分经典的爵士乐以及当时在美国流行的乡村音乐。这些音乐非常适合游戏的故事背景——1940年代的美国洛杉矶，流行之都，并且很好地为游戏注入了类似电影般的体验，配合这些经典的音乐，在洛城里开车办案，无疑是一种享受。而游戏里我最喜欢的一首ost是进入游戏主界面时播放的爵士，配合红色霓虹灯管闪烁着L.A.，映入眼帘的是黑白配色的游戏界面，在一面小巷晦暗的墙面上投射出的光影构成了几个选项字体，这一切完美地展现了游戏的气质——疑云重重的案件，纸醉金迷的40年代洛杉矶生活，这种阴冷夹杂着欲望的气息，足以称之为是一个吸引人的开场。其次，游戏的音效设计同样出色。在游戏过程中，当你在与人审问的过程中选择了错误的判断，游戏会响起一段沉重的音乐，这种音效加大了玩家在游戏体验过程中的不安感。",
-            "en": "Outstanding Sound Design Combined with Storytelling: The game’s music is split into two main categories: background music and sound effects. L.A. Noire uses several classic jazz tracks and popular country music from the 1940s in Los Angeles, which perfectly fit the setting of the game. These tracks inject a cinematic experience into the gameplay. One of my favorite OSTs is the jazz song that plays when you enter the main menu, accompanied by the neon red “L.A.” lights and the black-and-white interface. The shadowed alley wall projecting light and text options is a perfect representation of the game’s atmosphere—filled with mystery and the decadence of 1940s Los Angeles, creating an enticing opening. The sound effects are equally excellent. For example, when you make a wrong judgment during an interrogation, a heavy, ominous tune plays, increasing the player’s sense of unease during the experience."
+            "zh": "值得一提的是，在这个过程中我得到了很多如何清晰撰写一份设计文档的经验。以我过往在不同项目组中工作的经验来看，设计文档的撰写可能有不同的偏好风格，但无一例外地强调易读性。这就好比作为一名开发者在编写代码时需要考虑到你的协作者，尽量撰写架构清晰且适当添加注释的代码一样，设计文档并不只有策划需要阅读，因此你必须考虑到这份文档能够让开发人员理解功能需求，美术设计师明确风格和设计需求。以我个人的习惯来说，我通常会先交代清楚交互需求，然后再梳理功能背后的规则以及数据类型。我喜欢将交互界面的设计放在前面，这是因为可以给阅读者提供一个相当直观的印象，帮助他们理解这个系统或者功能与其他地方的联系。以我主要负责的任务系统为例：首先需要这个系统是因为游戏需要一个来为玩家提供成长目标以及能力验证的功能，这对于一个依赖数值成长的推关单机游戏来说是很重要的。",
+            "en": "One important thing I learned from this experience was how to write clear and effective design documents.\n\nBased on my experience working with different project teams, I found that the preferred style of design documentation may vary from project to project, but readability is always a priority. This is similar to software development: when writing code, developers need to consider their collaborators by keeping the architecture clear and adding comments where necessary. Design documents are no different. They are not written for game designers alone. Developers need to understand the functional requirements, while artists need to have a clear understanding of the visual style and asset requirements.\n\nAs for my own approach, I usually start by explaining the interaction requirements, followed by the underlying rules and data structures of the feature. I prefer to put the UI and interaction design first because it gives readers an immediate, visual understanding of the system and how it connects to other parts of the game.\n\nTake the quest system, which was one of my main responsibilities, as an example. The first thing I needed to explain was why the game required such a system in the first place. It was designed to provide players with clear progression goals and opportunities to demonstrate their abilities. This is particularly important in a single-player level-based game that relies heavily on numerical progression."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在设计任务系统的交互界面时，需要逐级展示每一层交互的具体界面。例如，任务的入口有哪些，进入后的界面是什么样，在这个界面上需要展示哪些信息，哪些是可以交互的，可以交互的内容进入后是新界面还是二级界面。需要具体到每一处UI的位置，以及控制关系。界面的一致性非常重要，因此在设计任务界面时，我让它的入口和其他系统保持一致，只单独增加了一个提示窗用于快捷入口。并且尽量减少不必要的界面跳转（这对一个小体量的放置游戏来说只是在增加玩家的操作频率和负担）所以任务窗口左侧用于展示任务列表，右侧用于展示任务详情以及奖励领取。并且一个理想的界面交互应该包括互相跳转，例如，在锻造界面如果玩家发现自己缺少某种材料，那么他可以通过直接点击该材料的图标跳转至可获得该材料的任务界面，而不是等玩家自己摸索如何获得。",
+            "en": "When designing the quest system's UI and interactions, it was important to illustrate each level of the interaction flow in detail. This included identifying all possible entry points to the quest system, showing what each screen would look like after entering, specifying what information should be displayed, and defining which elements were interactive. For each interactive element, I also needed to clarify whether clicking it would open a completely new screen or a secondary panel within the current interface. The design had to be specific enough to cover the position of every UI element and the relationships between different controls.\n\nConsistency across interfaces was particularly important. I therefore made sure that the quest system's entry points followed the same conventions as other systems, adding only a small notification window to provide a quick-access shortcut.\n\nI also tried to minimise unnecessary screen transitions. For a relatively small idle game, excessive navigation would only increase the number of interactions required and place an unnecessary burden on players. So I designed the quest window with the task list on the left and the corresponding quest details and reward collection area on the right.\n\nIdeally, interfaces should also allow players to navigate directly between related systems. For example, if a player discovers that they are missing a particular material in the crafting interface, they should be able to click directly on its icon and jump to a quest that rewards that material, rather than having to figure out how to obtain it on their own."
           }
         },
         {
           "type": "image",
-          "src": "assets/images/games/1784632655070-Screenshot_2026-07-21_121730.png",
+          "src": "assets/images/games/1794737767455-Screenshot_2026-11-15_181321.png",
           "caption": {
             "zh": "",
             "en": ""
@@ -611,13 +694,20 @@
         {
           "type": "text",
           "value": {
-            "zh": "细节且风味足够的人物对话设计——还原真实的城市风土一向是R星的拿手好戏，除了那些在GTA中随处可见的障碍物破坏、会从车上跳下来大声指责你的司机们、当你违规驾驶时四处惊慌逃窜路人，你甚至可以通过警察们在车上的闲聊窥见90s的洛杉矶文化。而在紧张刺激的追逐中，那些看似无关紧要只是程序生成的与你擦肩而过的路人却会停下脚步为你加油助威，同样，在这座看热闹不嫌事大的城市里，当你前往证人的家中进行搜查审讯时，在门口遇见的一帮游手好闲的混混可能会对你毫不掩饰地流露他们对于警察的厌恶。这些与主线任务无关紧要的台词设计，却为玩家还原呈现出一个立体鲜活的黑色洛城，相信你即便不赶去案发现场，慢悠悠地开着车在城市里晃荡，听着身旁除了唠嗑几乎毫无用处的搭档的闲聊和车载的经典音乐，看着街道两旁的城市风景以及时不时会路过一些经典的地标建筑，也是十分惬意的。",
-            "en": "Detailed and Flavorful Dialogue Design: Rockstar is known for faithfully recreating city cultures, and L.A. Noire is no exception. Apart from the usual obstacles and car chases, you can even hear police officers casually chatting in their cars about 90s LA culture. In intense chases, the seemingly irrelevant pedestrians you pass by may stop to cheer you on. On the other hand, when visiting a witness’s house for an interrogation, you might encounter idle thugs who openly express their disdain for the police. These seemingly minor, unrelated lines of dialogue add richness to the world and create a vivid, three-dimensional city. Even if you’re not rushing to the crime scene, casually driving through the city, listening to your partner’s chatter or the classic in-car music, while taking in the cityscape and passing landmarks, is quite relaxing."
+            "zh": "梳理完交互界面结构后，作为设计者也会对这个系统包括哪些值得进一步规定清楚的细节了然于胸。比如，任务列表里的任务按照什么优先级进行排序？任务种类的划分？新任务和进展中的任务有什么区别？任务的更新规则是什么？这些都是需要让开发者完全了解的。所以我会接下来按照概念出现的先后顺序详细规定这些规则，保证开发者的阅读体验是相对连贯的，不会被突然出现的新概念打断。在这个例子中，我会先说明任务的刷新与关卡进展有关（这个是已经存在的系统），并且将对应关卡序号与解锁任务的关系梳理在一个一目了然的配置表格中。然后我会讲解任务的分类，包括主线任务和支线，以及随机出现的日常任务。我会说明它们各自出现的条件，终止的条件。然后，我会说明在任务列表中，主线任务是优先级最高的，应该出现在最上方，并且按照解锁顺序排序。规定完这些后，我会进一步讨论在任务详情界面中随任务进展发生的变化以及奖励领取条件。请注意，在解释具体规则时，要遵循由浅入深，从已有的概念拓展到新概念的顺序，这可以降低开发者的理解成本。",
+            "en": "Once the interaction structure was established, I had a much clearer idea of which details and rules needed to be defined for the system. For example: How should quests be sorted by priority? How should different quest types be categorised? What distinguishes a new quest from an ongoing one? How should quests be updated? All of these details needed to be clearly communicated to the developers.\n\nI therefore documented the rules in the order in which the relevant concepts were introduced, making the document easier to follow and avoiding situations where developers encountered unfamiliar concepts without sufficient context.\n\nIn this example, I first explained that quest refreshes were linked to level progression, which was an existing game system. I then used a clear configuration table to map level numbers to the quests they unlocked.\n\nNext, I introduced the different quest categories, including main quests, side quests, and randomly generated daily quests. For each category, I specified its activation conditions and termination conditions.\n\nAfter that, I explained the sorting rules for the quest list. Main quests had the highest priority and should always appear at the top, ordered by their unlock sequence.\n\nFinally, I moved on to the changes displayed in the quest details panel as players progressed, along with the conditions for claiming rewards.\n\nThe key principle here is to explain things progressively, moving from familiar concepts to new ones and from basic rules to more complex details. This helps reduce the cognitive load on developers and makes the entire design document much easier to understand."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "在文档的最后，我通常会单独列出一个表格容纳全部需要美术设计师产出的素材，包括UI和一般2D素材。一方面防止遗漏，另一方面在美术设计师完成后，可以直接将素材上传至表格处，方便其他协作者进行对照和寻找。设计文档的结构应该根据项目类型进行调整，不必死板地遵循，但大体上的思路是一致的，即有逻辑地组织你的文档结构，方便任何一个不了解概念的人读懂。 ",
+            "en": "At the end of the document, I usually include a separate table listing all the assets required from the art team, including UI elements and general 2D assets. This serves two purposes: first, it helps prevent any assets from being overlooked; second, once the artists have completed their work, they can upload the files directly to the table, making it easier for other team members to locate and cross-reference them.\n\nThe structure of a design document should be adapted to the type of project rather than following a rigid template. However, the underlying principle remains the same: organise the content logically so that anyone, even someone unfamiliar with the feature, can easily understand it."
           }
         },
         {
           "type": "image",
-          "src": "assets/images/games/1784632975868-Screenshot_2026-07-21_122247.png",
+          "src": "assets/images/games/1794737775513-Screenshot_2026-11-15_181358.png",
           "caption": {
             "zh": "",
             "en": ""
@@ -626,20 +716,41 @@
         {
           "type": "text",
           "value": {
-            "zh": "出色的推理玩法与动作设计——枪战、飙车、收集线索、审讯犯人、盘问证人、紧张的追逐战等等，被恰到好处地安排设计，游玩体验就像观看一部美国经典犯罪电影那样爽快刺激，环环相扣的案件推进丝毫不会让人感到疲惫。在前期的任务中，即便我们在审问的过程中屡屡失误错失机会，也几乎不会影响我们逐步解锁新地点，只不过会使这个过程变得较为缓慢。\u000b而每一次案件我们都将经历从前期的取证、搜查、使用线索进行审问，这也是黑色洛城的核心玩法。但是，很显然设计师们并没有止步于此，为了尽可能还原在一座凶险的罪恶都市的警探生涯，也为了游戏的层次更加丰富，除此之外，枪战、飙车、追逐战、甚至在执勤的路上偶遇抢劫犯人的突发事件，都毫无疑问将游戏的真实体验感再度提升一个档次。",
-            "en": "Brilliant Detective Work and Action Design: Gunfights, car chases, collecting clues, interrogating criminals, questioning witnesses, and thrilling pursuits are all seamlessly integrated, creating a play experience that feels as engaging and intense as watching a classic American crime movie. The investigations unfold logically without overwhelming the player. Early on, even if we make mistakes during interrogations, we can still unlock new locations, though the process may be slower. Each case involves evidence collection, searches, and questioning based on clues—this is the core gameplay of L.A. Noire. However, the designers didn’t stop there. They added extra layers of depth, such as gunfights, car chases, and even random events like encountering a robbery while on patrol, all of which elevate the immersion."
+            "zh": "除了这类系统功能的写作，还有一种值得一提的例子是那些涉及到具体表现的内容，例如角色技能的设计。我们项目里全部的角色技能设计都是在一个大表格下，按照角色名称和职阶划分。每一行需要写清楚技能描述（游戏内显示的文本），具体技能效果和数值（供开发者参考），以及动画表现（供美术设计师参考）。动画表现就是策划希望的画面表现效果，在这个基础上，我还会附加一些参考图片，或者视频来帮助美术设计师理解我期望的一种表现效果。曾经我有纠结过这个问题，因为我不希望我的规定限制了美术设计师的创意空间，但在我与一些合作者交流后，我发现大部分人反而希望策划将这些细节尽可能规定清楚，这会让他们的工作效率大大提升。",
+            "en": "Beyond documenting system features, another interesting example is the design of content that involves specific visual presentations, such as character skills.\n\nIn our project, all character skills were documented in a single large spreadsheet, organised by character name and class. Each row contained three main elements: the skill description (the text displayed in-game), the specific skill effects and numerical values (for developers), and the animation requirements (for artists).\n\nThe animation requirements described the visual effects I had in mind for each skill. To help artists better understand my expectations, I also included reference images or videos to illustrate the intended visual presentation.\n\nI used to have some concerns about this approach because I didn't want my specifications to limit the artists' creative freedom. However, after discussing this with several collaborators, I realised that most of them actually preferred designers to define these details as clearly as possible. Having more specific requirements gave them a much clearer direction and significantly improved their working efficiency."
           }
         },
         {
           "type": "text",
           "value": {
-            "zh": "本作如何在有限的框架下提供自由的选择？——沉浸式电影般的体验\n一个特殊的点：在可以自由驾车探索真实还原洛城风貌的地图上，并非一举一动都是完全开放自由的。但这种限制却是必不可少——当玩家作为警探要尝试通过收集线索来一点点缩小调查范围，过于宽泛的选择并不是一件好事，试想一下，假如你像在辐射4中那样每一件物品都可以捡起观察，是不是足以令人头大？而LANoire选择在一个有限的空间内设置一定数量的clue spot，并且结合足够的音效和画面提示来帮助玩家找到线索，当你没有头绪时，除了查看随身携带的小笔记本，甚至还可以询问身旁的搭档是否有建议。这种将探索的自由和筛选线索的限制平衡得非常好，令玩家在对每一个调查现场感到足够好奇和兴奋的同时，也不会因为混乱的交互物品而感到烦躁。\n其次：笔记本的定位和线索梳理功能。游戏里主角最重要的道具除了汽车大概就是这个随身携带的调查笔记本。我认为这是游戏中一个很实用而且巧妙的小设计，面对一个真实还原的大地图和数量繁多的细节线索，我不认为追求真实地要求玩家全靠自己来记住是合理的，很大概率上这只会让玩家感到烦躁和困难，从而无法游玩下去。而拥有了这个小笔记本，可以自动将玩家收集到的关键线索记录下来，作为之后审问犯人的根据，还可以根据线索和证词圈定几个需要调查的关键地点，而且可以在地图上自动标记。这些功能减少了游戏为了真实性带来的潜在困难，大大提升了玩家的游戏体验。",
-            "en": "**How Does the Game Provide Freedom Within a Limited Framework? — Immersive Cinematic Experience**: A notable aspect of *L.A. Noire* is its open world map where players can freely explore and experience a realistic version of Los Angeles. However, not all actions are completely open and free, and this limitation is crucial. As a detective, narrowing down your investigation through clue collection requires focus. Imagine if the game let you pick up every item like in *Fallout 4*—it would be overwhelming. Instead, *L.A. Noire* cleverly restricts the number of clue spots within a defined space and provides helpful audio and visual cues to guide players. When you’re stuck, you can refer to your notebook or ask your partner for suggestions. This balance between free exploration and focused clue selection helps maintain excitement while preventing frustration from an overabundance of items.\n\n**The Notebook and Clue Organization**: The protagonist’s most important tool besides their car is the investigation notebook. This is a very useful and clever feature. With such a large map and numerous clues, expecting players to remember everything would likely be frustrating. The notebook automatically records key clues, which can then be used to guide interrogations and pinpoint essential locations on the map. This feature alleviates potential issues caused by realism, enhancing the overall player experience."
+            "zh": "关于文档写作我已经介绍足够多了。实际上，设计游戏里的不同方面带来的乐趣是不一样，比如，设计任务、引导这类的系统时，我所体会到的是一种预判玩家会如何成长以及平衡好挑战和养成的乐趣；在设计角色技能、装备效果这类功能时，我更多是从什么样的画面表现和角色定位来思考的，并且我会想象玩家可能会尝试哪种阵容搭配和玩法。在实际的工作流程中，比起文档写作，占据我大部分时间的是回应协作者的疑问，为开发的功能或美术素材提供反馈，以及与其他设计师一起讨论游戏的优化方向。当然，只要我有时间，我也会进行大量测试，并且及时将漏洞反馈给开发者进行修复。",
+            "en": "I think I have covered enough about design documentation. In practice, different aspects of game design offer different kinds of enjoyment.\n\nWhen designing systems such as quests and tutorials, I enjoy anticipating how players will progress through the game and finding the right balance between challenge and character progression. When designing character skills and equipment effects, my thinking is more focused on visual presentation and character identity. I also enjoy imagining the different team compositions and playstyles that players might experiment with.\n\nIn my day-to-day work, however, writing design documents actually took up much less of my time than communicating with collaborators. Most of my time was spent answering questions from other team members, providing feedback on implemented features and art assets, and discussing possible improvements to the game with other designers.\n\nOf course, whenever I had the time, I also carried out extensive testing and promptly reported any bugs to the developers for fixing."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "另外，我发现对于独立游戏工作室来说，多进行和玩家的面对面交流是很有必要的。在我们的项目基本系统全部完成后，我曾带着demo去参加了一次布里斯托线下的独立游戏测试聚会。在那次聚会上，通过和直接来体验我们游戏的玩家的交流，我发现这类数值养成放置类游戏有一个特点，对于喜爱这种休闲方式的玩家来说，他们会觉得装备的构筑深度和更难缠的敌人是一种乐趣；而对于不热衷于这类游戏的玩家来说，他们会觉得可交互的内容太少，很无聊。这给我提醒了一点，那就是我们应该尽可能考虑那些我们真正的受众的需求，因为对于这类放置游戏来说，在不同的玩家群体里评价可能是非常两极分化的。因此，在demo正式上线之前我们就搭建了一个线上社群，让获得内测资格的玩家们加入并且在这个群里畅所欲言，提出自己的建议和反馈，事实证明，有很多玩家比我们想象的还要热心，并且来自玩家视角的思考往往是比我们更加全面的。这些玩家建议在后期给我们的项目起到了很大的帮助。",
+            "en": "I also realised that face-to-face communication with players is particularly valuable for indie game studios. After the core systems of our project were completed, I took the demo to an offline indie game playtesting meetup in Bristol.\n\nBy talking directly to people who came to try our game, I noticed an interesting characteristic of idle games focused on numerical progression. Players who already enjoyed this genre tended to find depth in equipment builds and increasingly challenging enemies enjoyable. However, players who were not particularly interested in this type of game often found it boring because there were too few interactive elements.\n\nThis taught me an important lesson: we should focus as much as possible on the needs of our actual target audience. For idle games in particular, player opinions can be extremely polarised depending on their preferences and gaming habits.\n\nTherefore, before the official release of our demo, we set up an online community where players who received early access could share their thoughts, suggestions, and feedback freely. As it turned out, many players were much more enthusiastic than we had expected. Their perspectives were often broader than our own because they approached the game from the player's point of view rather than that of the developers.\n\nThe feedback and suggestions we received from these players proved extremely valuable in guiding the project's later development."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "这就不得不提到我们是如何宣传自己的游戏了。起初，我们一致认为仅靠自己宣发就够了，没有考虑过和发行商合作。于是我们开通了一些线上平台账号，例如Tiktok，小红书，bilibili，X，等等。因为我们目标是面向多语言地区的玩家。在帮助运营海外平台的过程中，我也发现不同平台的用户可能感兴趣的内容方向很不一样。例如，在更多游戏玩家的平台上，他们会想要看到更详细的开发过程，新功能的测试等等；而一些面向广泛群众的平台上，他们更会被一些搞笑的，或者与日常生活产生联系的内容吸引。但很快我们就发现这样做很力不从心，我们一边需要尽快完成上线steam的demo，一边要自己宣发，而且宣传的效果也不尽如人意。于是，后来我们的项目负责人还是与几家独立发行商联络，并且进行了合作。具体与发行商合作是否有效，以及这样做是否值得，我不会在这里展开，不过仅从结果上来看，我认为还是分担了我们很多压力，并且卓有成效的。我不会推荐任何独立开发者这样做，只是如果你觉得自己实在无法承担独立宣发的工作量，可以考虑。",
+            "en": "This brings me to how we marketed our game. Initially, we all agreed that we could handle the marketing ourselves and did not consider working with a publisher.\n\nWe therefore created accounts on several social media platforms, including TikTok, Xiaohongshu, Bilibili, and X, as our target audience was spread across different language regions.\n\nWhile helping to manage our overseas social media accounts, I also noticed that users on different platforms were interested in quite different types of content. On platforms with a stronger gaming community, people tended to be more interested in detailed development updates, behind-the-scenes content, and tests of new features. On platforms targeting a broader audience, however, funny content or posts related to everyday life were often more appealing.\n\nHowever, we soon realised that managing everything ourselves was becoming overwhelming. We had to complete the Steam demo as quickly as possible while also handling all the marketing activities, and the results were not particularly satisfactory.\n\nEventually, our project lead decided to get in touch with several indie game publishers, and we began working with them.\n\nI won't go into detail here about how effective these publishing partnerships were or whether they were ultimately worthwhile. However, judging from the results, I think they significantly reduced our workload and proved quite effective.\n\nI wouldn't necessarily recommend this approach to every indie developer. However, if you find that you simply cannot manage the workload of handling marketing independently, working with a publisher is certainly worth considering."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "现在，回头来看，我认为这个项目作为工作室的第一款产品是很好的选择。首先，它的创意考虑到了日渐增长的一个小众品类的需求，目标并不在于众口难调的广泛玩家群体。其次，它的类型本身并不需要高成本的投入，非常适合起步阶段的工作室积累第一批用户和资金。而且，完成远比惊世骇俗的创意更重要，也许很多独立开发者一开始都想制作一个市面上从未出现过的游戏，但缺乏实际能力匹不匹配的考虑，最终导致流产。而且，这个过程中积累的技术和经验也更适合之后制作更复杂，更高质量的项目。目前，我看这款游戏的Steam界面上开发组仍然在不断地更新内容和补丁，并积极回复玩家的意见，我认为这种及时跟进和不断更新的态度也是很好的，很多玩家也表示很欣赏工作室的这种态度。",
+            "en": "Looking back, I think this project was an excellent choice for the studio's first commercial game.\n\nFirst, its concept addressed the needs of a growing niche market rather than trying to appeal to a broad audience with widely differing tastes. Second, the genre itself did not require a particularly large financial investment, making it a good fit for a studio at an early stage that needed to build its first user base and generate some initial revenue.\n\nI also believe that completing a game is far more important than coming up with an extraordinary idea. Many indie developers start out wanting to create something the market has never seen before, but without carefully considering whether their actual development capabilities match their ambitions, they may eventually find themselves unable to finish the project.\n\nThe technical knowledge and experience gained throughout this process also provide a much better foundation for developing more complex and polished games in the future.\n\nEven now, I can see on the game's Steam page that the development team is still regularly releasing new content and patches, while actively responding to player feedback. I think this commitment to ongoing support and continuous improvement is a very positive attitude. Many players have also expressed their appreciation for the studio's responsiveness."
           }
         },
         {
           "type": "image",
-          "src": "assets/images/games/1784633262519-Screenshot_2026-07-21_122737.png",
+          "src": "assets/images/games/1794737781188-Screenshot_2026-11-15_181423.png",
           "caption": {
             "zh": "",
             "en": ""
@@ -648,15 +759,15 @@
         {
           "type": "text",
           "value": {
-            "zh": "游戏叙事的大成之作——并非单纯平铺直叙，而是有一个个看似无关的支线与穿插其中的回忆CG逐步塑造起一个多面有深度的主角。\n有几个重要的点：\n将场景和剧情结合得很好，没有多余的物品和场景设计，甚至不可交互的装饰性物品都暗示了一部分角色信息以及剧情发展。\n每一段剧情的发展总有小转折带给玩家预料之外的感受。\n优秀的台词设计。不管是与核心玩法无关的台词还是人物的关键证词，R星的设计做到了人物台词都能对应其角色设定，起到丰满人物形象的作用。尤其是每一次审问证人的对话，NPC的每一句台词都能做到既符合剧情和角色特点，且能够在不显得过分直白和愚蠢的前提下露出破绽——从而留给玩家根据调查得来的线索进行侦破。\n在基于真实的社会和历史背景下进行剧情设计。",
-            "en": "**Masterful Narrative Design**: The story is not told in a linear, flat manner. Instead, seemingly unrelated side stories and inserted memory cutscenes gradually build a multi-faceted and deep protagonist. Several key points stand out:\n\n- The integration of scenes and plot, with no unnecessary items or designs. Even non-interactive decorative items subtly hint at character backstory and plot developments.\n- Every plot segment has small twists that keep the player engaged.\n- The excellent dialogue design—whether it’s casual, unrelated lines or key testimonies, the dialogue always fits the character, enhancing their depth. Especially during interrogations, the NPCs’ lines fit both the storyline and character traits, revealing subtle clues without being too obvious, leaving room for players to piece together the investigation."
+            "zh": "结合玩家的反馈，我会对自己的一些设计决策进行反思。首先，我认为我当初在设计任务系统和引导的时候，没有充分考虑到玩家受众的特点，随机任务的添加让整个任务系统过于繁琐，不断弹出的新任务成为了玩家的一种压力而不是乐趣。另外，任务完成带来的正反馈偏少，这让不少玩家觉得自己为了完成任务投入的精力和回报不对等。任务本来应该是玩家用于验证自己的队伍培养的一种试验场，那些较难达成用于促使玩家继续养成的任务应该设置得更加温和，而不是让玩家直观地感觉到自己被限制了。其次就是交互方面，对于这类半屏显示的放置游戏，不少操作应该更加简明，部分信息值得被隐藏而不是全部展示给玩家。 ",
+            "en": "Based on player feedback, I also took some time to reflect on several of my own design decisions.\n\nFirst, I don't think I fully considered the characteristics of our target audience when designing the quest system and tutorial. Adding random quests made the overall system unnecessarily complicated. The constant appearance of new quests became a source of pressure for players rather than an enjoyable part of the experience.\n\nThere was also insufficient positive feedback for completing quests. As a result, many players felt that the effort required to finish them was not worth the rewards they received.\n\nQuests should ideally serve as a way for players to test the strength of their team builds and see how well their progression is paying off. Even when certain quests are designed to encourage further progression through challenging objectives, their requirements should be more forgiving. Players should feel encouraged to improve their teams, rather than feeling that their progress is being restricted.\n\nThe second area I would reconsider is interaction design. For this type of idle game, where the game only occupies part of the screen, many interactions should be much simpler. Some information is better hidden until players actually need it, rather than displaying everything at once."
           }
         },
         {
           "type": "text",
           "value": {
-            "zh": "最后聊一下黑色洛城的小缺点：\n首先，升级系统的意义不大。这几乎是完全可以在游玩途中被忽略的一个要素。除了解锁一些提示点数和新的人物制服，似乎并不能给我带来更多的驱动去升级解锁。比起这些升级带来的奖励，游戏吸引我玩下去的主要原因还是其优秀的剧情设计和独特的调查玩法。当然，这并不会构成一个减分项，只是说存在的意义没有那么大。\n其次，不可避免的，质量略低的模型和画质似乎与细腻的微表情有时候配合得不是很好。考虑到黑色洛城的开发日期，这是完全可以理解的。但以一个2024年的玩家的角度来看，这种真实捕捉的面部表情有时候会在粗糙的模型上显得有些”恐怖“。\n总体而言，黑色洛城毫无疑问是一款瑕不掩瑜的优秀作品，而且最难能可贵的是它独特的调查玩法至今仍然难以见到雷同的设计，这使得它在此类侦探游戏上留下了值得被铭记的一笔。",
-            "en": "**Final Thoughts on Minor Flaws**:\n\n- The upgrade system feels insignificant. This is an aspect of the game that can almost be ignored. Aside from unlocking some hint points and new outfits for characters, the rewards don’t provide enough motivation for upgrading. The main draw of the game for me was its exceptional story design and unique investigative gameplay, rather than the upgrades themselves. Of course, this doesn’t detract from the overall experience.\n- The low-quality models and graphics sometimes clash with the detailed micro-expressions. Given the game’s development date, this is understandable, but from a 2024 player’s perspective, the real-time facial capture can sometimes look a bit “creepy” on rougher models.\n\nOverall, *L.A. Noire* is undeniably an excellent work with minor flaws that do not diminish its value. Its unique investigative gameplay remains unmatched, leaving a lasting impact on detective games and making it a standout in its genre."
+            "zh": "最后我想谈谈关于线上工作的体会。我认为对于游戏开发来说，全部线上的工作方式的确会带来一些问题。虽然这种方式降低了成本，但是线上工作需要经常统一所有人的时间，造成了额外的工作量；并且这会让日常生活和工作时间的界限变得模糊，很多时候反而降低了工作效率。并且，我觉得，对于游戏设计师来说，线下的交流和讨论始终是更好的方式，和协作者面对面交流能避免很多误解以及不必要的争执，这一点我通过参加很多线下GameJam也深有体会。而且对于工时统计来说，纯线上也存在很难溯源的问题。因此我认为至少设计师和开发者还是需要一个固定的线下场所的。 ",
+            "en": "Finally, I would like to share some thoughts on remote working.\n\nI believe that working entirely online does bring certain challenges to game development. Although it helps reduce operational costs, remote collaboration requires everyone to constantly coordinate their schedules, which creates additional overhead. It also makes it harder to maintain a clear boundary between work and personal life, sometimes resulting in lower overall productivity.\n\nFor game designers in particular, I still believe that face-to-face communication and discussion are generally more effective. Being able to talk directly with collaborators can prevent many misunderstandings and unnecessary disagreements. I have experienced this firsthand through participating in several offline Game Jams.\n\nThere is also the issue of tracking working hours. In a fully remote environment, it can be difficult to accurately record and verify how much time has been spent on different tasks.\n\nFor these reasons, I believe that, at the very least, designers and developers should have a shared physical workspace where they can communicate and collaborate in person."
           }
         }
       ],
@@ -1579,6 +1690,227 @@
       "order": 7
     },
     {
+      "id": "01",
+      "section": "essays",
+      "title": {
+        "zh": "简评《星露谷物语》中的能量条设计",
+        "en": "A Quick Review of Energy bar design in Stardew Valley"
+      },
+      "cover": "assets/images/games/1782573898042-450e1661-00ff-493b-8f48-bfb9ea961a2a.png",
+      "blurb": {
+        "zh": "一种巧妙调节玩家游玩节奏的方式",
+        "en": "A sophisticated method of gently regulating the play's pace"
+      },
+      "tags": {
+        "genre": {
+          "zh": "模拟经营，像素2D",
+          "en": "Simulated management, 2D pixel art"
+        },
+        "platform": {
+          "zh": "PC，IOS移动端",
+          "en": "PC, IOS"
+        },
+        "duration": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "video": {
+        "type": "youtube",
+        "src": "https://www.youtube.com/watch?v=6kv66MydDUc&t=219s"
+      },
+      "body": [
+        {
+          "type": "text",
+          "value": {
+            "zh": "在星露谷物语中，能量条（或称精力条）的存在在刚开始可能会让某些玩家感到困惑：为什么我感觉什么都没干只是砍了几下树，敲了几块石头就累倒了，还损失了五十块钱。又或者是，我今天明明还打算去一趟镇上的杂货铺，但是由于我缺少精力，只能睡一觉明天再说。甚至有的时候还会因为挣扎在晕倒的边缘而惊心动魄地祈祷自己能顺利在昏倒之前回到家里。",
+            "en": "In Stardew Valley, the energy bar can be a source of confusion for some players when they first start playing: How am I already exhausted? It feels like I’ve barely done anything—just chopped down a few trees or broken a couple of rocks—and suddenly I collapse, losing 50 bucks in the process. Or perhaps I had planned to stop by the grocery store in town that day, only to realize that I simply didn't have enough energy left and would have to put it off until tomorrow. And if you know, you know: those nerve-racking moments when you're right on the edge of passing out, desperately hoping you'll make it back home before collapsing."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1782591817220-ScreenShot_2026-06-27_211736_019.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "但由于星露谷物语精美可爱的美术视觉风格——一座悠闲的乡下童话小镇，配合放松的背景音乐，以及刚开始你确实没那么多需要操心的事情：只是种种防风草，顺便清理一下门口的杂草和树丛，或许拜访几个邻居。因此渐渐的，玩家会在心理上接受这种设定：那好吧，在这样一个一切看上去都很悠闲的地方，为什么我还要拼死拼活地劳作呢？精力不够那就上床睡觉，等待明天的到来。",
+            "en": "However, Stardew Valley's charming visual style—a cosy countryside fairytale town paired with relaxing background music—along with the fact that you really don't have much to worry about at the beginning, gradually changes the way players perceive this system. At first, your days mostly consist of watering a few parsnips, clearing some weeds and bushes outside your farmhouse, and maybe dropping by to visit a few neighbours around town.\n\nSlowly but surely, players begin to accept the logic behind it: Alright then, in a place where everything feels so peaceful and laid-back, why should I be working myself to death like a 24/7 convenience store employee? If I run out of energy, so be it. I'll just head to bed and wait for tomorrow to arrive."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "而这正是开发者们想要看到的。当玩家对这种慢悠悠的节奏逐渐适应后，他们就开始加快节奏了，你会收到各种信件和新任务，引导你一边探索星露谷里更丰富的设定和系统，一边让你扩大自己的版图。于是这时候玩家们会发现一天的时间很快变得不够用，我本该在睡前给作物浇水，结果挖了一天矿已经没力气了。于是，玩家会从此刻开始思考，想要变得更加高效只有两种方式：第一，在一天开始之前考虑好要处理的事项优先级，第二，如何提高我的精力条？ ",
+            "en": "And that's exactly what the developers want to see. Once players have settled into the game's slow and easy-going rhythm, the pace begins to pick up. New letters arrive in the mailbox, new quests appear, and the game gradually encourages you to both explore the richer systems and stories hidden throughout Stardew Valley and expand your own little corner of it.\n\nBefore long, players begin to realise that a single day suddenly doesn't feel nearly long enough anymore. I was supposed to water my crops before bed, but after spending the entire day mining, I'm already out of energy.\n\nAnd it is at this moment that players begin to think that there are only two ways to become more efficient: first, decide what deserves priority before the day even begins; second, figure out how to make that energy bar last longer."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1782591831143-ScreenShot_2026-06-27_211802_566.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "答案当然是：两者皆可！而这正是开发者们喜闻乐见的。当你开始自发地产生脑内路线规划，并且给排列出今日要做的任务和优先级时，你就已经学会了自己去探索和自主驱动地在这个游戏里探索，而不是通过开发者为你塞进来一封又一封邮件，或者给你整个琳琅满目的任务系统。而当你开始想办法提高精力条的上限或者恢复精力条时，你开始把精力条当作游戏里的一种资源，而你此时产生了一个新的重要目标：我需要升级，以及，我需要合成/获取更多能恢复精力的道具。",
+            "en": "The answer, of course, is: both. And once again, that's exactly what the developers want to see.\n\nThe moment you start mentally mapping out your own routes for the day and arranging your tasks according to priority, you've already learned to explore the game on your own terms and drive your own progress, rather than relying on an endless stream of letters in your mailbox or a giant checklist of quests handed to you by the developers.\n\nAnd when you begin looking for ways to increase your maximum energy or restore it more efficiently, the energy bar stops being a restriction and starts becoming a resource in its own right. At that point, a new set of goals naturally emerges: I need upgrades. And I need better tools, foods, and items that can keep my energy topped up."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "所以，我会将星露谷物语里的精力条设计定义为一个优秀的案例，即如何通过设置某种限制，反而促进玩家的自驱力，让游戏里的目标和任务自发地涌现。其实很多游戏中都有类似的设定存在，在某些策略游戏中，这种设计被包装成行动点数；或者某些内置购买的游戏则是直接将这种行动点设定成了可以通过花钱补充的资源；而在很多战斗游戏中，尽管你的行为不会直接消耗，但是你的生命值经常受到威胁从而需要进行维护。只是为何星露谷物语中的这个设计会让玩家产生新鲜感，我认为主要有以下几点原因。",
+            "en": "To sum it up, I would consider the energy bar in Stardew Valley an excellent example of game design: a system where imposing limitations on the player actually encourages self-motivation, allowing goals and tasks to emerge naturally rather than being explicitly assigned by the game itself.\n\nIn fact, similar ideas can be found in many other games. In some strategy games, this limitation takes the form of action points. In certain free-to-play titles, those action points are even turned into a monetisable resource that can be replenished with real money. And in many combat-focused games, while your actions may not directly consume a resource, your health is constantly under threat and therefore requires careful management.\n\nSo why does Stardew Valley's implementation of this idea feel so fresh to players? I believe there are several reasons for that."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "1. 精力条的可视化方法并不会直接告诉你某个行为将会消耗多少能量，真的没有多少玩家喜欢在游戏里看见大量数字！（当然，某些爱好爆炸式数值呈现的玩家除外）而这种选择性的不可视也让玩家体验上更加自由，这是一种心理影响。\n2. 与模拟经营游戏的结合。正如这篇简评一开始提到的，这是一种巧妙控制游玩节奏的策略。由于精力条的存在，你不能再像个永动机一样昼夜不停地在你的模拟农场里劳作，而是每一天都需要思考今天将要探索哪几个地点，做些什么。也会让你格外期待下一天的到来，因为你有很多来不及今天完成的事情。而这种强制中断未尽之事的心理体验会让人上瘾，不像那些不加限制的经营游戏，当你持续不断工作了几个小时之后，大部分玩家会开始感到疲惫，而当你因为疲惫退出游戏后，下一次打开可能就是很久之后了。但这种强迫你中止的循环会让玩家不断地想起那些还没有完成的事情，从而因为这短暂的停止而更加投入到下一次循环中。",
+            "en": "1. The energy bar never tells you the numbers.\n\nFirst of all, the game never directly tells you how much energy each action costs. And honestly, most players don't actually enjoy staring at a bunch of numbers while playing games. (Well, unless you're one of those people who get excited by damage numbers exploding all over the screen.)\n\nBy keeping some of that information hidden, the game actually makes the whole system feel less restrictive. You're not constantly calculating whether chopping down one more tree will cost 6 energy or 8 energy. You just get a rough feeling for it over time.\n\nIronically, making the system less visible makes players feel more free, even though the restriction itself never disappeared. That's the psychological trick behind it.\n\n2. It works perfectly with the farming sim genre.\n\nAs I mentioned at the beginning, this is a very clever way of controlling the pace of the game.\n\nBecause of the energy bar, you can't just turn yourself into some kind of farming machine that works 24 hours a day without stopping. Every morning you naturally start asking yourself:\n\n\"Am I going mining today?\"\n\n\"Should I spend the day fishing?\"\n\n\"Do I finally have time to upgrade my pickaxe?\"\n\nSuddenly, planning becomes part of the game.\n\nAnd perhaps more importantly, the game makes you excited for tomorrow.\n\nThere's always something you didn't get around to doing today. Maybe the crops still need watering. Maybe there's another five floors waiting for you in the mines. Maybe you were this close to finally catching that fish.\n\nAnd strangely enough, being forced to stop is exactly what makes you want to keep playing.\n\nIn a lot of management games with no restrictions, players simply keep going until they burn themselves out. A few hours later they're tired, they quit, and the next time they open the game might be weeks later.\n\nStardew Valley does the opposite.\n\nIt stops you while you're still thinking:\n\n\"Ah, just one more day.\"\n\nAnd because the game leaves things unfinished, those unfinished tasks stay in your head. You keep thinking about them after you've stopped playing, which only makes you more excited to jump back in next time."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "总结，星露谷物语中的精力条设计不仅本身成为了一种独特的游戏体验，还与游戏任务系统和养成系统进行了有机结合。这是一种非常聪明且基于玩家体验出发的游戏设计思路。",
+            "en": "To sum up, the energy bar in Stardew Valley is not only a unique gameplay experience in itself, but also one that blends seamlessly with the game's quest and progression systems. It is a remarkably clever design, built around the player experience from beginning to end."
+          }
+        }
+      ],
+      "order": 8
+    },
+    {
+      "id": "game-review-quicl",
+      "section": "essays",
+      "title": {
+        "zh": "时隔13年，我们可以从黑色洛城中学习到什么",
+        "en": "Thirteen Years Later: What Can We Learn from L.A. Noire?"
+      },
+      "cover": "assets/images/games/1784632053685-Screenshot_2026-07-21_120200.png",
+      "blurb": {
+        "zh": "他们是如何构建出一座有血有肉的40s罪恶都市洛城？——有选择的细节决定真实性塑造。",
+        "en": "How did they build a vibrant, living 1940s crime-ridden city in L.A. Noire? — The choice of details shapes the sense of realism."
+      },
+      "tags": {
+        "genre": {
+          "zh": "角色扮演，线性叙事",
+          "en": "Roleplay, storytelling"
+        },
+        "platform": {
+          "zh": "pc/vr",
+          "en": "pc/vr"
+        },
+        "duration": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      "video": {
+        "type": "youtube",
+        "src": ""
+      },
+      "body": [
+        {
+          "type": "text",
+          "value": {
+            "zh": "作者标注：此篇为早期完成。 ",
+            "en": "Notice: This is an early article."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "NPC微表情：使用自研的加强版面部捕捉技术应用到NPC的微表情，可以通过观察NPC的微表情来判断他们是否说谎。我不敢说直到现在这项技术是否已经被广泛应用，但对于十三年前来说，这样一款能够捕捉到人物细致入微的表情，其真实感和流畅度仍然是足以令人震惊的。这里也不得不佩服R星工作室的开发者们为之付出的心血，在幕后访谈中，开发者提到他们使用了360度无死角的摄像头来捕捉每一个动作乃至表情的细节，而这对于设计者来说也同样是一项复杂的工作：他们做到了给每一位NPC设计好各种表情的细节，坦然、犹豫、惊慌、嘲讽......这些表情的含义相似但不同演员的表演却带来了毫无重复的新鲜感，因此在游戏中，当你与这些或许配合或许抗拒的人物进行对峙时，除了利用好手上收集到的线索和他们的表述，很多时候更加好用的是这些近乎真实的微表情判断——而作为玩家，我是第一次在游戏中如此细致入微地观察一个由电脑程序控制的NPC的表情，仿佛我穿过屏幕化身此地，而我所面对的都是一个个鲜活真实，生活在这座混乱邪恶的洛城里的 人。",
+            "en": "NPC Micro-Expressions: The game uses a self-developed advanced facial capture technology to depict NPCs’ micro-expressions. These expressions allow players to assess whether someone is lying. While I can’t say if this technology is widely used today, it was still incredibly impressive for its time. Thirteen years ago, the ability to capture such subtle facial expressions added a level of realism and smoothness that was truly astonishing. The developers at Rockstar Studios deserve immense credit for the effort they put in. In behind-the-scenes interviews, they mentioned using 360-degree cameras to capture every detail of movements and expressions. This was a complex task for the designers, as they had to create a variety of facial expressions for each NPC—calm, hesitation, panic, sarcasm… Although these expressions might have similar meanings, different actors’ performances brought freshness and uniqueness to each one. In the game, when confronting these characters—whether cooperative or resistant—it’s often more useful to rely on these almost lifelike micro-expressions, rather than just the clues or statements you’ve gathered. For me, as a player, this was the first time I observed NPCs controlled by a computer program so closely, as though I had stepped through the screen into the city, facing real people who lived in the chaotic, evil world of Los Angeles."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1784632485820-Screenshot_2026-07-21_121440.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "出色的音效设计与游戏情节相结合：游戏音乐设计主要由两大部分组成：背景音乐和音效。黑色洛城的背景音乐选取了几首十分经典的爵士乐以及当时在美国流行的乡村音乐。这些音乐非常适合游戏的故事背景——1940年代的美国洛杉矶，流行之都，并且很好地为游戏注入了类似电影般的体验，配合这些经典的音乐，在洛城里开车办案，无疑是一种享受。而游戏里我最喜欢的一首ost是进入游戏主界面时播放的爵士，配合红色霓虹灯管闪烁着L.A.，映入眼帘的是黑白配色的游戏界面，在一面小巷晦暗的墙面上投射出的光影构成了几个选项字体，这一切完美地展现了游戏的气质——疑云重重的案件，纸醉金迷的40年代洛杉矶生活，这种阴冷夹杂着欲望的气息，足以称之为是一个吸引人的开场。其次，游戏的音效设计同样出色。在游戏过程中，当你在与人审问的过程中选择了错误的判断，游戏会响起一段沉重的音乐，这种音效加大了玩家在游戏体验过程中的不安感。",
+            "en": "Outstanding Sound Design Combined with Storytelling: The game’s music is split into two main categories: background music and sound effects. L.A. Noire uses several classic jazz tracks and popular country music from the 1940s in Los Angeles, which perfectly fit the setting of the game. These tracks inject a cinematic experience into the gameplay. One of my favorite OSTs is the jazz song that plays when you enter the main menu, accompanied by the neon red “L.A.” lights and the black-and-white interface. The shadowed alley wall projecting light and text options is a perfect representation of the game’s atmosphere—filled with mystery and the decadence of 1940s Los Angeles, creating an enticing opening. The sound effects are equally excellent. For example, when you make a wrong judgment during an interrogation, a heavy, ominous tune plays, increasing the player’s sense of unease during the experience."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1784632655070-Screenshot_2026-07-21_121730.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "细节且风味足够的人物对话设计——还原真实的城市风土一向是R星的拿手好戏，除了那些在GTA中随处可见的障碍物破坏、会从车上跳下来大声指责你的司机们、当你违规驾驶时四处惊慌逃窜路人，你甚至可以通过警察们在车上的闲聊窥见90s的洛杉矶文化。而在紧张刺激的追逐中，那些看似无关紧要只是程序生成的与你擦肩而过的路人却会停下脚步为你加油助威，同样，在这座看热闹不嫌事大的城市里，当你前往证人的家中进行搜查审讯时，在门口遇见的一帮游手好闲的混混可能会对你毫不掩饰地流露他们对于警察的厌恶。这些与主线任务无关紧要的台词设计，却为玩家还原呈现出一个立体鲜活的黑色洛城，相信你即便不赶去案发现场，慢悠悠地开着车在城市里晃荡，听着身旁除了唠嗑几乎毫无用处的搭档的闲聊和车载的经典音乐，看着街道两旁的城市风景以及时不时会路过一些经典的地标建筑，也是十分惬意的。",
+            "en": "Detailed and Flavorful Dialogue Design: Rockstar is known for faithfully recreating city cultures, and L.A. Noire is no exception. Apart from the usual obstacles and car chases, you can even hear police officers casually chatting in their cars about 90s LA culture. In intense chases, the seemingly irrelevant pedestrians you pass by may stop to cheer you on. On the other hand, when visiting a witness’s house for an interrogation, you might encounter idle thugs who openly express their disdain for the police. These seemingly minor, unrelated lines of dialogue add richness to the world and create a vivid, three-dimensional city. Even if you’re not rushing to the crime scene, casually driving through the city, listening to your partner’s chatter or the classic in-car music, while taking in the cityscape and passing landmarks, is quite relaxing."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1784632975868-Screenshot_2026-07-21_122247.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "出色的推理玩法与动作设计——枪战、飙车、收集线索、审讯犯人、盘问证人、紧张的追逐战等等，被恰到好处地安排设计，游玩体验就像观看一部美国经典犯罪电影那样爽快刺激，环环相扣的案件推进丝毫不会让人感到疲惫。在前期的任务中，即便我们在审问的过程中屡屡失误错失机会，也几乎不会影响我们逐步解锁新地点，只不过会使这个过程变得较为缓慢。\u000b而每一次案件我们都将经历从前期的取证、搜查、使用线索进行审问，这也是黑色洛城的核心玩法。但是，很显然设计师们并没有止步于此，为了尽可能还原在一座凶险的罪恶都市的警探生涯，也为了游戏的层次更加丰富，除此之外，枪战、飙车、追逐战、甚至在执勤的路上偶遇抢劫犯人的突发事件，都毫无疑问将游戏的真实体验感再度提升一个档次。",
+            "en": "Brilliant Detective Work and Action Design: Gunfights, car chases, collecting clues, interrogating criminals, questioning witnesses, and thrilling pursuits are all seamlessly integrated, creating a play experience that feels as engaging and intense as watching a classic American crime movie. The investigations unfold logically without overwhelming the player. Early on, even if we make mistakes during interrogations, we can still unlock new locations, though the process may be slower. Each case involves evidence collection, searches, and questioning based on clues—this is the core gameplay of L.A. Noire. However, the designers didn’t stop there. They added extra layers of depth, such as gunfights, car chases, and even random events like encountering a robbery while on patrol, all of which elevate the immersion."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "本作如何在有限的框架下提供自由的选择？——沉浸式电影般的体验\n一个特殊的点：在可以自由驾车探索真实还原洛城风貌的地图上，并非一举一动都是完全开放自由的。但这种限制却是必不可少——当玩家作为警探要尝试通过收集线索来一点点缩小调查范围，过于宽泛的选择并不是一件好事，试想一下，假如你像在辐射4中那样每一件物品都可以捡起观察，是不是足以令人头大？而LANoire选择在一个有限的空间内设置一定数量的clue spot，并且结合足够的音效和画面提示来帮助玩家找到线索，当你没有头绪时，除了查看随身携带的小笔记本，甚至还可以询问身旁的搭档是否有建议。这种将探索的自由和筛选线索的限制平衡得非常好，令玩家在对每一个调查现场感到足够好奇和兴奋的同时，也不会因为混乱的交互物品而感到烦躁。\n其次：笔记本的定位和线索梳理功能。游戏里主角最重要的道具除了汽车大概就是这个随身携带的调查笔记本。我认为这是游戏中一个很实用而且巧妙的小设计，面对一个真实还原的大地图和数量繁多的细节线索，我不认为追求真实地要求玩家全靠自己来记住是合理的，很大概率上这只会让玩家感到烦躁和困难，从而无法游玩下去。而拥有了这个小笔记本，可以自动将玩家收集到的关键线索记录下来，作为之后审问犯人的根据，还可以根据线索和证词圈定几个需要调查的关键地点，而且可以在地图上自动标记。这些功能减少了游戏为了真实性带来的潜在困难，大大提升了玩家的游戏体验。",
+            "en": "**How Does the Game Provide Freedom Within a Limited Framework? — Immersive Cinematic Experience**: A notable aspect of *L.A. Noire* is its open world map where players can freely explore and experience a realistic version of Los Angeles. However, not all actions are completely open and free, and this limitation is crucial. As a detective, narrowing down your investigation through clue collection requires focus. Imagine if the game let you pick up every item like in *Fallout 4*—it would be overwhelming. Instead, *L.A. Noire* cleverly restricts the number of clue spots within a defined space and provides helpful audio and visual cues to guide players. When you’re stuck, you can refer to your notebook or ask your partner for suggestions. This balance between free exploration and focused clue selection helps maintain excitement while preventing frustration from an overabundance of items.\n\n**The Notebook and Clue Organization**: The protagonist’s most important tool besides their car is the investigation notebook. This is a very useful and clever feature. With such a large map and numerous clues, expecting players to remember everything would likely be frustrating. The notebook automatically records key clues, which can then be used to guide interrogations and pinpoint essential locations on the map. This feature alleviates potential issues caused by realism, enhancing the overall player experience."
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/games/1784633262519-Screenshot_2026-07-21_122737.png",
+          "caption": {
+            "zh": "",
+            "en": ""
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "游戏叙事的大成之作——并非单纯平铺直叙，而是有一个个看似无关的支线与穿插其中的回忆CG逐步塑造起一个多面有深度的主角。\n有几个重要的点：\n将场景和剧情结合得很好，没有多余的物品和场景设计，甚至不可交互的装饰性物品都暗示了一部分角色信息以及剧情发展。\n每一段剧情的发展总有小转折带给玩家预料之外的感受。\n优秀的台词设计。不管是与核心玩法无关的台词还是人物的关键证词，R星的设计做到了人物台词都能对应其角色设定，起到丰满人物形象的作用。尤其是每一次审问证人的对话，NPC的每一句台词都能做到既符合剧情和角色特点，且能够在不显得过分直白和愚蠢的前提下露出破绽——从而留给玩家根据调查得来的线索进行侦破。\n在基于真实的社会和历史背景下进行剧情设计。",
+            "en": "**Masterful Narrative Design**: The story is not told in a linear, flat manner. Instead, seemingly unrelated side stories and inserted memory cutscenes gradually build a multi-faceted and deep protagonist. Several key points stand out:\n\n- The integration of scenes and plot, with no unnecessary items or designs. Even non-interactive decorative items subtly hint at character backstory and plot developments.\n- Every plot segment has small twists that keep the player engaged.\n- The excellent dialogue design—whether it’s casual, unrelated lines or key testimonies, the dialogue always fits the character, enhancing their depth. Especially during interrogations, the NPCs’ lines fit both the storyline and character traits, revealing subtle clues without being too obvious, leaving room for players to piece together the investigation."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "最后聊一下黑色洛城的小缺点：\n首先，升级系统的意义不大。这几乎是完全可以在游玩途中被忽略的一个要素。除了解锁一些提示点数和新的人物制服，似乎并不能给我带来更多的驱动去升级解锁。比起这些升级带来的奖励，游戏吸引我玩下去的主要原因还是其优秀的剧情设计和独特的调查玩法。当然，这并不会构成一个减分项，只是说存在的意义没有那么大。\n其次，不可避免的，质量略低的模型和画质似乎与细腻的微表情有时候配合得不是很好。考虑到黑色洛城的开发日期，这是完全可以理解的。但以一个2024年的玩家的角度来看，这种真实捕捉的面部表情有时候会在粗糙的模型上显得有些”恐怖“。\n总体而言，黑色洛城毫无疑问是一款瑕不掩瑜的优秀作品，而且最难能可贵的是它独特的调查玩法至今仍然难以见到雷同的设计，这使得它在此类侦探游戏上留下了值得被铭记的一笔。",
+            "en": "**Final Thoughts on Minor Flaws**:\n\n- The upgrade system feels insignificant. This is an aspect of the game that can almost be ignored. Aside from unlocking some hint points and new outfits for characters, the rewards don’t provide enough motivation for upgrading. The main draw of the game for me was its exceptional story design and unique investigative gameplay, rather than the upgrades themselves. Of course, this doesn’t detract from the overall experience.\n- The low-quality models and graphics sometimes clash with the detailed micro-expressions. Given the game’s development date, this is understandable, but from a 2024 player’s perspective, the real-time facial capture can sometimes look a bit “creepy” on rougher models.\n\nOverall, *L.A. Noire* is undeniably an excellent work with minor flaws that do not diminish its value. Its unique investigative gameplay remains unmatched, leaving a lasting impact on detective games and making it a standout in its genre."
+          }
+        }
+      ],
+      "order": 9
+    },
+    {
       "id": "intern-01",
       "section": "essays",
       "title": {
@@ -1617,7 +1949,7 @@
           }
         }
       ],
-      "order": 8
+      "order": 10
     },
     {
       "id": "intern-02",
@@ -1641,338 +1973,6 @@
         "src": ""
       },
       "body": [],
-      "order": 9
-    },
-    {
-      "id": "intern-03",
-      "section": "essays",
-      "title": {
-        "zh": "我进入行业的起点之在研项目大暴死",
-        "en": "My First Step into the Industry: The Spectacular Failure of a Game in Development"
-      },
-      "cover": "assets/images/games/1794391631196-cover3.png",
-      "blurb": {
-        "zh": "反思一下为什么大厂的项目也暴死",
-        "en": "Why Do Even Big-Budget Games from Major Studios Fail?"
-      },
-      "tags": {
-        "genre": {
-          "zh": "",
-          "en": ""
-        },
-        "platform": {
-          "zh": "",
-          "en": ""
-        },
-        "duration": {
-          "zh": "",
-          "en": ""
-        }
-      },
-      "video": {
-        "type": "youtube",
-        "src": ""
-      },
-      "body": [
-        {
-          "type": "text",
-          "value": {
-            "zh": "作者声明：本文不会直接出现任何企业/游戏名，本文仅用于个人学习目的，禁止传播转载。另外，文章内容一切都基于本人对游戏设计本身的反思，不涉及任何对公司团队，游戏的评价。本人非常尊重任何工作过的企业和游戏，每一段经历对我来说都是受益匪浅，并结识了许多良师益友的。",
-            "en": "Author's Disclaimer\n\nThis article will not directly mention the names of any companies or games. It is intended solely for personal learning and reflection and must not be redistributed or reproduced without permission.\n\nAll discussions and reflections in this article are based on my personal experience and thoughts on game design. They should not be interpreted as evaluations or criticisms of any company, team, or game.\n\nI have great respect for every company and project I have had the opportunity to work with. Each experience has taught me something valuable, and I am grateful to have met so many inspiring mentors and colleagues along the way."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "这段实习是我第一次真正进入游戏行业的契机，只能说我很幸运能够进入一个当时规模很大的项目团队中，作为一名游戏系统策划实习生参与进来。这是一个移动端多人游戏，包含了PVE和PVP战斗玩法，以及社交玩法。从品类来说，算是一款2D横板战斗跑酷游戏。我加入时，这款游戏还未正式公测，只是拿到了版号，仍然处于在研期。但是当时的团队非常大，总共有两百多人。对我来说，这个开始非常有价值，因为它让我真正参与并见证了一个工业化的标准游戏开发管线，以及团队协作模式是什么样的。",
-            "en": "This internship was my first real opportunity to enter the game industry. I was fortunate enough to join a relatively large development team as a game systems design intern, working on a major project. It was a multiplayer mobile game featuring both PvE and PvP combat, as well as social gameplay. In terms of genre, it could be described as a 2D side-scrolling action platformer with combat and parkour elements. When I joined the team, the game had not yet entered its public beta. It had already obtained its publishing approval but was still under active development. Despite this, the development team was already quite large, with more than 200 members.\n\nThis was an extremely valuable starting point for my career. It gave me the opportunity to experience firsthand what a standard, industrial-scale game development pipeline looks like and how a large development team coordinates its work."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "我当时只是一个刚入行的策划实习生，因此一开始我的工作内容只是帮助其他策划做做诸如配表这类并不考验设计能力的工作。我非常感谢当时那几位策划百忙之中对我的耐心指导，因为我刚开始时甚至需要从零开始参考工作文档学习如何使用项目组自研的配表工具，以及Redmine平台创建工单。当时我的工作内容基本被两个环节占据：配表和跑测。我必须承认，这是非常枯燥的。例如我配置引导的时候，需要参考新手引导文档，对照表格里的每一项要求，按出现顺序和关卡序号把每一步引导里出现的文本、指引框、指示图标等UI素材参数填进表格里。至于跑测，就是每次开发完一个新功能，我都需要反复测试所有边界情况以及流程，并及时提交反馈。当时我们所有策划实习生来说，测试是一项日常任务，除此之外我们还需要每天游玩竞品游戏，并且在日报和周报里汇报自己游玩竞品的进度，以及关于设计方面的建议和心得。",
-            "en": "At the time, I was just an intern who had recently entered the game industry. Naturally, my initial responsibilities were mostly limited to supporting other designers with tasks such as configuring data tables, which did not require much actual design work.\n\nI am still very grateful to the designers who patiently guided me despite their busy schedules. When I first joined, I had to learn almost everything from scratch, including how to use the project's in-house data configuration tools and how to create tickets on the Redmine platform by following the internal documentation.\n\nMost of my daily work revolved around two main tasks: data configuration and playtesting. I have to admit that both could be rather tedious.\n\nFor example, when configuring the tutorial system, I had to follow the tutorial design document and check every requirement against the corresponding spreadsheet. I needed to enter parameters for all the elements appearing at each tutorial step, including text, guidance panels, directional icons, and other UI assets, making sure they appeared in the correct order and at the appropriate stages of each level.\n\nAs for playtesting, whenever a new feature was implemented, I was responsible for repeatedly testing its entire flow and various edge cases, then submitting feedback and bug reports whenever necessary.\n\nFor all design interns on the team, testing was part of our everyday routine. In addition, we were expected to play competing games every day. We had to report our progress in playing these games, along with our observations, design suggestions, and reflections, in our daily and weekly reports."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "现在想想，那其实是一项非常好的训练。对于初入行业的我来说，还不具备成熟的策划思维。而公司愿意将这种对于项目进度本身意义不大的事情作为我们日常工作内容的一部分，其实是很难得的。而且，当时我们的主策划和我的导师会定期给我们写反馈，这其实也是一件相当专业且值得感恩的事情。",
-            "en": "Looking back, I now realise that this was actually an excellent learning experience. As someone who had just entered the industry, I had not yet developed a mature approach to game design. The fact that the company was willing to make time for tasks that did not directly contribute much to the project's immediate progress, but were valuable for our development as designers, was something I truly appreciated.\n\nMoreover, our lead game designer and my mentor regularly provided us with written feedback. I think this was a particularly professional practice, and something I remain genuinely grateful for."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "现在回想，我认为游戏立项的出发点是成立的，并且也做到了发展出自己的特色。其实从主要玩法上来讲，这款游戏与它的竞品（一款运营了十年之久，且一直有稳定受众）几乎是完全相似的。一样的2D横板跑酷闯关，角色有小技能和大招，可以通过主动释放来战斗。剧情过场和PVE关卡结合得很连贯，除此之外，还有角色养成机制，可以配装，升级。另外这款游戏后来发展出的PVP模式更是让它上了一个台阶，在PVP中，玩家组队或单人匹配对手，在同一条路线上同时进行跑酷，率先完成路程的获胜。而且中途有类似肉鸽一样限时购买道具的商店。从体验上来说，这款竞品游戏最主要的优势是流畅的操作手感，符合直觉的交互设计，并且对玩家的战斗能力有意识地进行了限制，例如在技能漫长的CD完成之前，只能通过收集场景里道具的方式来进行普攻，因此大部分时候游玩感受是类似魂游一样紧张刺激的，而这一点和跑酷游戏的本质非常契合。",
-            "en": "Looking back, I believe the original idea behind the game was valid, and the project also managed to develop its own identity.\n\nIn terms of core gameplay, the game was almost identical to its main competitor, a game that had been running for ten years and still maintained a stable player base. Both featured 2D side-scrolling platform gameplay, with characters having basic skills and ultimate abilities that players could actively trigger during combat. The story sequences and PvE levels were also smoothly integrated. On top of that, the game offered character progression systems, allowing players to equip items and upgrade their characters.\n\nThe PvP mode introduced later took the game to another level. In this mode, players could compete either solo or in teams. Everyone ran along the same course at the same time, and the first player to reach the finish line won. Along the way, there were also shops where players could purchase temporary items, much like the item selection system in roguelike games.\n\nIn terms of player experience, the competitor's greatest strengths were its responsive controls and intuitive interactions. It also deliberately limited players' combat abilities. For example, while waiting for their skills to come off their long cooldowns, players could only perform basic attacks by collecting items scattered throughout the level. As a result, the gameplay felt tense and challenging most of the time, almost like playing a Soulslike game. I think this approach was particularly well suited to the nature of a parkour game."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "但这款竞品的问题也是显而易见的。一款运营长达十年的移动游戏，正如很多其他现存的游戏一样，它逐渐从休闲单机的本质转变成了包含内置付费项目的线上运营产品。这种模式的转变是符合逻辑的，但这样做也不可避免地导致了游戏的体验变得臃肿，层出不穷的副系统，极度分散的养成材料获取途径，繁重的任务系统，不平衡的角色数值让这款曾经红极一时的游戏流失了大量老玩家，当然，比起玩家流失和下滑的口碑，这种转变也确实让它保持了一定的生命力，且获得了实际收益。因此，我参与的这个项目正是立足于此，它看中了这批数量可观的受众，这些玩家大部分由于喜爱这种游戏类型却缺少可替代品而一边抱怨一边继续留存。除此之外，项目还看中了同类型赛道的竞争较少，休闲玩家市场等等因素。",
-            "en": "However, the problems with this competitor were also obvious. After ten years of operation, like many other long-running mobile games, it had gradually moved away from its original identity as a casual single-player game and evolved into a live-service product with various in-game monetisation features.\n\nThis transition was understandable from a business perspective, but it inevitably made the overall experience increasingly bloated. An ever-growing number of secondary systems, fragmented ways of obtaining progression materials, increasingly demanding quest systems, and unbalanced character stats all contributed to the loss of many long-time players. The game, which had once been extremely popular, also suffered from a declining reputation.\n\nOf course, despite the loss of players and negative feedback, this transition did help the game maintain a certain level of longevity and generate actual revenue.\n\nThis was precisely where the project I worked on saw its opportunity. It identified this considerable existing player base, many of whom continued playing despite frequently complaining about the game. Most of them still enjoyed this particular genre but had few alternative games to turn to.\n\nIn addition, the project recognised several other opportunities, including relatively little competition in this genre and the potential of the casual gaming market."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "我认为它的出发点是好的。例如，我能看出它在游戏体验方面所做的差异化和尝试：它加入了一个类似弹反的机制，将原本相对被动只能躲避敌人攻击的体验转化成了能够抓timing进行反制的主动进攻手段。此外，还引入了配队和团队连携效果，赋予了角色收集和属性养成更多意义。从实际体验上讲，我认为这两项尝试直接将这款类似的跑酷战斗游戏的侧重点从跑酷引向了战斗，在战斗方面爽感的提升也确立了它与竞品不同的特色。但我也必须在这里打个问号，如果说立项之初的目标是吸引偏好这类跑酷游戏的老玩家为主，加上泛休闲用户为辅。那么这种看似相似，实则游玩体验上却转向战斗爽这种类型，这本身隐含了一定风险。",
-            "en": "I think the original idea behind the project was sound. For example, I could see the effort it made to differentiate itself in terms of gameplay experience. It introduced a parry-like mechanic, turning what was previously a relatively passive experience, where players could only dodge enemy attacks, into a more active form of combat where they could counterattack by timing their actions correctly.\n\nIt also introduced team compositions and team synergy effects, giving character collection and stat progression more purpose.\n\nFrom my actual experience playing the game, I think these two changes shifted the focus of this type of parkour combat game away from running and towards fighting. The more satisfying combat experience also helped establish a distinct identity that set it apart from its competitors.\n\nHowever, I do have some reservations here. If the original goal was primarily to attract existing players who enjoyed this type of parkour game, with casual players as a secondary target audience, then there was an inherent risk in this approach. Although the game looked similar to its competitors on the surface, its actual gameplay experience had shifted towards a much more combat-focused experience, built around the satisfaction of engaging in combat. That difference in direction could potentially create a mismatch between what the target audience expected and what the game actually offered."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "如果说假设游戏的受众在此阶段发生了一次暗含的分化，已经由最初的跑酷游戏爱好者转向了喜欢快节奏爽感战斗的用户，那么接下来的设计决策在我看来存在一系列问题。首当其冲的是，这个游戏引入了一个与主要玩法几乎完全割裂的副玩法——类似泰拉瑞亚的2D沙盒生存建造。而且，我在加入团队的时候，被要求作为系统策划实习生辅助这个环节。我不能干涉已经进入制作阶段的决策，当然这不是重点，但是在参与这个系统的设计时，我产生了很多疑惑。首先，这个系统的设计出发点是为了平衡较为紧张刺激的战斗玩法，根据主要设计师的说法，他们认为玩家会产生疲惫感，而这个系统的存在是为了缓解压力而设置的纯粹休闲玩法。并且，这个玩法被放置在一个名叫家园的入口下，目标是向未来的玩家社交玩法拓展。如果说这个系统的功能只是让玩家可以拥有一个自主设计装饰，并且邀请其他玩家参观和集合的自定义空间，我认为还是可以接受的。在很多线上运营移动游戏里可以看到类似的设计，例如FGO里的空间允许玩家浏览已收集的角色，并与之互动，培养感情。而且从长远来看，社交需求的确是这类联网移动游戏的一项维持玩家社群活跃必不可少的考虑因素。",
-            "en": "If we assume that the target audience had gradually split at this stage, shifting from the original parkour game enthusiasts towards players who preferred fast-paced, action-packed combat, then I believe a series of problems began to emerge in the subsequent design decisions. The most obvious one was the introduction of a secondary game mode that was almost completely disconnected from the core gameplay: a 2D sandbox survival and building mode similar to *Terraria*.\n\nWhen I joined the team, I was assigned to assist with this part of the project as a systems design intern. I had no say in decisions that had already entered production, but that is not really the point. What matters is that I had quite a few questions while working on the design of this system. First of all, the original intention behind this mode was to balance out the relatively intense and fast-paced combat gameplay. According to the lead designer, they believed players would eventually become tired from fighting, so this mode was introduced purely as a casual activity to help them relax.\n\nIt was also placed under an entry point called *Home*, with the intention of eventually expanding into social features for players. If the purpose of this system had simply been to provide players with a personal space that they could freely customise and decorate, where they could also invite other players to visit and hang out, I would have found that perfectly reasonable. Similar features can be found in many live-service mobile games. For example, in *Fate/Grand Order (FGO)*, players can visit a dedicated space to view the characters they have collected and interact with them, helping to build a stronger emotional connection.\n\nMore importantly, from a long-term perspective, social interaction is indeed an important consideration for keeping the player community active in this type of online mobile game."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "但问题是，我发现整个团队几乎分成了两部分，一部分集中力量在战斗玩法的开发和优化上，持续设计敌人和关卡。另一部分则集中在这个家园玩法的打磨上。也就是说，团队似乎并没有把这个家园系统当作一个优先级较低的副系统进行制作，而是投入了比较高的成本和关注度在这个副系统上。当然，设计师们与此同时也在完善其他副系统，例如宠物养成，爬塔副本等等。但是，家园系统甚至制作了多个单独的场景地图，例如火山、冰原、森林等等，这些地图的设计和绘制都是有我参与完成的，还开发了与之匹配的移动和操作逻辑，具体设计和泰拉瑞亚极度相似。也就是说，在这个玩法中，玩家需要使用和主玩法完全不同的操作方式，像泰拉瑞亚一样击败敌人，向下挖掘，收集素材，建造庇护所。",
-            "en": "However, what concerned me was that the team seemed to be almost evenly divided into two groups. One focused on developing and polishing the combat gameplay, continuously designing new enemies and levels. The other concentrated on refining the Home mode.\n\nIn other words, the team did not seem to be treating the Home system as a low-priority secondary feature. Instead, it received a considerable amount of development resources and attention.\n\nOf course, the designers were also working on other secondary systems, such as pet progression and tower-climbing challenges. However, the Home mode went much further. The team even created several separate maps, including volcanic, icy and forest environments. I was personally involved in designing and creating these maps. We also developed dedicated movement and interaction systems to support this mode.\n\nThe gameplay itself was extremely similar to *Terraria*. Players had to use an entirely different control scheme from the main game, defeating enemies, digging underground, collecting resources and building shelters, just as they would in *Terraria*."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "就我个人的体验来说，我认为这个副系统和主要玩法在体验上来说完全是两种不同的心流。如果说主玩法带给我的感受是紧张刺激，需要高度专注的快节奏体验，那么这个家园玩法带给我的就是一种大脑放空，甚至不需要过分关注手上操作，可以一边后台开着背景音乐一边纯粹放松的。我能理解设计师们的愿景，他们假设了一种情景：在玩家经历了高强度的对局战斗后，想要放松一下自己的大脑和手指，这时大部分玩家可能会选择打开另外一款完全不需要思考和操作的休闲小游戏进行放松，但是由于我们的游戏集成了一个休闲玩法，所以这部分玩家不需要退出我们的游戏，他们完全可以继续留在这款游戏里放松，由此可以提升玩家的在线数量和留存率。但这也引出了一个实际问题：那就是，有多少玩家在被这个游戏所宣传的跑酷玩法吸引进来时，会把这个游戏当作一款需要投入主要精力的产品？",
-            "en": "From my personal experience, I felt that the secondary mode and the main gameplay offered two completely different types of flow.\n\nIf the main gameplay was a fast-paced, intense experience that required a high level of concentration, the Home mode was almost the opposite. It allowed me to switch off my brain and relax. I didn't even need to pay too much attention to what I was doing. I could simply leave some background music playing and enjoy the experience without much effort.\n\nI can understand the designers' vision. They imagined a scenario in which players, after several intense combat sessions, would want to give their brains and fingers a break. In that situation, many players might normally choose to open another casual game that requires little thought or interaction. However, since our game already included a casual mode, these players wouldn't need to leave the game to find something else to play. They could simply stay within our game and relax instead.\n\nIn theory, this could help increase the number of active players and improve retention. However, this also raises a practical question: How many players who were initially attracted by the parkour gameplay advertised by the game would actually consider it a product worth investing most of their gaming time in?"
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "事情发展到这一步，我认为这款游戏立项的初衷已经暗地发生了两到三次内部分裂，而且最致命的是，这会导致被宣传吸引而来的玩家预期和实际体验严重不符。由于我离开这个项目的节点是在第一次正式付费内测，所以对于游戏本身后续的优化调整和运营我并没有关注，因此我的评价和反思只集中在公开宣发初期。我在职期间，主要设计师后来也对这个玩法进行了一系列优化和完善，例如引入家园联机功能，可以邀请其他玩家加入一起游玩；还有将家园里击败敌人掉落的物品转化成外界系统可用于角色养成的素材；在家园世界地图加入副本玩法的入口等等。在我看来这些尝试很大程度上弥补了系统之间过于割裂的问题，也就是说，这个玩法本身变得有一定价值。但是，体验上的感受却不是系统设计能够弥补的。因此，这可能反而会让一部分玩家觉得，为了获得那部分养成材料和奖励，我不得不去游玩这个我并不感兴趣的玩法，这可能会让玩家产生一种被迫感。",
-            "en": "By this point, I felt that the original vision behind the project had quietly split into two or three different directions. More importantly, this created a serious risk: players attracted by the game's marketing could end up having expectations that were completely different from the actual gameplay experience.\n\nI left the project around the time of its first paid closed beta test, so I didn't follow its subsequent development, optimisation or live operations. Therefore, my evaluation and reflections here are limited to the early stage of its public marketing campaign.\n\nDuring my time on the project, the lead designers did make a series of improvements to the Home mode. For example, they introduced multiplayer functionality, allowing players to invite others into their home worlds and play together. They also made items dropped by enemies in the Home mode usable as character progression materials in the main game. In addition, they added entrances to dungeon content directly to the Home world map.\n\nIn my opinion, these changes went a long way towards addressing the lack of connection between the different systems. In other words, the Home mode gradually gained some practical value within the overall game.\n\nHowever, I don't think changes to system design alone can solve the fundamental problem of how a particular gameplay experience feels to players.\n\nIn fact, these changes might even create another problem. Some players could feel that they *have to* play a mode they aren't interested in just to obtain certain progression materials and rewards. This could easily turn what was originally intended to be a relaxing activity into something that feels like an obligation."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "除了上述我认为的导致项目后来没有取得预期成功的主要原因之外，它也存在着类似竞品游戏一样的困境：系统过于臃肿。某种程度上，这是一个长线运营移动游戏几乎无法避免的问题。但是，它可以通过合理的成长曲线和引导设计进行包装和规避。根据我的回忆，在我离职之前，这个游戏除了主要的pve关卡系统，家园系统，pvp系统，还包含宠物系统，角色养成，商城，任务系统，副本玩法，装备系统，社交系统（公会、组队）。优点是前期任务和引导设计比较清晰，能够很好地串联起这些系统开放的先后顺序，缺点是在游戏早期就加入了过多副系统。对比竞品游戏，它的很多系统都是在运营后期逐渐增加的，当然，在有产能的情况下，当然是越完善越好。但，这种完善更多指向的是如何延长玩家的游玩时长，如何让玩家投入精力，而不是游戏本身内容方面的。这就会导致一部分玩家观感上产生反感，而且主玩法本身的确还欠缺打磨，例如操作手感和交互设置，关卡设计，敌人种类等等。",
-            "en": "Apart from the major issues I mentioned above, which I believe contributed to the project falling short of its original expectations, the game also faced a problem similar to that of its competitor: an increasingly bloated system structure.\n\nTo some extent, this is almost unavoidable for a long-running live-service mobile game. However, it can be managed and made less overwhelming through a well-designed progression curve and onboarding experience.\n\nAs far as I can remember, before I left the project, the game already included the main PvE level system, the Home mode, PvP, pet progression, character development, an in-game shop, quests, dungeon content, equipment, and social features such as guilds and team matchmaking.\n\nOne advantage was that the early quests and tutorials were relatively well designed. They clearly guided players through the game and introduced these systems in a logical sequence. The downside, however, was that too many secondary systems were introduced at such an early stage.\n\nCompared with its competitor, many of these systems had only been added gradually during the later stages of its live operations. Of course, if a development team has sufficient resources, having a more comprehensive set of features is generally a good thing. But I think there is an important distinction here: much of this kind of expansion is aimed at extending playtime and encouraging players to invest more time and effort in the game, rather than actually enriching the core gameplay content itself.\n\nThis can understandably create a negative impression among some players. Meanwhile, the core gameplay itself still needed considerable polishing in several areas, including control responsiveness, interaction design, level design and enemy variety."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "然后，从更小的层面来说，这款游戏本身的故事剧情设计和角色设计并不扎实。由于主线是pve关卡驱动，而且穿插着大量剧情过场，因此剧情并不是一个可以被直接忽略的存在。当然，从游玩的角度来说，这不是一个叙事为主要内核的游戏，但一个制作不精良甚至透露出敷衍感的设计，不如不存在。它带来的问题同样是会拉低一部分玩家的好感。",
-            "en": "On a smaller scale, I also felt that the game's story and character designs lacked depth and polish. Since the main progression was driven by PvE levels, with a large number of story cutscenes woven into the experience, the narrative was not something players could simply ignore. Of course, from a gameplay perspective, this was not a narrative-driven game. However, I believe poorly executed content, especially when it comes across as rushed or half-hearted, can sometimes be worse than having no such content at all. It doesn't add much to the experience and can instead leave some players with a less favourable impression of the game."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "当然，这个项目也是有很多设计亮点的。至少对我来说很有启发性。比如，爬塔玩法我认为是一个很好的设计，在游戏中玩家可以挑战一个BOSS副本，是从易到难往上爬塔的形式，每一关都直接进入BOSS战，挑战不同等级和属性的BOSS，已经挑战过的关卡有每日扫荡功能，可以一键扫荡获得素材。首先从功能上，这个爬塔功能毫无疑问为玩家提供了一个配队和养成快速验证的渠道，而且比起主线的跑酷关卡，这个玩法直接体现了游戏本身的战斗爽感，我甚至认为比起家园，爬塔玩法是真正适合受众的休闲副玩法。另外，在战斗方面，早期角色的阵容连携效果和技能设计还是很有创意的，众多角色中，兼具远程输出特色和近战特色的角色，以及治疗系等辅助角色，每个角色都有鲜明的专长和短板，以及不同的操作手感。并且支持游戏内随时自由切换当前使用的角色，我认为这一点是毫无疑问好玩有趣的。",
-            "en": "Of course, the project also had many design highlights, some of which I found genuinely inspiring.\n\nFor example, I think the tower-climbing mode was a very good design. In this mode, players could challenge a series of boss encounters, progressing through increasingly difficult floors. Each floor took players directly into a boss fight, with different bosses featuring different levels of difficulty and attributes. Previously cleared floors could also be completed instantly through a daily sweep function, allowing players to collect progression materials with a single click.\n\nFrom a functional perspective, this mode provided players with an efficient way to test their team compositions and character builds. More importantly, unlike the parkour-based levels in the main storyline, it directly showcased the combat mechanics and the satisfaction of fighting. I would even argue that, compared with the Home mode, the tower-climbing mode was a much better fit for the target audience as a casual secondary activity.\n\nThere were also some genuinely creative ideas in the early character designs and team synergy mechanics. Among the various characters, there were those who combined ranged and melee combat styles, as well as healers and other support characters. Each had distinct strengths and weaknesses, along with their own unique combat mechanics and feel.\n\nThe game also allowed players to switch freely between their currently available characters at any time during gameplay. I think this was undoubtedly one of its most enjoyable and engaging features."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "另外，从工作流程上，这段经历让我受益匪浅。首先是非常专业化的架构，团队的线上数据库有非常全面且结构清晰的文档规范要求和指导手册，让我这种初入行业的新人都能快速理解并上手。其次，从独立分配的导师制度到由下而上的反馈渠道，即便作为实习生，我也可以和主策划直接对话，交流建议。更不用说日报，周报，以及例会，例会我们也会分为策划组内部的会议和团队会议，因此整个团队的协作分工都是非常明确且方便溯源的。另外，我很欣赏团队里大家互相帮忙的氛围，每个人都非常易于沟通，比如当我们策划遇到一些BUG或者技术问题时，技术组的专家们都会非常及时地响应并且处理。而且我们项目组内部的一些自研策划工具真的非常好用（我至今都在想念）比如技术组开发的策划配表工具，可以在上传之前本地一键排查冲突和漏洞，比直接使用Github这类工具要人性化得多。还有我当时一直在用的编辑器地图绘制工具和素材配置工具，等等。这也让我认识到技术工具的必要性。",
-            "en": "In addition, this experience taught me a great deal about professional development workflows.\n\nFirst, the team had a highly professional organisational structure. Its shared online database contained comprehensive documentation standards and clearly structured guidelines, making it easy for newcomers like me, who had just entered the industry, to understand the workflow and get started quickly.\n\nSecond, there was a well-established mentorship system, with each intern assigned an individual mentor, as well as bottom-up feedback channels. Even as an intern, I could communicate directly with the lead designer and discuss my ideas and suggestions. On top of that, we had daily reports, weekly reports and regular meetings. These meetings were divided into internal design team meetings and wider team meetings. As a result, responsibilities and collaboration across the project were clearly defined, and decisions and progress could easily be traced back.\n\nI also really appreciated the supportive atmosphere within the team. Everyone was approachable and willing to help. For example, whenever we encountered bugs or technical issues as designers, the technical team would respond and resolve them very promptly. Another thing I particularly appreciated was the collection of in-house tools developed specifically for the project. Some of them were genuinely excellent, and I still miss using them today.\n\nFor example, the technical team developed a configuration tool for game designers that allowed us to check for conflicts and potential errors locally with a single click before uploading our data. It was much more user-friendly than relying directly on tools like GitHub for this kind of work. There were also other useful tools I used regularly, such as the in-editor map creation tool and the asset configuration tool.\n\nAll of this helped me realise just how important well-designed technical tools are to an efficient game development workflow."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "最后，我有些标题党了，在此诚挚致歉（主要是这是一个曾经面试被问过的问题，我就写的夸张了些）。实际上，这段旅程对我来说意义重大，而且很幸运地能够与团队中如此优秀，专业的策划导师们和技术专家，以及美术设计师一起工作，成长。他们不仅耐心且专业地指导了我，包容了我，而且还为我提供了很多职场上的关怀，例如我的导师会请我们经常聚餐，和我们讨论一些游戏行业的情况，提供专业视角的建议和分析等等。而且这段经历也让我觉得游戏行业是一个很纯粹，大家都很专注在自己的热爱上的一个场所，更加坚定了我继续前行的信心。无论以后大家都在做什么样的项目，我都真诚希望大家能够收获事业成功，以及更重要的是玩的开心，身体健康。",
-            "en": "Finally, I may have used a slightly misleading title, and I sincerely apologise for that. (To be honest, this was actually a question I was once asked in a job interview, so I deliberately made the title a little more dramatic.) In reality, this journey meant a great deal to me. I was incredibly fortunate to have the opportunity to work and grow alongside such talented and professional design mentors, technical experts and artists.\n\nThey not only guided me with patience and professionalism, but also showed great understanding and support throughout my time there. They also made an effort to look after us beyond our day-to-day work. For example, my mentor would often invite us out for meals, discuss the state of the game industry with us, and share professional insights and advice from their own experience.\n\nThis experience also gave me the impression that the game industry can be a genuinely passionate place, where people are deeply committed to what they love doing. It strengthened my confidence and determination to keep moving forward in this industry.\n\nWhatever projects everyone is working on in the future, I sincerely wish you all success in your careers. More importantly, I hope you continue to enjoy what you do, have fun making games, and stay happy and healthy."
-          }
-        }
-      ],
-      "order": 10
-    },
-    {
-      "id": "intern-04",
-      "section": "essays",
-      "title": {
-        "zh": "我为独游工作室远程打工的日子",
-        "en": "My Days Working Remotely for an Indie Game Studio"
-      },
-      "cover": "assets/images/games/1794392184415-cover4.png",
-      "blurb": {
-        "zh": "关于小团队线上工作的一点思考",
-        "en": "Some Reflections on Remote Work in Small Teams"
-      },
-      "tags": {
-        "genre": {
-          "zh": "",
-          "en": ""
-        },
-        "platform": {
-          "zh": "",
-          "en": ""
-        },
-        "duration": {
-          "zh": "",
-          "en": ""
-        }
-      },
-      "video": {
-        "type": "youtube",
-        "src": ""
-      },
-      "body": [
-        {
-          "type": "text",
-          "value": {
-            "zh": "作者声明：本文不会直接出现任何企业/游戏名，本文仅用于个人学习目的，禁止传播转载。另外，文章内容一切都基于本人对游戏设计本身的反思，不涉及任何对公司团队，游戏的评价。本人非常尊重任何工作过的企业和游戏，每一段经历对我来说都是受益匪浅，并结识了许多良师益友的。",
-            "en": "Author's Disclaimer:\n\nThis article does not directly mention the names of any companies or games. It is intended solely for personal learning and reflection and must not be redistributed or reproduced without permission.\n\nAll content is based on my personal reflections on game design itself and should not be interpreted as an evaluation or criticism of any company, team, or game. I have great respect for every company I have worked with and every game I have been involved in. Each experience has taught me a great deal, and I have been fortunate to meet many wonderful colleagues and mentors along the way."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1794737682985-Screenshot_2026-11-15_181133.png",
-          "caption": {
-            "zh": "图片来源游戏Steam界面，版权归游戏工作室所有",
-            "en": "Image source: The game's Steam page. Image copyright belongs to the game studio."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "这段远程工作的经历是在我从上一段实习项目组内离职前往布里斯托读书期间，有幸得到之前老板的信任继续合作的。所以这份工作完全是我一边读书一边利用课余时间参与的，还存在与国内的七个小时时差等问题。因此我会在文内谈谈关于游戏开发纯线上的体验和一些反思。当然，这篇文章也是对我自己工作成果的一个反思，我会讨论很多关于游戏设计方面的经验反思。目前这个游戏已经于今年十月正式上线Steam了，截至目前大约2周多已经售出两万多份，由于这是工作室第一款游戏，而且是一款小体量的放置游戏，我认为这个成绩还是很不错的。在此，我也向曾经合作过的工作室成员以及我的老板真心祝贺，并且感谢他们的知遇之恩。也祝福他们之后的作品大获成功。",
-            "en": "This remote working experience took place while I was preparing to leave my previous internship team and move to Bristol for my studies. Fortunately, my former boss trusted me enough to continue working together, even after I had left the team. As a result, I worked on this project entirely alongside my studies, using my spare time to contribute. There were also practical challenges, such as the seven-hour time difference between the UK and China.\n\nIn this article, I will share my experience and reflections on working in a fully remote game development environment. I will also look back on my own contributions to the project and discuss some of the lessons I learned about game design.\n\nThe game officially launched on Steam in October this year and has sold over 20,000 copies in just over two weeks. Considering that this is the studio's first game and a relatively small-scale idle game, I think this is a very impressive achievement.\n\nI would also like to sincerely congratulate my former colleagues at the studio and my former boss. I am truly grateful that they gave me the opportunity and trusted me with this work. I wish them every success with their future projects!"
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "我加入这个项目的节点是从立项之后，一直到第一版demo上线Steam为止。在这期间，我所做的工作围绕任务系统、交互设计，以及部分装备、角色技能、新手引导等。我的工作流程包括了撰写设计文档，配置数据表，配置部分素材例如音效，测试反馈，以及部分线下和线上运营。相比起其他项目工作经历，这是一次我相对完整且广泛参与到一个独立游戏项目各个环节的体验。这正是令我受益匪浅的地方，在这里我见证了小体量工作室如何从零搭建项目，并且一步步走到宣发和运营。",
-            "en": "I joined the project shortly after its initial development began and stayed until the first demo was released on Steam. During this period, my work mainly focused on the quest system, interaction design, and some aspects of equipment, character skills, and the tutorial. My responsibilities covered a wide range of tasks, including writing design documents, configuring data tables, setting up assets such as sound effects, testing and providing feedback, as well as supporting both online and offline operations.\n\nCompared with my other project experiences, this was one in which I was involved in almost every stage of an indie game's development. This is what made the experience particularly valuable to me. I had the opportunity to witness how a small indie studio built a project from scratch and gradually moved towards marketing and live operations."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "首先，我想介绍下我们的团队是如何组织架构的。这个项目开始时，我们并没有一个固定的线下工作场所，所有的沟通和开发工作都是在线上完成。我们通过一个线上办公软件叫做飞书建立起不同的交流群组，包括策划组，UI组，Bug反馈组，等等。并且我们会每周召开线上会议进行工作内容对齐和未来任务的分工安排，我们的主策划也会明确每个交付节点给所有人。我们的分工由线上表格统一管理，结构类似于Github的issue board，只不过，每个人的任务后会详细附加开始-结束日期，以及相关链接（例如美术组的成员要上传素材，策划组的成员要添加文档链接）。并且这些任务会按照优先级进行排序，以保证所有人的工作进度是一致的。",
-            "en": "First, I would like to explain how our team was organised. When the project started, we did not have a fixed physical workplace, so all communication and development took place online.\n\nWe used an online collaboration platform called Feishu to create different communication groups for each team and purpose, including the game design team, UI team, bug reporting group, and so on. We also held weekly online meetings to review progress, align on ongoing work, and assign upcoming tasks. Our lead game designer was responsible for setting clear deadlines and communicating key milestones to the entire team.\n\nAll task assignments were managed through shared online spreadsheets, with a structure similar to GitHub's issue board. Each task included a clearly defined start and end date, along with relevant links or deliverables. For example, artists were expected to upload their assets, while game designers needed to attach links to their design documents. Tasks were also prioritised to help everyone stay aligned and ensure that the overall development schedule remained on track."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "任何一个功能从设计到实现交付的完整流程是：设计师们先内部讨论出方案，然后交给一人负责撰写整个设计文档，在文档里需要明确规定这个功能的定位，如何展示以及交互（UIUX），涉及哪些需要开发的内容，需要哪些美术以及文本素材。在主策划审核并确认通过后，这份文档就会被同步给开发组和美术组的人员共同审核，明确全部需求后建立起各自的任务分工和周期，然后进入开发阶段。在开发过程中，如果遇到任何问题，设计师需要一起讨论并解决，最终完成后，整组人员都要参与测试，但主要是设计师本人，测试并反馈建议给开发人员进行二次调整。",
-            "en": "The complete workflow for taking a feature from initial design to final delivery was as follows.\n\nFirst, the game designers discussed the idea internally and agreed on a proposed solution. One designer was then assigned to write the full design document. This document needed to clearly define the feature's purpose, presentation and interactions (UI/UX), development requirements, and the art and text assets needed.\n\nOnce the lead game designer had reviewed and approved the document, it was shared with both the development and art teams for further review. After all requirements had been clarified, tasks were assigned to the relevant team members, with clear timelines for each task. Development could then begin.\n\nDuring development, if any problems arose, the designers would discuss them together and work towards a solution. Once implementation was complete, the whole team participated in testing, although the designer responsible for the feature played the leading role. They would test the feature, provide feedback and suggestions to the developers, and request further adjustments where necessary."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1794737748451-Screenshot_2026-11-15_181150.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "值得一提的是，在这个过程中我得到了很多如何清晰撰写一份设计文档的经验。以我过往在不同项目组中工作的经验来看，设计文档的撰写可能有不同的偏好风格，但无一例外地强调易读性。这就好比作为一名开发者在编写代码时需要考虑到你的协作者，尽量撰写架构清晰且适当添加注释的代码一样，设计文档并不只有策划需要阅读，因此你必须考虑到这份文档能够让开发人员理解功能需求，美术设计师明确风格和设计需求。以我个人的习惯来说，我通常会先交代清楚交互需求，然后再梳理功能背后的规则以及数据类型。我喜欢将交互界面的设计放在前面，这是因为可以给阅读者提供一个相当直观的印象，帮助他们理解这个系统或者功能与其他地方的联系。以我主要负责的任务系统为例：首先需要这个系统是因为游戏需要一个来为玩家提供成长目标以及能力验证的功能，这对于一个依赖数值成长的推关单机游戏来说是很重要的。",
-            "en": "One important thing I learned from this experience was how to write clear and effective design documents.\n\nBased on my experience working with different project teams, I found that the preferred style of design documentation may vary from project to project, but readability is always a priority. This is similar to software development: when writing code, developers need to consider their collaborators by keeping the architecture clear and adding comments where necessary. Design documents are no different. They are not written for game designers alone. Developers need to understand the functional requirements, while artists need to have a clear understanding of the visual style and asset requirements.\n\nAs for my own approach, I usually start by explaining the interaction requirements, followed by the underlying rules and data structures of the feature. I prefer to put the UI and interaction design first because it gives readers an immediate, visual understanding of the system and how it connects to other parts of the game.\n\nTake the quest system, which was one of my main responsibilities, as an example. The first thing I needed to explain was why the game required such a system in the first place. It was designed to provide players with clear progression goals and opportunities to demonstrate their abilities. This is particularly important in a single-player level-based game that relies heavily on numerical progression."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "在设计任务系统的交互界面时，需要逐级展示每一层交互的具体界面。例如，任务的入口有哪些，进入后的界面是什么样，在这个界面上需要展示哪些信息，哪些是可以交互的，可以交互的内容进入后是新界面还是二级界面。需要具体到每一处UI的位置，以及控制关系。界面的一致性非常重要，因此在设计任务界面时，我让它的入口和其他系统保持一致，只单独增加了一个提示窗用于快捷入口。并且尽量减少不必要的界面跳转（这对一个小体量的放置游戏来说只是在增加玩家的操作频率和负担）所以任务窗口左侧用于展示任务列表，右侧用于展示任务详情以及奖励领取。并且一个理想的界面交互应该包括互相跳转，例如，在锻造界面如果玩家发现自己缺少某种材料，那么他可以通过直接点击该材料的图标跳转至可获得该材料的任务界面，而不是等玩家自己摸索如何获得。",
-            "en": "When designing the quest system's UI and interactions, it was important to illustrate each level of the interaction flow in detail. This included identifying all possible entry points to the quest system, showing what each screen would look like after entering, specifying what information should be displayed, and defining which elements were interactive. For each interactive element, I also needed to clarify whether clicking it would open a completely new screen or a secondary panel within the current interface. The design had to be specific enough to cover the position of every UI element and the relationships between different controls.\n\nConsistency across interfaces was particularly important. I therefore made sure that the quest system's entry points followed the same conventions as other systems, adding only a small notification window to provide a quick-access shortcut.\n\nI also tried to minimise unnecessary screen transitions. For a relatively small idle game, excessive navigation would only increase the number of interactions required and place an unnecessary burden on players. So I designed the quest window with the task list on the left and the corresponding quest details and reward collection area on the right.\n\nIdeally, interfaces should also allow players to navigate directly between related systems. For example, if a player discovers that they are missing a particular material in the crafting interface, they should be able to click directly on its icon and jump to a quest that rewards that material, rather than having to figure out how to obtain it on their own."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1794737767455-Screenshot_2026-11-15_181321.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "梳理完交互界面结构后，作为设计者也会对这个系统包括哪些值得进一步规定清楚的细节了然于胸。比如，任务列表里的任务按照什么优先级进行排序？任务种类的划分？新任务和进展中的任务有什么区别？任务的更新规则是什么？这些都是需要让开发者完全了解的。所以我会接下来按照概念出现的先后顺序详细规定这些规则，保证开发者的阅读体验是相对连贯的，不会被突然出现的新概念打断。在这个例子中，我会先说明任务的刷新与关卡进展有关（这个是已经存在的系统），并且将对应关卡序号与解锁任务的关系梳理在一个一目了然的配置表格中。然后我会讲解任务的分类，包括主线任务和支线，以及随机出现的日常任务。我会说明它们各自出现的条件，终止的条件。然后，我会说明在任务列表中，主线任务是优先级最高的，应该出现在最上方，并且按照解锁顺序排序。规定完这些后，我会进一步讨论在任务详情界面中随任务进展发生的变化以及奖励领取条件。请注意，在解释具体规则时，要遵循由浅入深，从已有的概念拓展到新概念的顺序，这可以降低开发者的理解成本。",
-            "en": "Once the interaction structure was established, I had a much clearer idea of which details and rules needed to be defined for the system. For example: How should quests be sorted by priority? How should different quest types be categorised? What distinguishes a new quest from an ongoing one? How should quests be updated? All of these details needed to be clearly communicated to the developers.\n\nI therefore documented the rules in the order in which the relevant concepts were introduced, making the document easier to follow and avoiding situations where developers encountered unfamiliar concepts without sufficient context.\n\nIn this example, I first explained that quest refreshes were linked to level progression, which was an existing game system. I then used a clear configuration table to map level numbers to the quests they unlocked.\n\nNext, I introduced the different quest categories, including main quests, side quests, and randomly generated daily quests. For each category, I specified its activation conditions and termination conditions.\n\nAfter that, I explained the sorting rules for the quest list. Main quests had the highest priority and should always appear at the top, ordered by their unlock sequence.\n\nFinally, I moved on to the changes displayed in the quest details panel as players progressed, along with the conditions for claiming rewards.\n\nThe key principle here is to explain things progressively, moving from familiar concepts to new ones and from basic rules to more complex details. This helps reduce the cognitive load on developers and makes the entire design document much easier to understand."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "在文档的最后，我通常会单独列出一个表格容纳全部需要美术设计师产出的素材，包括UI和一般2D素材。一方面防止遗漏，另一方面在美术设计师完成后，可以直接将素材上传至表格处，方便其他协作者进行对照和寻找。设计文档的结构应该根据项目类型进行调整，不必死板地遵循，但大体上的思路是一致的，即有逻辑地组织你的文档结构，方便任何一个不了解概念的人读懂。 ",
-            "en": "At the end of the document, I usually include a separate table listing all the assets required from the art team, including UI elements and general 2D assets. This serves two purposes: first, it helps prevent any assets from being overlooked; second, once the artists have completed their work, they can upload the files directly to the table, making it easier for other team members to locate and cross-reference them.\n\nThe structure of a design document should be adapted to the type of project rather than following a rigid template. However, the underlying principle remains the same: organise the content logically so that anyone, even someone unfamiliar with the feature, can easily understand it."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1794737775513-Screenshot_2026-11-15_181358.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "除了这类系统功能的写作，还有一种值得一提的例子是那些涉及到具体表现的内容，例如角色技能的设计。我们项目里全部的角色技能设计都是在一个大表格下，按照角色名称和职阶划分。每一行需要写清楚技能描述（游戏内显示的文本），具体技能效果和数值（供开发者参考），以及动画表现（供美术设计师参考）。动画表现就是策划希望的画面表现效果，在这个基础上，我还会附加一些参考图片，或者视频来帮助美术设计师理解我期望的一种表现效果。曾经我有纠结过这个问题，因为我不希望我的规定限制了美术设计师的创意空间，但在我与一些合作者交流后，我发现大部分人反而希望策划将这些细节尽可能规定清楚，这会让他们的工作效率大大提升。",
-            "en": "Beyond documenting system features, another interesting example is the design of content that involves specific visual presentations, such as character skills.\n\nIn our project, all character skills were documented in a single large spreadsheet, organised by character name and class. Each row contained three main elements: the skill description (the text displayed in-game), the specific skill effects and numerical values (for developers), and the animation requirements (for artists).\n\nThe animation requirements described the visual effects I had in mind for each skill. To help artists better understand my expectations, I also included reference images or videos to illustrate the intended visual presentation.\n\nI used to have some concerns about this approach because I didn't want my specifications to limit the artists' creative freedom. However, after discussing this with several collaborators, I realised that most of them actually preferred designers to define these details as clearly as possible. Having more specific requirements gave them a much clearer direction and significantly improved their working efficiency."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "关于文档写作我已经介绍足够多了。实际上，设计游戏里的不同方面带来的乐趣是不一样，比如，设计任务、引导这类的系统时，我所体会到的是一种预判玩家会如何成长以及平衡好挑战和养成的乐趣；在设计角色技能、装备效果这类功能时，我更多是从什么样的画面表现和角色定位来思考的，并且我会想象玩家可能会尝试哪种阵容搭配和玩法。在实际的工作流程中，比起文档写作，占据我大部分时间的是回应协作者的疑问，为开发的功能或美术素材提供反馈，以及与其他设计师一起讨论游戏的优化方向。当然，只要我有时间，我也会进行大量测试，并且及时将漏洞反馈给开发者进行修复。",
-            "en": "I think I have covered enough about design documentation. In practice, different aspects of game design offer different kinds of enjoyment.\n\nWhen designing systems such as quests and tutorials, I enjoy anticipating how players will progress through the game and finding the right balance between challenge and character progression. When designing character skills and equipment effects, my thinking is more focused on visual presentation and character identity. I also enjoy imagining the different team compositions and playstyles that players might experiment with.\n\nIn my day-to-day work, however, writing design documents actually took up much less of my time than communicating with collaborators. Most of my time was spent answering questions from other team members, providing feedback on implemented features and art assets, and discussing possible improvements to the game with other designers.\n\nOf course, whenever I had the time, I also carried out extensive testing and promptly reported any bugs to the developers for fixing."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "另外，我发现对于独立游戏工作室来说，多进行和玩家的面对面交流是很有必要的。在我们的项目基本系统全部完成后，我曾带着demo去参加了一次布里斯托线下的独立游戏测试聚会。在那次聚会上，通过和直接来体验我们游戏的玩家的交流，我发现这类数值养成放置类游戏有一个特点，对于喜爱这种休闲方式的玩家来说，他们会觉得装备的构筑深度和更难缠的敌人是一种乐趣；而对于不热衷于这类游戏的玩家来说，他们会觉得可交互的内容太少，很无聊。这给我提醒了一点，那就是我们应该尽可能考虑那些我们真正的受众的需求，因为对于这类放置游戏来说，在不同的玩家群体里评价可能是非常两极分化的。因此，在demo正式上线之前我们就搭建了一个线上社群，让获得内测资格的玩家们加入并且在这个群里畅所欲言，提出自己的建议和反馈，事实证明，有很多玩家比我们想象的还要热心，并且来自玩家视角的思考往往是比我们更加全面的。这些玩家建议在后期给我们的项目起到了很大的帮助。",
-            "en": "I also realised that face-to-face communication with players is particularly valuable for indie game studios. After the core systems of our project were completed, I took the demo to an offline indie game playtesting meetup in Bristol.\n\nBy talking directly to people who came to try our game, I noticed an interesting characteristic of idle games focused on numerical progression. Players who already enjoyed this genre tended to find depth in equipment builds and increasingly challenging enemies enjoyable. However, players who were not particularly interested in this type of game often found it boring because there were too few interactive elements.\n\nThis taught me an important lesson: we should focus as much as possible on the needs of our actual target audience. For idle games in particular, player opinions can be extremely polarised depending on their preferences and gaming habits.\n\nTherefore, before the official release of our demo, we set up an online community where players who received early access could share their thoughts, suggestions, and feedback freely. As it turned out, many players were much more enthusiastic than we had expected. Their perspectives were often broader than our own because they approached the game from the player's point of view rather than that of the developers.\n\nThe feedback and suggestions we received from these players proved extremely valuable in guiding the project's later development."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "这就不得不提到我们是如何宣传自己的游戏了。起初，我们一致认为仅靠自己宣发就够了，没有考虑过和发行商合作。于是我们开通了一些线上平台账号，例如Tiktok，小红书，bilibili，X，等等。因为我们目标是面向多语言地区的玩家。在帮助运营海外平台的过程中，我也发现不同平台的用户可能感兴趣的内容方向很不一样。例如，在更多游戏玩家的平台上，他们会想要看到更详细的开发过程，新功能的测试等等；而一些面向广泛群众的平台上，他们更会被一些搞笑的，或者与日常生活产生联系的内容吸引。但很快我们就发现这样做很力不从心，我们一边需要尽快完成上线steam的demo，一边要自己宣发，而且宣传的效果也不尽如人意。于是，后来我们的项目负责人还是与几家独立发行商联络，并且进行了合作。具体与发行商合作是否有效，以及这样做是否值得，我不会在这里展开，不过仅从结果上来看，我认为还是分担了我们很多压力，并且卓有成效的。我不会推荐任何独立开发者这样做，只是如果你觉得自己实在无法承担独立宣发的工作量，可以考虑。",
-            "en": "This brings me to how we marketed our game. Initially, we all agreed that we could handle the marketing ourselves and did not consider working with a publisher.\n\nWe therefore created accounts on several social media platforms, including TikTok, Xiaohongshu, Bilibili, and X, as our target audience was spread across different language regions.\n\nWhile helping to manage our overseas social media accounts, I also noticed that users on different platforms were interested in quite different types of content. On platforms with a stronger gaming community, people tended to be more interested in detailed development updates, behind-the-scenes content, and tests of new features. On platforms targeting a broader audience, however, funny content or posts related to everyday life were often more appealing.\n\nHowever, we soon realised that managing everything ourselves was becoming overwhelming. We had to complete the Steam demo as quickly as possible while also handling all the marketing activities, and the results were not particularly satisfactory.\n\nEventually, our project lead decided to get in touch with several indie game publishers, and we began working with them.\n\nI won't go into detail here about how effective these publishing partnerships were or whether they were ultimately worthwhile. However, judging from the results, I think they significantly reduced our workload and proved quite effective.\n\nI wouldn't necessarily recommend this approach to every indie developer. However, if you find that you simply cannot manage the workload of handling marketing independently, working with a publisher is certainly worth considering."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "现在，回头来看，我认为这个项目作为工作室的第一款产品是很好的选择。首先，它的创意考虑到了日渐增长的一个小众品类的需求，目标并不在于众口难调的广泛玩家群体。其次，它的类型本身并不需要高成本的投入，非常适合起步阶段的工作室积累第一批用户和资金。而且，完成远比惊世骇俗的创意更重要，也许很多独立开发者一开始都想制作一个市面上从未出现过的游戏，但缺乏实际能力匹不匹配的考虑，最终导致流产。而且，这个过程中积累的技术和经验也更适合之后制作更复杂，更高质量的项目。目前，我看这款游戏的Steam界面上开发组仍然在不断地更新内容和补丁，并积极回复玩家的意见，我认为这种及时跟进和不断更新的态度也是很好的，很多玩家也表示很欣赏工作室的这种态度。",
-            "en": "Looking back, I think this project was an excellent choice for the studio's first commercial game.\n\nFirst, its concept addressed the needs of a growing niche market rather than trying to appeal to a broad audience with widely differing tastes. Second, the genre itself did not require a particularly large financial investment, making it a good fit for a studio at an early stage that needed to build its first user base and generate some initial revenue.\n\nI also believe that completing a game is far more important than coming up with an extraordinary idea. Many indie developers start out wanting to create something the market has never seen before, but without carefully considering whether their actual development capabilities match their ambitions, they may eventually find themselves unable to finish the project.\n\nThe technical knowledge and experience gained throughout this process also provide a much better foundation for developing more complex and polished games in the future.\n\nEven now, I can see on the game's Steam page that the development team is still regularly releasing new content and patches, while actively responding to player feedback. I think this commitment to ongoing support and continuous improvement is a very positive attitude. Many players have also expressed their appreciation for the studio's responsiveness."
-          }
-        },
-        {
-          "type": "image",
-          "src": "assets/images/games/1794737781188-Screenshot_2026-11-15_181423.png",
-          "caption": {
-            "zh": "",
-            "en": ""
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "结合玩家的反馈，我会对自己的一些设计决策进行反思。首先，我认为我当初在设计任务系统和引导的时候，没有充分考虑到玩家受众的特点，随机任务的添加让整个任务系统过于繁琐，不断弹出的新任务成为了玩家的一种压力而不是乐趣。另外，任务完成带来的正反馈偏少，这让不少玩家觉得自己为了完成任务投入的精力和回报不对等。任务本来应该是玩家用于验证自己的队伍培养的一种试验场，那些较难达成用于促使玩家继续养成的任务应该设置得更加温和，而不是让玩家直观地感觉到自己被限制了。其次就是交互方面，对于这类半屏显示的放置游戏，不少操作应该更加简明，部分信息值得被隐藏而不是全部展示给玩家。 ",
-            "en": "Based on player feedback, I also took some time to reflect on several of my own design decisions.\n\nFirst, I don't think I fully considered the characteristics of our target audience when designing the quest system and tutorial. Adding random quests made the overall system unnecessarily complicated. The constant appearance of new quests became a source of pressure for players rather than an enjoyable part of the experience.\n\nThere was also insufficient positive feedback for completing quests. As a result, many players felt that the effort required to finish them was not worth the rewards they received.\n\nQuests should ideally serve as a way for players to test the strength of their team builds and see how well their progression is paying off. Even when certain quests are designed to encourage further progression through challenging objectives, their requirements should be more forgiving. Players should feel encouraged to improve their teams, rather than feeling that their progress is being restricted.\n\nThe second area I would reconsider is interaction design. For this type of idle game, where the game only occupies part of the screen, many interactions should be much simpler. Some information is better hidden until players actually need it, rather than displaying everything at once."
-          }
-        },
-        {
-          "type": "text",
-          "value": {
-            "zh": "最后我想谈谈关于线上工作的体会。我认为对于游戏开发来说，全部线上的工作方式的确会带来一些问题。虽然这种方式降低了成本，但是线上工作需要经常统一所有人的时间，造成了额外的工作量；并且这会让日常生活和工作时间的界限变得模糊，很多时候反而降低了工作效率。并且，我觉得，对于游戏设计师来说，线下的交流和讨论始终是更好的方式，和协作者面对面交流能避免很多误解以及不必要的争执，这一点我通过参加很多线下GameJam也深有体会。而且对于工时统计来说，纯线上也存在很难溯源的问题。因此我认为至少设计师和开发者还是需要一个固定的线下场所的。 ",
-            "en": "Finally, I would like to share some thoughts on remote working.\n\nI believe that working entirely online does bring certain challenges to game development. Although it helps reduce operational costs, remote collaboration requires everyone to constantly coordinate their schedules, which creates additional overhead. It also makes it harder to maintain a clear boundary between work and personal life, sometimes resulting in lower overall productivity.\n\nFor game designers in particular, I still believe that face-to-face communication and discussion are generally more effective. Being able to talk directly with collaborators can prevent many misunderstandings and unnecessary disagreements. I have experienced this firsthand through participating in several offline Game Jams.\n\nThere is also the issue of tracking working hours. In a fully remote environment, it can be difficult to accurately record and verify how much time has been spent on different tasks.\n\nFor these reasons, I believe that, at the very least, designers and developers should have a shared physical workspace where they can communicate and collaborate in person."
-          }
-        }
-      ],
       "order": 11
     }
   ]
