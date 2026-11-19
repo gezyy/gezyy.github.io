@@ -1701,6 +1701,13 @@
             "zh": "现在想想，那其实是一项非常好的训练。对于初入行业的我来说，还不具备成熟的策划思维。而公司愿意将这种对于项目进度本身意义不大的事情作为我们日常工作内容的一部分，其实是很难得的。而且，当时我们的主策划和我的导师会定期给我们写反馈，这其实也是一件相当专业且值得感恩的事情。",
             "en": "Looking back, I now realise that this was actually an excellent learning experience. As someone who had just entered the industry, I had not yet developed a mature approach to game design. The fact that the company was willing to make time for tasks that did not directly contribute much to the project's immediate progress, but were valuable for our development as designers, was something I truly appreciated.\n\nMoreover, our lead game designer and my mentor regularly provided us with written feedback. I think this was a particularly professional practice, and something I remain genuinely grateful for."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "现在回想，我认为游戏立项的出发点是成立的，并且也做到了发展出自己的特色。其实从主要玩法上来讲，这款游戏与它的竞品（一款运营了十年之久，且一直有稳定受众）几乎是完全相似的。一样的2D横板跑酷闯关，角色有小技能和大招，可以通过主动释放来战斗。剧情过场和PVE关卡结合得很连贯，除此之外，还有角色养成机制，可以配装，升级。另外这款游戏后来发展出的PVP模式更是让它上了一个台阶，在PVP中，玩家组队或单人匹配对手，在同一条路线上同时进行跑酷，率先完成路程的获胜。而且中途有类似肉鸽一样限时购买道具的商店。从体验上来说，这款竞品游戏最主要的优势是流畅的操作手感，符合直觉的交互设计，并且对玩家的战斗能力有意识地进行了限制，例如在技能漫长的CD完成之前，只能通过收集场景里道具的方式来进行普攻，因此大部分时候游玩感受是类似魂游一样紧张刺激的，而这一点和跑酷游戏的本质非常契合。",
+            "en": ""
+          }
         }
       ],
       "order": 10
