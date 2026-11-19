@@ -1961,6 +1961,13 @@
             "zh": "因此当时我刚加入，立刻就投入到七月的暑期活动筹备中。当然，和系统策划的经历类似的，我也需要写设计文档。但是我很快就感受到了玩法策划和系统策划工作内容上的不同，在做玩法策划的工作时，我会更加专注在具体机制，以及预期表现和体验方面。举例来说，我当时第一个负责的工作内容是给七月的活动玩法设计给武器附加特殊效果的芯片，根据活动玩法，玩家会在局内捡到附带随机芯片效果的武器，只不过此时的芯片是损坏的，因此玩家需要通过不断战斗积累芯片的维修进度，直到芯片的效果从负面影响转化成增益（Debuff -> Buff）。因此在设计效果时，我需要同时设计负面效果和正面效果。一开始我考虑到活动本质上是追求一种从压抑到爆发的游戏体验，因此把一些负面效果设计得很难。在经过测试和建议后，我意识到很多玩家实际上可能根本撑不到进化完成的阶段就被恶心退游了。所以我很快做了改进，重新设计后负面效果的重点放在“搞笑”“无厘头”为主，比起阻碍，更像是一种对玩家的无伤大雅的干扰。",
             "en": "So, as soon as I joined the team, I was immediately involved in preparing the July summer event.\n\nOf course, just as I had done in my previous systems design role, I was still responsible for writing design documents. However, I quickly noticed the differences between gameplay design and systems design. As a gameplay designer, I spent much more time focusing on specific mechanics, their intended behaviour, and the experience they were supposed to create.\n\nFor example, my first assignment was to design special-effect chips that could be attached to weapons for the July event. Based on the event's mechanics, players would find weapons with randomly generated chip effects during a run. However, these chips were initially damaged, so players had to keep fighting and accumulate repair progress before the chip's negative effects could eventually evolve into positive ones (Debuff → Buff).\n\nThis meant that I had to design both the negative and positive effects for each chip.\n\nInitially, I wanted the event to create a sense of progression from frustration and suppression to a satisfying final power spike. As a result, I made some of the negative effects quite challenging. However, after playtesting and receiving feedback, I realised that many players might never even reach the evolution stage. Instead, they could simply become frustrated and quit before experiencing the intended payoff.\n\nI quickly revised the designs. In the new version, the negative effects focused more on humour and absurdity. Rather than seriously hindering players, they became relatively harmless little annoyances that added some fun to the experience."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 10
