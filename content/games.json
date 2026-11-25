@@ -2045,6 +2045,20 @@
             "zh": "对参与活动模式的设计，我总结出了以下几条心得可供参考：\n1.任何表现、操作上的过渡要快，不要拖沓，尽量简化玩家额外的操作，不要增加过多与核心玩法无关的学习成本。\n2.玩法上一定要有一个足够新颖的，与核心玩法有绝对区别的内容作为核心吸引力。\n3.表现上要有新鲜感，即包装。\n4.局外养成性质的内容可促进重复游玩。养成的导向：收集/挑战，例如收集某物，随进度变化的关卡难度。\n5.要有直接的战斗增益确保玩的爽。\n6.设计特殊局内资源的时候，要注意尽量不要引入过多新型资源类型，会导致数值上的难以控制。",
             "en": "Based on my experience designing event modes, I've summarised the following six takeaways that may be useful as a reference:\n\n1. Keep transitions and interactions quick and seamless. Avoid unnecessary delays and simplify any additional actions required from players. Don't introduce too much learning cost that is unrelated to the core gameplay.\n\n2. Give the mode a distinctive gameplay hook. It should have at least one sufficiently novel feature that clearly sets it apart from the core gameplay and gives players a compelling reason to try it.\n\n3. Make the presentation feel fresh. A new theme, visual style, and overall presentation can help make the event feel different from the regular game.\n\n4. Use meta-progression to encourage replayability. Progression outside individual runs can motivate players to keep playing. Good progression goals include collection and challenges, such as collecting specific items or facing stages that become progressively more difficult.\n\n5. Provide direct combat benefits. Players should feel tangible improvements to their combat performance, helping ensure that the experience remains satisfying.\n\n6. Be careful when introducing special in-run resources. Avoid adding too many entirely new resource types, as this can make numerical balancing and overall resource management much more difficult."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "另外，在参与这种运营期的项目时，也会遇到优化某个板块的需求。面对此类要求，我的经验是：首先要看能够反应这个系统/内容的相关数据板块，最常见的指标有付费率和留存率。然后通过数据和玩家反馈快速找到现存的问题，另外需要考虑要做什么样的改动以及改动会给其他关联系统带来什么影响。具体的工作流程，我可能会先开会敲定优化方向，然后出几版方案，评审会上进行审核和讨论。确定优化方向后，出需求文档进入开发周期，并且要给数据组的同事提分组对比的数据埋点需求。在功能正式上线后，持续追踪数据变化。",
+            "en": "Another type of task that often comes up when working on a live-service project is the need to optimise a particular system or feature.\n\nBased on my experience, the first step is to look at the relevant data for that system or content area. The most common metrics are usually monetisation rate and player retention. By combining these figures with player feedback, we can quickly identify existing problems. It's also important to consider what kind of changes should be made and how those changes might affect other interconnected systems.\n\nAs for the actual workflow, I would usually start with a meeting to agree on the general direction of the optimisation. Then I would prepare several alternative proposals for review and discussion at a design review meeting. Once the direction had been finalised, I would write the requirements document and pass it into the development cycle. At the same time, I would submit requests to the data team for the necessary tracking events, including segmented data collection to support comparisons between different player groups.\n\nAfter the feature officially goes live, the final step is to continuously monitor the data and track how the changes affect its performance."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "",
+            "en": ""
+          }
         }
       ],
       "order": 10
