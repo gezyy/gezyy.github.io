@@ -2008,7 +2008,7 @@
           "type": "text",
           "value": {
             "zh": "我在参与活动设计时，最直观的体验是“带着镣铐跳舞”。这是因为考虑到开发成本以及核心受众等问题，我们的活动玩法需要基于核心的PVE闯关肉鸽机制，而且每一期都要做出新的小玩法。也就是说，每一期的设计不仅要考虑到不阻碍主流程，不能让玩家的学习成本过高，本身兼具一定的挑战性又必须符合休闲爽刷的体验，而且还要满足足够有趣的包装，能吸引玩家的兴趣。",
-            "en": ""
+            "en": "The most immediate feeling I had when working on event design was that it felt like **“dancing in shackles.” Because of development costs and the needs of our core audience, event gameplay had to be built around the game's core PvE roguelite progression system, while each event also needed to introduce a new mini-game or gameplay variation. In other words, every event design came with a long list of constraints. It had to fit into the main gameplay loop without disrupting its flow, avoid creating too steep a learning curve, and offer a certain level of challenge while still preserving the casual, satisfying experience of repeatedly clearing stages. On top of all that, it also needed an appealing theme and presentation that could capture players' interest."
           }
         }
       ],
