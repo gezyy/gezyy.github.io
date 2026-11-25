@@ -2049,6 +2049,13 @@
         {
           "type": "text",
           "value": {
+            "zh": "除此之外，我认为可以考虑每次的活动玩法与本季推出的新角色/新技能/新武器适用搭配。比如某个新推出的角色技能很适合处理单个敌人单位，相对的群体能力偏弱，那么可以考虑设计一种适用于这种场景的活动玩法，让玩家能够直观感受到这类技能的优势，有时候这也是一种潜在的营销推广方式。并且，活动玩法本身可以作为某些计划上线的玩法或系统的测试场，可以统计一下关卡内玩家的行为数据，例如，每局游戏事件房的探索率是多少，在商人处购买增益道具的概率，并利用关卡内行为来分析我们的玩家群体包含多少技巧型玩家和数值碾压型玩家，以此来对之后推出的新内容策略进行调整。尤其是对于高付费用户，要观察他们的局内行为更倾向于高挑战性还是过关效率。",
+            "en": "In addition, I think it's worth considering how each event mode could complement the new characters, skills, or weapons introduced in the same season.\n\nFor example, if a newly released character has a skill that is particularly effective against individual enemies but relatively weak against groups, we could design an event mode that plays to this strength. This would allow players to experience the advantages of the new skill more directly. In some cases, this can also serve as an indirect form of marketing and promotion.\n\nEvent modes can also act as testing grounds for gameplay features or systems that are planned for future release. We can collect data on player behaviour during each run, such as the percentage of players who explore event rooms or the likelihood of purchasing buff items from merchants. We can also use in-game behaviour to better understand the composition of our player base: for example, how many players rely on mechanical skill and strategic decision-making, compared with those who prefer to overpower challenges through character stats and numerical advantages.\n\nThis information can then help us adjust our strategies when planning future content. In particular, it's worth paying close attention to high-spending players and observing whether they tend to prioritise challenging gameplay or clearing stages as efficiently as possible."
+          }
+        },
+        {
+          "type": "text",
+          "value": {
             "zh": "另外，在参与这种运营期的项目时，也会遇到优化某个板块的需求。面对此类要求，我的经验是：首先要看能够反应这个系统/内容的相关数据板块，最常见的指标有付费率和留存率。然后通过数据和玩家反馈快速找到现存的问题，另外需要考虑要做什么样的改动以及改动会给其他关联系统带来什么影响。具体的工作流程，我可能会先开会敲定优化方向，然后出几版方案，评审会上进行审核和讨论。确定优化方向后，出需求文档进入开发周期，并且要给数据组的同事提分组对比的数据埋点需求。在功能正式上线后，持续追踪数据变化。",
             "en": "Another type of task that often comes up when working on a live-service project is the need to optimise a particular system or feature.\n\nBased on my experience, the first step is to look at the relevant data for that system or content area. The most common metrics are usually monetisation rate and player retention. By combining these figures with player feedback, we can quickly identify existing problems. It's also important to consider what kind of changes should be made and how those changes might affect other interconnected systems.\n\nAs for the actual workflow, I would usually start with a meeting to agree on the general direction of the optimisation. Then I would prepare several alternative proposals for review and discussion at a design review meeting. Once the direction had been finalised, I would write the requirements document and pass it into the development cycle. At the same time, I would submit requests to the data team for the necessary tracking events, including segmented data collection to support comparisons between different player groups.\n\nAfter the feature officially goes live, the final step is to continuously monitor the data and track how the changes affect its performance."
           }
@@ -2056,7 +2063,7 @@
         {
           "type": "text",
           "value": {
-            "zh": "",
+            "zh": "最后，反思整个",
             "en": ""
           }
         }
