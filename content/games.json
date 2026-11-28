@@ -2097,7 +2097,7 @@
         }
       },
       "video": {
-        "type": "vimeo",
+        "type": "youtube",
         "src": "https://www.bilibili.com/video/BV1eKbXzcEUQ/?spm_id_from=333.337.search-card.all.click"
       },
       "body": [
