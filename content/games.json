@@ -2114,6 +2114,13 @@
             "zh": "这篇文章的背景请参考另一篇《我为一款曾经百万DAU移动游戏打工的日子》。这是我在实习期间负责为一个角色设计技能的经历，首先我想说明一下，由于我们游戏的性质，并没有严格意义上类似MOBA游戏的职责划分，例如坦克，输出，辅助这样明确的角色定位。但尽管如此，每个角色依然存在各自的特性。而我当时负责的这个角色是一个枪手，顾名思义，这名角色的一技能与各类枪械武器有着很高的联动性，针对不同的枪械类型（例如狙击枪，手枪，霰弹枪等等）有着特殊加成，这个技能设计的成功之处在于很好地将角色技能与武器系统联系起来，让玩家可以有选择性地携带适配的武器进入游戏，并且可以根据武器加成的方向选择天赋构筑。而我当时负责的是这个角色的二技能设计，由于一技能的设计已经非常优秀且全面，一度占据整个游戏内排行S级别的强力地位，所以对我来说这是一个考验。",
             "en": "This article follows on from another piece I wrote, *My Days Working on a Mobile Game That Once Had Over One Million DAU*. It focuses on my experience designing a character skill during my internship. First, I should clarify that, given the nature of our game, there was no strict role classification like the traditional tank, damage dealer, and support roles found in MOBA games. Nevertheless, each character still had their own distinct characteristics.\n\nThe character I worked on was a gunner. As the name suggests, their first skill had strong synergies with different types of firearms. It provided specific bonuses depending on the weapon type, such as sniper rifles, pistols, and shotguns. I think the success of this skill design lay in how effectively it connected the character's abilities with the weapon system. It allowed players to choose weapons that suited the character before entering a run, and then build their talents around the bonuses provided by those weapons. My responsibility was to design this character's second skill. Since the first skill was already exceptionally well-designed and comprehensive, and had consistently ranked among the game's S-tier skills, this was quite a challenge for me."
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "我当时面临着几重考验：首先，由于我们游戏除了联机模式都是单兵作战的PVE玩法，所以每个角色的技能都需要一定的作战能力。其次，这个角色的二技能定位是一个付费技能，这意味着这个技能需要一定的强度以致于符合付费玩家的预期。最后，正如我前面所说，这个角色已经拥有了一个相当全面且强力的一技能，因此二技能如何才能表现出自己的特色而不至于让玩家毫无兴趣呢？",
+            "en": "I faced several challenges when designing this skill.\n\nFirst, since our game was primarily a solo PvE experience outside of its multiplayer mode, every character's skills needed to offer a certain level of combat effectiveness.\n\nSecond, this character's second skill was intended to be a paid skill. This meant it needed to be powerful enough to meet the expectations of paying players and justify its price.\n\nFinally, as I mentioned earlier, the character already had an exceptionally versatile and powerful first skill. So how could I make the second skill stand out in its own right, rather than leaving players with little reason to choose it?"
+          }
         }
       ],
       "order": 11
