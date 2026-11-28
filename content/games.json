@@ -2121,6 +2121,13 @@
             "zh": "我当时面临着几重考验：首先，由于我们游戏除了联机模式都是单兵作战的PVE玩法，所以每个角色的技能都需要一定的作战能力。其次，这个角色的二技能定位是一个付费技能，这意味着这个技能需要一定的强度以致于符合付费玩家的预期。最后，正如我前面所说，这个角色已经拥有了一个相当全面且强力的一技能，因此二技能如何才能表现出自己的特色而不至于让玩家毫无兴趣呢？",
             "en": "I faced several challenges when designing this skill.\n\nFirst, since our game was primarily a solo PvE experience outside of its multiplayer mode, every character's skills needed to offer a certain level of combat effectiveness.\n\nSecond, this character's second skill was intended to be a paid skill. This meant it needed to be powerful enough to meet the expectations of paying players and justify its price.\n\nFinally, as I mentioned earlier, the character already had an exceptionally versatile and powerful first skill. So how could I make the second skill stand out in its own right, rather than leaving players with little reason to choose it?"
           }
+        },
+        {
+          "type": "text",
+          "value": {
+            "zh": "因此，在开始设计之前，我先花了很长时间亲自游玩这个角色，并感受他在每局游戏里的操作手感和技能效果。我发现这个角色存在以下几个特点：首先，一技能偏向于构筑+清图类的技能，也就是说它本身与各类武器连携的特殊效果可以展开各种与适配天赋以及特殊道具的构筑搭配，而且在局内可以通过构筑组合瞬间造成大量群体伤害达到清图效果。它的优势很明确，但是问题是，这种偏向构筑类型的技能需要一定的成长期，且本身并没有特殊的操作感。这里的操作感指的是释放技能后明显发生变化的手感以及角色操作方式。",
+            "en": "Therefore, before starting the design process, I spent a considerable amount of time playing the character myself to understand how he felt to play in different matches, including his controls and skill effects.\n\nI identified several key characteristics. First, his first skill was mainly focused on build creation and clearing large groups of enemies. Its special interactions with different weapons allowed players to create various builds by combining compatible talents and special items. With the right combination, it could also deal massive AoE damage in a short time, making it highly effective at clearing enemies.\n\nThese strengths were quite clear, but the skill also had some limitations. Builds based around this skill required time to develop, and the skill itself did not offer much in terms of unique gameplay feel. By *gameplay feel*, I mean a noticeable change in how the character feels and plays after activating a skill, such as a different control experience or a new way of interacting with the game."
+          }
         }
       ],
       "order": 11
